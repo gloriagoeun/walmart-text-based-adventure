@@ -1,0 +1,1 @@
+/Users/glorialee/CS181G/walmart-text-based-adventure/walmart-text-based-game/target/debug/walmart-text-based-game: /Users/glorialee/CS181G/walmart-text-based-adventure/walmart-text-based-game/src/main.rs

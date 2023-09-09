@@ -1,59 +1,254 @@
-struct Room {
-    name: String, // E.g. "Antechamber"
-    desc: String, // E.g. "Dark wood paneling covers the walls.  The gilded northern doorway lies open."
-    doors: Vec<Door>
+struct Aisle {
+    name: String, // E.g. "Soup Aisle"
+    desc: String, // E.g. "Dark wood paneling covers the walls.  The gilded northern Pointerway lies open."
+    Pointers: Vec<Pointer>,
 }
-struct Door {
-    target: RoomID, // More about this in a minute
-    triggers:Vec<String>, // e.g. "go north", "north"
-    message: Option<String> // What message, if any, to print when the doorway is traversed
-    // Any other info about the door would go here
+struct Pointer {
+    target: AisleID,         // More about this in a minute
+    triggers: Vec<String>,   // e.g. "left" or "right" or "straight"
+    message: Option<String>, // What message, if any, to print when the Pointerway is traversed
 }
+
 #[derive(PartialEq, Eq, Clone, Copy)]
-struct RoomID(usize);
+struct AisleID(usize);
+
 fn main() {
     use std::io;
     // We need the Write trait so we can flush stdout
     use std::io::Write;
-    let rooms = [
-        Room {
-            name: "Foyer".into(), // Turn a &'static string (string constant) into a String
-            desc: "This beautifully decorated foyer beckons you further into the mansion.  There is a door to the north.".into(),
-            doors: vec![Door{target:RoomID(1), triggers:vec!["door".into(), "north".into(), "go north".into()], message:None}]
+    let Aisles = [
+        Aisle {
+            name: "Cashier".into(), // Turn a &'static string (string constant) into a String
+            desc: "(o_o)".into(),
+            Pointers: vec![
+                Pointer {
+                    target: AisleID(1),
+                    triggers: vec!["left".into()],
+                    message: None,
+                },
+                Pointer {
+                    target: AisleID(2),
+                    triggers: vec!["straight".into()],
+                    message: None,
+                },
+                Pointer {
+                    target: AisleID(3),
+                    triggers: vec!["right".into()],
+                    message: None,
+                },
+            ],
         },
-        Room {
-            name: "Antechamber".into(),
-            desc: "Dark wood paneling covers the walls.  An intricate painting of a field mouse hangs slightly askew on the wall (it looks like you could fix it).  The gilded northern doorway lies open to a shadowy parlour.  You can return to the foyer to the southern door.".into(),
-            doors: vec![
-                Door{target:RoomID(0), triggers:vec!["door".into(), "south".into(), "go south".into(), "foyer".into()], message:None},
-                Door{target:RoomID(2), triggers:vec!["north".into(), "doorway".into(), "go north".into()], message:None},
-                Door{target:RoomID(3), triggers:vec!["painting".into(), "mouse".into(), "fix painting".into()], message:Some("As you adjust the painting, a trap-door opens beneath your feet!".into())}
-            ]
+        Aisle {
+            name: "Aisle 1".into(),
+            desc: "Blub blub blub (o3o)".into(),
+            Pointers: vec![
+                Pointer {
+                    target: AisleID(2),
+                    triggers: vec!["right".into()],
+                    message: None,
+                },
+                Pointer {
+                    target: AisleID(4),
+                    triggers: vec!["straight".into()],
+                    message: None,
+                },
+            ],
         },
-        Room {
-            name: "A Room Full of Snakes!".into(),
-            desc: "The shadows wriggle and shift as you enter the parlour.  The floor is covered in snakes!  The walls are covered in snakes!  The ceiling is covered in snakes!  You are also covered in snakes!\n\nBAD END".into(),
-            doors:vec![]
+        Aisle {
+            name: "Aisle 2".into(),
+            desc: "Cucumbers (._.  *)".into(),
+            Pointers: vec![
+                Pointer {
+                    target: AisleID(3),
+                    triggers: vec!["right".into()],
+                    message: None,
+                },
+                Pointer {
+                    target: AisleID(6),
+                    triggers: vec!["straight".into()],
+                    message: None,
+                },
+            ],
         },
-        Room {
-            name: "The Vault".into(),
-            desc: "When you regain consciousness, you feel a stabbing sensation in your lower back.  Reaching beneath you, you discover a massive diamond!  This room is full of gold and jewels, and a convenient ladder leading back outdoors!\n\nYou win!".into(),
-            doors:vec![]
-        }
+        Aisle {
+            name: "Aisle 3".into(),
+            desc: "Cucumbers (._.  *)".into(),
+            Pointers: vec![Pointer {
+                target: AisleID(4),
+                triggers: vec!["left".into()],
+                message: None,
+            }],
+        },
+        Aisle {
+            name: "Aisle 4".into(),
+            desc: "Cucumbers (._.  *)".into(),
+            Pointers: vec![Pointer {
+                target: AisleID(5),
+                triggers: vec!["right".into()],
+                message: None,
+            }],
+        },
+        Aisle {
+            name: "Aisle 5".into(),
+            desc: "Cucumbers (._.  *)".into(),
+            Pointers: vec![Pointer {
+                target: AisleID(6),
+                triggers: vec!["straight".into()],
+                message: None,
+            }],
+        },
+        Aisle {
+            name: "Aisle 6".into(),
+            desc: "Cucumbers (._.  *)".into(),
+            Pointers: vec![Pointer {
+                target: AisleID(7),
+                triggers: vec!["straight".into()],
+                message: None,
+            }],
+        },
+        Aisle {
+            name: "Aisle 7".into(),
+            desc: "Victory".into(),
+            Pointers: vec![
+                Pointer {
+                    target: AisleID(8),
+                    triggers: vec!["left".into()],
+                    message: None,
+                },
+                Pointer {
+                    target: AisleID(9),
+                    triggers: vec!["straight".into()],
+                    message: None,
+                },
+                Pointer {
+                    target: AisleID(10),
+                    triggers: vec!["right".into()],
+                    message: None,
+                },
+            ],
+        },
+        Aisle {
+            name: "Aisle 8".into(),
+            desc: "Bananas".into(),
+            Pointers: vec![
+                Pointer {
+                    target: AisleID(9),
+                    triggers: vec!["right".into()],
+                    message: None,
+                },
+                Pointer {
+                    target: AisleID(11),
+                    triggers: vec!["straight".into()],
+                    message: None,
+                },
+            ],
+        },
+        Aisle {
+            name: "Aisle 9".into(),
+            desc: "Clothing".into(),
+            Pointers: vec![
+                Pointer {
+                    target: AisleID(10),
+                    triggers: vec!["right".into()],
+                    message: None,
+                },
+                Pointer {
+                    target: AisleID(12),
+                    triggers: vec!["straight".into()],
+                    message: None,
+                },
+            ],
+        },
+        Aisle {
+            name: "Aisle 10".into(),
+            desc: "Trees".into(),
+            Pointers: vec![
+                Pointer {
+                    target: AisleID(12),
+                    triggers: vec!["left".into()],
+                    message: None,
+                },
+                Pointer {
+                    target: AisleID(13),
+                    triggers: vec!["straight".into()],
+                    message: None,
+                },
+            ],
+        },
+        Aisle {
+            name: "Aisle 11".into(),
+            desc: "fwevbi ".into(),
+            Pointers: vec![Pointer {
+                target: AisleID(15),
+                triggers: vec!["straight".into()],
+                message: None,
+            }],
+        },
+        Aisle {
+            name: "Aisle 12".into(),
+            desc: "Greetings".into(),
+            Pointers: vec![
+                Pointer {
+                    target: AisleID(11),
+                    triggers: vec!["straight".into()],
+                    message: None,
+                },
+                Pointer {
+                    target: AisleID(8),
+                    triggers: vec!["left".into()],
+                    message: None,
+                },
+            ],
+        },
+        Aisle {
+            name: "Aisle 13".into(),
+            desc: "Dinos".into(),
+            Pointers: vec![
+                Pointer {
+                    target: AisleID(12),
+                    triggers: vec!["left".into()],
+                    message: None,
+                },
+                Pointer {
+                    target: AisleID(14),
+                    triggers: vec!["right".into()],
+                    message: None,
+                },
+                Pointer {
+                    target: AisleID(15),
+                    triggers: vec!["straight".into()],
+                    message: None,
+                },
+            ],
+        },
+        Aisle {
+            name: "Aisle 14".into(),
+            desc: "White Paint".into(),
+            Pointers: vec![Pointer {
+                target: AisleID(13),
+                triggers: vec!["straight".into()],
+                message: None,
+            }],
+        },
+        Aisle {
+            name: "Aisle 15".into(),
+            desc: "Cashier".into(),
+            Pointers: vec![],
+        },
     ];
-    let end_rooms = [RoomID(2), RoomID(3)];
+    let end_Aisles = [AisleID(15)];
     let mut input = String::new();
 
-    let mut at = RoomID(0);
-    println!("The Spooky Mansion Adventure");
+    let mut at = AisleID(0);
+    println!("The Walmart Shopping Adventure");
     println!("============================");
     println!();
     println!("You've been walking for hours in the countryside, and have finally stumbled on the spooky mansion you read about in the tour guide.");
     loop {
-        // We don't want to move out of rooms, so we take a reference
-        let here = &rooms[at.0];
+        // We don't want to move out of Aisles, so we take a reference
+        let here = &Aisles[at.0];
         println!("{}\n{}", here.name, here.desc);
-        if end_rooms.contains(&at) {
+        if end_Aisles.contains(&at) {
             break;
         }
         loop {
@@ -62,11 +257,15 @@ fn main() {
             input.clear();
             io::stdin().read_line(&mut input).unwrap();
             let input = input.trim();
-            if let Some(door) = here.doors.iter().find(|d| d.triggers.iter().any(|t| *t == input)) {
-                if let Some(msg) = &door.message {
+            if let Some(Pointer) = here
+                .Pointers
+                .iter()
+                .find(|d| d.triggers.iter().any(|t| *t == input))
+            {
+                if let Some(msg) = &Pointer.message {
                     println!("{}", msg);
                 }
-                at = door.target;
+                at = Pointer.target;
                 break;
             } else {
                 println!("You can't do that!");

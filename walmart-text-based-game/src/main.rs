@@ -242,11 +242,20 @@ fn main() {
 
     let mut at = AisleID(0);
     println!("The Walmart Shopping Adventure");
-    println!("============================");
+    println!("=======================================================");
+    println!("Welcome to...");
     println!();
+    println!(
+        "    :::       :::     :::     :::        ::::    ::::      :::     :::::::::  ::::::::::: 
+    :+:       :+:   :+: :+:   :+:        +:+:+: :+:+:+   :+: :+:   :+:    :+:     :+:     
+    +:+       +:+  +:+   +:+  +:+        +:+ +:+:+ +:+  +:+   +:+  +:+    +:+     +:+     
+    +#+  +:+  +#+ +#++:++#++: +#+        +#+  +:+  +#+ +#++:++#++: +#++:++#:      +#+     
+    +#+ +#+#+ +#+ +#+     +#+ +#+        +#+       +#+ +#+     +#+ +#+    +#+     +#+     
+     #+#+# #+#+#  #+#     #+# #+#        #+#       #+# #+#     #+# #+#    #+#     #+#     
+      ###   ###   ###     ### ########## ###       ### ###     ### ###    ###     ### "
+    );
     println!("You've been walking for hours in the countryside, and have finally stumbled on the spooky mansion you read about in the tour guide.");
     let start = Instant::now();
-    println!("{:?}", start);
     loop {
         // We don't want to move out of Aisles, so we take a reference
         let here = &Aisles[at.0];
@@ -258,13 +267,17 @@ fn main() {
         let mut new_now = Instant::now();
 
         //the game should end when the time ends
-        println!("{:?}", new_now);
-        if (new_now.duration_since(start) >= Duration::from_secs(2)) {
+        if (new_now.duration_since(start) >= Duration::from_secs(240)) {
             println!("You ran out of time :( Your parents left you..... Sriracha blood is all over you >:))");
             break;
         }
         println!("{:?}", new_now.duration_since(start));
         loop {
+            println!(
+                "You have {:?} seconds left!!!",
+                Duration::from_secs(60) - new_now.duration_since(start)
+            );
+            println!();
             print!("What will you do?\n> ");
             io::stdout().flush().unwrap();
             input.clear();

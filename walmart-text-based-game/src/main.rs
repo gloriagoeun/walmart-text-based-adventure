@@ -254,6 +254,7 @@ fn main() {
      #+#+# #+#+#  #+#     #+# #+#        #+#       #+# #+#     #+# #+#    #+#     #+#     
       ###   ###   ###     ### ########## ###       ### ###     ### ###    ###     ### "
     );
+    println!();
     println!("You've been walking for hours in the countryside, and have finally stumbled on the spooky mansion you read about in the tour guide.");
     let start = Instant::now();
     loop {

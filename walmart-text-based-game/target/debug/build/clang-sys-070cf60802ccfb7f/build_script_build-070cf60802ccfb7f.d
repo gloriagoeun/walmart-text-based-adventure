@@ -1,0 +1,9 @@
+/Users/glorialee/CS181G/walmart-text-based-adventure/walmart-text-based-game/target/debug/build/clang-sys-070cf60802ccfb7f/build_script_build-070cf60802ccfb7f: /Users/glorialee/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-1.6.1/build.rs /Users/glorialee/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-1.6.1/build/macros.rs /Users/glorialee/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-1.6.1/build/common.rs /Users/glorialee/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-1.6.1/build/dynamic.rs /Users/glorialee/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-1.6.1/build/static.rs
+
+/Users/glorialee/CS181G/walmart-text-based-adventure/walmart-text-based-game/target/debug/build/clang-sys-070cf60802ccfb7f/build_script_build-070cf60802ccfb7f.d: /Users/glorialee/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-1.6.1/build.rs /Users/glorialee/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-1.6.1/build/macros.rs /Users/glorialee/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-1.6.1/build/common.rs /Users/glorialee/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-1.6.1/build/dynamic.rs /Users/glorialee/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-1.6.1/build/static.rs
+
+/Users/glorialee/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-1.6.1/build.rs:
+/Users/glorialee/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-1.6.1/build/macros.rs:
+/Users/glorialee/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-1.6.1/build/common.rs:
+/Users/glorialee/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-1.6.1/build/dynamic.rs:
+/Users/glorialee/.cargo/registry/src/index.crates.io-6f17d22bba15001f/clang-sys-1.6.1/build/static.rs:

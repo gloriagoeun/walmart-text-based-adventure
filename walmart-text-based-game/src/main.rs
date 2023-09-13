@@ -283,14 +283,17 @@ fn main() {
     println!();
     println!();
     println!("You are grocery shopping with your parents!! WOW, so fun...");
+    println!();
     //sleep(Duration::from_secs(2));
     println!("Except, you are stressed.. Why may you ask? Your parents are checking out their items, but THEY FORGOT THE SRIRACHA!!");
-    println!("Your mission for this game is to grab the sriracha before the cashier checks out all of the items (and before your parents leave..... without you.... :'()");
+    println!();
+    println!("Your mission for this game is to grab the sriracha before the cashier checks out all of the items and before your parents leave..... without you.... :'(");
+    println!();
     println!("Ready....? The game shall start soon...");
 
     //playing the intro music here
-    let intro_time: u64 = 2;
-    let mp3_file_path = "beep.mp3";
+    let intro_time: u64 = 7;
+    let mp3_file_path = "/Users/glorialee/CS181G/walmart-text-based-adventure/walmart-text-based-game/src/beep.mp3";
     play_mp3_file(mp3_file_path, &intro_time);
 
     let start = Instant::now();
@@ -301,20 +304,24 @@ fn main() {
         let here = &Aisles[at.0];
 
         //prints the aisle name and description
+        println!();
+        println!("++++++++++++++++++++++++++++++++++++++++++++++++++");
+        
+        //the game should end when the time ends
+        let mut new_now = Instant::now();
+        if new_now.duration_since(start) >= Duration::from_secs(time_limit) {
+            println!("You ran out of time :( Your parents left you..... Sriracha blood is all over you >:))");
+            break;
+        }
+        println!();
         println!("{}\n{}", here.name, here.desc);
 
         if end_Aisles.contains(&at) {
             println!("You reached the end. You can go home with your parents :)");
             break;
         }
-        let mut new_now = Instant::now();
-
-        //the game should end when the time ends
-        if new_now.duration_since(start) >= Duration::from_secs(time_limit) {
-            println!("You ran out of time :( Your parents left you..... Sriracha blood is all over you >:))");
-            break;
-        }
-        //loop {
+        
+        println!();
         println!(
             "You have {:?} seconds left!!!",
             Duration::from_secs(time_limit) - new_now.duration_since(start)
@@ -333,8 +340,8 @@ fn main() {
             || at == AisleID(7)
         {
             loop {
-                println!("Is the sriracha in this aisle?");
-                println!("'Yes' or 'No'? ");
+                println!();
+                println!("Is the sriracha in this aisle?: 'Yes' or 'No'?");
                 io::stdout().flush().unwrap();
                 input_one.clear();
                 io::stdin().read_line(&mut input_one).unwrap();
@@ -365,6 +372,7 @@ fn main() {
 
         if keep {
             loop {
+                println!();
                 print!("What will you do?\n> ");
                 io::stdout().flush().unwrap();
                 input.clear();
@@ -385,6 +393,5 @@ fn main() {
                 }
             }
         }
-        //}
     }
 }

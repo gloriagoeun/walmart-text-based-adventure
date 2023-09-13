@@ -84,7 +84,7 @@ fn main() {
             ],
         },
         Aisle {
-            name: "Aisle 1".into(),
+            name: "Aisle BOM".into(),
             desc: " 
             xxxxxxxxxxxxxxxxxxx
             🍎🍏🍏🍏🍎🍒🍏🍏🍏🍏
@@ -107,7 +107,7 @@ fn main() {
             ],
         },
         Aisle {
-            name: "Aisle 2".into(),
+            name: "Aisle BAS".into(),
             desc: " 
             xxxxxxxxxxxxxxxxxxx
             🍈🍎🥝🥝🍈🍠🥝🥑🥑
@@ -130,7 +130,7 @@ fn main() {
             ],
         },
         Aisle {
-            name: "Aisle 3".into(),
+            name: "Aisle TIC".into(),
             desc: " 
             xxxxxxxxxxxxxxxxxxx
             🍠🍑🍊🍑🍊🍊🍑🍊🍊
@@ -146,7 +146,7 @@ fn main() {
             }],
         },
         Aisle {
-            name: "Aisle 4".into(),
+            name: "Aisle SIDE".into(),
             desc: " 
             xxxxxxxxxxxxxxxxxxx
             🍅🍓🥫🥫🥫🍒🍒🍅🍅
@@ -162,7 +162,7 @@ fn main() {
             }],
         },
         Aisle {
-            name: "Aisle 5".into(),
+            name: "Aisle EYE".into(),
             desc: " 
             xxxxxxxxxxxxxxxxxxx
             ⏰🥫🖍🎈🧲🧯🧰🌰🚨
@@ -178,7 +178,7 @@ fn main() {
             }],
         },
         Aisle {
-            name: "Aisle 6".into(),
+            name: "Aisle WOA".into(),
             desc: " 
             xxxxxxxxxxxxxxxxxxx
             🥯🥨🥫🍎🍒🍒🌽🫑🧄
@@ -194,13 +194,13 @@ fn main() {
             }],
         },
         Aisle {
-            name: "Aisle 7".into(),
+            name: "Aisle TIK".into(),
             desc: " 
-            xxxxxxxxxxxxxxxxxxx
-            🌶️🌶️🌶️🌶️🌶️🌶️🌶️🌶️🌶️
-            🌶️💲 ®️ ℹ️ ®️ 🅰️ ©️ ♓ 🅰️🌶️
-            🌶️🌶️🌶️🌶️🌶️🌶️🌶️🌶️🌶️                                                              
-            xxxxxxxxxxxxxxxxxxx
+            xxxxxxxxxxxxxxxxxxxxxx
+            🌶️🌶️🌶️🌶️🌶️🌶️🌶️🌶️🌶️🌶️🌶️🌶️🌶️🌶️🌶️🌶️🌶️🌶️🌶️
+            🌶️ 💲®️ ℹ️ ®️ 🅰️ ©️ ♓🅰️ 🌶️
+            🌶️🌶️🌶️🌶️🌶️🌶️🌶️🌶️🌶️🌶️🌶️🌶️🌶️🌶️🌶️🌶️🌶️🌶️🌶️                                                          
+            xxxxxxxxxxxxxxxxxxxxxx
             "
             .into(),
             Pointers: vec![
@@ -222,8 +222,15 @@ fn main() {
             ],
         },
         Aisle {
-            name: "Aisle 8".into(),
-            desc: "Bananas".into(),
+            name: "Aisle TOK".into(),
+            desc: " 
+            xxxxxxxxxxxxxxxxxxx
+            ⏰🖨️🎧⏰🖨️🎧🖨️🎧
+            ⏰🖨️🎧⏰🖨️🎧⏰🎧
+            ⏰🖨️🎧⏰🖨️🎧⏰🖨️                                                                       
+            xxxxxxxxxxxxxxxxxxx
+            "
+            .into(),
             Pointers: vec![
                 Pointer {
                     target: AisleID(9),
@@ -238,8 +245,15 @@ fn main() {
             ],
         },
         Aisle {
-            name: "Aisle 9".into(),
-            desc: "Clothing".into(),
+            name: "Aisle CLICK".into(),
+            desc: " 
+            xxxxxxxxxxxxxxxxxxx
+            🖥️💻📱⏰🖥️💻📱🖥️
+            🖥️💻📱⏰🖥️💻📱💻
+            🖥️💻📱⏰🖥️💻📱📱                                                                                 
+            xxxxxxxxxxxxxxxxxxx
+            "
+            .into(),
             Pointers: vec![
                 Pointer {
                     target: AisleID(10),
@@ -254,8 +268,15 @@ fn main() {
             ],
         },
         Aisle {
-            name: "Aisle 10".into(),
-            desc: "Trees".into(),
+            name: "Aisle CLOCK".into(),
+            desc: " 
+            xxxxxxxxxxxxxxxxxxx
+            🖥️🛹🏸⚽️🖥️🛹🏸⚽️
+            🖥️🛹🏸⚽️🛹🏸⚽️💻
+            🛹⚽️📱🛹🏸⚽️🖥️🏸                                                                                            
+            xxxxxxxxxxxxxxxxxxx
+            "
+            .into(),
             Pointers: vec![
                 Pointer {
                     target: AisleID(12),
@@ -270,8 +291,15 @@ fn main() {
             ],
         },
         Aisle {
-            name: "Aisle 11".into(),
-            desc: "fwevbi ".into(),
+            name: "Aisle GO".into(),
+            desc: " 
+            xxxxxxxxxxxxxxxxxxx
+            🎂🥮🎂🎂🎂🥮🥮🥮🥮
+            🥮🎂🎂🎂🥐🥐🥐🥐🥐
+            🥐🥐🥐🥖🥖🥖🥖🥖🥖                                                                                           
+            xxxxxxxxxxxxxxxxxxx
+            "
+            .into(),
             Pointers: vec![Pointer {
                 target: AisleID(15),
                 triggers: vec!["straight".into()],
@@ -279,8 +307,15 @@ fn main() {
             }],
         },
         Aisle {
-            name: "Aisle 12".into(),
-            desc: "Greetings".into(),
+            name: "Aisle RUN".into(),
+            desc: " 
+            xxxxxxxxxxxxxxxxxxx
+            🌂🎒🕶️🌂🎒🕶️🥮🥮
+            🌂🎒🕶️🎂🥐🌂🎒🕶️
+            🥐🌂🎒🕶️🥖🌂🎒🕶️                                                                               
+            xxxxxxxxxxxxxxxxxxx
+            "
+            .into(),
             Pointers: vec![
                 Pointer {
                     target: AisleID(11),
@@ -295,8 +330,15 @@ fn main() {
             ],
         },
         Aisle {
-            name: "Aisle 13".into(),
-            desc: "Dinos".into(),
+            name: "Aisle FOR".into(),
+            desc: " 
+            xxxxxxxxxxxxxxxxxxx
+            🍫🍭💐🌂🎒🍫🍭💐
+            🌂🎒🍫🍭💐🍫🍭💐
+            🥐🍫🍭💐🥖🍫🍭💐                                                                               
+            xxxxxxxxxxxxxxxxxxx
+            "
+            .into(),
             Pointers: vec![
                 Pointer {
                     target: AisleID(12),
@@ -316,8 +358,15 @@ fn main() {
             ],
         },
         Aisle {
-            name: "Aisle 14".into(),
-            desc: "White Paint".into(),
+            name: "Aisle LIFE".into(),
+            desc: " 
+            xxxxxxxxxxxxxxxxxxx
+            🦕🦕🦕🦕🧃🧃🧃🧃
+            🫐🫐🦕🦕🦕🦕🦕🫐
+            🥑🥑🥑🥑🥑🦖🦖🦖                                                                                         
+            xxxxxxxxxxxxxxxxxxx
+            "
+            .into(),
             Pointers: vec![Pointer {
                 target: AisleID(13),
                 triggers: vec!["straight".into()],

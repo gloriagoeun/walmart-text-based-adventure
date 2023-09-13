@@ -6,6 +6,6 @@ The mission of this game is for you to find and grab the treasured hot sriracha!
 Beet the beep!
 
 Credits:
-https://www.youtube.com/watch?v=WoxnL5dakyA
+https://www.youtube.com/watch?v=WoxnL5dakyA  
 https://cs.pomona.edu/classes/cs181g/
 

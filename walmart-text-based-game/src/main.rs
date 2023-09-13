@@ -41,6 +41,18 @@ fn play_mp3_file(file_path: &str, intro_time: &u64) {
     sink.stop();
 }
 
+fn show_moves(aisle: &Aisle) -> String {
+    let mut res: String = "".to_owned();
+    for dir in &aisle.Pointers {
+        if let Some(point) = dir.triggers.first() {
+            res.push_str(point);
+            res.push_str(", ");
+        }
+    }
+    println!("{}", res);
+    return res;
+}
+
 fn main() {
     let Aisles = [
         Aisle {
@@ -403,14 +415,14 @@ fn main() {
                 io::stdin().read_line(&mut input_one).unwrap();
                 let input_one = input_one.trim();
                 //if (at == )
-                if input_one == "No" {
+                if input_one == "No" || input_one == "no" {
                     if at == AisleID(7) {
                         at = AisleID(0);
                         println!("You missed it... back to the cashier");
                         keep = false;
                     }
                     break;
-                } else if input_one == "Yes" {
+                } else if input_one == "Yes" || input_one == "yes" {
                     // say yes
                     if at != AisleID(7) {
                         at = AisleID(0);
@@ -430,6 +442,8 @@ fn main() {
             loop {
                 println!();
                 print!("What will you do?\n> ");
+                show_moves(here);
+
                 io::stdout().flush().unwrap();
                 input.clear();
                 io::stdin().read_line(&mut input).unwrap();

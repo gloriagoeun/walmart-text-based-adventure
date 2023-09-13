@@ -9,7 +9,7 @@ use std::time::{Duration, Instant}; // Import the Duration type from std::time
 
 struct Aisle {
     name: String, // E.g. "Soup Aisle"
-    desc: String, // E.g. "Dark wood paneling covers the walls.  The gilded northern Pointerway lies open."
+    desc: String,
     Pointers: Vec<Pointer>,
 }
 struct Pointer {
@@ -44,8 +44,15 @@ fn play_mp3_file(file_path: &str, intro_time: &u64) {
 fn main() {
     let Aisles = [
         Aisle {
-            name: "Cashier".into(), // Turn a &'static string (string constant) into a String
-            desc: "Apple, Orange, Banana".into(),
+            name: "(ಠ_ಠ) Cashier".into(), // Turn a &'static string (string constant) into a String
+            desc: " 
+            xxxxxxxxxxxxxxxxxxx
+            🗣️👥📠⏳❗️🛒 🗣️👥📠⏳
+            🗣️👥📠⏳❗️🛒 🗣️👥📠⏳
+            🗣️👥📠⏳❗️🛒 🗣️👥📠⏳
+            xxxxxxxxxxxxxxxxxxx
+            "
+            .into(),
             Pointers: vec![
                 Pointer {
                     target: AisleID(1),
@@ -66,7 +73,14 @@ fn main() {
         },
         Aisle {
             name: "Aisle 1".into(),
-            desc: "(o3o)".into(),
+            desc: " 
+            xxxxxxxxxxxxxxxxxxx
+            🍎🍏🍏🍏🍎🍒🍏🍏🍏🍏
+            🥫🍎🍎🍒🍎🍎🍎🍏🍎🥫
+            🍎🍏🍏🍎🍎🍎🍎🍒🍠🍎            
+            xxxxxxxxxxxxxxxxxxx
+            "
+            .into(),
             Pointers: vec![
                 Pointer {
                     target: AisleID(2),
@@ -82,7 +96,14 @@ fn main() {
         },
         Aisle {
             name: "Aisle 2".into(),
-            desc: "Cucumbers (._.  *)".into(),
+            desc: " 
+            xxxxxxxxxxxxxxxxxxx
+            🍈🍎🥝🥝🍈🍠🥝🥑🥑
+            🥝🥑🥑🥝🥝🥝🥝🍠🥝
+            🥝🥝🥝❗️🥝🍎🥝🥑🥑                       
+            xxxxxxxxxxxxxxxxxxx
+            "
+            .into(),
             Pointers: vec![
                 Pointer {
                     target: AisleID(3),
@@ -98,7 +119,14 @@ fn main() {
         },
         Aisle {
             name: "Aisle 3".into(),
-            desc: "Cucumbers (._.  *)".into(),
+            desc: " 
+            xxxxxxxxxxxxxxxxxxx
+            🍠🍑🍊🍑🍊🍊🍑🍊🍊
+            🍊🍊🍊🍠🍊🍋🍋🍊🍊
+            🍊🍑🍋🍋🍊🍊🍠🍊🍊                       
+            xxxxxxxxxxxxxxxxxxx
+            "
+            .into(),
             Pointers: vec![Pointer {
                 target: AisleID(4),
                 triggers: vec!["left".into()],
@@ -107,7 +135,14 @@ fn main() {
         },
         Aisle {
             name: "Aisle 4".into(),
-            desc: "Cucumbers (._.  *)".into(),
+            desc: " 
+            xxxxxxxxxxxxxxxxxxx
+            🍅🍓🥫🥫🥫🍒🍒🍅🍅
+            🍒🍅🍅🍅🍓🥫🍅🍠🍅
+            🍉🥫🥫🥫🥫🍅🍅🍅🍉                                   
+            xxxxxxxxxxxxxxxxxxx
+            "
+            .into(),
             Pointers: vec![Pointer {
                 target: AisleID(5),
                 triggers: vec!["right".into()],
@@ -116,7 +151,14 @@ fn main() {
         },
         Aisle {
             name: "Aisle 5".into(),
-            desc: "Cucumbers (._.  *)".into(),
+            desc: " 
+            xxxxxxxxxxxxxxxxxxx
+            ⏰🥫🖍🎈🧲🧯🧰🌰🚨
+            🍒🍅🍅⏰🧶🦀🦐🍠🥕
+            🍑☄️🔥🥫🍄🍄🦀🦐🥩                                              
+            xxxxxxxxxxxxxxxxxxx
+            "
+            .into(),
             Pointers: vec![Pointer {
                 target: AisleID(6),
                 triggers: vec!["straight".into()],
@@ -125,7 +167,14 @@ fn main() {
         },
         Aisle {
             name: "Aisle 6".into(),
-            desc: "Cucumbers (._.  *)".into(),
+            desc: " 
+            xxxxxxxxxxxxxxxxxxx
+            🥯🥨🥫🍎🍒🍒🌽🫑🧄
+            🍒🍅🍅🥯👶🧀🥖🍠🥕
+            🍑🥭🍍🥫🍦🍐🍊🍋🍌                                                    
+            xxxxxxxxxxxxxxxxxxx
+            "
+            .into(),
             Pointers: vec![Pointer {
                 target: AisleID(7),
                 triggers: vec!["straight".into()],
@@ -134,7 +183,14 @@ fn main() {
         },
         Aisle {
             name: "Aisle 7".into(),
-            desc: "Victory".into(),
+            desc: " 
+            xxxxxxxxxxxxxxxxxxx
+            🌶️🌶️🌶️🌶️🌶️🌶️🌶️🌶️🌶️
+            🌶️💲 ®️ ℹ️ ®️ 🅰️ ©️ ♓ 🅰️🌶️
+            🌶️🌶️🌶️🌶️🌶️🌶️🌶️🌶️🌶️                                                              
+            xxxxxxxxxxxxxxxxxxx
+            "
+            .into(),
             Pointers: vec![
                 Pointer {
                     target: AisleID(8),
@@ -262,7 +318,7 @@ fn main() {
             Pointers: vec![],
         },
     ];
-    let end_Aisles = [AisleID(15)];
+    let end_aisles = [AisleID(15)];
     let mut input = String::new();
     let mut input_one = String::new();
 
@@ -293,7 +349,7 @@ fn main() {
 
     //playing the intro music here
     let intro_time: u64 = 7;
-    let mp3_file_path = "/Users/glorialee/CS181G/walmart-text-based-adventure/walmart-text-based-game/src/beep.mp3";
+    let mp3_file_path = "./src/beep.mp3";
     play_mp3_file(mp3_file_path, &intro_time);
 
     let start = Instant::now();
@@ -306,7 +362,7 @@ fn main() {
         //prints the aisle name and description
         println!();
         println!("++++++++++++++++++++++++++++++++++++++++++++++++++");
-        
+
         //the game should end when the time ends
         let mut new_now = Instant::now();
         if new_now.duration_since(start) >= Duration::from_secs(time_limit) {
@@ -316,15 +372,15 @@ fn main() {
         println!();
         println!("{}\n{}", here.name, here.desc);
 
-        if end_Aisles.contains(&at) {
+        if end_aisles.contains(&at) {
             println!("You reached the end. You can go home with your parents :)");
             break;
         }
-        
+
         println!();
         println!(
             "You have {:?} seconds left!!!",
-            Duration::from_secs(time_limit) - new_now.duration_since(start)
+            Duration::from_secs(time_limit).as_secs() - new_now.duration_since(start).as_secs()
         );
         println!();
 

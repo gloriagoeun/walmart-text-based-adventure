@@ -1,0 +1,9 @@
+/Users/emily/Downloads/CSCI181G/walmart-text-based-adventure/walmart-text-based-game/target/debug/deps/slice_deque-71cc0a0978fedec0.rmeta: /Users/emily/.cargo/registry/src/index.crates.io-6f17d22bba15001f/slice-deque-0.3.0/src/lib.rs /Users/emily/.cargo/registry/src/index.crates.io-6f17d22bba15001f/slice-deque-0.3.0/src/macros.rs /Users/emily/.cargo/registry/src/index.crates.io-6f17d22bba15001f/slice-deque-0.3.0/src/mirrored/mod.rs /Users/emily/.cargo/registry/src/index.crates.io-6f17d22bba15001f/slice-deque-0.3.0/src/mirrored/buffer.rs /Users/emily/.cargo/registry/src/index.crates.io-6f17d22bba15001f/slice-deque-0.3.0/src/mirrored/macos.rs
+
+/Users/emily/Downloads/CSCI181G/walmart-text-based-adventure/walmart-text-based-game/target/debug/deps/slice_deque-71cc0a0978fedec0.d: /Users/emily/.cargo/registry/src/index.crates.io-6f17d22bba15001f/slice-deque-0.3.0/src/lib.rs /Users/emily/.cargo/registry/src/index.crates.io-6f17d22bba15001f/slice-deque-0.3.0/src/macros.rs /Users/emily/.cargo/registry/src/index.crates.io-6f17d22bba15001f/slice-deque-0.3.0/src/mirrored/mod.rs /Users/emily/.cargo/registry/src/index.crates.io-6f17d22bba15001f/slice-deque-0.3.0/src/mirrored/buffer.rs /Users/emily/.cargo/registry/src/index.crates.io-6f17d22bba15001f/slice-deque-0.3.0/src/mirrored/macos.rs
+
+/Users/emily/.cargo/registry/src/index.crates.io-6f17d22bba15001f/slice-deque-0.3.0/src/lib.rs:
+/Users/emily/.cargo/registry/src/index.crates.io-6f17d22bba15001f/slice-deque-0.3.0/src/macros.rs:
+/Users/emily/.cargo/registry/src/index.crates.io-6f17d22bba15001f/slice-deque-0.3.0/src/mirrored/mod.rs:
+/Users/emily/.cargo/registry/src/index.crates.io-6f17d22bba15001f/slice-deque-0.3.0/src/mirrored/buffer.rs:
+/Users/emily/.cargo/registry/src/index.crates.io-6f17d22bba15001f/slice-deque-0.3.0/src/mirrored/macos.rs:

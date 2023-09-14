@@ -21,7 +21,7 @@ cargo:rerun-if-env-changed=HOST_CFLAGS
 HOST_CFLAGS = None
 cargo:rerun-if-env-changed=CFLAGS
 CFLAGS = None
-running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-2" "-fno-omit-frame-pointer" "-arch" "arm64" "-I" "minimp3/" "-Wall" "-Wextra" "-DMINIMP3_IMPLEMENTATION" "-o" "/Users/emily/Downloads/CSCI181G/walmart-text-based-adventure/walmart-text-based-game/target/debug/build/minimp3-sys-897debf58e500395/out/minimp3.o" "-c" "minimp3.c"
+running: "cc" "-O0" "-ffunction-sections" "-fdata-sections" "-fPIC" "-gdwarf-2" "-fno-omit-frame-pointer" "-arch" "arm64" "-I" "minimp3/" "-Wall" "-Wextra" "-DMINIMP3_IMPLEMENTATION" "-o" "/Users/Aniku/cs181g/walmart-text-based-adventure/walmart-text-based-game/target/debug/build/minimp3-sys-897debf58e500395/out/minimp3.o" "-c" "minimp3.c"
 exit status: 0
 cargo:rerun-if-env-changed=AR_aarch64-apple-darwin
 AR_aarch64-apple-darwin = None
@@ -39,9 +39,9 @@ cargo:rerun-if-env-changed=HOST_ARFLAGS
 HOST_ARFLAGS = None
 cargo:rerun-if-env-changed=ARFLAGS
 ARFLAGS = None
-running: ZERO_AR_DATE="1" "ar" "cq" "/Users/emily/Downloads/CSCI181G/walmart-text-based-adventure/walmart-text-based-game/target/debug/build/minimp3-sys-897debf58e500395/out/libminimp3.a" "/Users/emily/Downloads/CSCI181G/walmart-text-based-adventure/walmart-text-based-game/target/debug/build/minimp3-sys-897debf58e500395/out/minimp3.o"
+running: ZERO_AR_DATE="1" "ar" "cq" "/Users/Aniku/cs181g/walmart-text-based-adventure/walmart-text-based-game/target/debug/build/minimp3-sys-897debf58e500395/out/libminimp3.a" "/Users/Aniku/cs181g/walmart-text-based-adventure/walmart-text-based-game/target/debug/build/minimp3-sys-897debf58e500395/out/minimp3.o"
 exit status: 0
-running: "ar" "s" "/Users/emily/Downloads/CSCI181G/walmart-text-based-adventure/walmart-text-based-game/target/debug/build/minimp3-sys-897debf58e500395/out/libminimp3.a"
+running: "ar" "s" "/Users/Aniku/cs181g/walmart-text-based-adventure/walmart-text-based-game/target/debug/build/minimp3-sys-897debf58e500395/out/libminimp3.a"
 exit status: 0
 cargo:rustc-link-lib=static=minimp3
-cargo:rustc-link-search=native=/Users/emily/Downloads/CSCI181G/walmart-text-based-adventure/walmart-text-based-game/target/debug/build/minimp3-sys-897debf58e500395/out
+cargo:rustc-link-search=native=/Users/Aniku/cs181g/walmart-text-based-adventure/walmart-text-based-game/target/debug/build/minimp3-sys-897debf58e500395/out

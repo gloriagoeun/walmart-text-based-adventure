@@ -1,4 +1,4 @@
-# The Ultimate Walmart Text-Based Game
+# The Ultimate Walmart Searcharcha Hunt
 ### created by Emily Wang, Anika Gupta & Gloria Lee for CS181G
 
 Welcome! This repository holds the code we have written to develop a fun little text-based game. 

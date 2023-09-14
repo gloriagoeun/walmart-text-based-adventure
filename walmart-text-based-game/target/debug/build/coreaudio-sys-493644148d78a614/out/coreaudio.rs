@@ -116,6 +116,12 @@ pub const TARGET_RT_LITTLE_ENDIAN: u32 = 1;
 pub const TARGET_RT_BIG_ENDIAN: u32 = 0;
 pub const TARGET_RT_64_BIT: u32 = 1;
 pub const __API_TO_BE_DEPRECATED: u32 = 100000;
+pub const __API_TO_BE_DEPRECATED_MACOS: u32 = 100000;
+pub const __API_TO_BE_DEPRECATED_IOS: u32 = 100000;
+pub const __API_TO_BE_DEPRECATED_TVOS: u32 = 100000;
+pub const __API_TO_BE_DEPRECATED_WATCHOS: u32 = 100000;
+pub const __API_TO_BE_DEPRECATED_MACCATALYST: u32 = 100000;
+pub const __API_TO_BE_DEPRECATED_DRIVERKIT: u32 = 100000;
 pub const __MAC_10_0: u32 = 1000;
 pub const __MAC_10_1: u32 = 1010;
 pub const __MAC_10_2: u32 = 1020;
@@ -159,6 +165,10 @@ pub const __MAC_12_0: u32 = 120000;
 pub const __MAC_12_1: u32 = 120100;
 pub const __MAC_12_2: u32 = 120200;
 pub const __MAC_12_3: u32 = 120300;
+pub const __MAC_13_0: u32 = 130000;
+pub const __MAC_13_1: u32 = 130100;
+pub const __MAC_13_2: u32 = 130200;
+pub const __MAC_13_3: u32 = 130300;
 pub const __IPHONE_2_0: u32 = 20000;
 pub const __IPHONE_2_1: u32 = 20100;
 pub const __IPHONE_2_2: u32 = 20200;
@@ -219,6 +229,11 @@ pub const __IPHONE_15_1: u32 = 150100;
 pub const __IPHONE_15_2: u32 = 150200;
 pub const __IPHONE_15_3: u32 = 150300;
 pub const __IPHONE_15_4: u32 = 150400;
+pub const __IPHONE_16_0: u32 = 160000;
+pub const __IPHONE_16_1: u32 = 160100;
+pub const __IPHONE_16_2: u32 = 160200;
+pub const __IPHONE_16_3: u32 = 160300;
+pub const __IPHONE_16_4: u32 = 160400;
 pub const __TVOS_9_0: u32 = 90000;
 pub const __TVOS_9_1: u32 = 90100;
 pub const __TVOS_9_2: u32 = 90200;
@@ -252,6 +267,11 @@ pub const __TVOS_15_1: u32 = 150100;
 pub const __TVOS_15_2: u32 = 150200;
 pub const __TVOS_15_3: u32 = 150300;
 pub const __TVOS_15_4: u32 = 150400;
+pub const __TVOS_16_0: u32 = 160000;
+pub const __TVOS_16_1: u32 = 160100;
+pub const __TVOS_16_2: u32 = 160200;
+pub const __TVOS_16_3: u32 = 160300;
+pub const __TVOS_16_4: u32 = 160400;
 pub const __WATCHOS_1_0: u32 = 10000;
 pub const __WATCHOS_2_0: u32 = 20000;
 pub const __WATCHOS_2_1: u32 = 20100;
@@ -283,6 +303,11 @@ pub const __WATCHOS_8_1: u32 = 80100;
 pub const __WATCHOS_8_3: u32 = 80300;
 pub const __WATCHOS_8_4: u32 = 80400;
 pub const __WATCHOS_8_5: u32 = 80500;
+pub const __WATCHOS_9_0: u32 = 90000;
+pub const __WATCHOS_9_1: u32 = 90100;
+pub const __WATCHOS_9_2: u32 = 90200;
+pub const __WATCHOS_9_3: u32 = 90300;
+pub const __WATCHOS_9_4: u32 = 90400;
 pub const MAC_OS_X_VERSION_10_0: u32 = 1000;
 pub const MAC_OS_X_VERSION_10_1: u32 = 1010;
 pub const MAC_OS_X_VERSION_10_2: u32 = 1020;
@@ -317,18 +342,26 @@ pub const MAC_OS_X_VERSION_10_15_1: u32 = 101501;
 pub const MAC_OS_X_VERSION_10_16: u32 = 101600;
 pub const MAC_OS_VERSION_11_0: u32 = 110000;
 pub const MAC_OS_VERSION_12_0: u32 = 120000;
+pub const MAC_OS_VERSION_13_0: u32 = 130000;
 pub const __DRIVERKIT_19_0: u32 = 190000;
 pub const __DRIVERKIT_20_0: u32 = 200000;
 pub const __DRIVERKIT_21_0: u32 = 210000;
-pub const __MAC_OS_X_VERSION_MAX_ALLOWED: u32 = 120300;
+pub const __MAC_OS_X_VERSION_MAX_ALLOWED: u32 = 130300;
 pub const __ENABLE_LEGACY_MAC_AVAILABILITY: u32 = 1;
-pub const COREAUDIOTYPES_VERSION: u32 = 20210401;
+pub const COREAUDIOTYPES_VERSION: u32 = 20211130;
 pub const __COREFOUNDATION_CFBASE__: u32 = 1;
 pub const __COREFOUNDATION_CFAVAILABILITY__: u32 = 1;
 pub const API_TO_BE_DEPRECATED: u32 = 100000;
+pub const API_TO_BE_DEPRECATED_MACOS: u32 = 100000;
+pub const API_TO_BE_DEPRECATED_IOS: u32 = 100000;
+pub const API_TO_BE_DEPRECATED_TVOS: u32 = 100000;
+pub const API_TO_BE_DEPRECATED_WATCHOS: u32 = 100000;
+pub const API_TO_BE_DEPRECATED_DRIVERKIT: u32 = 100000;
 pub const MAC_OS_VERSION_11_1: u32 = 110100;
 pub const MAC_OS_VERSION_11_3: u32 = 110300;
-pub const MAC_OS_X_VERSION_MAX_ALLOWED: u32 = 120000;
+pub const MAC_OS_VERSION_13_1: u32 = 130100;
+pub const MAC_OS_VERSION_13_3: u32 = 130300;
+pub const MAC_OS_X_VERSION_MAX_ALLOWED: u32 = 130300;
 pub const __AVAILABILITY_MACROS_USES_AVAILABILITY: u32 = 1;
 pub const __WORDSIZE: u32 = 64;
 pub const __DARWIN_ONLY_64_BIT_INO_T: u32 = 1;
@@ -404,9 +437,9 @@ pub const WINT_MIN: i32 = -2147483648;
 pub const WINT_MAX: u32 = 2147483647;
 pub const SIG_ATOMIC_MIN: i32 = -2147483648;
 pub const SIG_ATOMIC_MAX: u32 = 2147483647;
+pub const __bool_true_false_are_defined: u32 = 1;
 pub const true_: u32 = 1;
 pub const false_: u32 = 0;
-pub const __bool_true_false_are_defined: u32 = 1;
 pub const UNIVERSAL_INTERFACES_VERSION: u32 = 1024;
 pub const PRAGMA_IMPORT: u32 = 0;
 pub const PRAGMA_ONCE: u32 = 0;
@@ -995,7 +1028,8 @@ pub const RUSAGE_INFO_V2: u32 = 2;
 pub const RUSAGE_INFO_V3: u32 = 3;
 pub const RUSAGE_INFO_V4: u32 = 4;
 pub const RUSAGE_INFO_V5: u32 = 5;
-pub const RUSAGE_INFO_CURRENT: u32 = 5;
+pub const RUSAGE_INFO_V6: u32 = 6;
+pub const RUSAGE_INFO_CURRENT: u32 = 6;
 pub const RU_PROC_RUNS_RESLIDE: u32 = 1;
 pub const RLIMIT_CPU: u32 = 0;
 pub const RLIMIT_FSIZE: u32 = 1;
@@ -1029,6 +1063,7 @@ pub const IOPOL_TYPE_VFS_IGNORE_CONTENT_PROTECTION: u32 = 6;
 pub const IOPOL_TYPE_VFS_IGNORE_PERMISSIONS: u32 = 7;
 pub const IOPOL_TYPE_VFS_SKIP_MTIME_UPDATE: u32 = 8;
 pub const IOPOL_TYPE_VFS_ALLOW_LOW_SPACE_WRITES: u32 = 9;
+pub const IOPOL_TYPE_VFS_DISALLOW_RW_FOR_O_EVTONLY: u32 = 10;
 pub const IOPOL_SCOPE_PROCESS: u32 = 0;
 pub const IOPOL_SCOPE_THREAD: u32 = 1;
 pub const IOPOL_SCOPE_DARWIN_BG: u32 = 2;
@@ -1057,6 +1092,8 @@ pub const IOPOL_VFS_SKIP_MTIME_UPDATE_OFF: u32 = 0;
 pub const IOPOL_VFS_SKIP_MTIME_UPDATE_ON: u32 = 1;
 pub const IOPOL_VFS_ALLOW_LOW_SPACE_WRITES_OFF: u32 = 0;
 pub const IOPOL_VFS_ALLOW_LOW_SPACE_WRITES_ON: u32 = 1;
+pub const IOPOL_VFS_DISALLOW_RW_FOR_O_EVTONLY_DEFAULT: u32 = 0;
+pub const IOPOL_VFS_DISALLOW_RW_FOR_O_EVTONLY_ON: u32 = 1;
 pub const WNOHANG: u32 = 1;
 pub const WUNTRACED: u32 = 2;
 pub const WCOREFLAG: u32 = 128;
@@ -1246,10 +1283,14 @@ pub const __COREFOUNDATION_CFTIMEZONE__: u32 = 1;
 pub const __COREFOUNDATION_CFDATA__: u32 = 1;
 pub const __COREFOUNDATION_CFSTRING__: u32 = 1;
 pub const __COREFOUNDATION_CFCHARACTERSET__: u32 = 1;
+pub const __COREFOUNDATION_CFERROR__: u32 = 1;
 pub const kCFStringEncodingInvalidId: u32 = 4294967295;
 pub const __kCFStringInlineBufferLength: u32 = 64;
+pub const __COREFOUNDATION_CFCGTYPES__: u32 = 1;
+pub const CGFLOAT_IS_DOUBLE: u32 = 1;
+pub const CGFLOAT_DEFINED: u32 = 1;
+pub const CGVECTOR_DEFINED: u32 = 1;
 pub const __COREFOUNDATION_CFDATEFORMATTER__: u32 = 1;
-pub const __COREFOUNDATION_CFERROR__: u32 = 1;
 pub const __COREFOUNDATION_CFNUMBER__: u32 = 1;
 pub const __COREFOUNDATION_CFNUMBERFORMATTER__: u32 = 1;
 pub const __COREFOUNDATION_CFPREFERENCES__: u32 = 1;
@@ -1301,6 +1342,9 @@ pub const MPO_FILTER_MSG: u32 = 256;
 pub const MPO_TG_BLOCK_TRACKING: u32 = 512;
 pub const MPO_SERVICE_PORT: u32 = 1024;
 pub const MPO_CONNECTION_PORT: u32 = 2048;
+pub const MPO_REPLY_PORT: u32 = 4096;
+pub const MPO_ENFORCE_REPLY_PORT_SEMANTICS: u32 = 8192;
+pub const MPO_PROVISIONAL_REPLY_PORT: u32 = 16384;
 pub const GUARD_TYPE_MACH_PORT: u32 = 1;
 pub const MAX_FATAL_kGUARD_EXC_CODE: u32 = 128;
 pub const MPG_FLAGS_NONE: u32 = 0;
@@ -1404,7 +1448,7 @@ pub const _POSIX_SAVED_IDS: u32 = 200112;
 pub const _POSIX_SEMAPHORES: i32 = -1;
 pub const _POSIX_SHARED_MEMORY_OBJECTS: i32 = -1;
 pub const _POSIX_SHELL: u32 = 200112;
-pub const _POSIX_SPAWN: i32 = -1;
+pub const _POSIX_SPAWN: u32 = 200112;
 pub const _POSIX_SPIN_LOCKS: i32 = -1;
 pub const _POSIX_SPORADIC_SERVER: i32 = -1;
 pub const _POSIX_SYNCHRONIZED_IO: i32 = -1;
@@ -1658,6 +1702,8 @@ pub const O_SYMLINK: u32 = 2097152;
 pub const O_DSYNC: u32 = 4194304;
 pub const O_CLOEXEC: u32 = 16777216;
 pub const O_NOFOLLOW_ANY: u32 = 536870912;
+pub const O_EXEC: u32 = 1073741824;
+pub const O_SEARCH: u32 = 1074790400;
 pub const AT_FDCWD: i32 = -2;
 pub const AT_EACCESS: u32 = 16;
 pub const AT_SYMLINK_NOFOLLOW: u32 = 32;
@@ -1668,6 +1714,8 @@ pub const AT_FDONLY: u32 = 1024;
 pub const AT_SYMLINK_NOFOLLOW_ANY: u32 = 2048;
 pub const O_DP_GETRAWENCRYPTED: u32 = 1;
 pub const O_DP_GETRAWUNENCRYPTED: u32 = 2;
+pub const O_DP_AUTHENTICATE: u32 = 4;
+pub const AUTH_OPEN_NOAUTHFD: i32 = -1;
 pub const FAPPEND: u32 = 8;
 pub const FASYNC: u32 = 64;
 pub const FFSYNC: u32 = 128;
@@ -1730,7 +1778,9 @@ pub const F_GETPATH_NOFIRMLINK: u32 = 102;
 pub const F_ADDFILESIGS_INFO: u32 = 103;
 pub const F_ADDFILESUPPL: u32 = 104;
 pub const F_GETSIGSINFO: u32 = 105;
-pub const F_FSRESERVED: u32 = 106;
+pub const F_SETLEASE: u32 = 106;
+pub const F_GETLEASE: u32 = 107;
+pub const F_TRANSFEREXTENTS: u32 = 110;
 pub const FCNTL_FS_SPECIFIC_BASE: u32 = 65536;
 pub const F_DUPFD_CLOEXEC: u32 = 67;
 pub const FD_CLOEXEC: u32 = 1;
@@ -1767,6 +1817,7 @@ pub const S_IWRITE: u32 = 128;
 pub const S_IEXEC: u32 = 64;
 pub const F_ALLOCATECONTIG: u32 = 2;
 pub const F_ALLOCATEALL: u32 = 4;
+pub const F_ALLOCATEPERSIST: u32 = 8;
 pub const F_PEOFPOSMODE: u32 = 3;
 pub const F_VOLPOSMODE: u32 = 4;
 pub const USER_FSIGNATURES_CDHASH_LEN: u32 = 20;
@@ -1906,6 +1957,7 @@ pub const MACH_MSG_OOL_DESCRIPTOR: u32 = 1;
 pub const MACH_MSG_OOL_PORTS_DESCRIPTOR: u32 = 2;
 pub const MACH_MSG_OOL_VOLATILE_DESCRIPTOR: u32 = 3;
 pub const MACH_MSG_GUARDED_PORT_DESCRIPTOR: u32 = 4;
+pub const MACH_MSG_DESCRIPTOR_MAX: u32 = 4;
 pub const MACH_MSG_TRAILER_FORMAT_0: u32 = 0;
 pub const MACH_MSGH_KIND_NORMAL: u32 = 0;
 pub const MACH_MSGH_KIND_NOTIFICATION: u32 = 1;
@@ -1975,9 +2027,12 @@ pub const MACH_SEND_INVALID_TYPE: u32 = 268435471;
 pub const MACH_SEND_INVALID_HEADER: u32 = 268435472;
 pub const MACH_SEND_INVALID_TRAILER: u32 = 268435473;
 pub const MACH_SEND_INVALID_CONTEXT: u32 = 268435474;
+pub const MACH_SEND_INVALID_OPTIONS: u32 = 268435475;
 pub const MACH_SEND_INVALID_RT_OOL_SIZE: u32 = 268435477;
 pub const MACH_SEND_NO_GRANT_DEST: u32 = 268435478;
 pub const MACH_SEND_MSG_FILTERED: u32 = 268435479;
+pub const MACH_SEND_AUX_TOO_SMALL: u32 = 268435480;
+pub const MACH_SEND_AUX_TOO_LARGE: u32 = 268435481;
 pub const MACH_RCV_IN_PROGRESS: u32 = 268451841;
 pub const MACH_RCV_INVALID_NAME: u32 = 268451842;
 pub const MACH_RCV_TIMED_OUT: u32 = 268451843;
@@ -1995,6 +2050,7 @@ pub const MACH_RCV_SCATTER_SMALL: u32 = 268451854;
 pub const MACH_RCV_INVALID_TRAILER: u32 = 268451855;
 pub const MACH_RCV_IN_PROGRESS_TIMED: u32 = 268451857;
 pub const MACH_RCV_INVALID_REPLY: u32 = 268451858;
+pub const MACH_RCV_INVALID_ARGUMENTS: u32 = 268451859;
 pub const DISPATCH_MACH_SEND_DEAD: u32 = 1;
 pub const DISPATCH_MEMORYPRESSURE_NORMAL: u32 = 1;
 pub const DISPATCH_MEMORYPRESSURE_WARN: u32 = 2;
@@ -2071,6 +2127,7 @@ pub const CPUFAMILY_ARM_VORTEX_TEMPEST: u32 = 131287967;
 pub const CPUFAMILY_ARM_LIGHTNING_THUNDER: u32 = 1176831186;
 pub const CPUFAMILY_ARM_FIRESTORM_ICESTORM: u32 = 458787763;
 pub const CPUFAMILY_ARM_BLIZZARD_AVALANCHE: u32 = 3660830781;
+pub const CPUFAMILY_ARM_EVEREST_SAWTOOTH: u32 = 2271604202;
 pub const CPUSUBFAMILY_UNKNOWN: u32 = 0;
 pub const CPUSUBFAMILY_ARM_HP: u32 = 1;
 pub const CPUSUBFAMILY_ARM_HG: u32 = 2;
@@ -2258,6 +2315,8 @@ pub const kAudioUnitConfigurationInfo_IconURL: &[u8; 8usize] = b"IconURL\0";
 pub const kAudioUnitConfigurationInfo_BusCountWritable: &[u8; 17usize] = b"BusCountWritable\0";
 pub const kAudioUnitConfigurationInfo_SupportedChannelLayoutTags: &[u8; 27usize] =
     b"SupportedChannelLayoutTags\0";
+pub const kAudioUnitConfigurationInfo_MIDIProtocol: &[u8; 13usize] = b"MIDIProtocol\0";
+pub const kAudioUnitConfigurationInfo_MigrateFromPlugin: &[u8; 18usize] = b"MigrateFromPlugin\0";
 pub const kAudioEndPointDeviceUIDKey: &[u8; 4usize] = b"uid\0";
 pub const kAudioEndPointDeviceNameKey: &[u8; 5usize] = b"name\0";
 pub const kAudioEndPointDeviceEndPointListKey: &[u8; 10usize] = b"endpoints\0";
@@ -3344,6 +3403,18 @@ pub const kAudioChannelLabel_RightTopMiddle: _bindgen_ty_15 = 51;
 pub const kAudioChannelLabel_LeftTopRear: _bindgen_ty_15 = 52;
 pub const kAudioChannelLabel_CenterTopRear: _bindgen_ty_15 = 53;
 pub const kAudioChannelLabel_RightTopRear: _bindgen_ty_15 = 54;
+pub const kAudioChannelLabel_LeftSideSurround: _bindgen_ty_15 = 55;
+pub const kAudioChannelLabel_RightSideSurround: _bindgen_ty_15 = 56;
+pub const kAudioChannelLabel_LeftBottom: _bindgen_ty_15 = 57;
+pub const kAudioChannelLabel_RightBottom: _bindgen_ty_15 = 58;
+pub const kAudioChannelLabel_CenterBottom: _bindgen_ty_15 = 59;
+pub const kAudioChannelLabel_LeftTopSurround: _bindgen_ty_15 = 60;
+pub const kAudioChannelLabel_RightTopSurround: _bindgen_ty_15 = 61;
+pub const kAudioChannelLabel_LFE3: _bindgen_ty_15 = 62;
+pub const kAudioChannelLabel_LeftBackSurround: _bindgen_ty_15 = 63;
+pub const kAudioChannelLabel_RightBackSurround: _bindgen_ty_15 = 64;
+pub const kAudioChannelLabel_LeftEdgeOfScreen: _bindgen_ty_15 = 65;
+pub const kAudioChannelLabel_RightEdgeOfScreen: _bindgen_ty_15 = 66;
 pub const kAudioChannelLabel_Ambisonic_W: _bindgen_ty_15 = 200;
 pub const kAudioChannelLabel_Ambisonic_X: _bindgen_ty_15 = 201;
 pub const kAudioChannelLabel_Ambisonic_Y: _bindgen_ty_15 = 202;
@@ -3396,6 +3467,7 @@ pub const kAudioChannelLabel_HOA_ACN_15: _bindgen_ty_15 = 131087;
 pub const kAudioChannelLabel_HOA_ACN_65024: _bindgen_ty_15 = 196096;
 pub const kAudioChannelLabel_HOA_SN3D: _bindgen_ty_15 = 131072;
 pub const kAudioChannelLabel_HOA_N3D: _bindgen_ty_15 = 196608;
+pub const kAudioChannelLabel_Object: _bindgen_ty_15 = 262144;
 pub const kAudioChannelLabel_BeginReserved: _bindgen_ty_15 = 4026531840;
 pub const kAudioChannelLabel_EndReserved: _bindgen_ty_15 = 4294967294;
 pub type _bindgen_ty_15 = ::std::os::raw::c_uint;
@@ -3618,6 +3690,25 @@ pub const kAudioChannelLayoutTag_Logic_Atmos_7_1_4_A: _bindgen_ty_19 = 12582924;
 pub const kAudioChannelLayoutTag_Logic_Atmos_7_1_4_B: _bindgen_ty_19 = 13238284;
 pub const kAudioChannelLayoutTag_Logic_Atmos_7_1_6: _bindgen_ty_19 = 13303822;
 pub const kAudioChannelLayoutTag_DiscreteInOrder: _bindgen_ty_19 = 9633792;
+pub const kAudioChannelLayoutTag_CICP_1: _bindgen_ty_19 = 6553601;
+pub const kAudioChannelLayoutTag_CICP_2: _bindgen_ty_19 = 6619138;
+pub const kAudioChannelLayoutTag_CICP_3: _bindgen_ty_19 = 7405571;
+pub const kAudioChannelLayoutTag_CICP_4: _bindgen_ty_19 = 7536644;
+pub const kAudioChannelLayoutTag_CICP_5: _bindgen_ty_19 = 7667717;
+pub const kAudioChannelLayoutTag_CICP_6: _bindgen_ty_19 = 7929862;
+pub const kAudioChannelLayoutTag_CICP_7: _bindgen_ty_19 = 8323080;
+pub const kAudioChannelLayoutTag_CICP_9: _bindgen_ty_19 = 8585219;
+pub const kAudioChannelLayoutTag_CICP_10: _bindgen_ty_19 = 8650756;
+pub const kAudioChannelLayoutTag_CICP_11: _bindgen_ty_19 = 8192007;
+pub const kAudioChannelLayoutTag_CICP_12: _bindgen_ty_19 = 8388616;
+pub const kAudioChannelLayoutTag_CICP_13: _bindgen_ty_19 = 13369368;
+pub const kAudioChannelLayoutTag_CICP_14: _bindgen_ty_19 = 13434888;
+pub const kAudioChannelLayoutTag_CICP_15: _bindgen_ty_19 = 13500428;
+pub const kAudioChannelLayoutTag_CICP_16: _bindgen_ty_19 = 13565962;
+pub const kAudioChannelLayoutTag_CICP_17: _bindgen_ty_19 = 13631500;
+pub const kAudioChannelLayoutTag_CICP_18: _bindgen_ty_19 = 13697038;
+pub const kAudioChannelLayoutTag_CICP_19: _bindgen_ty_19 = 13762572;
+pub const kAudioChannelLayoutTag_CICP_20: _bindgen_ty_19 = 13828110;
 pub const kAudioChannelLayoutTag_BeginReserved: _bindgen_ty_19 = 4026531840;
 pub const kAudioChannelLayoutTag_EndReserved: _bindgen_ty_19 = 4294901759;
 pub const kAudioChannelLayoutTag_Unknown: _bindgen_ty_19 = 4294901760;
@@ -5695,7 +5786,55 @@ pub struct rusage_info_v5 {
     pub ri_runnable_time: u64,
     pub ri_flags: u64,
 }
-pub type rusage_info_current = rusage_info_v5;
+#[repr(C)]
+#[derive(Debug, Default, Copy, Clone)]
+pub struct rusage_info_v6 {
+    pub ri_uuid: [u8; 16usize],
+    pub ri_user_time: u64,
+    pub ri_system_time: u64,
+    pub ri_pkg_idle_wkups: u64,
+    pub ri_interrupt_wkups: u64,
+    pub ri_pageins: u64,
+    pub ri_wired_size: u64,
+    pub ri_resident_size: u64,
+    pub ri_phys_footprint: u64,
+    pub ri_proc_start_abstime: u64,
+    pub ri_proc_exit_abstime: u64,
+    pub ri_child_user_time: u64,
+    pub ri_child_system_time: u64,
+    pub ri_child_pkg_idle_wkups: u64,
+    pub ri_child_interrupt_wkups: u64,
+    pub ri_child_pageins: u64,
+    pub ri_child_elapsed_abstime: u64,
+    pub ri_diskio_bytesread: u64,
+    pub ri_diskio_byteswritten: u64,
+    pub ri_cpu_time_qos_default: u64,
+    pub ri_cpu_time_qos_maintenance: u64,
+    pub ri_cpu_time_qos_background: u64,
+    pub ri_cpu_time_qos_utility: u64,
+    pub ri_cpu_time_qos_legacy: u64,
+    pub ri_cpu_time_qos_user_initiated: u64,
+    pub ri_cpu_time_qos_user_interactive: u64,
+    pub ri_billed_system_time: u64,
+    pub ri_serviced_system_time: u64,
+    pub ri_logical_writes: u64,
+    pub ri_lifetime_max_phys_footprint: u64,
+    pub ri_instructions: u64,
+    pub ri_cycles: u64,
+    pub ri_billed_energy: u64,
+    pub ri_serviced_energy: u64,
+    pub ri_interval_max_phys_footprint: u64,
+    pub ri_runnable_time: u64,
+    pub ri_flags: u64,
+    pub ri_user_ptime: u64,
+    pub ri_system_ptime: u64,
+    pub ri_pinstructions: u64,
+    pub ri_pcycles: u64,
+    pub ri_energy_nj: u64,
+    pub ri_penergy_nj: u64,
+    pub ri_reserved: [u64; 14usize],
+}
+pub type rusage_info_current = rusage_info_v6;
 #[repr(C)]
 #[derive(Debug, Default, Copy, Clone)]
 pub struct rlimit {
@@ -8390,6 +8529,88 @@ extern "C" {
 extern "C" {
     pub fn CFCharacterSetInvert(theSet: CFMutableCharacterSetRef);
 }
+pub type CFErrorDomain = CFStringRef;
+#[repr(C)]
+#[derive(Debug, Copy, Clone)]
+pub struct __CFError {
+    _unused: [u8; 0],
+}
+pub type CFErrorRef = *mut __CFError;
+extern "C" {
+    pub fn CFErrorGetTypeID() -> CFTypeID;
+}
+extern "C" {
+    pub static kCFErrorDomainPOSIX: CFErrorDomain;
+}
+extern "C" {
+    pub static kCFErrorDomainOSStatus: CFErrorDomain;
+}
+extern "C" {
+    pub static kCFErrorDomainMach: CFErrorDomain;
+}
+extern "C" {
+    pub static kCFErrorDomainCocoa: CFErrorDomain;
+}
+extern "C" {
+    pub static kCFErrorLocalizedDescriptionKey: CFStringRef;
+}
+extern "C" {
+    pub static kCFErrorLocalizedFailureKey: CFStringRef;
+}
+extern "C" {
+    pub static kCFErrorLocalizedFailureReasonKey: CFStringRef;
+}
+extern "C" {
+    pub static kCFErrorLocalizedRecoverySuggestionKey: CFStringRef;
+}
+extern "C" {
+    pub static kCFErrorDescriptionKey: CFStringRef;
+}
+extern "C" {
+    pub static kCFErrorUnderlyingErrorKey: CFStringRef;
+}
+extern "C" {
+    pub static kCFErrorURLKey: CFStringRef;
+}
+extern "C" {
+    pub static kCFErrorFilePathKey: CFStringRef;
+}
+extern "C" {
+    pub fn CFErrorCreate(
+        allocator: CFAllocatorRef,
+        domain: CFErrorDomain,
+        code: CFIndex,
+        userInfo: CFDictionaryRef,
+    ) -> CFErrorRef;
+}
+extern "C" {
+    pub fn CFErrorCreateWithUserInfoKeysAndValues(
+        allocator: CFAllocatorRef,
+        domain: CFErrorDomain,
+        code: CFIndex,
+        userInfoKeys: *const *const ::std::os::raw::c_void,
+        userInfoValues: *const *const ::std::os::raw::c_void,
+        numUserInfoValues: CFIndex,
+    ) -> CFErrorRef;
+}
+extern "C" {
+    pub fn CFErrorGetDomain(err: CFErrorRef) -> CFErrorDomain;
+}
+extern "C" {
+    pub fn CFErrorGetCode(err: CFErrorRef) -> CFIndex;
+}
+extern "C" {
+    pub fn CFErrorCopyUserInfo(err: CFErrorRef) -> CFDictionaryRef;
+}
+extern "C" {
+    pub fn CFErrorCopyDescription(err: CFErrorRef) -> CFStringRef;
+}
+extern "C" {
+    pub fn CFErrorCopyFailureReason(err: CFErrorRef) -> CFStringRef;
+}
+extern "C" {
+    pub fn CFErrorCopyRecoverySuggestion(err: CFErrorRef) -> CFStringRef;
+}
 pub type CFStringEncoding = UInt32;
 pub type CFStringBuiltInEncodings = CFStringEncoding;
 pub const kCFStringEncodingMacRoman: _bindgen_ty_30 = 0;
@@ -8498,6 +8719,26 @@ extern "C" {
         formatOptions: CFDictionaryRef,
         format: CFStringRef,
         arguments: va_list,
+    ) -> CFStringRef;
+}
+extern "C" {
+    pub fn CFStringCreateStringWithValidatedFormat(
+        alloc: CFAllocatorRef,
+        formatOptions: CFDictionaryRef,
+        validFormatSpecifiers: CFStringRef,
+        format: CFStringRef,
+        errorPtr: *mut CFErrorRef,
+        ...
+    ) -> CFStringRef;
+}
+extern "C" {
+    pub fn CFStringCreateStringWithValidatedFormatAndArguments(
+        alloc: CFAllocatorRef,
+        formatOptions: CFDictionaryRef,
+        validFormatSpecifiers: CFStringRef,
+        format: CFStringRef,
+        arguments: va_list,
+        errorPtr: *mut CFErrorRef,
     ) -> CFStringRef;
 }
 extern "C" {
@@ -9212,6 +9453,55 @@ extern "C" {
         ...
     ) -> Boolean;
 }
+pub type CGFloat = f64;
+#[repr(C)]
+#[derive(Debug, Default, Copy, Clone)]
+pub struct CGPoint {
+    pub x: CGFloat,
+    pub y: CGFloat,
+}
+#[repr(C)]
+#[derive(Debug, Default, Copy, Clone)]
+pub struct CGSize {
+    pub width: CGFloat,
+    pub height: CGFloat,
+}
+#[repr(C)]
+#[derive(Debug, Default, Copy, Clone)]
+pub struct CGVector {
+    pub dx: CGFloat,
+    pub dy: CGFloat,
+}
+#[repr(C)]
+#[derive(Debug, Default, Copy, Clone)]
+pub struct CGRect {
+    pub origin: CGPoint,
+    pub size: CGSize,
+}
+pub type CGRectEdge = u32;
+pub const CGRectMinXEdge: _bindgen_ty_36 = 0;
+pub const CGRectMinYEdge: _bindgen_ty_36 = 1;
+pub const CGRectMaxXEdge: _bindgen_ty_36 = 2;
+pub const CGRectMaxYEdge: _bindgen_ty_36 = 3;
+pub type _bindgen_ty_36 = ::std::os::raw::c_uint;
+#[repr(C)]
+#[derive(Debug, Default, Copy, Clone)]
+pub struct CGAffineTransform {
+    pub a: CGFloat,
+    pub b: CGFloat,
+    pub c: CGFloat,
+    pub d: CGFloat,
+    pub tx: CGFloat,
+    pub ty: CGFloat,
+}
+#[repr(C)]
+#[derive(Debug, Default, Copy, Clone)]
+pub struct CGAffineTransformComponents {
+    pub scale: CGSize,
+    pub horizontalShear: CGFloat,
+    pub rotation: CGFloat,
+    pub translation: CGVector,
+}
 pub type CFDateFormatterKey = CFStringRef;
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
@@ -9231,28 +9521,28 @@ extern "C" {
     pub fn CFDateFormatterGetTypeID() -> CFTypeID;
 }
 pub type CFDateFormatterStyle = CFIndex;
-pub const kCFDateFormatterNoStyle: _bindgen_ty_36 = 0;
-pub const kCFDateFormatterShortStyle: _bindgen_ty_36 = 1;
-pub const kCFDateFormatterMediumStyle: _bindgen_ty_36 = 2;
-pub const kCFDateFormatterLongStyle: _bindgen_ty_36 = 3;
-pub const kCFDateFormatterFullStyle: _bindgen_ty_36 = 4;
-pub type _bindgen_ty_36 = ::std::os::raw::c_uint;
-pub type CFISO8601DateFormatOptions = CFOptionFlags;
-pub const kCFISO8601DateFormatWithYear: _bindgen_ty_37 = 1;
-pub const kCFISO8601DateFormatWithMonth: _bindgen_ty_37 = 2;
-pub const kCFISO8601DateFormatWithWeekOfYear: _bindgen_ty_37 = 4;
-pub const kCFISO8601DateFormatWithDay: _bindgen_ty_37 = 16;
-pub const kCFISO8601DateFormatWithTime: _bindgen_ty_37 = 32;
-pub const kCFISO8601DateFormatWithTimeZone: _bindgen_ty_37 = 64;
-pub const kCFISO8601DateFormatWithSpaceBetweenDateAndTime: _bindgen_ty_37 = 128;
-pub const kCFISO8601DateFormatWithDashSeparatorInDate: _bindgen_ty_37 = 256;
-pub const kCFISO8601DateFormatWithColonSeparatorInTime: _bindgen_ty_37 = 512;
-pub const kCFISO8601DateFormatWithColonSeparatorInTimeZone: _bindgen_ty_37 = 1024;
-pub const kCFISO8601DateFormatWithFractionalSeconds: _bindgen_ty_37 = 2048;
-pub const kCFISO8601DateFormatWithFullDate: _bindgen_ty_37 = 275;
-pub const kCFISO8601DateFormatWithFullTime: _bindgen_ty_37 = 1632;
-pub const kCFISO8601DateFormatWithInternetDateTime: _bindgen_ty_37 = 1907;
+pub const kCFDateFormatterNoStyle: _bindgen_ty_37 = 0;
+pub const kCFDateFormatterShortStyle: _bindgen_ty_37 = 1;
+pub const kCFDateFormatterMediumStyle: _bindgen_ty_37 = 2;
+pub const kCFDateFormatterLongStyle: _bindgen_ty_37 = 3;
+pub const kCFDateFormatterFullStyle: _bindgen_ty_37 = 4;
 pub type _bindgen_ty_37 = ::std::os::raw::c_uint;
+pub type CFISO8601DateFormatOptions = CFOptionFlags;
+pub const kCFISO8601DateFormatWithYear: _bindgen_ty_38 = 1;
+pub const kCFISO8601DateFormatWithMonth: _bindgen_ty_38 = 2;
+pub const kCFISO8601DateFormatWithWeekOfYear: _bindgen_ty_38 = 4;
+pub const kCFISO8601DateFormatWithDay: _bindgen_ty_38 = 16;
+pub const kCFISO8601DateFormatWithTime: _bindgen_ty_38 = 32;
+pub const kCFISO8601DateFormatWithTimeZone: _bindgen_ty_38 = 64;
+pub const kCFISO8601DateFormatWithSpaceBetweenDateAndTime: _bindgen_ty_38 = 128;
+pub const kCFISO8601DateFormatWithDashSeparatorInDate: _bindgen_ty_38 = 256;
+pub const kCFISO8601DateFormatWithColonSeparatorInTime: _bindgen_ty_38 = 512;
+pub const kCFISO8601DateFormatWithColonSeparatorInTimeZone: _bindgen_ty_38 = 1024;
+pub const kCFISO8601DateFormatWithFractionalSeconds: _bindgen_ty_38 = 2048;
+pub const kCFISO8601DateFormatWithFullDate: _bindgen_ty_38 = 275;
+pub const kCFISO8601DateFormatWithFullTime: _bindgen_ty_38 = 1632;
+pub const kCFISO8601DateFormatWithInternetDateTime: _bindgen_ty_38 = 1907;
+pub type _bindgen_ty_38 = ::std::os::raw::c_uint;
 extern "C" {
     pub fn CFDateFormatterCreateISO8601Formatter(
         allocator: CFAllocatorRef,
@@ -9412,88 +9702,6 @@ extern "C" {
 extern "C" {
     pub static kCFDateFormatterDoesRelativeDateFormattingKey: CFDateFormatterKey;
 }
-pub type CFErrorDomain = CFStringRef;
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct __CFError {
-    _unused: [u8; 0],
-}
-pub type CFErrorRef = *mut __CFError;
-extern "C" {
-    pub fn CFErrorGetTypeID() -> CFTypeID;
-}
-extern "C" {
-    pub static kCFErrorDomainPOSIX: CFErrorDomain;
-}
-extern "C" {
-    pub static kCFErrorDomainOSStatus: CFErrorDomain;
-}
-extern "C" {
-    pub static kCFErrorDomainMach: CFErrorDomain;
-}
-extern "C" {
-    pub static kCFErrorDomainCocoa: CFErrorDomain;
-}
-extern "C" {
-    pub static kCFErrorLocalizedDescriptionKey: CFStringRef;
-}
-extern "C" {
-    pub static kCFErrorLocalizedFailureKey: CFStringRef;
-}
-extern "C" {
-    pub static kCFErrorLocalizedFailureReasonKey: CFStringRef;
-}
-extern "C" {
-    pub static kCFErrorLocalizedRecoverySuggestionKey: CFStringRef;
-}
-extern "C" {
-    pub static kCFErrorDescriptionKey: CFStringRef;
-}
-extern "C" {
-    pub static kCFErrorUnderlyingErrorKey: CFStringRef;
-}
-extern "C" {
-    pub static kCFErrorURLKey: CFStringRef;
-}
-extern "C" {
-    pub static kCFErrorFilePathKey: CFStringRef;
-}
-extern "C" {
-    pub fn CFErrorCreate(
-        allocator: CFAllocatorRef,
-        domain: CFErrorDomain,
-        code: CFIndex,
-        userInfo: CFDictionaryRef,
-    ) -> CFErrorRef;
-}
-extern "C" {
-    pub fn CFErrorCreateWithUserInfoKeysAndValues(
-        allocator: CFAllocatorRef,
-        domain: CFErrorDomain,
-        code: CFIndex,
-        userInfoKeys: *const *const ::std::os::raw::c_void,
-        userInfoValues: *const *const ::std::os::raw::c_void,
-        numUserInfoValues: CFIndex,
-    ) -> CFErrorRef;
-}
-extern "C" {
-    pub fn CFErrorGetDomain(err: CFErrorRef) -> CFErrorDomain;
-}
-extern "C" {
-    pub fn CFErrorGetCode(err: CFErrorRef) -> CFIndex;
-}
-extern "C" {
-    pub fn CFErrorCopyUserInfo(err: CFErrorRef) -> CFDictionaryRef;
-}
-extern "C" {
-    pub fn CFErrorCopyDescription(err: CFErrorRef) -> CFStringRef;
-}
-extern "C" {
-    pub fn CFErrorCopyFailureReason(err: CFErrorRef) -> CFStringRef;
-}
-extern "C" {
-    pub fn CFErrorCopyRecoverySuggestion(err: CFErrorRef) -> CFStringRef;
-}
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
 pub struct __CFBoolean {
@@ -9513,24 +9721,24 @@ extern "C" {
     pub fn CFBooleanGetValue(boolean: CFBooleanRef) -> Boolean;
 }
 pub type CFNumberType = CFIndex;
-pub const kCFNumberSInt8Type: _bindgen_ty_38 = 1;
-pub const kCFNumberSInt16Type: _bindgen_ty_38 = 2;
-pub const kCFNumberSInt32Type: _bindgen_ty_38 = 3;
-pub const kCFNumberSInt64Type: _bindgen_ty_38 = 4;
-pub const kCFNumberFloat32Type: _bindgen_ty_38 = 5;
-pub const kCFNumberFloat64Type: _bindgen_ty_38 = 6;
-pub const kCFNumberCharType: _bindgen_ty_38 = 7;
-pub const kCFNumberShortType: _bindgen_ty_38 = 8;
-pub const kCFNumberIntType: _bindgen_ty_38 = 9;
-pub const kCFNumberLongType: _bindgen_ty_38 = 10;
-pub const kCFNumberLongLongType: _bindgen_ty_38 = 11;
-pub const kCFNumberFloatType: _bindgen_ty_38 = 12;
-pub const kCFNumberDoubleType: _bindgen_ty_38 = 13;
-pub const kCFNumberCFIndexType: _bindgen_ty_38 = 14;
-pub const kCFNumberNSIntegerType: _bindgen_ty_38 = 15;
-pub const kCFNumberCGFloatType: _bindgen_ty_38 = 16;
-pub const kCFNumberMaxType: _bindgen_ty_38 = 16;
-pub type _bindgen_ty_38 = ::std::os::raw::c_uint;
+pub const kCFNumberSInt8Type: _bindgen_ty_39 = 1;
+pub const kCFNumberSInt16Type: _bindgen_ty_39 = 2;
+pub const kCFNumberSInt32Type: _bindgen_ty_39 = 3;
+pub const kCFNumberSInt64Type: _bindgen_ty_39 = 4;
+pub const kCFNumberFloat32Type: _bindgen_ty_39 = 5;
+pub const kCFNumberFloat64Type: _bindgen_ty_39 = 6;
+pub const kCFNumberCharType: _bindgen_ty_39 = 7;
+pub const kCFNumberShortType: _bindgen_ty_39 = 8;
+pub const kCFNumberIntType: _bindgen_ty_39 = 9;
+pub const kCFNumberLongType: _bindgen_ty_39 = 10;
+pub const kCFNumberLongLongType: _bindgen_ty_39 = 11;
+pub const kCFNumberFloatType: _bindgen_ty_39 = 12;
+pub const kCFNumberDoubleType: _bindgen_ty_39 = 13;
+pub const kCFNumberCFIndexType: _bindgen_ty_39 = 14;
+pub const kCFNumberNSIntegerType: _bindgen_ty_39 = 15;
+pub const kCFNumberCGFloatType: _bindgen_ty_39 = 16;
+pub const kCFNumberMaxType: _bindgen_ty_39 = 16;
+pub type _bindgen_ty_39 = ::std::os::raw::c_uint;
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
 pub struct __CFNumber {
@@ -9590,17 +9798,17 @@ extern "C" {
     pub fn CFNumberFormatterGetTypeID() -> CFTypeID;
 }
 pub type CFNumberFormatterStyle = CFIndex;
-pub const kCFNumberFormatterNoStyle: _bindgen_ty_39 = 0;
-pub const kCFNumberFormatterDecimalStyle: _bindgen_ty_39 = 1;
-pub const kCFNumberFormatterCurrencyStyle: _bindgen_ty_39 = 2;
-pub const kCFNumberFormatterPercentStyle: _bindgen_ty_39 = 3;
-pub const kCFNumberFormatterScientificStyle: _bindgen_ty_39 = 4;
-pub const kCFNumberFormatterSpellOutStyle: _bindgen_ty_39 = 5;
-pub const kCFNumberFormatterOrdinalStyle: _bindgen_ty_39 = 6;
-pub const kCFNumberFormatterCurrencyISOCodeStyle: _bindgen_ty_39 = 8;
-pub const kCFNumberFormatterCurrencyPluralStyle: _bindgen_ty_39 = 9;
-pub const kCFNumberFormatterCurrencyAccountingStyle: _bindgen_ty_39 = 10;
-pub type _bindgen_ty_39 = ::std::os::raw::c_uint;
+pub const kCFNumberFormatterNoStyle: _bindgen_ty_40 = 0;
+pub const kCFNumberFormatterDecimalStyle: _bindgen_ty_40 = 1;
+pub const kCFNumberFormatterCurrencyStyle: _bindgen_ty_40 = 2;
+pub const kCFNumberFormatterPercentStyle: _bindgen_ty_40 = 3;
+pub const kCFNumberFormatterScientificStyle: _bindgen_ty_40 = 4;
+pub const kCFNumberFormatterSpellOutStyle: _bindgen_ty_40 = 5;
+pub const kCFNumberFormatterOrdinalStyle: _bindgen_ty_40 = 6;
+pub const kCFNumberFormatterCurrencyISOCodeStyle: _bindgen_ty_40 = 8;
+pub const kCFNumberFormatterCurrencyPluralStyle: _bindgen_ty_40 = 9;
+pub const kCFNumberFormatterCurrencyAccountingStyle: _bindgen_ty_40 = 10;
+pub type _bindgen_ty_40 = ::std::os::raw::c_uint;
 extern "C" {
     pub fn CFNumberFormatterCreate(
         allocator: CFAllocatorRef,
@@ -9636,8 +9844,8 @@ extern "C" {
     ) -> CFStringRef;
 }
 pub type CFNumberFormatterOptionFlags = CFOptionFlags;
-pub const kCFNumberFormatterParseIntegersOnly: _bindgen_ty_40 = 1;
-pub type _bindgen_ty_40 = ::std::os::raw::c_uint;
+pub const kCFNumberFormatterParseIntegersOnly: _bindgen_ty_41 = 1;
+pub type _bindgen_ty_41 = ::std::os::raw::c_uint;
 extern "C" {
     pub fn CFNumberFormatterCreateNumberFromString(
         allocator: CFAllocatorRef,
@@ -9784,20 +9992,20 @@ extern "C" {
     pub static kCFNumberFormatterMaxSignificantDigits: CFNumberFormatterKey;
 }
 pub type CFNumberFormatterRoundingMode = CFIndex;
-pub const kCFNumberFormatterRoundCeiling: _bindgen_ty_41 = 0;
-pub const kCFNumberFormatterRoundFloor: _bindgen_ty_41 = 1;
-pub const kCFNumberFormatterRoundDown: _bindgen_ty_41 = 2;
-pub const kCFNumberFormatterRoundUp: _bindgen_ty_41 = 3;
-pub const kCFNumberFormatterRoundHalfEven: _bindgen_ty_41 = 4;
-pub const kCFNumberFormatterRoundHalfDown: _bindgen_ty_41 = 5;
-pub const kCFNumberFormatterRoundHalfUp: _bindgen_ty_41 = 6;
-pub type _bindgen_ty_41 = ::std::os::raw::c_uint;
-pub type CFNumberFormatterPadPosition = CFIndex;
-pub const kCFNumberFormatterPadBeforePrefix: _bindgen_ty_42 = 0;
-pub const kCFNumberFormatterPadAfterPrefix: _bindgen_ty_42 = 1;
-pub const kCFNumberFormatterPadBeforeSuffix: _bindgen_ty_42 = 2;
-pub const kCFNumberFormatterPadAfterSuffix: _bindgen_ty_42 = 3;
+pub const kCFNumberFormatterRoundCeiling: _bindgen_ty_42 = 0;
+pub const kCFNumberFormatterRoundFloor: _bindgen_ty_42 = 1;
+pub const kCFNumberFormatterRoundDown: _bindgen_ty_42 = 2;
+pub const kCFNumberFormatterRoundUp: _bindgen_ty_42 = 3;
+pub const kCFNumberFormatterRoundHalfEven: _bindgen_ty_42 = 4;
+pub const kCFNumberFormatterRoundHalfDown: _bindgen_ty_42 = 5;
+pub const kCFNumberFormatterRoundHalfUp: _bindgen_ty_42 = 6;
 pub type _bindgen_ty_42 = ::std::os::raw::c_uint;
+pub type CFNumberFormatterPadPosition = CFIndex;
+pub const kCFNumberFormatterPadBeforePrefix: _bindgen_ty_43 = 0;
+pub const kCFNumberFormatterPadAfterPrefix: _bindgen_ty_43 = 1;
+pub const kCFNumberFormatterPadBeforeSuffix: _bindgen_ty_43 = 2;
+pub const kCFNumberFormatterPadAfterSuffix: _bindgen_ty_43 = 3;
+pub type _bindgen_ty_43 = ::std::os::raw::c_uint;
 extern "C" {
     pub fn CFNumberFormatterGetDecimalInfoForCurrencyCode(
         currencyCode: CFStringRef,
@@ -9920,10 +10128,10 @@ extern "C" {
     pub fn CFPreferencesAppValueIsForced(key: CFStringRef, applicationID: CFStringRef) -> Boolean;
 }
 pub type CFURLPathStyle = CFIndex;
-pub const kCFURLPOSIXPathStyle: _bindgen_ty_43 = 0;
-pub const kCFURLHFSPathStyle: _bindgen_ty_43 = 1;
-pub const kCFURLWindowsPathStyle: _bindgen_ty_43 = 2;
-pub type _bindgen_ty_43 = ::std::os::raw::c_uint;
+pub const kCFURLPOSIXPathStyle: _bindgen_ty_44 = 0;
+pub const kCFURLHFSPathStyle: _bindgen_ty_44 = 1;
+pub const kCFURLWindowsPathStyle: _bindgen_ty_44 = 2;
+pub type _bindgen_ty_44 = ::std::os::raw::c_uint;
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
 pub struct __CFURL {
@@ -10107,19 +10315,19 @@ extern "C" {
     pub fn CFURLGetBytes(url: CFURLRef, buffer: *mut UInt8, bufferLength: CFIndex) -> CFIndex;
 }
 pub type CFURLComponentType = CFIndex;
-pub const kCFURLComponentScheme: _bindgen_ty_44 = 1;
-pub const kCFURLComponentNetLocation: _bindgen_ty_44 = 2;
-pub const kCFURLComponentPath: _bindgen_ty_44 = 3;
-pub const kCFURLComponentResourceSpecifier: _bindgen_ty_44 = 4;
-pub const kCFURLComponentUser: _bindgen_ty_44 = 5;
-pub const kCFURLComponentPassword: _bindgen_ty_44 = 6;
-pub const kCFURLComponentUserInfo: _bindgen_ty_44 = 7;
-pub const kCFURLComponentHost: _bindgen_ty_44 = 8;
-pub const kCFURLComponentPort: _bindgen_ty_44 = 9;
-pub const kCFURLComponentParameterString: _bindgen_ty_44 = 10;
-pub const kCFURLComponentQuery: _bindgen_ty_44 = 11;
-pub const kCFURLComponentFragment: _bindgen_ty_44 = 12;
-pub type _bindgen_ty_44 = ::std::os::raw::c_uint;
+pub const kCFURLComponentScheme: _bindgen_ty_45 = 1;
+pub const kCFURLComponentNetLocation: _bindgen_ty_45 = 2;
+pub const kCFURLComponentPath: _bindgen_ty_45 = 3;
+pub const kCFURLComponentResourceSpecifier: _bindgen_ty_45 = 4;
+pub const kCFURLComponentUser: _bindgen_ty_45 = 5;
+pub const kCFURLComponentPassword: _bindgen_ty_45 = 6;
+pub const kCFURLComponentUserInfo: _bindgen_ty_45 = 7;
+pub const kCFURLComponentHost: _bindgen_ty_45 = 8;
+pub const kCFURLComponentPort: _bindgen_ty_45 = 9;
+pub const kCFURLComponentParameterString: _bindgen_ty_45 = 10;
+pub const kCFURLComponentQuery: _bindgen_ty_45 = 11;
+pub const kCFURLComponentFragment: _bindgen_ty_45 = 12;
+pub type _bindgen_ty_45 = ::std::os::raw::c_uint;
 extern "C" {
     pub fn CFURLGetByteRangeForComponent(
         url: CFURLRef,
@@ -10278,6 +10486,9 @@ extern "C" {
 }
 extern "C" {
     pub static kCFURLAttributeModificationDateKey: CFStringRef;
+}
+extern "C" {
+    pub static kCFURLFileIdentifierKey: CFStringRef;
 }
 extern "C" {
     pub static kCFURLFileContentIdentifierKey: CFStringRef;
@@ -10556,6 +10767,15 @@ extern "C" {
     pub static kCFURLVolumeSupportsFileProtectionKey: CFStringRef;
 }
 extern "C" {
+    pub static kCFURLVolumeTypeNameKey: CFStringRef;
+}
+extern "C" {
+    pub static kCFURLVolumeSubtypeKey: CFStringRef;
+}
+extern "C" {
+    pub static kCFURLVolumeMountFromLocationKey: CFStringRef;
+}
+extern "C" {
     pub static kCFURLIsUbiquitousItemKey: CFStringRef;
 }
 extern "C" {
@@ -10601,21 +10821,21 @@ extern "C" {
     pub static kCFURLUbiquitousItemDownloadingStatusCurrent: CFStringRef;
 }
 pub type CFURLBookmarkCreationOptions = CFOptionFlags;
-pub const kCFURLBookmarkCreationMinimalBookmarkMask: _bindgen_ty_45 = 512;
-pub const kCFURLBookmarkCreationSuitableForBookmarkFile: _bindgen_ty_45 = 1024;
-pub const kCFURLBookmarkCreationWithSecurityScope: _bindgen_ty_45 = 2048;
-pub const kCFURLBookmarkCreationSecurityScopeAllowOnlyReadAccess: _bindgen_ty_45 = 4096;
-pub const kCFURLBookmarkCreationWithoutImplicitSecurityScope: _bindgen_ty_45 = 536870912;
-pub const kCFURLBookmarkCreationPreferFileIDResolutionMask: _bindgen_ty_45 = 256;
-pub type _bindgen_ty_45 = ::std::os::raw::c_uint;
-pub type CFURLBookmarkResolutionOptions = CFOptionFlags;
-pub const kCFURLBookmarkResolutionWithoutUIMask: _bindgen_ty_46 = 256;
-pub const kCFURLBookmarkResolutionWithoutMountingMask: _bindgen_ty_46 = 512;
-pub const kCFURLBookmarkResolutionWithSecurityScope: _bindgen_ty_46 = 1024;
-pub const kCFURLBookmarkResolutionWithoutImplicitStartAccessing: _bindgen_ty_46 = 32768;
-pub const kCFBookmarkResolutionWithoutUIMask: _bindgen_ty_46 = 256;
-pub const kCFBookmarkResolutionWithoutMountingMask: _bindgen_ty_46 = 512;
+pub const kCFURLBookmarkCreationMinimalBookmarkMask: _bindgen_ty_46 = 512;
+pub const kCFURLBookmarkCreationSuitableForBookmarkFile: _bindgen_ty_46 = 1024;
+pub const kCFURLBookmarkCreationWithSecurityScope: _bindgen_ty_46 = 2048;
+pub const kCFURLBookmarkCreationSecurityScopeAllowOnlyReadAccess: _bindgen_ty_46 = 4096;
+pub const kCFURLBookmarkCreationWithoutImplicitSecurityScope: _bindgen_ty_46 = 536870912;
+pub const kCFURLBookmarkCreationPreferFileIDResolutionMask: _bindgen_ty_46 = 256;
 pub type _bindgen_ty_46 = ::std::os::raw::c_uint;
+pub type CFURLBookmarkResolutionOptions = CFOptionFlags;
+pub const kCFURLBookmarkResolutionWithoutUIMask: _bindgen_ty_47 = 256;
+pub const kCFURLBookmarkResolutionWithoutMountingMask: _bindgen_ty_47 = 512;
+pub const kCFURLBookmarkResolutionWithSecurityScope: _bindgen_ty_47 = 1024;
+pub const kCFURLBookmarkResolutionWithoutImplicitStartAccessing: _bindgen_ty_47 = 32768;
+pub const kCFBookmarkResolutionWithoutUIMask: _bindgen_ty_47 = 256;
+pub const kCFBookmarkResolutionWithoutMountingMask: _bindgen_ty_47 = 512;
+pub type _bindgen_ty_47 = ::std::os::raw::c_uint;
 pub type CFURLBookmarkFileCreationOptions = CFOptionFlags;
 extern "C" {
     pub fn CFURLCreateBookmarkData(
@@ -10863,8 +11083,12 @@ pub type mach_port_options_t = mach_port_options;
 pub type mach_port_options_ptr_t = *mut mach_port_options_t;
 pub const mach_port_guard_exception_codes_kGUARD_EXC_DESTROY: mach_port_guard_exception_codes = 1;
 pub const mach_port_guard_exception_codes_kGUARD_EXC_MOD_REFS: mach_port_guard_exception_codes = 2;
+pub const mach_port_guard_exception_codes_kGUARD_EXC_INVALID_OPTIONS:
+    mach_port_guard_exception_codes = 3;
 pub const mach_port_guard_exception_codes_kGUARD_EXC_SET_CONTEXT: mach_port_guard_exception_codes =
     4;
+pub const mach_port_guard_exception_codes_kGUARD_EXC_THREAD_SET_STATE:
+    mach_port_guard_exception_codes = 5;
 pub const mach_port_guard_exception_codes_kGUARD_EXC_UNGUARDED: mach_port_guard_exception_codes = 8;
 pub const mach_port_guard_exception_codes_kGUARD_EXC_INCORRECT_GUARD:
     mach_port_guard_exception_codes = 16;
@@ -10904,6 +11128,8 @@ pub const mach_port_guard_exception_codes_kGUARD_EXC_MOD_REFS_NON_FATAL:
     mach_port_guard_exception_codes = 2097152;
 pub const mach_port_guard_exception_codes_kGUARD_EXC_IMMOVABLE_NON_FATAL:
     mach_port_guard_exception_codes = 4194304;
+pub const mach_port_guard_exception_codes_kGUARD_EXC_REQUIRE_REPLY_PORT_SEMANTICS:
+    mach_port_guard_exception_codes = 8388608;
 pub type mach_port_guard_exception_codes = ::std::os::raw::c_uint;
 pub type CFRunLoopMode = CFStringRef;
 #[repr(C)]
@@ -10931,20 +11157,20 @@ pub struct __CFRunLoopTimer {
 }
 pub type CFRunLoopTimerRef = *mut __CFRunLoopTimer;
 pub type CFRunLoopRunResult = SInt32;
-pub const kCFRunLoopRunFinished: _bindgen_ty_47 = 1;
-pub const kCFRunLoopRunStopped: _bindgen_ty_47 = 2;
-pub const kCFRunLoopRunTimedOut: _bindgen_ty_47 = 3;
-pub const kCFRunLoopRunHandledSource: _bindgen_ty_47 = 4;
-pub type _bindgen_ty_47 = ::std::os::raw::c_uint;
-pub type CFRunLoopActivity = CFOptionFlags;
-pub const kCFRunLoopEntry: _bindgen_ty_48 = 1;
-pub const kCFRunLoopBeforeTimers: _bindgen_ty_48 = 2;
-pub const kCFRunLoopBeforeSources: _bindgen_ty_48 = 4;
-pub const kCFRunLoopBeforeWaiting: _bindgen_ty_48 = 32;
-pub const kCFRunLoopAfterWaiting: _bindgen_ty_48 = 64;
-pub const kCFRunLoopExit: _bindgen_ty_48 = 128;
-pub const kCFRunLoopAllActivities: _bindgen_ty_48 = 268435455;
+pub const kCFRunLoopRunFinished: _bindgen_ty_48 = 1;
+pub const kCFRunLoopRunStopped: _bindgen_ty_48 = 2;
+pub const kCFRunLoopRunTimedOut: _bindgen_ty_48 = 3;
+pub const kCFRunLoopRunHandledSource: _bindgen_ty_48 = 4;
 pub type _bindgen_ty_48 = ::std::os::raw::c_uint;
+pub type CFRunLoopActivity = CFOptionFlags;
+pub const kCFRunLoopEntry: _bindgen_ty_49 = 1;
+pub const kCFRunLoopBeforeTimers: _bindgen_ty_49 = 2;
+pub const kCFRunLoopBeforeSources: _bindgen_ty_49 = 4;
+pub const kCFRunLoopBeforeWaiting: _bindgen_ty_49 = 32;
+pub const kCFRunLoopAfterWaiting: _bindgen_ty_49 = 64;
+pub const kCFRunLoopExit: _bindgen_ty_49 = 128;
+pub const kCFRunLoopAllActivities: _bindgen_ty_49 = 268435455;
+pub type _bindgen_ty_49 = ::std::os::raw::c_uint;
 extern "C" {
     pub static kCFRunLoopDefaultMode: CFRunLoopMode;
 }
@@ -11319,10 +11545,10 @@ pub struct __CFSocket {
 }
 pub type CFSocketRef = *mut __CFSocket;
 pub type CFSocketError = CFIndex;
-pub const kCFSocketSuccess: _bindgen_ty_49 = 0;
-pub const kCFSocketError: _bindgen_ty_49 = -1;
-pub const kCFSocketTimeout: _bindgen_ty_49 = -2;
-pub type _bindgen_ty_49 = ::std::os::raw::c_int;
+pub const kCFSocketSuccess: _bindgen_ty_50 = 0;
+pub const kCFSocketError: _bindgen_ty_50 = -1;
+pub const kCFSocketTimeout: _bindgen_ty_50 = -2;
+pub type _bindgen_ty_50 = ::std::os::raw::c_int;
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
 pub struct CFSocketSignature {
@@ -11341,20 +11567,20 @@ impl Default for CFSocketSignature {
     }
 }
 pub type CFSocketCallBackType = CFOptionFlags;
-pub const kCFSocketNoCallBack: _bindgen_ty_50 = 0;
-pub const kCFSocketReadCallBack: _bindgen_ty_50 = 1;
-pub const kCFSocketAcceptCallBack: _bindgen_ty_50 = 2;
-pub const kCFSocketDataCallBack: _bindgen_ty_50 = 3;
-pub const kCFSocketConnectCallBack: _bindgen_ty_50 = 4;
-pub const kCFSocketWriteCallBack: _bindgen_ty_50 = 8;
-pub type _bindgen_ty_50 = ::std::os::raw::c_uint;
-pub const kCFSocketAutomaticallyReenableReadCallBack: _bindgen_ty_51 = 1;
-pub const kCFSocketAutomaticallyReenableAcceptCallBack: _bindgen_ty_51 = 2;
-pub const kCFSocketAutomaticallyReenableDataCallBack: _bindgen_ty_51 = 3;
-pub const kCFSocketAutomaticallyReenableWriteCallBack: _bindgen_ty_51 = 8;
-pub const kCFSocketLeaveErrors: _bindgen_ty_51 = 64;
-pub const kCFSocketCloseOnInvalidate: _bindgen_ty_51 = 128;
+pub const kCFSocketNoCallBack: _bindgen_ty_51 = 0;
+pub const kCFSocketReadCallBack: _bindgen_ty_51 = 1;
+pub const kCFSocketAcceptCallBack: _bindgen_ty_51 = 2;
+pub const kCFSocketDataCallBack: _bindgen_ty_51 = 3;
+pub const kCFSocketConnectCallBack: _bindgen_ty_51 = 4;
+pub const kCFSocketWriteCallBack: _bindgen_ty_51 = 8;
 pub type _bindgen_ty_51 = ::std::os::raw::c_uint;
+pub const kCFSocketAutomaticallyReenableReadCallBack: _bindgen_ty_52 = 1;
+pub const kCFSocketAutomaticallyReenableAcceptCallBack: _bindgen_ty_52 = 2;
+pub const kCFSocketAutomaticallyReenableDataCallBack: _bindgen_ty_52 = 3;
+pub const kCFSocketAutomaticallyReenableWriteCallBack: _bindgen_ty_52 = 8;
+pub const kCFSocketLeaveErrors: _bindgen_ty_52 = 64;
+pub const kCFSocketCloseOnInvalidate: _bindgen_ty_52 = 128;
+pub type _bindgen_ty_52 = ::std::os::raw::c_uint;
 pub type CFSocketCallBack = ::std::option::Option<
     unsafe extern "C" fn(
         s: CFSocketRef,
@@ -11590,6 +11816,13 @@ extern "C" {
         arg5: usize,
         arg6: u32,
     ) -> ::std::os::raw::c_int;
+}
+extern "C" {
+    pub fn freadlink(
+        arg1: ::std::os::raw::c_int,
+        arg2: *mut ::std::os::raw::c_char,
+        arg3: usize,
+    ) -> isize;
 }
 extern "C" {
     pub fn faccessat(
@@ -12523,23 +12756,6 @@ pub struct fspecread {
     pub fsr_length: off_t,
 }
 pub type fspecread_t = fspecread;
-#[repr(C)]
-#[derive(Debug, Copy, Clone)]
-pub struct fbootstraptransfer {
-    pub fbt_offset: off_t,
-    pub fbt_length: usize,
-    pub fbt_buffer: *mut ::std::os::raw::c_void,
-}
-impl Default for fbootstraptransfer {
-    fn default() -> Self {
-        let mut s = ::std::mem::MaybeUninit::<Self>::uninit();
-        unsafe {
-            ::std::ptr::write_bytes(s.as_mut_ptr(), 0, 1);
-            s.assume_init()
-        }
-    }
-}
-pub type fbootstraptransfer_t = fbootstraptransfer;
 #[repr(C, packed(4))]
 #[derive(Debug, Default, Copy, Clone)]
 pub struct log2phys {
@@ -12601,6 +12817,24 @@ extern "C" {
         arg3: ::std::os::raw::c_int,
         arg4: ::std::os::raw::c_int,
         ...
+    ) -> ::std::os::raw::c_int;
+}
+extern "C" {
+    pub fn openat_dprotected_np(
+        arg1: ::std::os::raw::c_int,
+        arg2: *const ::std::os::raw::c_char,
+        arg3: ::std::os::raw::c_int,
+        arg4: ::std::os::raw::c_int,
+        arg5: ::std::os::raw::c_int,
+        ...
+    ) -> ::std::os::raw::c_int;
+}
+extern "C" {
+    pub fn openat_authenticated_np(
+        arg1: ::std::os::raw::c_int,
+        arg2: *const ::std::os::raw::c_char,
+        arg3: ::std::os::raw::c_int,
+        arg4: ::std::os::raw::c_int,
     ) -> ::std::os::raw::c_int;
 }
 extern "C" {
@@ -12823,21 +13057,21 @@ pub struct mach_timespec {
 }
 pub type mach_timespec_t = mach_timespec;
 pub type dispatch_time_t = u64;
-pub const DISPATCH_WALLTIME_NOW: _bindgen_ty_52 = 18446744073709551614;
-pub type _bindgen_ty_52 = ::std::os::raw::c_ulong;
+pub const DISPATCH_WALLTIME_NOW: _bindgen_ty_53 = 18446744073709551614;
+pub type _bindgen_ty_53 = ::std::os::raw::c_ulong;
 extern "C" {
     pub fn dispatch_time(when: dispatch_time_t, delta: i64) -> dispatch_time_t;
 }
 extern "C" {
     pub fn dispatch_walltime(when: *const timespec, delta: i64) -> dispatch_time_t;
 }
-pub const QOS_CLASS_USER_INTERACTIVE: _bindgen_ty_53 = 33;
-pub const QOS_CLASS_USER_INITIATED: _bindgen_ty_53 = 25;
-pub const QOS_CLASS_DEFAULT: _bindgen_ty_53 = 21;
-pub const QOS_CLASS_UTILITY: _bindgen_ty_53 = 17;
-pub const QOS_CLASS_BACKGROUND: _bindgen_ty_53 = 9;
-pub const QOS_CLASS_UNSPECIFIED: _bindgen_ty_53 = 0;
-pub type _bindgen_ty_53 = ::std::os::raw::c_uint;
+pub const QOS_CLASS_USER_INTERACTIVE: _bindgen_ty_54 = 33;
+pub const QOS_CLASS_USER_INITIATED: _bindgen_ty_54 = 25;
+pub const QOS_CLASS_DEFAULT: _bindgen_ty_54 = 21;
+pub const QOS_CLASS_UTILITY: _bindgen_ty_54 = 17;
+pub const QOS_CLASS_BACKGROUND: _bindgen_ty_54 = 9;
+pub const QOS_CLASS_UNSPECIFIED: _bindgen_ty_54 = 0;
+pub type _bindgen_ty_54 = ::std::os::raw::c_uint;
 pub type qos_class_t = ::std::os::raw::c_uint;
 extern "C" {
     pub fn qos_class_self() -> qos_class_t;
@@ -14505,23 +14739,23 @@ pub struct CFStreamError {
 }
 pub type CFStreamPropertyKey = CFStringRef;
 pub type CFStreamStatus = CFIndex;
-pub const kCFStreamStatusNotOpen: _bindgen_ty_54 = 0;
-pub const kCFStreamStatusOpening: _bindgen_ty_54 = 1;
-pub const kCFStreamStatusOpen: _bindgen_ty_54 = 2;
-pub const kCFStreamStatusReading: _bindgen_ty_54 = 3;
-pub const kCFStreamStatusWriting: _bindgen_ty_54 = 4;
-pub const kCFStreamStatusAtEnd: _bindgen_ty_54 = 5;
-pub const kCFStreamStatusClosed: _bindgen_ty_54 = 6;
-pub const kCFStreamStatusError: _bindgen_ty_54 = 7;
-pub type _bindgen_ty_54 = ::std::os::raw::c_uint;
-pub type CFStreamEventType = CFOptionFlags;
-pub const kCFStreamEventNone: _bindgen_ty_55 = 0;
-pub const kCFStreamEventOpenCompleted: _bindgen_ty_55 = 1;
-pub const kCFStreamEventHasBytesAvailable: _bindgen_ty_55 = 2;
-pub const kCFStreamEventCanAcceptBytes: _bindgen_ty_55 = 4;
-pub const kCFStreamEventErrorOccurred: _bindgen_ty_55 = 8;
-pub const kCFStreamEventEndEncountered: _bindgen_ty_55 = 16;
+pub const kCFStreamStatusNotOpen: _bindgen_ty_55 = 0;
+pub const kCFStreamStatusOpening: _bindgen_ty_55 = 1;
+pub const kCFStreamStatusOpen: _bindgen_ty_55 = 2;
+pub const kCFStreamStatusReading: _bindgen_ty_55 = 3;
+pub const kCFStreamStatusWriting: _bindgen_ty_55 = 4;
+pub const kCFStreamStatusAtEnd: _bindgen_ty_55 = 5;
+pub const kCFStreamStatusClosed: _bindgen_ty_55 = 6;
+pub const kCFStreamStatusError: _bindgen_ty_55 = 7;
 pub type _bindgen_ty_55 = ::std::os::raw::c_uint;
+pub type CFStreamEventType = CFOptionFlags;
+pub const kCFStreamEventNone: _bindgen_ty_56 = 0;
+pub const kCFStreamEventOpenCompleted: _bindgen_ty_56 = 1;
+pub const kCFStreamEventHasBytesAvailable: _bindgen_ty_56 = 2;
+pub const kCFStreamEventCanAcceptBytes: _bindgen_ty_56 = 4;
+pub const kCFStreamEventErrorOccurred: _bindgen_ty_56 = 8;
+pub const kCFStreamEventEndEncountered: _bindgen_ty_56 = 16;
+pub type _bindgen_ty_56 = ::std::os::raw::c_uint;
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
 pub struct CFStreamClientContext {
@@ -14842,10 +15076,10 @@ extern "C" {
     pub fn CFWriteStreamCopyDispatchQueue(stream: CFWriteStreamRef) -> dispatch_queue_t;
 }
 pub type CFStreamErrorDomain = CFIndex;
-pub const kCFStreamErrorDomainCustom: _bindgen_ty_56 = -1;
-pub const kCFStreamErrorDomainPOSIX: _bindgen_ty_56 = 1;
-pub const kCFStreamErrorDomainMacOSStatus: _bindgen_ty_56 = 2;
-pub type _bindgen_ty_56 = ::std::os::raw::c_int;
+pub const kCFStreamErrorDomainCustom: _bindgen_ty_57 = -1;
+pub const kCFStreamErrorDomainPOSIX: _bindgen_ty_57 = 1;
+pub const kCFStreamErrorDomainMacOSStatus: _bindgen_ty_57 = 2;
+pub type _bindgen_ty_57 = ::std::os::raw::c_int;
 extern "C" {
     pub fn CFReadStreamGetError(stream: CFReadStreamRef) -> CFStreamError;
 }
@@ -14853,10 +15087,10 @@ extern "C" {
     pub fn CFWriteStreamGetError(stream: CFWriteStreamRef) -> CFStreamError;
 }
 pub type CFPropertyListMutabilityOptions = CFOptionFlags;
-pub const kCFPropertyListImmutable: _bindgen_ty_57 = 0;
-pub const kCFPropertyListMutableContainers: _bindgen_ty_57 = 1;
-pub const kCFPropertyListMutableContainersAndLeaves: _bindgen_ty_57 = 2;
-pub type _bindgen_ty_57 = ::std::os::raw::c_uint;
+pub const kCFPropertyListImmutable: _bindgen_ty_58 = 0;
+pub const kCFPropertyListMutableContainers: _bindgen_ty_58 = 1;
+pub const kCFPropertyListMutableContainersAndLeaves: _bindgen_ty_58 = 2;
+pub type _bindgen_ty_58 = ::std::os::raw::c_uint;
 extern "C" {
     pub fn CFPropertyListCreateFromXMLData(
         allocator: CFAllocatorRef,
@@ -14879,10 +15113,10 @@ extern "C" {
     ) -> CFPropertyListRef;
 }
 pub type CFPropertyListFormat = CFIndex;
-pub const kCFPropertyListOpenStepFormat: _bindgen_ty_58 = 1;
-pub const kCFPropertyListXMLFormat_v1_0: _bindgen_ty_58 = 100;
-pub const kCFPropertyListBinaryFormat_v1_0: _bindgen_ty_58 = 200;
-pub type _bindgen_ty_58 = ::std::os::raw::c_uint;
+pub const kCFPropertyListOpenStepFormat: _bindgen_ty_59 = 1;
+pub const kCFPropertyListXMLFormat_v1_0: _bindgen_ty_59 = 100;
+pub const kCFPropertyListBinaryFormat_v1_0: _bindgen_ty_59 = 200;
+pub type _bindgen_ty_59 = ::std::os::raw::c_uint;
 extern "C" {
     pub fn CFPropertyListIsValid(plist: CFPropertyListRef, format: CFPropertyListFormat)
         -> Boolean;
@@ -14905,11 +15139,11 @@ extern "C" {
         errorString: *mut CFStringRef,
     ) -> CFPropertyListRef;
 }
-pub const kCFPropertyListReadCorruptError: _bindgen_ty_59 = 3840;
-pub const kCFPropertyListReadUnknownVersionError: _bindgen_ty_59 = 3841;
-pub const kCFPropertyListReadStreamError: _bindgen_ty_59 = 3842;
-pub const kCFPropertyListWriteStreamError: _bindgen_ty_59 = 3851;
-pub type _bindgen_ty_59 = ::std::os::raw::c_uint;
+pub const kCFPropertyListReadCorruptError: _bindgen_ty_60 = 3840;
+pub const kCFPropertyListReadUnknownVersionError: _bindgen_ty_60 = 3841;
+pub const kCFPropertyListReadStreamError: _bindgen_ty_60 = 3842;
+pub const kCFPropertyListWriteStreamError: _bindgen_ty_60 = 3851;
+pub type _bindgen_ty_60 = ::std::os::raw::c_uint;
 extern "C" {
     pub fn CFPropertyListCreateWithData(
         allocator: CFAllocatorRef,
@@ -15072,136 +15306,136 @@ extern "C" {
     pub fn CFSetRemoveAllValues(theSet: CFMutableSetRef);
 }
 pub type CFStringEncodings = CFIndex;
-pub const kCFStringEncodingMacJapanese: _bindgen_ty_60 = 1;
-pub const kCFStringEncodingMacChineseTrad: _bindgen_ty_60 = 2;
-pub const kCFStringEncodingMacKorean: _bindgen_ty_60 = 3;
-pub const kCFStringEncodingMacArabic: _bindgen_ty_60 = 4;
-pub const kCFStringEncodingMacHebrew: _bindgen_ty_60 = 5;
-pub const kCFStringEncodingMacGreek: _bindgen_ty_60 = 6;
-pub const kCFStringEncodingMacCyrillic: _bindgen_ty_60 = 7;
-pub const kCFStringEncodingMacDevanagari: _bindgen_ty_60 = 9;
-pub const kCFStringEncodingMacGurmukhi: _bindgen_ty_60 = 10;
-pub const kCFStringEncodingMacGujarati: _bindgen_ty_60 = 11;
-pub const kCFStringEncodingMacOriya: _bindgen_ty_60 = 12;
-pub const kCFStringEncodingMacBengali: _bindgen_ty_60 = 13;
-pub const kCFStringEncodingMacTamil: _bindgen_ty_60 = 14;
-pub const kCFStringEncodingMacTelugu: _bindgen_ty_60 = 15;
-pub const kCFStringEncodingMacKannada: _bindgen_ty_60 = 16;
-pub const kCFStringEncodingMacMalayalam: _bindgen_ty_60 = 17;
-pub const kCFStringEncodingMacSinhalese: _bindgen_ty_60 = 18;
-pub const kCFStringEncodingMacBurmese: _bindgen_ty_60 = 19;
-pub const kCFStringEncodingMacKhmer: _bindgen_ty_60 = 20;
-pub const kCFStringEncodingMacThai: _bindgen_ty_60 = 21;
-pub const kCFStringEncodingMacLaotian: _bindgen_ty_60 = 22;
-pub const kCFStringEncodingMacGeorgian: _bindgen_ty_60 = 23;
-pub const kCFStringEncodingMacArmenian: _bindgen_ty_60 = 24;
-pub const kCFStringEncodingMacChineseSimp: _bindgen_ty_60 = 25;
-pub const kCFStringEncodingMacTibetan: _bindgen_ty_60 = 26;
-pub const kCFStringEncodingMacMongolian: _bindgen_ty_60 = 27;
-pub const kCFStringEncodingMacEthiopic: _bindgen_ty_60 = 28;
-pub const kCFStringEncodingMacCentralEurRoman: _bindgen_ty_60 = 29;
-pub const kCFStringEncodingMacVietnamese: _bindgen_ty_60 = 30;
-pub const kCFStringEncodingMacExtArabic: _bindgen_ty_60 = 31;
-pub const kCFStringEncodingMacSymbol: _bindgen_ty_60 = 33;
-pub const kCFStringEncodingMacDingbats: _bindgen_ty_60 = 34;
-pub const kCFStringEncodingMacTurkish: _bindgen_ty_60 = 35;
-pub const kCFStringEncodingMacCroatian: _bindgen_ty_60 = 36;
-pub const kCFStringEncodingMacIcelandic: _bindgen_ty_60 = 37;
-pub const kCFStringEncodingMacRomanian: _bindgen_ty_60 = 38;
-pub const kCFStringEncodingMacCeltic: _bindgen_ty_60 = 39;
-pub const kCFStringEncodingMacGaelic: _bindgen_ty_60 = 40;
-pub const kCFStringEncodingMacFarsi: _bindgen_ty_60 = 140;
-pub const kCFStringEncodingMacUkrainian: _bindgen_ty_60 = 152;
-pub const kCFStringEncodingMacInuit: _bindgen_ty_60 = 236;
-pub const kCFStringEncodingMacVT100: _bindgen_ty_60 = 252;
-pub const kCFStringEncodingMacHFS: _bindgen_ty_60 = 255;
-pub const kCFStringEncodingISOLatin2: _bindgen_ty_60 = 514;
-pub const kCFStringEncodingISOLatin3: _bindgen_ty_60 = 515;
-pub const kCFStringEncodingISOLatin4: _bindgen_ty_60 = 516;
-pub const kCFStringEncodingISOLatinCyrillic: _bindgen_ty_60 = 517;
-pub const kCFStringEncodingISOLatinArabic: _bindgen_ty_60 = 518;
-pub const kCFStringEncodingISOLatinGreek: _bindgen_ty_60 = 519;
-pub const kCFStringEncodingISOLatinHebrew: _bindgen_ty_60 = 520;
-pub const kCFStringEncodingISOLatin5: _bindgen_ty_60 = 521;
-pub const kCFStringEncodingISOLatin6: _bindgen_ty_60 = 522;
-pub const kCFStringEncodingISOLatinThai: _bindgen_ty_60 = 523;
-pub const kCFStringEncodingISOLatin7: _bindgen_ty_60 = 525;
-pub const kCFStringEncodingISOLatin8: _bindgen_ty_60 = 526;
-pub const kCFStringEncodingISOLatin9: _bindgen_ty_60 = 527;
-pub const kCFStringEncodingISOLatin10: _bindgen_ty_60 = 528;
-pub const kCFStringEncodingDOSLatinUS: _bindgen_ty_60 = 1024;
-pub const kCFStringEncodingDOSGreek: _bindgen_ty_60 = 1029;
-pub const kCFStringEncodingDOSBalticRim: _bindgen_ty_60 = 1030;
-pub const kCFStringEncodingDOSLatin1: _bindgen_ty_60 = 1040;
-pub const kCFStringEncodingDOSGreek1: _bindgen_ty_60 = 1041;
-pub const kCFStringEncodingDOSLatin2: _bindgen_ty_60 = 1042;
-pub const kCFStringEncodingDOSCyrillic: _bindgen_ty_60 = 1043;
-pub const kCFStringEncodingDOSTurkish: _bindgen_ty_60 = 1044;
-pub const kCFStringEncodingDOSPortuguese: _bindgen_ty_60 = 1045;
-pub const kCFStringEncodingDOSIcelandic: _bindgen_ty_60 = 1046;
-pub const kCFStringEncodingDOSHebrew: _bindgen_ty_60 = 1047;
-pub const kCFStringEncodingDOSCanadianFrench: _bindgen_ty_60 = 1048;
-pub const kCFStringEncodingDOSArabic: _bindgen_ty_60 = 1049;
-pub const kCFStringEncodingDOSNordic: _bindgen_ty_60 = 1050;
-pub const kCFStringEncodingDOSRussian: _bindgen_ty_60 = 1051;
-pub const kCFStringEncodingDOSGreek2: _bindgen_ty_60 = 1052;
-pub const kCFStringEncodingDOSThai: _bindgen_ty_60 = 1053;
-pub const kCFStringEncodingDOSJapanese: _bindgen_ty_60 = 1056;
-pub const kCFStringEncodingDOSChineseSimplif: _bindgen_ty_60 = 1057;
-pub const kCFStringEncodingDOSKorean: _bindgen_ty_60 = 1058;
-pub const kCFStringEncodingDOSChineseTrad: _bindgen_ty_60 = 1059;
-pub const kCFStringEncodingWindowsLatin2: _bindgen_ty_60 = 1281;
-pub const kCFStringEncodingWindowsCyrillic: _bindgen_ty_60 = 1282;
-pub const kCFStringEncodingWindowsGreek: _bindgen_ty_60 = 1283;
-pub const kCFStringEncodingWindowsLatin5: _bindgen_ty_60 = 1284;
-pub const kCFStringEncodingWindowsHebrew: _bindgen_ty_60 = 1285;
-pub const kCFStringEncodingWindowsArabic: _bindgen_ty_60 = 1286;
-pub const kCFStringEncodingWindowsBalticRim: _bindgen_ty_60 = 1287;
-pub const kCFStringEncodingWindowsVietnamese: _bindgen_ty_60 = 1288;
-pub const kCFStringEncodingWindowsKoreanJohab: _bindgen_ty_60 = 1296;
-pub const kCFStringEncodingANSEL: _bindgen_ty_60 = 1537;
-pub const kCFStringEncodingJIS_X0201_76: _bindgen_ty_60 = 1568;
-pub const kCFStringEncodingJIS_X0208_83: _bindgen_ty_60 = 1569;
-pub const kCFStringEncodingJIS_X0208_90: _bindgen_ty_60 = 1570;
-pub const kCFStringEncodingJIS_X0212_90: _bindgen_ty_60 = 1571;
-pub const kCFStringEncodingJIS_C6226_78: _bindgen_ty_60 = 1572;
-pub const kCFStringEncodingShiftJIS_X0213: _bindgen_ty_60 = 1576;
-pub const kCFStringEncodingShiftJIS_X0213_MenKuTen: _bindgen_ty_60 = 1577;
-pub const kCFStringEncodingGB_2312_80: _bindgen_ty_60 = 1584;
-pub const kCFStringEncodingGBK_95: _bindgen_ty_60 = 1585;
-pub const kCFStringEncodingGB_18030_2000: _bindgen_ty_60 = 1586;
-pub const kCFStringEncodingKSC_5601_87: _bindgen_ty_60 = 1600;
-pub const kCFStringEncodingKSC_5601_92_Johab: _bindgen_ty_60 = 1601;
-pub const kCFStringEncodingCNS_11643_92_P1: _bindgen_ty_60 = 1617;
-pub const kCFStringEncodingCNS_11643_92_P2: _bindgen_ty_60 = 1618;
-pub const kCFStringEncodingCNS_11643_92_P3: _bindgen_ty_60 = 1619;
-pub const kCFStringEncodingISO_2022_JP: _bindgen_ty_60 = 2080;
-pub const kCFStringEncodingISO_2022_JP_2: _bindgen_ty_60 = 2081;
-pub const kCFStringEncodingISO_2022_JP_1: _bindgen_ty_60 = 2082;
-pub const kCFStringEncodingISO_2022_JP_3: _bindgen_ty_60 = 2083;
-pub const kCFStringEncodingISO_2022_CN: _bindgen_ty_60 = 2096;
-pub const kCFStringEncodingISO_2022_CN_EXT: _bindgen_ty_60 = 2097;
-pub const kCFStringEncodingISO_2022_KR: _bindgen_ty_60 = 2112;
-pub const kCFStringEncodingEUC_JP: _bindgen_ty_60 = 2336;
-pub const kCFStringEncodingEUC_CN: _bindgen_ty_60 = 2352;
-pub const kCFStringEncodingEUC_TW: _bindgen_ty_60 = 2353;
-pub const kCFStringEncodingEUC_KR: _bindgen_ty_60 = 2368;
-pub const kCFStringEncodingShiftJIS: _bindgen_ty_60 = 2561;
-pub const kCFStringEncodingKOI8_R: _bindgen_ty_60 = 2562;
-pub const kCFStringEncodingBig5: _bindgen_ty_60 = 2563;
-pub const kCFStringEncodingMacRomanLatin1: _bindgen_ty_60 = 2564;
-pub const kCFStringEncodingHZ_GB_2312: _bindgen_ty_60 = 2565;
-pub const kCFStringEncodingBig5_HKSCS_1999: _bindgen_ty_60 = 2566;
-pub const kCFStringEncodingVISCII: _bindgen_ty_60 = 2567;
-pub const kCFStringEncodingKOI8_U: _bindgen_ty_60 = 2568;
-pub const kCFStringEncodingBig5_E: _bindgen_ty_60 = 2569;
-pub const kCFStringEncodingNextStepJapanese: _bindgen_ty_60 = 2818;
-pub const kCFStringEncodingEBCDIC_US: _bindgen_ty_60 = 3073;
-pub const kCFStringEncodingEBCDIC_CP037: _bindgen_ty_60 = 3074;
-pub const kCFStringEncodingUTF7: _bindgen_ty_60 = 67109120;
-pub const kCFStringEncodingUTF7_IMAP: _bindgen_ty_60 = 2576;
-pub const kCFStringEncodingShiftJIS_X0213_00: _bindgen_ty_60 = 1576;
-pub type _bindgen_ty_60 = ::std::os::raw::c_uint;
+pub const kCFStringEncodingMacJapanese: _bindgen_ty_61 = 1;
+pub const kCFStringEncodingMacChineseTrad: _bindgen_ty_61 = 2;
+pub const kCFStringEncodingMacKorean: _bindgen_ty_61 = 3;
+pub const kCFStringEncodingMacArabic: _bindgen_ty_61 = 4;
+pub const kCFStringEncodingMacHebrew: _bindgen_ty_61 = 5;
+pub const kCFStringEncodingMacGreek: _bindgen_ty_61 = 6;
+pub const kCFStringEncodingMacCyrillic: _bindgen_ty_61 = 7;
+pub const kCFStringEncodingMacDevanagari: _bindgen_ty_61 = 9;
+pub const kCFStringEncodingMacGurmukhi: _bindgen_ty_61 = 10;
+pub const kCFStringEncodingMacGujarati: _bindgen_ty_61 = 11;
+pub const kCFStringEncodingMacOriya: _bindgen_ty_61 = 12;
+pub const kCFStringEncodingMacBengali: _bindgen_ty_61 = 13;
+pub const kCFStringEncodingMacTamil: _bindgen_ty_61 = 14;
+pub const kCFStringEncodingMacTelugu: _bindgen_ty_61 = 15;
+pub const kCFStringEncodingMacKannada: _bindgen_ty_61 = 16;
+pub const kCFStringEncodingMacMalayalam: _bindgen_ty_61 = 17;
+pub const kCFStringEncodingMacSinhalese: _bindgen_ty_61 = 18;
+pub const kCFStringEncodingMacBurmese: _bindgen_ty_61 = 19;
+pub const kCFStringEncodingMacKhmer: _bindgen_ty_61 = 20;
+pub const kCFStringEncodingMacThai: _bindgen_ty_61 = 21;
+pub const kCFStringEncodingMacLaotian: _bindgen_ty_61 = 22;
+pub const kCFStringEncodingMacGeorgian: _bindgen_ty_61 = 23;
+pub const kCFStringEncodingMacArmenian: _bindgen_ty_61 = 24;
+pub const kCFStringEncodingMacChineseSimp: _bindgen_ty_61 = 25;
+pub const kCFStringEncodingMacTibetan: _bindgen_ty_61 = 26;
+pub const kCFStringEncodingMacMongolian: _bindgen_ty_61 = 27;
+pub const kCFStringEncodingMacEthiopic: _bindgen_ty_61 = 28;
+pub const kCFStringEncodingMacCentralEurRoman: _bindgen_ty_61 = 29;
+pub const kCFStringEncodingMacVietnamese: _bindgen_ty_61 = 30;
+pub const kCFStringEncodingMacExtArabic: _bindgen_ty_61 = 31;
+pub const kCFStringEncodingMacSymbol: _bindgen_ty_61 = 33;
+pub const kCFStringEncodingMacDingbats: _bindgen_ty_61 = 34;
+pub const kCFStringEncodingMacTurkish: _bindgen_ty_61 = 35;
+pub const kCFStringEncodingMacCroatian: _bindgen_ty_61 = 36;
+pub const kCFStringEncodingMacIcelandic: _bindgen_ty_61 = 37;
+pub const kCFStringEncodingMacRomanian: _bindgen_ty_61 = 38;
+pub const kCFStringEncodingMacCeltic: _bindgen_ty_61 = 39;
+pub const kCFStringEncodingMacGaelic: _bindgen_ty_61 = 40;
+pub const kCFStringEncodingMacFarsi: _bindgen_ty_61 = 140;
+pub const kCFStringEncodingMacUkrainian: _bindgen_ty_61 = 152;
+pub const kCFStringEncodingMacInuit: _bindgen_ty_61 = 236;
+pub const kCFStringEncodingMacVT100: _bindgen_ty_61 = 252;
+pub const kCFStringEncodingMacHFS: _bindgen_ty_61 = 255;
+pub const kCFStringEncodingISOLatin2: _bindgen_ty_61 = 514;
+pub const kCFStringEncodingISOLatin3: _bindgen_ty_61 = 515;
+pub const kCFStringEncodingISOLatin4: _bindgen_ty_61 = 516;
+pub const kCFStringEncodingISOLatinCyrillic: _bindgen_ty_61 = 517;
+pub const kCFStringEncodingISOLatinArabic: _bindgen_ty_61 = 518;
+pub const kCFStringEncodingISOLatinGreek: _bindgen_ty_61 = 519;
+pub const kCFStringEncodingISOLatinHebrew: _bindgen_ty_61 = 520;
+pub const kCFStringEncodingISOLatin5: _bindgen_ty_61 = 521;
+pub const kCFStringEncodingISOLatin6: _bindgen_ty_61 = 522;
+pub const kCFStringEncodingISOLatinThai: _bindgen_ty_61 = 523;
+pub const kCFStringEncodingISOLatin7: _bindgen_ty_61 = 525;
+pub const kCFStringEncodingISOLatin8: _bindgen_ty_61 = 526;
+pub const kCFStringEncodingISOLatin9: _bindgen_ty_61 = 527;
+pub const kCFStringEncodingISOLatin10: _bindgen_ty_61 = 528;
+pub const kCFStringEncodingDOSLatinUS: _bindgen_ty_61 = 1024;
+pub const kCFStringEncodingDOSGreek: _bindgen_ty_61 = 1029;
+pub const kCFStringEncodingDOSBalticRim: _bindgen_ty_61 = 1030;
+pub const kCFStringEncodingDOSLatin1: _bindgen_ty_61 = 1040;
+pub const kCFStringEncodingDOSGreek1: _bindgen_ty_61 = 1041;
+pub const kCFStringEncodingDOSLatin2: _bindgen_ty_61 = 1042;
+pub const kCFStringEncodingDOSCyrillic: _bindgen_ty_61 = 1043;
+pub const kCFStringEncodingDOSTurkish: _bindgen_ty_61 = 1044;
+pub const kCFStringEncodingDOSPortuguese: _bindgen_ty_61 = 1045;
+pub const kCFStringEncodingDOSIcelandic: _bindgen_ty_61 = 1046;
+pub const kCFStringEncodingDOSHebrew: _bindgen_ty_61 = 1047;
+pub const kCFStringEncodingDOSCanadianFrench: _bindgen_ty_61 = 1048;
+pub const kCFStringEncodingDOSArabic: _bindgen_ty_61 = 1049;
+pub const kCFStringEncodingDOSNordic: _bindgen_ty_61 = 1050;
+pub const kCFStringEncodingDOSRussian: _bindgen_ty_61 = 1051;
+pub const kCFStringEncodingDOSGreek2: _bindgen_ty_61 = 1052;
+pub const kCFStringEncodingDOSThai: _bindgen_ty_61 = 1053;
+pub const kCFStringEncodingDOSJapanese: _bindgen_ty_61 = 1056;
+pub const kCFStringEncodingDOSChineseSimplif: _bindgen_ty_61 = 1057;
+pub const kCFStringEncodingDOSKorean: _bindgen_ty_61 = 1058;
+pub const kCFStringEncodingDOSChineseTrad: _bindgen_ty_61 = 1059;
+pub const kCFStringEncodingWindowsLatin2: _bindgen_ty_61 = 1281;
+pub const kCFStringEncodingWindowsCyrillic: _bindgen_ty_61 = 1282;
+pub const kCFStringEncodingWindowsGreek: _bindgen_ty_61 = 1283;
+pub const kCFStringEncodingWindowsLatin5: _bindgen_ty_61 = 1284;
+pub const kCFStringEncodingWindowsHebrew: _bindgen_ty_61 = 1285;
+pub const kCFStringEncodingWindowsArabic: _bindgen_ty_61 = 1286;
+pub const kCFStringEncodingWindowsBalticRim: _bindgen_ty_61 = 1287;
+pub const kCFStringEncodingWindowsVietnamese: _bindgen_ty_61 = 1288;
+pub const kCFStringEncodingWindowsKoreanJohab: _bindgen_ty_61 = 1296;
+pub const kCFStringEncodingANSEL: _bindgen_ty_61 = 1537;
+pub const kCFStringEncodingJIS_X0201_76: _bindgen_ty_61 = 1568;
+pub const kCFStringEncodingJIS_X0208_83: _bindgen_ty_61 = 1569;
+pub const kCFStringEncodingJIS_X0208_90: _bindgen_ty_61 = 1570;
+pub const kCFStringEncodingJIS_X0212_90: _bindgen_ty_61 = 1571;
+pub const kCFStringEncodingJIS_C6226_78: _bindgen_ty_61 = 1572;
+pub const kCFStringEncodingShiftJIS_X0213: _bindgen_ty_61 = 1576;
+pub const kCFStringEncodingShiftJIS_X0213_MenKuTen: _bindgen_ty_61 = 1577;
+pub const kCFStringEncodingGB_2312_80: _bindgen_ty_61 = 1584;
+pub const kCFStringEncodingGBK_95: _bindgen_ty_61 = 1585;
+pub const kCFStringEncodingGB_18030_2000: _bindgen_ty_61 = 1586;
+pub const kCFStringEncodingKSC_5601_87: _bindgen_ty_61 = 1600;
+pub const kCFStringEncodingKSC_5601_92_Johab: _bindgen_ty_61 = 1601;
+pub const kCFStringEncodingCNS_11643_92_P1: _bindgen_ty_61 = 1617;
+pub const kCFStringEncodingCNS_11643_92_P2: _bindgen_ty_61 = 1618;
+pub const kCFStringEncodingCNS_11643_92_P3: _bindgen_ty_61 = 1619;
+pub const kCFStringEncodingISO_2022_JP: _bindgen_ty_61 = 2080;
+pub const kCFStringEncodingISO_2022_JP_2: _bindgen_ty_61 = 2081;
+pub const kCFStringEncodingISO_2022_JP_1: _bindgen_ty_61 = 2082;
+pub const kCFStringEncodingISO_2022_JP_3: _bindgen_ty_61 = 2083;
+pub const kCFStringEncodingISO_2022_CN: _bindgen_ty_61 = 2096;
+pub const kCFStringEncodingISO_2022_CN_EXT: _bindgen_ty_61 = 2097;
+pub const kCFStringEncodingISO_2022_KR: _bindgen_ty_61 = 2112;
+pub const kCFStringEncodingEUC_JP: _bindgen_ty_61 = 2336;
+pub const kCFStringEncodingEUC_CN: _bindgen_ty_61 = 2352;
+pub const kCFStringEncodingEUC_TW: _bindgen_ty_61 = 2353;
+pub const kCFStringEncodingEUC_KR: _bindgen_ty_61 = 2368;
+pub const kCFStringEncodingShiftJIS: _bindgen_ty_61 = 2561;
+pub const kCFStringEncodingKOI8_R: _bindgen_ty_61 = 2562;
+pub const kCFStringEncodingBig5: _bindgen_ty_61 = 2563;
+pub const kCFStringEncodingMacRomanLatin1: _bindgen_ty_61 = 2564;
+pub const kCFStringEncodingHZ_GB_2312: _bindgen_ty_61 = 2565;
+pub const kCFStringEncodingBig5_HKSCS_1999: _bindgen_ty_61 = 2566;
+pub const kCFStringEncodingVISCII: _bindgen_ty_61 = 2567;
+pub const kCFStringEncodingKOI8_U: _bindgen_ty_61 = 2568;
+pub const kCFStringEncodingBig5_E: _bindgen_ty_61 = 2569;
+pub const kCFStringEncodingNextStepJapanese: _bindgen_ty_61 = 2818;
+pub const kCFStringEncodingEBCDIC_US: _bindgen_ty_61 = 3073;
+pub const kCFStringEncodingEBCDIC_CP037: _bindgen_ty_61 = 3074;
+pub const kCFStringEncodingUTF7: _bindgen_ty_61 = 67109120;
+pub const kCFStringEncodingUTF7_IMAP: _bindgen_ty_61 = 2576;
+pub const kCFStringEncodingShiftJIS_X0213_00: _bindgen_ty_61 = 1576;
+pub type _bindgen_ty_61 = ::std::os::raw::c_uint;
 pub type CFTreeRetainCallBack = ::std::option::Option<
     unsafe extern "C" fn(info: *const ::std::os::raw::c_void) -> *const ::std::os::raw::c_void,
 >;
@@ -15331,16 +15565,16 @@ extern "C" {
     ) -> CFTypeRef;
 }
 pub type CFURLError = CFIndex;
-pub const kCFURLUnknownError: _bindgen_ty_61 = -10;
-pub const kCFURLUnknownSchemeError: _bindgen_ty_61 = -11;
-pub const kCFURLResourceNotFoundError: _bindgen_ty_61 = -12;
-pub const kCFURLResourceAccessViolationError: _bindgen_ty_61 = -13;
-pub const kCFURLRemoteHostUnavailableError: _bindgen_ty_61 = -14;
-pub const kCFURLImproperArgumentsError: _bindgen_ty_61 = -15;
-pub const kCFURLUnknownPropertyKeyError: _bindgen_ty_61 = -16;
-pub const kCFURLPropertyKeyUnavailableError: _bindgen_ty_61 = -17;
-pub const kCFURLTimeoutError: _bindgen_ty_61 = -18;
-pub type _bindgen_ty_61 = ::std::os::raw::c_int;
+pub const kCFURLUnknownError: _bindgen_ty_62 = -10;
+pub const kCFURLUnknownSchemeError: _bindgen_ty_62 = -11;
+pub const kCFURLResourceNotFoundError: _bindgen_ty_62 = -12;
+pub const kCFURLResourceAccessViolationError: _bindgen_ty_62 = -13;
+pub const kCFURLRemoteHostUnavailableError: _bindgen_ty_62 = -14;
+pub const kCFURLImproperArgumentsError: _bindgen_ty_62 = -15;
+pub const kCFURLUnknownPropertyKeyError: _bindgen_ty_62 = -16;
+pub const kCFURLPropertyKeyUnavailableError: _bindgen_ty_62 = -17;
+pub const kCFURLTimeoutError: _bindgen_ty_62 = -18;
+pub type _bindgen_ty_62 = ::std::os::raw::c_int;
 extern "C" {
     pub static kCFURLFileExists: CFStringRef;
 }
@@ -15643,12 +15877,12 @@ extern "C" {
 extern "C" {
     pub fn CFBundleCopyExecutableURL(bundle: CFBundleRef) -> CFURLRef;
 }
-pub const kCFBundleExecutableArchitectureI386: _bindgen_ty_62 = 7;
-pub const kCFBundleExecutableArchitecturePPC: _bindgen_ty_62 = 18;
-pub const kCFBundleExecutableArchitectureX86_64: _bindgen_ty_62 = 16777223;
-pub const kCFBundleExecutableArchitecturePPC64: _bindgen_ty_62 = 16777234;
-pub const kCFBundleExecutableArchitectureARM64: _bindgen_ty_62 = 16777228;
-pub type _bindgen_ty_62 = ::std::os::raw::c_uint;
+pub const kCFBundleExecutableArchitectureI386: _bindgen_ty_63 = 7;
+pub const kCFBundleExecutableArchitecturePPC: _bindgen_ty_63 = 18;
+pub const kCFBundleExecutableArchitectureX86_64: _bindgen_ty_63 = 16777223;
+pub const kCFBundleExecutableArchitecturePPC64: _bindgen_ty_63 = 16777234;
+pub const kCFBundleExecutableArchitectureARM64: _bindgen_ty_63 = 16777228;
+pub type _bindgen_ty_63 = ::std::os::raw::c_uint;
 extern "C" {
     pub fn CFBundleCopyExecutableArchitectures(bundle: CFBundleRef) -> CFArrayRef;
 }
@@ -15734,13 +15968,13 @@ pub struct __CFMessagePort {
     _unused: [u8; 0],
 }
 pub type CFMessagePortRef = *mut __CFMessagePort;
-pub const kCFMessagePortSuccess: _bindgen_ty_63 = 0;
-pub const kCFMessagePortSendTimeout: _bindgen_ty_63 = -1;
-pub const kCFMessagePortReceiveTimeout: _bindgen_ty_63 = -2;
-pub const kCFMessagePortIsInvalid: _bindgen_ty_63 = -3;
-pub const kCFMessagePortTransportError: _bindgen_ty_63 = -4;
-pub const kCFMessagePortBecameInvalidError: _bindgen_ty_63 = -5;
-pub type _bindgen_ty_63 = ::std::os::raw::c_int;
+pub const kCFMessagePortSuccess: _bindgen_ty_64 = 0;
+pub const kCFMessagePortSendTimeout: _bindgen_ty_64 = -1;
+pub const kCFMessagePortReceiveTimeout: _bindgen_ty_64 = -2;
+pub const kCFMessagePortIsInvalid: _bindgen_ty_64 = -3;
+pub const kCFMessagePortTransportError: _bindgen_ty_64 = -4;
+pub const kCFMessagePortBecameInvalidError: _bindgen_ty_64 = -5;
+pub type _bindgen_ty_64 = ::std::os::raw::c_int;
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
 pub struct CFMessagePortContext {
@@ -16194,15 +16428,15 @@ extern "C" {
     pub fn CFURLEnumeratorGetTypeID() -> CFTypeID;
 }
 pub type CFURLEnumeratorOptions = CFOptionFlags;
-pub const kCFURLEnumeratorDefaultBehavior: _bindgen_ty_64 = 0;
-pub const kCFURLEnumeratorDescendRecursively: _bindgen_ty_64 = 1;
-pub const kCFURLEnumeratorSkipInvisibles: _bindgen_ty_64 = 2;
-pub const kCFURLEnumeratorGenerateFileReferenceURLs: _bindgen_ty_64 = 4;
-pub const kCFURLEnumeratorSkipPackageContents: _bindgen_ty_64 = 8;
-pub const kCFURLEnumeratorIncludeDirectoriesPreOrder: _bindgen_ty_64 = 16;
-pub const kCFURLEnumeratorIncludeDirectoriesPostOrder: _bindgen_ty_64 = 32;
-pub const kCFURLEnumeratorGenerateRelativePathURLs: _bindgen_ty_64 = 64;
-pub type _bindgen_ty_64 = ::std::os::raw::c_uint;
+pub const kCFURLEnumeratorDefaultBehavior: _bindgen_ty_65 = 0;
+pub const kCFURLEnumeratorDescendRecursively: _bindgen_ty_65 = 1;
+pub const kCFURLEnumeratorSkipInvisibles: _bindgen_ty_65 = 2;
+pub const kCFURLEnumeratorGenerateFileReferenceURLs: _bindgen_ty_65 = 4;
+pub const kCFURLEnumeratorSkipPackageContents: _bindgen_ty_65 = 8;
+pub const kCFURLEnumeratorIncludeDirectoriesPreOrder: _bindgen_ty_65 = 16;
+pub const kCFURLEnumeratorIncludeDirectoriesPostOrder: _bindgen_ty_65 = 32;
+pub const kCFURLEnumeratorGenerateRelativePathURLs: _bindgen_ty_65 = 64;
+pub type _bindgen_ty_65 = ::std::os::raw::c_uint;
 extern "C" {
     pub fn CFURLEnumeratorCreateForDirectoryURL(
         alloc: CFAllocatorRef,
@@ -16219,11 +16453,11 @@ extern "C" {
     ) -> CFURLEnumeratorRef;
 }
 pub type CFURLEnumeratorResult = CFIndex;
-pub const kCFURLEnumeratorSuccess: _bindgen_ty_65 = 1;
-pub const kCFURLEnumeratorEnd: _bindgen_ty_65 = 2;
-pub const kCFURLEnumeratorError: _bindgen_ty_65 = 3;
-pub const kCFURLEnumeratorDirectoryPostOrderSuccess: _bindgen_ty_65 = 4;
-pub type _bindgen_ty_65 = ::std::os::raw::c_uint;
+pub const kCFURLEnumeratorSuccess: _bindgen_ty_66 = 1;
+pub const kCFURLEnumeratorEnd: _bindgen_ty_66 = 2;
+pub const kCFURLEnumeratorError: _bindgen_ty_66 = 3;
+pub const kCFURLEnumeratorDirectoryPostOrderSuccess: _bindgen_ty_66 = 4;
+pub type _bindgen_ty_66 = ::std::os::raw::c_uint;
 extern "C" {
     pub fn CFURLEnumeratorGetNextURL(
         enumerator: CFURLEnumeratorRef,
@@ -16691,13 +16925,13 @@ extern "C" {
     pub fn CFFileSecuritySetMode(fileSec: CFFileSecurityRef, mode: mode_t) -> Boolean;
 }
 pub type CFFileSecurityClearOptions = CFOptionFlags;
-pub const kCFFileSecurityClearOwner: _bindgen_ty_66 = 1;
-pub const kCFFileSecurityClearGroup: _bindgen_ty_66 = 2;
-pub const kCFFileSecurityClearMode: _bindgen_ty_66 = 4;
-pub const kCFFileSecurityClearOwnerUUID: _bindgen_ty_66 = 8;
-pub const kCFFileSecurityClearGroupUUID: _bindgen_ty_66 = 16;
-pub const kCFFileSecurityClearAccessControlList: _bindgen_ty_66 = 32;
-pub type _bindgen_ty_66 = ::std::os::raw::c_uint;
+pub const kCFFileSecurityClearOwner: _bindgen_ty_67 = 1;
+pub const kCFFileSecurityClearGroup: _bindgen_ty_67 = 2;
+pub const kCFFileSecurityClearMode: _bindgen_ty_67 = 4;
+pub const kCFFileSecurityClearOwnerUUID: _bindgen_ty_67 = 8;
+pub const kCFFileSecurityClearGroupUUID: _bindgen_ty_67 = 16;
+pub const kCFFileSecurityClearAccessControlList: _bindgen_ty_67 = 32;
+pub type _bindgen_ty_67 = ::std::os::raw::c_uint;
 extern "C" {
     pub fn CFFileSecurityClearProperties(
         fileSec: CFFileSecurityRef,
@@ -16716,23 +16950,23 @@ pub struct __CFStringTokenizer {
     _unused: [u8; 0],
 }
 pub type CFStringTokenizerRef = *mut __CFStringTokenizer;
-pub const kCFStringTokenizerUnitWord: _bindgen_ty_67 = 0;
-pub const kCFStringTokenizerUnitSentence: _bindgen_ty_67 = 1;
-pub const kCFStringTokenizerUnitParagraph: _bindgen_ty_67 = 2;
-pub const kCFStringTokenizerUnitLineBreak: _bindgen_ty_67 = 3;
-pub const kCFStringTokenizerUnitWordBoundary: _bindgen_ty_67 = 4;
-pub const kCFStringTokenizerAttributeLatinTranscription: _bindgen_ty_67 = 65536;
-pub const kCFStringTokenizerAttributeLanguage: _bindgen_ty_67 = 131072;
-pub type _bindgen_ty_67 = ::std::os::raw::c_uint;
-pub type CFStringTokenizerTokenType = CFOptionFlags;
-pub const kCFStringTokenizerTokenNone: _bindgen_ty_68 = 0;
-pub const kCFStringTokenizerTokenNormal: _bindgen_ty_68 = 1;
-pub const kCFStringTokenizerTokenHasSubTokensMask: _bindgen_ty_68 = 2;
-pub const kCFStringTokenizerTokenHasDerivedSubTokensMask: _bindgen_ty_68 = 4;
-pub const kCFStringTokenizerTokenHasHasNumbersMask: _bindgen_ty_68 = 8;
-pub const kCFStringTokenizerTokenHasNonLettersMask: _bindgen_ty_68 = 16;
-pub const kCFStringTokenizerTokenIsCJWordMask: _bindgen_ty_68 = 32;
+pub const kCFStringTokenizerUnitWord: _bindgen_ty_68 = 0;
+pub const kCFStringTokenizerUnitSentence: _bindgen_ty_68 = 1;
+pub const kCFStringTokenizerUnitParagraph: _bindgen_ty_68 = 2;
+pub const kCFStringTokenizerUnitLineBreak: _bindgen_ty_68 = 3;
+pub const kCFStringTokenizerUnitWordBoundary: _bindgen_ty_68 = 4;
+pub const kCFStringTokenizerAttributeLatinTranscription: _bindgen_ty_68 = 65536;
+pub const kCFStringTokenizerAttributeLanguage: _bindgen_ty_68 = 131072;
 pub type _bindgen_ty_68 = ::std::os::raw::c_uint;
+pub type CFStringTokenizerTokenType = CFOptionFlags;
+pub const kCFStringTokenizerTokenNone: _bindgen_ty_69 = 0;
+pub const kCFStringTokenizerTokenNormal: _bindgen_ty_69 = 1;
+pub const kCFStringTokenizerTokenHasSubTokensMask: _bindgen_ty_69 = 2;
+pub const kCFStringTokenizerTokenHasDerivedSubTokensMask: _bindgen_ty_69 = 4;
+pub const kCFStringTokenizerTokenHasHasNumbersMask: _bindgen_ty_69 = 8;
+pub const kCFStringTokenizerTokenHasNonLettersMask: _bindgen_ty_69 = 16;
+pub const kCFStringTokenizerTokenIsCJWordMask: _bindgen_ty_69 = 32;
+pub type _bindgen_ty_69 = ::std::os::raw::c_uint;
 extern "C" {
     pub fn CFStringTokenizerGetTypeID() -> CFTypeID;
 }
@@ -16787,9 +17021,9 @@ pub struct __CFFileDescriptor {
     _unused: [u8; 0],
 }
 pub type CFFileDescriptorRef = *mut __CFFileDescriptor;
-pub const kCFFileDescriptorReadCallBack: _bindgen_ty_69 = 1;
-pub const kCFFileDescriptorWriteCallBack: _bindgen_ty_69 = 2;
-pub type _bindgen_ty_69 = ::std::os::raw::c_uint;
+pub const kCFFileDescriptorReadCallBack: _bindgen_ty_70 = 1;
+pub const kCFFileDescriptorWriteCallBack: _bindgen_ty_70 = 2;
+pub type _bindgen_ty_70 = ::std::os::raw::c_uint;
 pub type CFFileDescriptorCallBack = ::std::option::Option<
     unsafe extern "C" fn(
         f: CFFileDescriptorRef,
@@ -16947,19 +17181,19 @@ extern "C" {
         responseFlags: *mut CFOptionFlags,
     ) -> SInt32;
 }
-pub const kCFUserNotificationStopAlertLevel: _bindgen_ty_70 = 0;
-pub const kCFUserNotificationNoteAlertLevel: _bindgen_ty_70 = 1;
-pub const kCFUserNotificationCautionAlertLevel: _bindgen_ty_70 = 2;
-pub const kCFUserNotificationPlainAlertLevel: _bindgen_ty_70 = 3;
-pub type _bindgen_ty_70 = ::std::os::raw::c_uint;
-pub const kCFUserNotificationDefaultResponse: _bindgen_ty_71 = 0;
-pub const kCFUserNotificationAlternateResponse: _bindgen_ty_71 = 1;
-pub const kCFUserNotificationOtherResponse: _bindgen_ty_71 = 2;
-pub const kCFUserNotificationCancelResponse: _bindgen_ty_71 = 3;
+pub const kCFUserNotificationStopAlertLevel: _bindgen_ty_71 = 0;
+pub const kCFUserNotificationNoteAlertLevel: _bindgen_ty_71 = 1;
+pub const kCFUserNotificationCautionAlertLevel: _bindgen_ty_71 = 2;
+pub const kCFUserNotificationPlainAlertLevel: _bindgen_ty_71 = 3;
 pub type _bindgen_ty_71 = ::std::os::raw::c_uint;
-pub const kCFUserNotificationNoDefaultButtonFlag: _bindgen_ty_72 = 32;
-pub const kCFUserNotificationUseRadioButtonsFlag: _bindgen_ty_72 = 64;
+pub const kCFUserNotificationDefaultResponse: _bindgen_ty_72 = 0;
+pub const kCFUserNotificationAlternateResponse: _bindgen_ty_72 = 1;
+pub const kCFUserNotificationOtherResponse: _bindgen_ty_72 = 2;
+pub const kCFUserNotificationCancelResponse: _bindgen_ty_72 = 3;
 pub type _bindgen_ty_72 = ::std::os::raw::c_uint;
+pub const kCFUserNotificationNoDefaultButtonFlag: _bindgen_ty_73 = 32;
+pub const kCFUserNotificationUseRadioButtonsFlag: _bindgen_ty_73 = 64;
+pub type _bindgen_ty_73 = ::std::os::raw::c_uint;
 extern "C" {
     pub static kCFUserNotificationIconURLKey: CFStringRef;
 }
@@ -17008,8 +17242,8 @@ extern "C" {
 extern "C" {
     pub static kCFUserNotificationKeyboardTypesKey: CFStringRef;
 }
-pub const kCFXMLNodeCurrentVersion: _bindgen_ty_73 = 1;
-pub type _bindgen_ty_73 = ::std::os::raw::c_uint;
+pub const kCFXMLNodeCurrentVersion: _bindgen_ty_74 = 1;
+pub type _bindgen_ty_74 = ::std::os::raw::c_uint;
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
 pub struct __CFXMLNode {
@@ -17018,22 +17252,22 @@ pub struct __CFXMLNode {
 pub type CFXMLNodeRef = *const __CFXMLNode;
 pub type CFXMLTreeRef = CFTreeRef;
 pub type CFXMLNodeTypeCode = CFIndex;
-pub const kCFXMLNodeTypeDocument: _bindgen_ty_74 = 1;
-pub const kCFXMLNodeTypeElement: _bindgen_ty_74 = 2;
-pub const kCFXMLNodeTypeAttribute: _bindgen_ty_74 = 3;
-pub const kCFXMLNodeTypeProcessingInstruction: _bindgen_ty_74 = 4;
-pub const kCFXMLNodeTypeComment: _bindgen_ty_74 = 5;
-pub const kCFXMLNodeTypeText: _bindgen_ty_74 = 6;
-pub const kCFXMLNodeTypeCDATASection: _bindgen_ty_74 = 7;
-pub const kCFXMLNodeTypeDocumentFragment: _bindgen_ty_74 = 8;
-pub const kCFXMLNodeTypeEntity: _bindgen_ty_74 = 9;
-pub const kCFXMLNodeTypeEntityReference: _bindgen_ty_74 = 10;
-pub const kCFXMLNodeTypeDocumentType: _bindgen_ty_74 = 11;
-pub const kCFXMLNodeTypeWhitespace: _bindgen_ty_74 = 12;
-pub const kCFXMLNodeTypeNotation: _bindgen_ty_74 = 13;
-pub const kCFXMLNodeTypeElementTypeDeclaration: _bindgen_ty_74 = 14;
-pub const kCFXMLNodeTypeAttributeListDeclaration: _bindgen_ty_74 = 15;
-pub type _bindgen_ty_74 = ::std::os::raw::c_uint;
+pub const kCFXMLNodeTypeDocument: _bindgen_ty_75 = 1;
+pub const kCFXMLNodeTypeElement: _bindgen_ty_75 = 2;
+pub const kCFXMLNodeTypeAttribute: _bindgen_ty_75 = 3;
+pub const kCFXMLNodeTypeProcessingInstruction: _bindgen_ty_75 = 4;
+pub const kCFXMLNodeTypeComment: _bindgen_ty_75 = 5;
+pub const kCFXMLNodeTypeText: _bindgen_ty_75 = 6;
+pub const kCFXMLNodeTypeCDATASection: _bindgen_ty_75 = 7;
+pub const kCFXMLNodeTypeDocumentFragment: _bindgen_ty_75 = 8;
+pub const kCFXMLNodeTypeEntity: _bindgen_ty_75 = 9;
+pub const kCFXMLNodeTypeEntityReference: _bindgen_ty_75 = 10;
+pub const kCFXMLNodeTypeDocumentType: _bindgen_ty_75 = 11;
+pub const kCFXMLNodeTypeWhitespace: _bindgen_ty_75 = 12;
+pub const kCFXMLNodeTypeNotation: _bindgen_ty_75 = 13;
+pub const kCFXMLNodeTypeElementTypeDeclaration: _bindgen_ty_75 = 14;
+pub const kCFXMLNodeTypeAttributeListDeclaration: _bindgen_ty_75 = 15;
+pub type _bindgen_ty_75 = ::std::os::raw::c_uint;
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
 pub struct CFXMLElementInfo {
@@ -17169,12 +17403,12 @@ impl Default for CFXMLAttributeListDeclarationInfo {
     }
 }
 pub type CFXMLEntityTypeCode = CFIndex;
-pub const kCFXMLEntityTypeParameter: _bindgen_ty_75 = 0;
-pub const kCFXMLEntityTypeParsedInternal: _bindgen_ty_75 = 1;
-pub const kCFXMLEntityTypeParsedExternal: _bindgen_ty_75 = 2;
-pub const kCFXMLEntityTypeUnparsed: _bindgen_ty_75 = 3;
-pub const kCFXMLEntityTypeCharacter: _bindgen_ty_75 = 4;
-pub type _bindgen_ty_75 = ::std::os::raw::c_uint;
+pub const kCFXMLEntityTypeParameter: _bindgen_ty_76 = 0;
+pub const kCFXMLEntityTypeParsedInternal: _bindgen_ty_76 = 1;
+pub const kCFXMLEntityTypeParsedExternal: _bindgen_ty_76 = 2;
+pub const kCFXMLEntityTypeUnparsed: _bindgen_ty_76 = 3;
+pub const kCFXMLEntityTypeCharacter: _bindgen_ty_76 = 4;
+pub type _bindgen_ty_76 = ::std::os::raw::c_uint;
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
 pub struct CFXMLEntityInfo {
@@ -17237,35 +17471,35 @@ pub struct __CFXMLParser {
 }
 pub type CFXMLParserRef = *mut __CFXMLParser;
 pub type CFXMLParserOptions = CFOptionFlags;
-pub const kCFXMLParserValidateDocument: _bindgen_ty_76 = 1;
-pub const kCFXMLParserSkipMetaData: _bindgen_ty_76 = 2;
-pub const kCFXMLParserReplacePhysicalEntities: _bindgen_ty_76 = 4;
-pub const kCFXMLParserSkipWhitespace: _bindgen_ty_76 = 8;
-pub const kCFXMLParserResolveExternalEntities: _bindgen_ty_76 = 16;
-pub const kCFXMLParserAddImpliedAttributes: _bindgen_ty_76 = 32;
-pub const kCFXMLParserAllOptions: _bindgen_ty_76 = 16777215;
-pub const kCFXMLParserNoOptions: _bindgen_ty_76 = 0;
-pub type _bindgen_ty_76 = ::std::os::raw::c_uint;
+pub const kCFXMLParserValidateDocument: _bindgen_ty_77 = 1;
+pub const kCFXMLParserSkipMetaData: _bindgen_ty_77 = 2;
+pub const kCFXMLParserReplacePhysicalEntities: _bindgen_ty_77 = 4;
+pub const kCFXMLParserSkipWhitespace: _bindgen_ty_77 = 8;
+pub const kCFXMLParserResolveExternalEntities: _bindgen_ty_77 = 16;
+pub const kCFXMLParserAddImpliedAttributes: _bindgen_ty_77 = 32;
+pub const kCFXMLParserAllOptions: _bindgen_ty_77 = 16777215;
+pub const kCFXMLParserNoOptions: _bindgen_ty_77 = 0;
+pub type _bindgen_ty_77 = ::std::os::raw::c_uint;
 pub type CFXMLParserStatusCode = CFIndex;
-pub const kCFXMLStatusParseNotBegun: _bindgen_ty_77 = -2;
-pub const kCFXMLStatusParseInProgress: _bindgen_ty_77 = -1;
-pub const kCFXMLStatusParseSuccessful: _bindgen_ty_77 = 0;
-pub const kCFXMLErrorUnexpectedEOF: _bindgen_ty_77 = 1;
-pub const kCFXMLErrorUnknownEncoding: _bindgen_ty_77 = 2;
-pub const kCFXMLErrorEncodingConversionFailure: _bindgen_ty_77 = 3;
-pub const kCFXMLErrorMalformedProcessingInstruction: _bindgen_ty_77 = 4;
-pub const kCFXMLErrorMalformedDTD: _bindgen_ty_77 = 5;
-pub const kCFXMLErrorMalformedName: _bindgen_ty_77 = 6;
-pub const kCFXMLErrorMalformedCDSect: _bindgen_ty_77 = 7;
-pub const kCFXMLErrorMalformedCloseTag: _bindgen_ty_77 = 8;
-pub const kCFXMLErrorMalformedStartTag: _bindgen_ty_77 = 9;
-pub const kCFXMLErrorMalformedDocument: _bindgen_ty_77 = 10;
-pub const kCFXMLErrorElementlessDocument: _bindgen_ty_77 = 11;
-pub const kCFXMLErrorMalformedComment: _bindgen_ty_77 = 12;
-pub const kCFXMLErrorMalformedCharacterReference: _bindgen_ty_77 = 13;
-pub const kCFXMLErrorMalformedParsedCharacterData: _bindgen_ty_77 = 14;
-pub const kCFXMLErrorNoData: _bindgen_ty_77 = 15;
-pub type _bindgen_ty_77 = ::std::os::raw::c_int;
+pub const kCFXMLStatusParseNotBegun: _bindgen_ty_78 = -2;
+pub const kCFXMLStatusParseInProgress: _bindgen_ty_78 = -1;
+pub const kCFXMLStatusParseSuccessful: _bindgen_ty_78 = 0;
+pub const kCFXMLErrorUnexpectedEOF: _bindgen_ty_78 = 1;
+pub const kCFXMLErrorUnknownEncoding: _bindgen_ty_78 = 2;
+pub const kCFXMLErrorEncodingConversionFailure: _bindgen_ty_78 = 3;
+pub const kCFXMLErrorMalformedProcessingInstruction: _bindgen_ty_78 = 4;
+pub const kCFXMLErrorMalformedDTD: _bindgen_ty_78 = 5;
+pub const kCFXMLErrorMalformedName: _bindgen_ty_78 = 6;
+pub const kCFXMLErrorMalformedCDSect: _bindgen_ty_78 = 7;
+pub const kCFXMLErrorMalformedCloseTag: _bindgen_ty_78 = 8;
+pub const kCFXMLErrorMalformedStartTag: _bindgen_ty_78 = 9;
+pub const kCFXMLErrorMalformedDocument: _bindgen_ty_78 = 10;
+pub const kCFXMLErrorElementlessDocument: _bindgen_ty_78 = 11;
+pub const kCFXMLErrorMalformedComment: _bindgen_ty_78 = 12;
+pub const kCFXMLErrorMalformedCharacterReference: _bindgen_ty_78 = 13;
+pub const kCFXMLErrorMalformedParsedCharacterData: _bindgen_ty_78 = 14;
+pub const kCFXMLErrorNoData: _bindgen_ty_78 = 15;
+pub type _bindgen_ty_78 = ::std::os::raw::c_int;
 pub type CFXMLParserCreateXMLStructureCallBack = ::std::option::Option<
     unsafe extern "C" fn(
         parser: CFXMLParserRef,
@@ -17452,17 +17686,17 @@ extern "C" {
     pub static kCFXMLTreeErrorStatusCode: CFStringRef;
 }
 pub type AudioComponentFlags = UInt32;
-pub const kAudioComponentFlag_Unsearchable: _bindgen_ty_78 = 1;
-pub const kAudioComponentFlag_SandboxSafe: _bindgen_ty_78 = 2;
-pub const kAudioComponentFlag_IsV3AudioUnit: _bindgen_ty_78 = 4;
-pub const kAudioComponentFlag_RequiresAsyncInstantiation: _bindgen_ty_78 = 8;
-pub const kAudioComponentFlag_CanLoadInProcess: _bindgen_ty_78 = 16;
-pub type _bindgen_ty_78 = ::std::os::raw::c_uint;
-pub type AudioComponentInstantiationOptions = UInt32;
-pub const kAudioComponentInstantiation_LoadOutOfProcess: _bindgen_ty_79 = 1;
-pub const kAudioComponentInstantiation_LoadInProcess: _bindgen_ty_79 = 2;
-pub const kAudioComponentInstantiation_LoadedRemotely: _bindgen_ty_79 = 2147483648;
+pub const kAudioComponentFlag_Unsearchable: _bindgen_ty_79 = 1;
+pub const kAudioComponentFlag_SandboxSafe: _bindgen_ty_79 = 2;
+pub const kAudioComponentFlag_IsV3AudioUnit: _bindgen_ty_79 = 4;
+pub const kAudioComponentFlag_RequiresAsyncInstantiation: _bindgen_ty_79 = 8;
+pub const kAudioComponentFlag_CanLoadInProcess: _bindgen_ty_79 = 16;
 pub type _bindgen_ty_79 = ::std::os::raw::c_uint;
+pub type AudioComponentInstantiationOptions = UInt32;
+pub const kAudioComponentInstantiation_LoadOutOfProcess: _bindgen_ty_80 = 1;
+pub const kAudioComponentInstantiation_LoadInProcess: _bindgen_ty_80 = 2;
+pub const kAudioComponentInstantiation_LoadedRemotely: _bindgen_ty_80 = 2147483648;
+pub type _bindgen_ty_80 = ::std::os::raw::c_uint;
 #[repr(C)]
 #[derive(Debug, Default, Copy, Clone)]
 pub struct AudioComponentDescription {
@@ -17584,13 +17818,13 @@ extern "C" {
     ) -> OSStatus;
 }
 pub type AudioComponentValidationResult = UInt32;
-pub const kAudioComponentValidationResult_Unknown: _bindgen_ty_80 = 0;
-pub const kAudioComponentValidationResult_Passed: _bindgen_ty_80 = 1;
-pub const kAudioComponentValidationResult_Failed: _bindgen_ty_80 = 2;
-pub const kAudioComponentValidationResult_TimedOut: _bindgen_ty_80 = 3;
-pub const kAudioComponentValidationResult_UnauthorizedError_Open: _bindgen_ty_80 = 4;
-pub const kAudioComponentValidationResult_UnauthorizedError_Init: _bindgen_ty_80 = 5;
-pub type _bindgen_ty_80 = ::std::os::raw::c_uint;
+pub const kAudioComponentValidationResult_Unknown: _bindgen_ty_81 = 0;
+pub const kAudioComponentValidationResult_Passed: _bindgen_ty_81 = 1;
+pub const kAudioComponentValidationResult_Failed: _bindgen_ty_81 = 2;
+pub const kAudioComponentValidationResult_TimedOut: _bindgen_ty_81 = 3;
+pub const kAudioComponentValidationResult_UnauthorizedError_Open: _bindgen_ty_81 = 4;
+pub const kAudioComponentValidationResult_UnauthorizedError_Init: _bindgen_ty_81 = 5;
+pub type _bindgen_ty_81 = ::std::os::raw::c_uint;
 extern "C" {
     pub fn AudioComponentValidate(
         inComponent: AudioComponent,
@@ -17598,140 +17832,149 @@ extern "C" {
         outValidationResult: *mut AudioComponentValidationResult,
     ) -> OSStatus;
 }
+extern "C" {
+    pub fn AudioComponentValidateWithResults(
+        inComponent: AudioComponent,
+        inValidationParameters: CFDictionaryRef,
+        inCompletionHandler: *mut ::std::os::raw::c_void,
+    ) -> OSStatus;
+}
 pub type AudioUnit = AudioComponentInstance;
-pub const kAudioUnitType_Output: _bindgen_ty_81 = 1635086197;
-pub const kAudioUnitType_MusicDevice: _bindgen_ty_81 = 1635085685;
-pub const kAudioUnitType_MusicEffect: _bindgen_ty_81 = 1635085670;
-pub const kAudioUnitType_FormatConverter: _bindgen_ty_81 = 1635083875;
-pub const kAudioUnitType_Effect: _bindgen_ty_81 = 1635083896;
-pub const kAudioUnitType_Mixer: _bindgen_ty_81 = 1635085688;
-pub const kAudioUnitType_Panner: _bindgen_ty_81 = 1635086446;
-pub const kAudioUnitType_Generator: _bindgen_ty_81 = 1635084142;
-pub const kAudioUnitType_OfflineEffect: _bindgen_ty_81 = 1635086188;
-pub const kAudioUnitType_MIDIProcessor: _bindgen_ty_81 = 1635085673;
-pub type _bindgen_ty_81 = ::std::os::raw::c_uint;
-pub const kAudioUnitType_RemoteEffect: _bindgen_ty_82 = 1635086968;
-pub const kAudioUnitType_RemoteGenerator: _bindgen_ty_82 = 1635086951;
-pub const kAudioUnitType_RemoteInstrument: _bindgen_ty_82 = 1635086953;
-pub const kAudioUnitType_RemoteMusicEffect: _bindgen_ty_82 = 1635086957;
+pub const kAudioUnitType_Output: _bindgen_ty_82 = 1635086197;
+pub const kAudioUnitType_MusicDevice: _bindgen_ty_82 = 1635085685;
+pub const kAudioUnitType_MusicEffect: _bindgen_ty_82 = 1635085670;
+pub const kAudioUnitType_FormatConverter: _bindgen_ty_82 = 1635083875;
+pub const kAudioUnitType_Effect: _bindgen_ty_82 = 1635083896;
+pub const kAudioUnitType_Mixer: _bindgen_ty_82 = 1635085688;
+pub const kAudioUnitType_Panner: _bindgen_ty_82 = 1635086446;
+pub const kAudioUnitType_Generator: _bindgen_ty_82 = 1635084142;
+pub const kAudioUnitType_OfflineEffect: _bindgen_ty_82 = 1635086188;
+pub const kAudioUnitType_MIDIProcessor: _bindgen_ty_82 = 1635085673;
+pub const kAudioUnitType_SpeechSynthesizer: _bindgen_ty_82 = 1635087216;
 pub type _bindgen_ty_82 = ::std::os::raw::c_uint;
-pub const kAudioUnitManufacturer_Apple: _bindgen_ty_83 = 1634758764;
+pub const kAudioUnitType_RemoteEffect: _bindgen_ty_83 = 1635086968;
+pub const kAudioUnitType_RemoteGenerator: _bindgen_ty_83 = 1635086951;
+pub const kAudioUnitType_RemoteInstrument: _bindgen_ty_83 = 1635086953;
+pub const kAudioUnitType_RemoteMusicEffect: _bindgen_ty_83 = 1635086957;
 pub type _bindgen_ty_83 = ::std::os::raw::c_uint;
-pub const kAudioUnitSubType_GenericOutput: _bindgen_ty_84 = 1734700658;
-pub const kAudioUnitSubType_VoiceProcessingIO: _bindgen_ty_84 = 1987078511;
+pub const kAudioUnitManufacturer_Apple: _bindgen_ty_84 = 1634758764;
 pub type _bindgen_ty_84 = ::std::os::raw::c_uint;
-pub const kAudioUnitSubType_HALOutput: _bindgen_ty_85 = 1634230636;
-pub const kAudioUnitSubType_DefaultOutput: _bindgen_ty_85 = 1684366880;
-pub const kAudioUnitSubType_SystemOutput: _bindgen_ty_85 = 1937339168;
+pub const kAudioUnitSubType_GenericOutput: _bindgen_ty_85 = 1734700658;
+pub const kAudioUnitSubType_VoiceProcessingIO: _bindgen_ty_85 = 1987078511;
 pub type _bindgen_ty_85 = ::std::os::raw::c_uint;
-pub const kAudioUnitSubType_DLSSynth: _bindgen_ty_86 = 1684828960;
-pub const kAudioUnitSubType_Sampler: _bindgen_ty_86 = 1935764848;
-pub const kAudioUnitSubType_MIDISynth: _bindgen_ty_86 = 1836284270;
+pub const kAudioUnitSubType_HALOutput: _bindgen_ty_86 = 1634230636;
+pub const kAudioUnitSubType_DefaultOutput: _bindgen_ty_86 = 1684366880;
+pub const kAudioUnitSubType_SystemOutput: _bindgen_ty_86 = 1937339168;
 pub type _bindgen_ty_86 = ::std::os::raw::c_uint;
-pub const kAudioUnitSubType_AUConverter: _bindgen_ty_87 = 1668247158;
-pub const kAudioUnitSubType_Varispeed: _bindgen_ty_87 = 1986097769;
-pub const kAudioUnitSubType_DeferredRenderer: _bindgen_ty_87 = 1684366962;
-pub const kAudioUnitSubType_Splitter: _bindgen_ty_87 = 1936747636;
-pub const kAudioUnitSubType_MultiSplitter: _bindgen_ty_87 = 1836281964;
-pub const kAudioUnitSubType_Merger: _bindgen_ty_87 = 1835364967;
-pub const kAudioUnitSubType_NewTimePitch: _bindgen_ty_87 = 1853191280;
-pub const kAudioUnitSubType_AUiPodTimeOther: _bindgen_ty_87 = 1768977519;
-pub const kAudioUnitSubType_RoundTripAAC: _bindgen_ty_87 = 1918984547;
+pub const kAudioUnitSubType_DLSSynth: _bindgen_ty_87 = 1684828960;
+pub const kAudioUnitSubType_Sampler: _bindgen_ty_87 = 1935764848;
+pub const kAudioUnitSubType_MIDISynth: _bindgen_ty_87 = 1836284270;
 pub type _bindgen_ty_87 = ::std::os::raw::c_uint;
-pub const kAudioUnitSubType_TimePitch: _bindgen_ty_88 = 1953329268;
+pub const kAudioUnitSubType_AUConverter: _bindgen_ty_88 = 1668247158;
+pub const kAudioUnitSubType_Varispeed: _bindgen_ty_88 = 1986097769;
+pub const kAudioUnitSubType_DeferredRenderer: _bindgen_ty_88 = 1684366962;
+pub const kAudioUnitSubType_Splitter: _bindgen_ty_88 = 1936747636;
+pub const kAudioUnitSubType_MultiSplitter: _bindgen_ty_88 = 1836281964;
+pub const kAudioUnitSubType_Merger: _bindgen_ty_88 = 1835364967;
+pub const kAudioUnitSubType_NewTimePitch: _bindgen_ty_88 = 1853191280;
+pub const kAudioUnitSubType_AUiPodTimeOther: _bindgen_ty_88 = 1768977519;
+pub const kAudioUnitSubType_RoundTripAAC: _bindgen_ty_88 = 1918984547;
 pub type _bindgen_ty_88 = ::std::os::raw::c_uint;
-pub const kAudioUnitSubType_PeakLimiter: _bindgen_ty_89 = 1819112562;
-pub const kAudioUnitSubType_DynamicsProcessor: _bindgen_ty_89 = 1684237680;
-pub const kAudioUnitSubType_LowPassFilter: _bindgen_ty_89 = 1819304307;
-pub const kAudioUnitSubType_HighPassFilter: _bindgen_ty_89 = 1752195443;
-pub const kAudioUnitSubType_BandPassFilter: _bindgen_ty_89 = 1651532147;
-pub const kAudioUnitSubType_HighShelfFilter: _bindgen_ty_89 = 1752393830;
-pub const kAudioUnitSubType_LowShelfFilter: _bindgen_ty_89 = 1819502694;
-pub const kAudioUnitSubType_ParametricEQ: _bindgen_ty_89 = 1886217585;
-pub const kAudioUnitSubType_Distortion: _bindgen_ty_89 = 1684632436;
-pub const kAudioUnitSubType_Delay: _bindgen_ty_89 = 1684368505;
-pub const kAudioUnitSubType_SampleDelay: _bindgen_ty_89 = 1935961209;
-pub const kAudioUnitSubType_NBandEQ: _bindgen_ty_89 = 1851942257;
-pub const kAudioUnitSubType_Reverb2: _bindgen_ty_89 = 1920361010;
+pub const kAudioUnitSubType_TimePitch: _bindgen_ty_89 = 1953329268;
 pub type _bindgen_ty_89 = ::std::os::raw::c_uint;
-pub const kAudioUnitSubType_GraphicEQ: _bindgen_ty_90 = 1735550321;
-pub const kAudioUnitSubType_MultiBandCompressor: _bindgen_ty_90 = 1835232624;
-pub const kAudioUnitSubType_MatrixReverb: _bindgen_ty_90 = 1836213622;
-pub const kAudioUnitSubType_Pitch: _bindgen_ty_90 = 1953329268;
-pub const kAudioUnitSubType_AUFilter: _bindgen_ty_90 = 1718185076;
-pub const kAudioUnitSubType_NetSend: _bindgen_ty_90 = 1853058660;
-pub const kAudioUnitSubType_RogerBeep: _bindgen_ty_90 = 1919903602;
+pub const kAudioUnitSubType_PeakLimiter: _bindgen_ty_90 = 1819112562;
+pub const kAudioUnitSubType_DynamicsProcessor: _bindgen_ty_90 = 1684237680;
+pub const kAudioUnitSubType_LowPassFilter: _bindgen_ty_90 = 1819304307;
+pub const kAudioUnitSubType_HighPassFilter: _bindgen_ty_90 = 1752195443;
+pub const kAudioUnitSubType_BandPassFilter: _bindgen_ty_90 = 1651532147;
+pub const kAudioUnitSubType_HighShelfFilter: _bindgen_ty_90 = 1752393830;
+pub const kAudioUnitSubType_LowShelfFilter: _bindgen_ty_90 = 1819502694;
+pub const kAudioUnitSubType_ParametricEQ: _bindgen_ty_90 = 1886217585;
+pub const kAudioUnitSubType_Distortion: _bindgen_ty_90 = 1684632436;
+pub const kAudioUnitSubType_Delay: _bindgen_ty_90 = 1684368505;
+pub const kAudioUnitSubType_SampleDelay: _bindgen_ty_90 = 1935961209;
+pub const kAudioUnitSubType_NBandEQ: _bindgen_ty_90 = 1851942257;
+pub const kAudioUnitSubType_Reverb2: _bindgen_ty_90 = 1920361010;
+pub const kAudioUnitSubType_AUSoundIsolation: _bindgen_ty_90 = 1987012979;
 pub type _bindgen_ty_90 = ::std::os::raw::c_uint;
-pub const kAudioUnitSubType_MultiChannelMixer: _bindgen_ty_91 = 1835232632;
-pub const kAudioUnitSubType_MatrixMixer: _bindgen_ty_91 = 1836608888;
-pub const kAudioUnitSubType_SpatialMixer: _bindgen_ty_91 = 862217581;
+pub const kAudioUnitSubType_GraphicEQ: _bindgen_ty_91 = 1735550321;
+pub const kAudioUnitSubType_MultiBandCompressor: _bindgen_ty_91 = 1835232624;
+pub const kAudioUnitSubType_MatrixReverb: _bindgen_ty_91 = 1836213622;
+pub const kAudioUnitSubType_Pitch: _bindgen_ty_91 = 1953329268;
+pub const kAudioUnitSubType_AUFilter: _bindgen_ty_91 = 1718185076;
+pub const kAudioUnitSubType_NetSend: _bindgen_ty_91 = 1853058660;
+pub const kAudioUnitSubType_RogerBeep: _bindgen_ty_91 = 1919903602;
 pub type _bindgen_ty_91 = ::std::os::raw::c_uint;
-pub const kAudioUnitSubType_StereoMixer: _bindgen_ty_92 = 1936554098;
-pub const kAudioUnitSubType_3DMixer: _bindgen_ty_92 = 862219640;
+pub const kAudioUnitSubType_MultiChannelMixer: _bindgen_ty_92 = 1835232632;
+pub const kAudioUnitSubType_MatrixMixer: _bindgen_ty_92 = 1836608888;
+pub const kAudioUnitSubType_SpatialMixer: _bindgen_ty_92 = 862217581;
 pub type _bindgen_ty_92 = ::std::os::raw::c_uint;
-pub const kAudioUnitSubType_SphericalHeadPanner: _bindgen_ty_93 = 1936746610;
-pub const kAudioUnitSubType_VectorPanner: _bindgen_ty_93 = 1986158963;
-pub const kAudioUnitSubType_SoundFieldPanner: _bindgen_ty_93 = 1634558569;
-pub const kAudioUnitSubType_HRTFPanner: _bindgen_ty_93 = 1752331366;
+pub const kAudioUnitSubType_StereoMixer: _bindgen_ty_93 = 1936554098;
+pub const kAudioUnitSubType_3DMixer: _bindgen_ty_93 = 862219640;
 pub type _bindgen_ty_93 = ::std::os::raw::c_uint;
-pub const kAudioUnitSubType_NetReceive: _bindgen_ty_94 = 1852990326;
-pub const kAudioUnitSubType_ScheduledSoundPlayer: _bindgen_ty_94 = 1936945260;
-pub const kAudioUnitSubType_AudioFilePlayer: _bindgen_ty_94 = 1634103404;
+pub const kAudioUnitSubType_SphericalHeadPanner: _bindgen_ty_94 = 1936746610;
+pub const kAudioUnitSubType_VectorPanner: _bindgen_ty_94 = 1986158963;
+pub const kAudioUnitSubType_SoundFieldPanner: _bindgen_ty_94 = 1634558569;
+pub const kAudioUnitSubType_HRTFPanner: _bindgen_ty_94 = 1752331366;
 pub type _bindgen_ty_94 = ::std::os::raw::c_uint;
-pub type AudioUnitRenderActionFlags = UInt32;
-pub const kAudioUnitRenderAction_PreRender: _bindgen_ty_95 = 4;
-pub const kAudioUnitRenderAction_PostRender: _bindgen_ty_95 = 8;
-pub const kAudioUnitRenderAction_OutputIsSilence: _bindgen_ty_95 = 16;
-pub const kAudioOfflineUnitRenderAction_Preflight: _bindgen_ty_95 = 32;
-pub const kAudioOfflineUnitRenderAction_Render: _bindgen_ty_95 = 64;
-pub const kAudioOfflineUnitRenderAction_Complete: _bindgen_ty_95 = 128;
-pub const kAudioUnitRenderAction_PostRenderError: _bindgen_ty_95 = 256;
-pub const kAudioUnitRenderAction_DoNotCheckRenderArgs: _bindgen_ty_95 = 512;
+pub const kAudioUnitSubType_NetReceive: _bindgen_ty_95 = 1852990326;
+pub const kAudioUnitSubType_ScheduledSoundPlayer: _bindgen_ty_95 = 1936945260;
+pub const kAudioUnitSubType_AudioFilePlayer: _bindgen_ty_95 = 1634103404;
 pub type _bindgen_ty_95 = ::std::os::raw::c_uint;
-pub const kAudioUnitErr_InvalidProperty: _bindgen_ty_96 = -10879;
-pub const kAudioUnitErr_InvalidParameter: _bindgen_ty_96 = -10878;
-pub const kAudioUnitErr_InvalidElement: _bindgen_ty_96 = -10877;
-pub const kAudioUnitErr_NoConnection: _bindgen_ty_96 = -10876;
-pub const kAudioUnitErr_FailedInitialization: _bindgen_ty_96 = -10875;
-pub const kAudioUnitErr_TooManyFramesToProcess: _bindgen_ty_96 = -10874;
-pub const kAudioUnitErr_InvalidFile: _bindgen_ty_96 = -10871;
-pub const kAudioUnitErr_UnknownFileType: _bindgen_ty_96 = -10870;
-pub const kAudioUnitErr_FileNotSpecified: _bindgen_ty_96 = -10869;
-pub const kAudioUnitErr_FormatNotSupported: _bindgen_ty_96 = -10868;
-pub const kAudioUnitErr_Uninitialized: _bindgen_ty_96 = -10867;
-pub const kAudioUnitErr_InvalidScope: _bindgen_ty_96 = -10866;
-pub const kAudioUnitErr_PropertyNotWritable: _bindgen_ty_96 = -10865;
-pub const kAudioUnitErr_CannotDoInCurrentContext: _bindgen_ty_96 = -10863;
-pub const kAudioUnitErr_InvalidPropertyValue: _bindgen_ty_96 = -10851;
-pub const kAudioUnitErr_PropertyNotInUse: _bindgen_ty_96 = -10850;
-pub const kAudioUnitErr_Initialized: _bindgen_ty_96 = -10849;
-pub const kAudioUnitErr_InvalidOfflineRender: _bindgen_ty_96 = -10848;
-pub const kAudioUnitErr_Unauthorized: _bindgen_ty_96 = -10847;
-pub const kAudioUnitErr_MIDIOutputBufferFull: _bindgen_ty_96 = -66753;
-pub const kAudioComponentErr_InstanceTimedOut: _bindgen_ty_96 = -66754;
-pub const kAudioComponentErr_InstanceInvalidated: _bindgen_ty_96 = -66749;
-pub const kAudioUnitErr_RenderTimeout: _bindgen_ty_96 = -66745;
-pub const kAudioUnitErr_ExtensionNotFound: _bindgen_ty_96 = -66744;
-pub const kAudioUnitErr_InvalidParameterValue: _bindgen_ty_96 = -66743;
-pub const kAudioUnitErr_InvalidFilePath: _bindgen_ty_96 = -66742;
-pub const kAudioUnitErr_MissingKey: _bindgen_ty_96 = -66741;
-pub type _bindgen_ty_96 = ::std::os::raw::c_int;
-pub const kAudioComponentErr_DuplicateDescription: _bindgen_ty_97 = -66752;
-pub const kAudioComponentErr_UnsupportedType: _bindgen_ty_97 = -66751;
-pub const kAudioComponentErr_TooManyInstances: _bindgen_ty_97 = -66750;
-pub const kAudioComponentErr_NotPermitted: _bindgen_ty_97 = -66748;
-pub const kAudioComponentErr_InitializationTimedOut: _bindgen_ty_97 = -66747;
-pub const kAudioComponentErr_InvalidFormat: _bindgen_ty_97 = -66746;
+pub type AudioUnitRenderActionFlags = UInt32;
+pub const kAudioUnitRenderAction_PreRender: _bindgen_ty_96 = 4;
+pub const kAudioUnitRenderAction_PostRender: _bindgen_ty_96 = 8;
+pub const kAudioUnitRenderAction_OutputIsSilence: _bindgen_ty_96 = 16;
+pub const kAudioOfflineUnitRenderAction_Preflight: _bindgen_ty_96 = 32;
+pub const kAudioOfflineUnitRenderAction_Render: _bindgen_ty_96 = 64;
+pub const kAudioOfflineUnitRenderAction_Complete: _bindgen_ty_96 = 128;
+pub const kAudioUnitRenderAction_PostRenderError: _bindgen_ty_96 = 256;
+pub const kAudioUnitRenderAction_DoNotCheckRenderArgs: _bindgen_ty_96 = 512;
+pub type _bindgen_ty_96 = ::std::os::raw::c_uint;
+pub const kAudioUnitErr_InvalidProperty: _bindgen_ty_97 = -10879;
+pub const kAudioUnitErr_InvalidParameter: _bindgen_ty_97 = -10878;
+pub const kAudioUnitErr_InvalidElement: _bindgen_ty_97 = -10877;
+pub const kAudioUnitErr_NoConnection: _bindgen_ty_97 = -10876;
+pub const kAudioUnitErr_FailedInitialization: _bindgen_ty_97 = -10875;
+pub const kAudioUnitErr_TooManyFramesToProcess: _bindgen_ty_97 = -10874;
+pub const kAudioUnitErr_InvalidFile: _bindgen_ty_97 = -10871;
+pub const kAudioUnitErr_UnknownFileType: _bindgen_ty_97 = -10870;
+pub const kAudioUnitErr_FileNotSpecified: _bindgen_ty_97 = -10869;
+pub const kAudioUnitErr_FormatNotSupported: _bindgen_ty_97 = -10868;
+pub const kAudioUnitErr_Uninitialized: _bindgen_ty_97 = -10867;
+pub const kAudioUnitErr_InvalidScope: _bindgen_ty_97 = -10866;
+pub const kAudioUnitErr_PropertyNotWritable: _bindgen_ty_97 = -10865;
+pub const kAudioUnitErr_CannotDoInCurrentContext: _bindgen_ty_97 = -10863;
+pub const kAudioUnitErr_InvalidPropertyValue: _bindgen_ty_97 = -10851;
+pub const kAudioUnitErr_PropertyNotInUse: _bindgen_ty_97 = -10850;
+pub const kAudioUnitErr_Initialized: _bindgen_ty_97 = -10849;
+pub const kAudioUnitErr_InvalidOfflineRender: _bindgen_ty_97 = -10848;
+pub const kAudioUnitErr_Unauthorized: _bindgen_ty_97 = -10847;
+pub const kAudioUnitErr_MIDIOutputBufferFull: _bindgen_ty_97 = -66753;
+pub const kAudioComponentErr_InstanceTimedOut: _bindgen_ty_97 = -66754;
+pub const kAudioComponentErr_InstanceInvalidated: _bindgen_ty_97 = -66749;
+pub const kAudioUnitErr_RenderTimeout: _bindgen_ty_97 = -66745;
+pub const kAudioUnitErr_ExtensionNotFound: _bindgen_ty_97 = -66744;
+pub const kAudioUnitErr_InvalidParameterValue: _bindgen_ty_97 = -66743;
+pub const kAudioUnitErr_InvalidFilePath: _bindgen_ty_97 = -66742;
+pub const kAudioUnitErr_MissingKey: _bindgen_ty_97 = -66741;
 pub type _bindgen_ty_97 = ::std::os::raw::c_int;
+pub const kAudioComponentErr_DuplicateDescription: _bindgen_ty_98 = -66752;
+pub const kAudioComponentErr_UnsupportedType: _bindgen_ty_98 = -66751;
+pub const kAudioComponentErr_TooManyInstances: _bindgen_ty_98 = -66750;
+pub const kAudioComponentErr_NotPermitted: _bindgen_ty_98 = -66748;
+pub const kAudioComponentErr_InitializationTimedOut: _bindgen_ty_98 = -66747;
+pub const kAudioComponentErr_InvalidFormat: _bindgen_ty_98 = -66746;
+pub type _bindgen_ty_98 = ::std::os::raw::c_int;
 pub type AudioUnitPropertyID = UInt32;
 pub type AudioUnitScope = UInt32;
 pub type AudioUnitElement = UInt32;
 pub type AudioUnitParameterID = UInt32;
 pub type AudioUnitParameterValue = Float32;
 pub type AUParameterEventType = UInt32;
-pub const kParameterEvent_Immediate: _bindgen_ty_98 = 1;
-pub const kParameterEvent_Ramped: _bindgen_ty_98 = 2;
-pub type _bindgen_ty_98 = ::std::os::raw::c_uint;
+pub const kParameterEvent_Immediate: _bindgen_ty_99 = 1;
+pub const kParameterEvent_Ramped: _bindgen_ty_99 = 2;
+pub type _bindgen_ty_99 = ::std::os::raw::c_uint;
 #[repr(C)]
 #[derive(Copy, Clone)]
 pub struct AudioUnitParameterEvent {
@@ -17996,26 +18239,26 @@ extern "C" {
 extern "C" {
     pub fn AudioUnitExtensionCopyComponentList(extensionIdentifier: CFStringRef) -> CFArrayRef;
 }
-pub const kAudioUnitRange: _bindgen_ty_99 = 0;
-pub const kAudioUnitInitializeSelect: _bindgen_ty_99 = 1;
-pub const kAudioUnitUninitializeSelect: _bindgen_ty_99 = 2;
-pub const kAudioUnitGetPropertyInfoSelect: _bindgen_ty_99 = 3;
-pub const kAudioUnitGetPropertySelect: _bindgen_ty_99 = 4;
-pub const kAudioUnitSetPropertySelect: _bindgen_ty_99 = 5;
-pub const kAudioUnitAddPropertyListenerSelect: _bindgen_ty_99 = 10;
-pub const kAudioUnitRemovePropertyListenerSelect: _bindgen_ty_99 = 11;
-pub const kAudioUnitRemovePropertyListenerWithUserDataSelect: _bindgen_ty_99 = 18;
-pub const kAudioUnitAddRenderNotifySelect: _bindgen_ty_99 = 15;
-pub const kAudioUnitRemoveRenderNotifySelect: _bindgen_ty_99 = 16;
-pub const kAudioUnitGetParameterSelect: _bindgen_ty_99 = 6;
-pub const kAudioUnitSetParameterSelect: _bindgen_ty_99 = 7;
-pub const kAudioUnitScheduleParametersSelect: _bindgen_ty_99 = 17;
-pub const kAudioUnitRenderSelect: _bindgen_ty_99 = 14;
-pub const kAudioUnitResetSelect: _bindgen_ty_99 = 9;
-pub const kAudioUnitComplexRenderSelect: _bindgen_ty_99 = 19;
-pub const kAudioUnitProcessSelect: _bindgen_ty_99 = 20;
-pub const kAudioUnitProcessMultipleSelect: _bindgen_ty_99 = 21;
-pub type _bindgen_ty_99 = ::std::os::raw::c_uint;
+pub const kAudioUnitRange: _bindgen_ty_100 = 0;
+pub const kAudioUnitInitializeSelect: _bindgen_ty_100 = 1;
+pub const kAudioUnitUninitializeSelect: _bindgen_ty_100 = 2;
+pub const kAudioUnitGetPropertyInfoSelect: _bindgen_ty_100 = 3;
+pub const kAudioUnitGetPropertySelect: _bindgen_ty_100 = 4;
+pub const kAudioUnitSetPropertySelect: _bindgen_ty_100 = 5;
+pub const kAudioUnitAddPropertyListenerSelect: _bindgen_ty_100 = 10;
+pub const kAudioUnitRemovePropertyListenerSelect: _bindgen_ty_100 = 11;
+pub const kAudioUnitRemovePropertyListenerWithUserDataSelect: _bindgen_ty_100 = 18;
+pub const kAudioUnitAddRenderNotifySelect: _bindgen_ty_100 = 15;
+pub const kAudioUnitRemoveRenderNotifySelect: _bindgen_ty_100 = 16;
+pub const kAudioUnitGetParameterSelect: _bindgen_ty_100 = 6;
+pub const kAudioUnitSetParameterSelect: _bindgen_ty_100 = 7;
+pub const kAudioUnitScheduleParametersSelect: _bindgen_ty_100 = 17;
+pub const kAudioUnitRenderSelect: _bindgen_ty_100 = 14;
+pub const kAudioUnitResetSelect: _bindgen_ty_100 = 9;
+pub const kAudioUnitComplexRenderSelect: _bindgen_ty_100 = 19;
+pub const kAudioUnitProcessSelect: _bindgen_ty_100 = 20;
+pub const kAudioUnitProcessMultipleSelect: _bindgen_ty_100 = 21;
+pub type _bindgen_ty_100 = ::std::os::raw::c_uint;
 pub type AudioUnitInitializeProc =
     ::std::option::Option<unsafe extern "C" fn(self_: *mut ::std::os::raw::c_void) -> OSStatus>;
 pub type AudioUnitUninitializeProc =
@@ -18165,9 +18408,9 @@ pub type AudioUnitRenderProc = ::std::option::Option<
         ioData: *mut AudioBufferList,
     ) -> OSStatus,
 >;
-pub const kAudioUnitErr_IllegalInstrument: _bindgen_ty_100 = -10873;
-pub const kAudioUnitErr_InstrumentTypeNotFound: _bindgen_ty_100 = -10872;
-pub type _bindgen_ty_100 = ::std::os::raw::c_int;
+pub const kAudioUnitErr_IllegalInstrument: _bindgen_ty_101 = -10873;
+pub const kAudioUnitErr_InstrumentTypeNotFound: _bindgen_ty_101 = -10872;
+pub type _bindgen_ty_101 = ::std::os::raw::c_int;
 pub type AudioCodec = AudioComponentInstance;
 pub type AudioCodecPropertyID = UInt32;
 #[repr(C)]
@@ -18185,88 +18428,88 @@ impl Default for AudioCodecMagicCookieInfo {
         }
     }
 }
-pub const kAudioDecoderComponentType: _bindgen_ty_101 = 1633969507;
-pub const kAudioEncoderComponentType: _bindgen_ty_101 = 1634037347;
-pub const kAudioUnityCodecComponentType: _bindgen_ty_101 = 1633903715;
-pub type _bindgen_ty_101 = ::std::os::raw::c_uint;
-pub const kAudioCodecPropertySupportedInputFormats: _bindgen_ty_102 = 1768320291;
-pub const kAudioCodecPropertySupportedOutputFormats: _bindgen_ty_102 = 1868983587;
-pub const kAudioCodecPropertyAvailableInputSampleRates: _bindgen_ty_102 = 1634300786;
-pub const kAudioCodecPropertyAvailableOutputSampleRates: _bindgen_ty_102 = 1634694002;
-pub const kAudioCodecPropertyAvailableBitRateRange: _bindgen_ty_102 = 1633841780;
-pub const kAudioCodecPropertyMinimumNumberInputPackets: _bindgen_ty_102 = 1835952496;
-pub const kAudioCodecPropertyMinimumNumberOutputPackets: _bindgen_ty_102 = 1835954032;
-pub const kAudioCodecPropertyAvailableNumberChannels: _bindgen_ty_102 = 1668116067;
-pub const kAudioCodecPropertyDoesSampleRateConversion: _bindgen_ty_102 = 1819112035;
-pub const kAudioCodecPropertyAvailableInputChannelLayoutTags: _bindgen_ty_102 = 1634296684;
-pub const kAudioCodecPropertyAvailableOutputChannelLayoutTags: _bindgen_ty_102 = 1634689900;
-pub const kAudioCodecPropertyInputFormatsForOutputFormat: _bindgen_ty_102 = 1768305775;
-pub const kAudioCodecPropertyOutputFormatsForInputFormat: _bindgen_ty_102 = 1868969065;
-pub const kAudioCodecPropertyFormatInfo: _bindgen_ty_102 = 1633904233;
+pub const kAudioDecoderComponentType: _bindgen_ty_102 = 1633969507;
+pub const kAudioEncoderComponentType: _bindgen_ty_102 = 1634037347;
+pub const kAudioUnityCodecComponentType: _bindgen_ty_102 = 1633903715;
 pub type _bindgen_ty_102 = ::std::os::raw::c_uint;
-pub const kAudioCodecPropertyInputBufferSize: _bindgen_ty_103 = 1952609638;
-pub const kAudioCodecPropertyPacketFrameSize: _bindgen_ty_103 = 1885432678;
-pub const kAudioCodecPropertyHasVariablePacketByteSizes: _bindgen_ty_103 = 1987078975;
-pub const kAudioCodecPropertyEmploysDependentPackets: _bindgen_ty_103 = 1685089087;
-pub const kAudioCodecPropertyMaximumPacketByteSize: _bindgen_ty_103 = 1885432674;
-pub const kAudioCodecPropertyPacketSizeLimitForVBR: _bindgen_ty_103 = 1885432684;
-pub const kAudioCodecPropertyCurrentInputFormat: _bindgen_ty_103 = 1768320372;
-pub const kAudioCodecPropertyCurrentOutputFormat: _bindgen_ty_103 = 1868983668;
-pub const kAudioCodecPropertyMagicCookie: _bindgen_ty_103 = 1802857321;
-pub const kAudioCodecPropertyUsedInputBufferSize: _bindgen_ty_103 = 1969386854;
-pub const kAudioCodecPropertyIsInitialized: _bindgen_ty_103 = 1768843636;
-pub const kAudioCodecPropertyCurrentTargetBitRate: _bindgen_ty_103 = 1651663220;
-pub const kAudioCodecPropertyCurrentInputSampleRate: _bindgen_ty_103 = 1667855218;
-pub const kAudioCodecPropertyCurrentOutputSampleRate: _bindgen_ty_103 = 1668248434;
-pub const kAudioCodecPropertyQualitySetting: _bindgen_ty_103 = 1936876401;
-pub const kAudioCodecPropertyApplicableBitRateRange: _bindgen_ty_103 = 1651668065;
-pub const kAudioCodecPropertyRecommendedBitRateRange: _bindgen_ty_103 = 1651668082;
-pub const kAudioCodecPropertyApplicableInputSampleRates: _bindgen_ty_103 = 1769173601;
-pub const kAudioCodecPropertyApplicableOutputSampleRates: _bindgen_ty_103 = 1869836897;
-pub const kAudioCodecPropertyPaddedZeros: _bindgen_ty_103 = 1885430832;
-pub const kAudioCodecPropertyPrimeMethod: _bindgen_ty_103 = 1886547309;
-pub const kAudioCodecPropertyPrimeInfo: _bindgen_ty_103 = 1886546285;
-pub const kAudioCodecPropertyCurrentInputChannelLayout: _bindgen_ty_103 = 1768123424;
-pub const kAudioCodecPropertyCurrentOutputChannelLayout: _bindgen_ty_103 = 1868786720;
-pub const kAudioCodecPropertySettings: _bindgen_ty_103 = 1633907488;
-pub const kAudioCodecPropertyFormatList: _bindgen_ty_103 = 1633904236;
-pub const kAudioCodecPropertyBitRateControlMode: _bindgen_ty_103 = 1633903206;
-pub const kAudioCodecPropertySoundQualityForVBR: _bindgen_ty_103 = 1986163313;
-pub const kAudioCodecPropertyBitRateForVBR: _bindgen_ty_103 = 1986163298;
-pub const kAudioCodecPropertyDelayMode: _bindgen_ty_103 = 1684893540;
-pub const kAudioCodecPropertyAdjustLocalQuality: _bindgen_ty_103 = 1584488812;
-pub const kAudioCodecPropertyProgramTargetLevel: _bindgen_ty_103 = 1886418028;
-pub const kAudioCodecPropertyDynamicRangeControlMode: _bindgen_ty_103 = 1835299427;
-pub const kAudioCodecPropertyProgramTargetLevelConstant: _bindgen_ty_103 = 1886678115;
+pub const kAudioCodecPropertySupportedInputFormats: _bindgen_ty_103 = 1768320291;
+pub const kAudioCodecPropertySupportedOutputFormats: _bindgen_ty_103 = 1868983587;
+pub const kAudioCodecPropertyAvailableInputSampleRates: _bindgen_ty_103 = 1634300786;
+pub const kAudioCodecPropertyAvailableOutputSampleRates: _bindgen_ty_103 = 1634694002;
+pub const kAudioCodecPropertyAvailableBitRateRange: _bindgen_ty_103 = 1633841780;
+pub const kAudioCodecPropertyMinimumNumberInputPackets: _bindgen_ty_103 = 1835952496;
+pub const kAudioCodecPropertyMinimumNumberOutputPackets: _bindgen_ty_103 = 1835954032;
+pub const kAudioCodecPropertyAvailableNumberChannels: _bindgen_ty_103 = 1668116067;
+pub const kAudioCodecPropertyDoesSampleRateConversion: _bindgen_ty_103 = 1819112035;
+pub const kAudioCodecPropertyAvailableInputChannelLayoutTags: _bindgen_ty_103 = 1634296684;
+pub const kAudioCodecPropertyAvailableOutputChannelLayoutTags: _bindgen_ty_103 = 1634689900;
+pub const kAudioCodecPropertyInputFormatsForOutputFormat: _bindgen_ty_103 = 1768305775;
+pub const kAudioCodecPropertyOutputFormatsForInputFormat: _bindgen_ty_103 = 1868969065;
+pub const kAudioCodecPropertyFormatInfo: _bindgen_ty_103 = 1633904233;
 pub type _bindgen_ty_103 = ::std::os::raw::c_uint;
-pub const kAudioCodecQuality_Max: _bindgen_ty_104 = 127;
-pub const kAudioCodecQuality_High: _bindgen_ty_104 = 96;
-pub const kAudioCodecQuality_Medium: _bindgen_ty_104 = 64;
-pub const kAudioCodecQuality_Low: _bindgen_ty_104 = 32;
-pub const kAudioCodecQuality_Min: _bindgen_ty_104 = 0;
+pub const kAudioCodecPropertyInputBufferSize: _bindgen_ty_104 = 1952609638;
+pub const kAudioCodecPropertyPacketFrameSize: _bindgen_ty_104 = 1885432678;
+pub const kAudioCodecPropertyHasVariablePacketByteSizes: _bindgen_ty_104 = 1987078975;
+pub const kAudioCodecPropertyEmploysDependentPackets: _bindgen_ty_104 = 1685089087;
+pub const kAudioCodecPropertyMaximumPacketByteSize: _bindgen_ty_104 = 1885432674;
+pub const kAudioCodecPropertyPacketSizeLimitForVBR: _bindgen_ty_104 = 1885432684;
+pub const kAudioCodecPropertyCurrentInputFormat: _bindgen_ty_104 = 1768320372;
+pub const kAudioCodecPropertyCurrentOutputFormat: _bindgen_ty_104 = 1868983668;
+pub const kAudioCodecPropertyMagicCookie: _bindgen_ty_104 = 1802857321;
+pub const kAudioCodecPropertyUsedInputBufferSize: _bindgen_ty_104 = 1969386854;
+pub const kAudioCodecPropertyIsInitialized: _bindgen_ty_104 = 1768843636;
+pub const kAudioCodecPropertyCurrentTargetBitRate: _bindgen_ty_104 = 1651663220;
+pub const kAudioCodecPropertyCurrentInputSampleRate: _bindgen_ty_104 = 1667855218;
+pub const kAudioCodecPropertyCurrentOutputSampleRate: _bindgen_ty_104 = 1668248434;
+pub const kAudioCodecPropertyQualitySetting: _bindgen_ty_104 = 1936876401;
+pub const kAudioCodecPropertyApplicableBitRateRange: _bindgen_ty_104 = 1651668065;
+pub const kAudioCodecPropertyRecommendedBitRateRange: _bindgen_ty_104 = 1651668082;
+pub const kAudioCodecPropertyApplicableInputSampleRates: _bindgen_ty_104 = 1769173601;
+pub const kAudioCodecPropertyApplicableOutputSampleRates: _bindgen_ty_104 = 1869836897;
+pub const kAudioCodecPropertyPaddedZeros: _bindgen_ty_104 = 1885430832;
+pub const kAudioCodecPropertyPrimeMethod: _bindgen_ty_104 = 1886547309;
+pub const kAudioCodecPropertyPrimeInfo: _bindgen_ty_104 = 1886546285;
+pub const kAudioCodecPropertyCurrentInputChannelLayout: _bindgen_ty_104 = 1768123424;
+pub const kAudioCodecPropertyCurrentOutputChannelLayout: _bindgen_ty_104 = 1868786720;
+pub const kAudioCodecPropertySettings: _bindgen_ty_104 = 1633907488;
+pub const kAudioCodecPropertyFormatList: _bindgen_ty_104 = 1633904236;
+pub const kAudioCodecPropertyBitRateControlMode: _bindgen_ty_104 = 1633903206;
+pub const kAudioCodecPropertySoundQualityForVBR: _bindgen_ty_104 = 1986163313;
+pub const kAudioCodecPropertyBitRateForVBR: _bindgen_ty_104 = 1986163298;
+pub const kAudioCodecPropertyDelayMode: _bindgen_ty_104 = 1684893540;
+pub const kAudioCodecPropertyAdjustLocalQuality: _bindgen_ty_104 = 1584488812;
+pub const kAudioCodecPropertyProgramTargetLevel: _bindgen_ty_104 = 1886418028;
+pub const kAudioCodecPropertyDynamicRangeControlMode: _bindgen_ty_104 = 1835299427;
+pub const kAudioCodecPropertyProgramTargetLevelConstant: _bindgen_ty_104 = 1886678115;
 pub type _bindgen_ty_104 = ::std::os::raw::c_uint;
-pub const kAudioCodecPrimeMethod_Pre: _bindgen_ty_105 = 0;
-pub const kAudioCodecPrimeMethod_Normal: _bindgen_ty_105 = 1;
-pub const kAudioCodecPrimeMethod_None: _bindgen_ty_105 = 2;
+pub const kAudioCodecQuality_Max: _bindgen_ty_105 = 127;
+pub const kAudioCodecQuality_High: _bindgen_ty_105 = 96;
+pub const kAudioCodecQuality_Medium: _bindgen_ty_105 = 64;
+pub const kAudioCodecQuality_Low: _bindgen_ty_105 = 32;
+pub const kAudioCodecQuality_Min: _bindgen_ty_105 = 0;
 pub type _bindgen_ty_105 = ::std::os::raw::c_uint;
-pub const kAudioCodecBitRateControlMode_Constant: _bindgen_ty_106 = 0;
-pub const kAudioCodecBitRateControlMode_LongTermAverage: _bindgen_ty_106 = 1;
-pub const kAudioCodecBitRateControlMode_VariableConstrained: _bindgen_ty_106 = 2;
-pub const kAudioCodecBitRateControlMode_Variable: _bindgen_ty_106 = 3;
+pub const kAudioCodecPrimeMethod_Pre: _bindgen_ty_106 = 0;
+pub const kAudioCodecPrimeMethod_Normal: _bindgen_ty_106 = 1;
+pub const kAudioCodecPrimeMethod_None: _bindgen_ty_106 = 2;
 pub type _bindgen_ty_106 = ::std::os::raw::c_uint;
-pub const kAudioCodecDelayMode_Compatibility: _bindgen_ty_107 = 0;
-pub const kAudioCodecDelayMode_Minimum: _bindgen_ty_107 = 1;
-pub const kAudioCodecDelayMode_Optimal: _bindgen_ty_107 = 2;
+pub const kAudioCodecBitRateControlMode_Constant: _bindgen_ty_107 = 0;
+pub const kAudioCodecBitRateControlMode_LongTermAverage: _bindgen_ty_107 = 1;
+pub const kAudioCodecBitRateControlMode_VariableConstrained: _bindgen_ty_107 = 2;
+pub const kAudioCodecBitRateControlMode_Variable: _bindgen_ty_107 = 3;
 pub type _bindgen_ty_107 = ::std::os::raw::c_uint;
-pub const kProgramTargetLevel_None: _bindgen_ty_108 = 0;
-pub const kProgramTargetLevel_Minus31dB: _bindgen_ty_108 = 1;
-pub const kProgramTargetLevel_Minus23dB: _bindgen_ty_108 = 2;
-pub const kProgramTargetLevel_Minus20dB: _bindgen_ty_108 = 3;
+pub const kAudioCodecDelayMode_Compatibility: _bindgen_ty_108 = 0;
+pub const kAudioCodecDelayMode_Minimum: _bindgen_ty_108 = 1;
+pub const kAudioCodecDelayMode_Optimal: _bindgen_ty_108 = 2;
 pub type _bindgen_ty_108 = ::std::os::raw::c_uint;
-pub const kDynamicRangeControlMode_None: _bindgen_ty_109 = 0;
-pub const kDynamicRangeControlMode_Light: _bindgen_ty_109 = 1;
-pub const kDynamicRangeControlMode_Heavy: _bindgen_ty_109 = 2;
+pub const kProgramTargetLevel_None: _bindgen_ty_109 = 0;
+pub const kProgramTargetLevel_Minus31dB: _bindgen_ty_109 = 1;
+pub const kProgramTargetLevel_Minus23dB: _bindgen_ty_109 = 2;
+pub const kProgramTargetLevel_Minus20dB: _bindgen_ty_109 = 3;
 pub type _bindgen_ty_109 = ::std::os::raw::c_uint;
+pub const kDynamicRangeControlMode_None: _bindgen_ty_110 = 0;
+pub const kDynamicRangeControlMode_Light: _bindgen_ty_110 = 1;
+pub const kDynamicRangeControlMode_Heavy: _bindgen_ty_110 = 2;
+pub type _bindgen_ty_110 = ::std::os::raw::c_uint;
 #[repr(C)]
 #[derive(Debug, Default, Copy, Clone)]
 pub struct AudioCodecPrimeInfo {
@@ -18274,38 +18517,39 @@ pub struct AudioCodecPrimeInfo {
     pub trailingFrames: UInt32,
 }
 pub type AudioSettingsFlags = UInt32;
-pub const kAudioSettingsFlags_ExpertParameter: _bindgen_ty_110 = 1;
-pub const kAudioSettingsFlags_InvisibleParameter: _bindgen_ty_110 = 2;
-pub const kAudioSettingsFlags_MetaParameter: _bindgen_ty_110 = 4;
-pub const kAudioSettingsFlags_UserInterfaceParameter: _bindgen_ty_110 = 8;
-pub type _bindgen_ty_110 = ::std::os::raw::c_uint;
-pub const kAudioCodecProduceOutputPacketFailure: _bindgen_ty_111 = 1;
-pub const kAudioCodecProduceOutputPacketSuccess: _bindgen_ty_111 = 2;
-pub const kAudioCodecProduceOutputPacketSuccessHasMore: _bindgen_ty_111 = 3;
-pub const kAudioCodecProduceOutputPacketNeedsMoreInputData: _bindgen_ty_111 = 4;
-pub const kAudioCodecProduceOutputPacketAtEOF: _bindgen_ty_111 = 5;
+pub const kAudioSettingsFlags_ExpertParameter: _bindgen_ty_111 = 1;
+pub const kAudioSettingsFlags_InvisibleParameter: _bindgen_ty_111 = 2;
+pub const kAudioSettingsFlags_MetaParameter: _bindgen_ty_111 = 4;
+pub const kAudioSettingsFlags_UserInterfaceParameter: _bindgen_ty_111 = 8;
 pub type _bindgen_ty_111 = ::std::os::raw::c_uint;
-pub const kAudioCodecGetPropertyInfoSelect: _bindgen_ty_112 = 1;
-pub const kAudioCodecGetPropertySelect: _bindgen_ty_112 = 2;
-pub const kAudioCodecSetPropertySelect: _bindgen_ty_112 = 3;
-pub const kAudioCodecInitializeSelect: _bindgen_ty_112 = 4;
-pub const kAudioCodecUninitializeSelect: _bindgen_ty_112 = 5;
-pub const kAudioCodecAppendInputDataSelect: _bindgen_ty_112 = 6;
-pub const kAudioCodecProduceOutputDataSelect: _bindgen_ty_112 = 7;
-pub const kAudioCodecResetSelect: _bindgen_ty_112 = 8;
-pub const kAudioCodecAppendInputBufferListSelect: _bindgen_ty_112 = 9;
-pub const kAudioCodecProduceOutputBufferListSelect: _bindgen_ty_112 = 10;
+pub const kAudioCodecProduceOutputPacketFailure: _bindgen_ty_112 = 1;
+pub const kAudioCodecProduceOutputPacketSuccess: _bindgen_ty_112 = 2;
+pub const kAudioCodecProduceOutputPacketSuccessHasMore: _bindgen_ty_112 = 3;
+pub const kAudioCodecProduceOutputPacketNeedsMoreInputData: _bindgen_ty_112 = 4;
+pub const kAudioCodecProduceOutputPacketAtEOF: _bindgen_ty_112 = 5;
+pub const kAudioCodecProduceOutputPacketSuccessConcealed: _bindgen_ty_112 = 6;
 pub type _bindgen_ty_112 = ::std::os::raw::c_uint;
-pub const kAudioCodecNoError: _bindgen_ty_113 = 0;
-pub const kAudioCodecUnspecifiedError: _bindgen_ty_113 = 2003329396;
-pub const kAudioCodecUnknownPropertyError: _bindgen_ty_113 = 2003332927;
-pub const kAudioCodecBadPropertySizeError: _bindgen_ty_113 = 561211770;
-pub const kAudioCodecIllegalOperationError: _bindgen_ty_113 = 1852797029;
-pub const kAudioCodecUnsupportedFormatError: _bindgen_ty_113 = 560226676;
-pub const kAudioCodecStateError: _bindgen_ty_113 = 561214580;
-pub const kAudioCodecNotEnoughBufferSpaceError: _bindgen_ty_113 = 560100710;
-pub const kAudioCodecBadDataError: _bindgen_ty_113 = 1650549857;
+pub const kAudioCodecGetPropertyInfoSelect: _bindgen_ty_113 = 1;
+pub const kAudioCodecGetPropertySelect: _bindgen_ty_113 = 2;
+pub const kAudioCodecSetPropertySelect: _bindgen_ty_113 = 3;
+pub const kAudioCodecInitializeSelect: _bindgen_ty_113 = 4;
+pub const kAudioCodecUninitializeSelect: _bindgen_ty_113 = 5;
+pub const kAudioCodecAppendInputDataSelect: _bindgen_ty_113 = 6;
+pub const kAudioCodecProduceOutputDataSelect: _bindgen_ty_113 = 7;
+pub const kAudioCodecResetSelect: _bindgen_ty_113 = 8;
+pub const kAudioCodecAppendInputBufferListSelect: _bindgen_ty_113 = 9;
+pub const kAudioCodecProduceOutputBufferListSelect: _bindgen_ty_113 = 10;
 pub type _bindgen_ty_113 = ::std::os::raw::c_uint;
+pub const kAudioCodecNoError: _bindgen_ty_114 = 0;
+pub const kAudioCodecUnspecifiedError: _bindgen_ty_114 = 2003329396;
+pub const kAudioCodecUnknownPropertyError: _bindgen_ty_114 = 2003332927;
+pub const kAudioCodecBadPropertySizeError: _bindgen_ty_114 = 561211770;
+pub const kAudioCodecIllegalOperationError: _bindgen_ty_114 = 1852797029;
+pub const kAudioCodecUnsupportedFormatError: _bindgen_ty_114 = 560226676;
+pub const kAudioCodecStateError: _bindgen_ty_114 = 561214580;
+pub const kAudioCodecNotEnoughBufferSpaceError: _bindgen_ty_114 = 560100710;
+pub const kAudioCodecBadDataError: _bindgen_ty_114 = 1650549857;
+pub type _bindgen_ty_114 = ::std::os::raw::c_uint;
 extern "C" {
     pub fn AudioCodecGetPropertyInfo(
         inCodec: AudioCodec,
@@ -18456,432 +18700,440 @@ pub type AudioCodecProduceOutputBufferListProc = ::std::option::Option<
         outStatus: *mut UInt32,
     ) -> OSStatus,
 >;
-pub const kAudioCodecPropertyMinimumDelayMode: _bindgen_ty_114 = 1835296108;
-pub type _bindgen_ty_114 = ::std::os::raw::c_uint;
-pub const kAudioCodecPropertyNameCFString: _bindgen_ty_115 = 1819173229;
-pub const kAudioCodecPropertyManufacturerCFString: _bindgen_ty_115 = 1819107691;
-pub const kAudioCodecPropertyFormatCFString: _bindgen_ty_115 = 1818652530;
+pub const kAudioCodecPropertyMinimumDelayMode: _bindgen_ty_115 = 1835296108;
 pub type _bindgen_ty_115 = ::std::os::raw::c_uint;
-pub const kAudioCodecPropertyRequiresPacketDescription: _bindgen_ty_116 = 1885432676;
-pub const kAudioCodecPropertyAvailableBitRates: _bindgen_ty_116 = 1651668003;
-pub const kAudioCodecExtendFrequencies: _bindgen_ty_116 = 1633903974;
-pub const kAudioCodecUseRecommendedSampleRate: _bindgen_ty_116 = 1970434930;
-pub const kAudioCodecOutputPrecedence: _bindgen_ty_116 = 1869639794;
-pub const kAudioCodecBitRateFormat: _bindgen_ty_116 = 1633903206;
-pub const kAudioCodecDoesSampleRateConversion: _bindgen_ty_116 = 1819112035;
-pub const kAudioCodecInputFormatsForOutputFormat: _bindgen_ty_116 = 1768305775;
-pub const kAudioCodecOutputFormatsForInputFormat: _bindgen_ty_116 = 1868969065;
-pub const kAudioCodecPropertyInputChannelLayout: _bindgen_ty_116 = 1768123424;
-pub const kAudioCodecPropertyOutputChannelLayout: _bindgen_ty_116 = 1868786720;
-pub const kAudioCodecPropertyAvailableInputChannelLayouts: _bindgen_ty_116 = 1634296684;
-pub const kAudioCodecPropertyAvailableOutputChannelLayouts: _bindgen_ty_116 = 1634689900;
-pub const kAudioCodecPropertyZeroFramesPadded: _bindgen_ty_116 = 1885430832;
+pub const kAudioCodecPropertyNameCFString: _bindgen_ty_116 = 1819173229;
+pub const kAudioCodecPropertyManufacturerCFString: _bindgen_ty_116 = 1819107691;
+pub const kAudioCodecPropertyFormatCFString: _bindgen_ty_116 = 1818652530;
 pub type _bindgen_ty_116 = ::std::os::raw::c_uint;
-pub const kAudioCodecBitRateFormat_CBR: _bindgen_ty_117 = 0;
-pub const kAudioCodecBitRateFormat_ABR: _bindgen_ty_117 = 1;
-pub const kAudioCodecBitRateFormat_VBR: _bindgen_ty_117 = 2;
+pub const kAudioCodecPropertyRequiresPacketDescription: _bindgen_ty_117 = 1885432676;
+pub const kAudioCodecPropertyAvailableBitRates: _bindgen_ty_117 = 1651668003;
+pub const kAudioCodecExtendFrequencies: _bindgen_ty_117 = 1633903974;
+pub const kAudioCodecUseRecommendedSampleRate: _bindgen_ty_117 = 1970434930;
+pub const kAudioCodecOutputPrecedence: _bindgen_ty_117 = 1869639794;
+pub const kAudioCodecBitRateFormat: _bindgen_ty_117 = 1633903206;
+pub const kAudioCodecDoesSampleRateConversion: _bindgen_ty_117 = 1819112035;
+pub const kAudioCodecInputFormatsForOutputFormat: _bindgen_ty_117 = 1768305775;
+pub const kAudioCodecOutputFormatsForInputFormat: _bindgen_ty_117 = 1868969065;
+pub const kAudioCodecPropertyInputChannelLayout: _bindgen_ty_117 = 1768123424;
+pub const kAudioCodecPropertyOutputChannelLayout: _bindgen_ty_117 = 1868786720;
+pub const kAudioCodecPropertyAvailableInputChannelLayouts: _bindgen_ty_117 = 1634296684;
+pub const kAudioCodecPropertyAvailableOutputChannelLayouts: _bindgen_ty_117 = 1634689900;
+pub const kAudioCodecPropertyZeroFramesPadded: _bindgen_ty_117 = 1885430832;
 pub type _bindgen_ty_117 = ::std::os::raw::c_uint;
-pub const kAudioCodecOutputPrecedenceNone: _bindgen_ty_118 = 0;
-pub const kAudioCodecOutputPrecedenceBitRate: _bindgen_ty_118 = 1;
-pub const kAudioCodecOutputPrecedenceSampleRate: _bindgen_ty_118 = 2;
+pub const kAudioCodecBitRateFormat_CBR: _bindgen_ty_118 = 0;
+pub const kAudioCodecBitRateFormat_ABR: _bindgen_ty_118 = 1;
+pub const kAudioCodecBitRateFormat_VBR: _bindgen_ty_118 = 2;
 pub type _bindgen_ty_118 = ::std::os::raw::c_uint;
-pub type MagicCookieInfo = AudioCodecMagicCookieInfo;
-pub const kHintBasic: _bindgen_ty_119 = 0;
-pub const kHintAdvanced: _bindgen_ty_119 = 1;
-pub const kHintHidden: _bindgen_ty_119 = 2;
+pub const kAudioCodecOutputPrecedenceNone: _bindgen_ty_119 = 0;
+pub const kAudioCodecOutputPrecedenceBitRate: _bindgen_ty_119 = 1;
+pub const kAudioCodecOutputPrecedenceSampleRate: _bindgen_ty_119 = 2;
 pub type _bindgen_ty_119 = ::std::os::raw::c_uint;
+pub type MagicCookieInfo = AudioCodecMagicCookieInfo;
+pub const kHintBasic: _bindgen_ty_120 = 0;
+pub const kHintAdvanced: _bindgen_ty_120 = 1;
+pub const kHintHidden: _bindgen_ty_120 = 2;
+pub type _bindgen_ty_120 = ::std::os::raw::c_uint;
 extern "C" {
     pub fn AudioOutputUnitStart(ci: AudioUnit) -> OSStatus;
 }
 extern "C" {
     pub fn AudioOutputUnitStop(ci: AudioUnit) -> OSStatus;
 }
-pub const kAudioOutputUnitRange: _bindgen_ty_120 = 512;
-pub const kAudioOutputUnitStartSelect: _bindgen_ty_120 = 513;
-pub const kAudioOutputUnitStopSelect: _bindgen_ty_120 = 514;
-pub type _bindgen_ty_120 = ::std::os::raw::c_uint;
+pub const kAudioOutputUnitRange: _bindgen_ty_121 = 512;
+pub const kAudioOutputUnitStartSelect: _bindgen_ty_121 = 513;
+pub const kAudioOutputUnitStopSelect: _bindgen_ty_121 = 514;
+pub type _bindgen_ty_121 = ::std::os::raw::c_uint;
 pub type AudioOutputUnitStartProc =
     ::std::option::Option<unsafe extern "C" fn(self_: *mut ::std::os::raw::c_void) -> OSStatus>;
 pub type AudioOutputUnitStopProc =
     ::std::option::Option<unsafe extern "C" fn(self_: *mut ::std::os::raw::c_void) -> OSStatus>;
-pub const kAUGroupParameterID_Volume: _bindgen_ty_121 = 7;
-pub const kAUGroupParameterID_Sustain: _bindgen_ty_121 = 64;
-pub const kAUGroupParameterID_Sostenuto: _bindgen_ty_121 = 66;
-pub const kAUGroupParameterID_AllNotesOff: _bindgen_ty_121 = 123;
-pub const kAUGroupParameterID_ModWheel: _bindgen_ty_121 = 1;
-pub const kAUGroupParameterID_PitchBend: _bindgen_ty_121 = 224;
-pub const kAUGroupParameterID_AllSoundOff: _bindgen_ty_121 = 120;
-pub const kAUGroupParameterID_ResetAllControllers: _bindgen_ty_121 = 121;
-pub const kAUGroupParameterID_Pan: _bindgen_ty_121 = 10;
-pub const kAUGroupParameterID_Foot: _bindgen_ty_121 = 4;
-pub const kAUGroupParameterID_ChannelPressure: _bindgen_ty_121 = 208;
-pub const kAUGroupParameterID_KeyPressure: _bindgen_ty_121 = 160;
-pub const kAUGroupParameterID_Expression: _bindgen_ty_121 = 11;
-pub const kAUGroupParameterID_DataEntry: _bindgen_ty_121 = 6;
-pub const kAUGroupParameterID_Volume_LSB: _bindgen_ty_121 = 39;
-pub const kAUGroupParameterID_ModWheel_LSB: _bindgen_ty_121 = 33;
-pub const kAUGroupParameterID_Pan_LSB: _bindgen_ty_121 = 42;
-pub const kAUGroupParameterID_Foot_LSB: _bindgen_ty_121 = 36;
-pub const kAUGroupParameterID_Expression_LSB: _bindgen_ty_121 = 43;
-pub const kAUGroupParameterID_DataEntry_LSB: _bindgen_ty_121 = 38;
-pub const kAUGroupParameterID_KeyPressure_FirstKey: _bindgen_ty_121 = 256;
-pub const kAUGroupParameterID_KeyPressure_LastKey: _bindgen_ty_121 = 383;
-pub type _bindgen_ty_121 = ::std::os::raw::c_uint;
-pub const kPannerParam_Gain: _bindgen_ty_122 = 0;
-pub const kPannerParam_Azimuth: _bindgen_ty_122 = 1;
-pub const kPannerParam_Elevation: _bindgen_ty_122 = 2;
-pub const kPannerParam_Distance: _bindgen_ty_122 = 3;
-pub const kPannerParam_CoordScale: _bindgen_ty_122 = 4;
-pub const kPannerParam_RefDistance: _bindgen_ty_122 = 5;
+pub const kAUGroupParameterID_Volume: _bindgen_ty_122 = 7;
+pub const kAUGroupParameterID_Sustain: _bindgen_ty_122 = 64;
+pub const kAUGroupParameterID_Sostenuto: _bindgen_ty_122 = 66;
+pub const kAUGroupParameterID_AllNotesOff: _bindgen_ty_122 = 123;
+pub const kAUGroupParameterID_ModWheel: _bindgen_ty_122 = 1;
+pub const kAUGroupParameterID_PitchBend: _bindgen_ty_122 = 224;
+pub const kAUGroupParameterID_AllSoundOff: _bindgen_ty_122 = 120;
+pub const kAUGroupParameterID_ResetAllControllers: _bindgen_ty_122 = 121;
+pub const kAUGroupParameterID_Pan: _bindgen_ty_122 = 10;
+pub const kAUGroupParameterID_Foot: _bindgen_ty_122 = 4;
+pub const kAUGroupParameterID_ChannelPressure: _bindgen_ty_122 = 208;
+pub const kAUGroupParameterID_KeyPressure: _bindgen_ty_122 = 160;
+pub const kAUGroupParameterID_Expression: _bindgen_ty_122 = 11;
+pub const kAUGroupParameterID_DataEntry: _bindgen_ty_122 = 6;
+pub const kAUGroupParameterID_Volume_LSB: _bindgen_ty_122 = 39;
+pub const kAUGroupParameterID_ModWheel_LSB: _bindgen_ty_122 = 33;
+pub const kAUGroupParameterID_Pan_LSB: _bindgen_ty_122 = 42;
+pub const kAUGroupParameterID_Foot_LSB: _bindgen_ty_122 = 36;
+pub const kAUGroupParameterID_Expression_LSB: _bindgen_ty_122 = 43;
+pub const kAUGroupParameterID_DataEntry_LSB: _bindgen_ty_122 = 38;
+pub const kAUGroupParameterID_KeyPressure_FirstKey: _bindgen_ty_122 = 256;
+pub const kAUGroupParameterID_KeyPressure_LastKey: _bindgen_ty_122 = 383;
 pub type _bindgen_ty_122 = ::std::os::raw::c_uint;
-pub const kSpatialMixerParam_Azimuth: _bindgen_ty_123 = 0;
-pub const kSpatialMixerParam_Elevation: _bindgen_ty_123 = 1;
-pub const kSpatialMixerParam_Distance: _bindgen_ty_123 = 2;
-pub const kSpatialMixerParam_Gain: _bindgen_ty_123 = 3;
-pub const kSpatialMixerParam_PlaybackRate: _bindgen_ty_123 = 4;
-pub const kSpatialMixerParam_Enable: _bindgen_ty_123 = 5;
-pub const kSpatialMixerParam_MinGain: _bindgen_ty_123 = 6;
-pub const kSpatialMixerParam_MaxGain: _bindgen_ty_123 = 7;
-pub const kSpatialMixerParam_ReverbBlend: _bindgen_ty_123 = 8;
-pub const kSpatialMixerParam_GlobalReverbGain: _bindgen_ty_123 = 9;
-pub const kSpatialMixerParam_OcclusionAttenuation: _bindgen_ty_123 = 10;
-pub const kSpatialMixerParam_ObstructionAttenuation: _bindgen_ty_123 = 11;
-pub const kSpatialMixerParam_HeadYaw: _bindgen_ty_123 = 19;
-pub const kSpatialMixerParam_HeadPitch: _bindgen_ty_123 = 20;
-pub const kSpatialMixerParam_HeadRoll: _bindgen_ty_123 = 21;
+pub const kPannerParam_Gain: _bindgen_ty_123 = 0;
+pub const kPannerParam_Azimuth: _bindgen_ty_123 = 1;
+pub const kPannerParam_Elevation: _bindgen_ty_123 = 2;
+pub const kPannerParam_Distance: _bindgen_ty_123 = 3;
+pub const kPannerParam_CoordScale: _bindgen_ty_123 = 4;
+pub const kPannerParam_RefDistance: _bindgen_ty_123 = 5;
 pub type _bindgen_ty_123 = ::std::os::raw::c_uint;
-pub const kReverbParam_FilterFrequency: _bindgen_ty_124 = 14;
-pub const kReverbParam_FilterBandwidth: _bindgen_ty_124 = 15;
-pub const kReverbParam_FilterGain: _bindgen_ty_124 = 16;
-pub const kReverbParam_FilterType: _bindgen_ty_124 = 17;
-pub const kReverbParam_FilterEnable: _bindgen_ty_124 = 18;
+pub const kSpatialMixerParam_Azimuth: _bindgen_ty_124 = 0;
+pub const kSpatialMixerParam_Elevation: _bindgen_ty_124 = 1;
+pub const kSpatialMixerParam_Distance: _bindgen_ty_124 = 2;
+pub const kSpatialMixerParam_Gain: _bindgen_ty_124 = 3;
+pub const kSpatialMixerParam_PlaybackRate: _bindgen_ty_124 = 4;
+pub const kSpatialMixerParam_Enable: _bindgen_ty_124 = 5;
+pub const kSpatialMixerParam_MinGain: _bindgen_ty_124 = 6;
+pub const kSpatialMixerParam_MaxGain: _bindgen_ty_124 = 7;
+pub const kSpatialMixerParam_ReverbBlend: _bindgen_ty_124 = 8;
+pub const kSpatialMixerParam_GlobalReverbGain: _bindgen_ty_124 = 9;
+pub const kSpatialMixerParam_OcclusionAttenuation: _bindgen_ty_124 = 10;
+pub const kSpatialMixerParam_ObstructionAttenuation: _bindgen_ty_124 = 11;
+pub const kSpatialMixerParam_HeadYaw: _bindgen_ty_124 = 19;
+pub const kSpatialMixerParam_HeadPitch: _bindgen_ty_124 = 20;
+pub const kSpatialMixerParam_HeadRoll: _bindgen_ty_124 = 21;
 pub type _bindgen_ty_124 = ::std::os::raw::c_uint;
-pub const k3DMixerParam_Azimuth: _bindgen_ty_125 = 0;
-pub const k3DMixerParam_Elevation: _bindgen_ty_125 = 1;
-pub const k3DMixerParam_Distance: _bindgen_ty_125 = 2;
-pub const k3DMixerParam_Gain: _bindgen_ty_125 = 3;
-pub const k3DMixerParam_PlaybackRate: _bindgen_ty_125 = 4;
-pub const k3DMixerParam_BusEnable: _bindgen_ty_125 = 20;
-pub const k3DMixerParam_MinGainInDecibels: _bindgen_ty_125 = 21;
-pub const k3DMixerParam_MaxGainInDecibels: _bindgen_ty_125 = 22;
-pub const k3DMixerParam_DryWetReverbBlend: _bindgen_ty_125 = 23;
-pub const k3DMixerParam_GlobalReverbGainInDecibels: _bindgen_ty_125 = 24;
-pub const k3DMixerParam_OcclusionAttenuationInDecibels: _bindgen_ty_125 = 25;
-pub const k3DMixerParam_ObstructionAttenuationInDecibels: _bindgen_ty_125 = 26;
-pub const k3DMixerParam_ReverbBlend: _bindgen_ty_125 = 5;
-pub const k3DMixerParam_GlobalReverbGain: _bindgen_ty_125 = 6;
-pub const k3DMixerParam_OcclusionAttenuation: _bindgen_ty_125 = 7;
-pub const k3DMixerParam_ObstructionAttenuation: _bindgen_ty_125 = 8;
-pub const k3DMixerParam_MinGain: _bindgen_ty_125 = 9;
-pub const k3DMixerParam_MaxGain: _bindgen_ty_125 = 10;
-pub const k3DMixerParam_PreAveragePower: _bindgen_ty_125 = 1000;
-pub const k3DMixerParam_PrePeakHoldLevel: _bindgen_ty_125 = 2000;
-pub const k3DMixerParam_PostAveragePower: _bindgen_ty_125 = 3000;
-pub const k3DMixerParam_PostPeakHoldLevel: _bindgen_ty_125 = 4000;
+pub const kReverbParam_FilterFrequency: _bindgen_ty_125 = 14;
+pub const kReverbParam_FilterBandwidth: _bindgen_ty_125 = 15;
+pub const kReverbParam_FilterGain: _bindgen_ty_125 = 16;
+pub const kReverbParam_FilterType: _bindgen_ty_125 = 17;
+pub const kReverbParam_FilterEnable: _bindgen_ty_125 = 18;
 pub type _bindgen_ty_125 = ::std::os::raw::c_uint;
-pub const kMultiChannelMixerParam_Volume: _bindgen_ty_126 = 0;
-pub const kMultiChannelMixerParam_Enable: _bindgen_ty_126 = 1;
-pub const kMultiChannelMixerParam_Pan: _bindgen_ty_126 = 2;
-pub const kMultiChannelMixerParam_PreAveragePower: _bindgen_ty_126 = 1000;
-pub const kMultiChannelMixerParam_PrePeakHoldLevel: _bindgen_ty_126 = 2000;
-pub const kMultiChannelMixerParam_PostAveragePower: _bindgen_ty_126 = 3000;
-pub const kMultiChannelMixerParam_PostPeakHoldLevel: _bindgen_ty_126 = 4000;
+pub const k3DMixerParam_Azimuth: _bindgen_ty_126 = 0;
+pub const k3DMixerParam_Elevation: _bindgen_ty_126 = 1;
+pub const k3DMixerParam_Distance: _bindgen_ty_126 = 2;
+pub const k3DMixerParam_Gain: _bindgen_ty_126 = 3;
+pub const k3DMixerParam_PlaybackRate: _bindgen_ty_126 = 4;
+pub const k3DMixerParam_BusEnable: _bindgen_ty_126 = 20;
+pub const k3DMixerParam_MinGainInDecibels: _bindgen_ty_126 = 21;
+pub const k3DMixerParam_MaxGainInDecibels: _bindgen_ty_126 = 22;
+pub const k3DMixerParam_DryWetReverbBlend: _bindgen_ty_126 = 23;
+pub const k3DMixerParam_GlobalReverbGainInDecibels: _bindgen_ty_126 = 24;
+pub const k3DMixerParam_OcclusionAttenuationInDecibels: _bindgen_ty_126 = 25;
+pub const k3DMixerParam_ObstructionAttenuationInDecibels: _bindgen_ty_126 = 26;
+pub const k3DMixerParam_ReverbBlend: _bindgen_ty_126 = 5;
+pub const k3DMixerParam_GlobalReverbGain: _bindgen_ty_126 = 6;
+pub const k3DMixerParam_OcclusionAttenuation: _bindgen_ty_126 = 7;
+pub const k3DMixerParam_ObstructionAttenuation: _bindgen_ty_126 = 8;
+pub const k3DMixerParam_MinGain: _bindgen_ty_126 = 9;
+pub const k3DMixerParam_MaxGain: _bindgen_ty_126 = 10;
+pub const k3DMixerParam_PreAveragePower: _bindgen_ty_126 = 1000;
+pub const k3DMixerParam_PrePeakHoldLevel: _bindgen_ty_126 = 2000;
+pub const k3DMixerParam_PostAveragePower: _bindgen_ty_126 = 3000;
+pub const k3DMixerParam_PostPeakHoldLevel: _bindgen_ty_126 = 4000;
 pub type _bindgen_ty_126 = ::std::os::raw::c_uint;
-pub const kMatrixMixerParam_Volume: _bindgen_ty_127 = 0;
-pub const kMatrixMixerParam_Enable: _bindgen_ty_127 = 1;
-pub const kMatrixMixerParam_PreAveragePower: _bindgen_ty_127 = 1000;
-pub const kMatrixMixerParam_PrePeakHoldLevel: _bindgen_ty_127 = 2000;
-pub const kMatrixMixerParam_PostAveragePower: _bindgen_ty_127 = 3000;
-pub const kMatrixMixerParam_PostPeakHoldLevel: _bindgen_ty_127 = 4000;
-pub const kMatrixMixerParam_PreAveragePowerLinear: _bindgen_ty_127 = 5000;
-pub const kMatrixMixerParam_PrePeakHoldLevelLinear: _bindgen_ty_127 = 6000;
-pub const kMatrixMixerParam_PostAveragePowerLinear: _bindgen_ty_127 = 7000;
-pub const kMatrixMixerParam_PostPeakHoldLevelLinear: _bindgen_ty_127 = 8000;
+pub const kMultiChannelMixerParam_Volume: _bindgen_ty_127 = 0;
+pub const kMultiChannelMixerParam_Enable: _bindgen_ty_127 = 1;
+pub const kMultiChannelMixerParam_Pan: _bindgen_ty_127 = 2;
+pub const kMultiChannelMixerParam_PreAveragePower: _bindgen_ty_127 = 1000;
+pub const kMultiChannelMixerParam_PrePeakHoldLevel: _bindgen_ty_127 = 2000;
+pub const kMultiChannelMixerParam_PostAveragePower: _bindgen_ty_127 = 3000;
+pub const kMultiChannelMixerParam_PostPeakHoldLevel: _bindgen_ty_127 = 4000;
 pub type _bindgen_ty_127 = ::std::os::raw::c_uint;
-pub const kHALOutputParam_Volume: _bindgen_ty_128 = 14;
+pub const kMatrixMixerParam_Volume: _bindgen_ty_128 = 0;
+pub const kMatrixMixerParam_Enable: _bindgen_ty_128 = 1;
+pub const kMatrixMixerParam_PreAveragePower: _bindgen_ty_128 = 1000;
+pub const kMatrixMixerParam_PrePeakHoldLevel: _bindgen_ty_128 = 2000;
+pub const kMatrixMixerParam_PostAveragePower: _bindgen_ty_128 = 3000;
+pub const kMatrixMixerParam_PostPeakHoldLevel: _bindgen_ty_128 = 4000;
+pub const kMatrixMixerParam_PreAveragePowerLinear: _bindgen_ty_128 = 5000;
+pub const kMatrixMixerParam_PrePeakHoldLevelLinear: _bindgen_ty_128 = 6000;
+pub const kMatrixMixerParam_PostAveragePowerLinear: _bindgen_ty_128 = 7000;
+pub const kMatrixMixerParam_PostPeakHoldLevelLinear: _bindgen_ty_128 = 8000;
 pub type _bindgen_ty_128 = ::std::os::raw::c_uint;
-pub const kTimePitchParam_Rate: _bindgen_ty_129 = 0;
-pub const kTimePitchParam_Pitch: _bindgen_ty_129 = 1;
-pub const kTimePitchParam_EffectBlend: _bindgen_ty_129 = 2;
+pub const kHALOutputParam_Volume: _bindgen_ty_129 = 14;
 pub type _bindgen_ty_129 = ::std::os::raw::c_uint;
-pub const kNewTimePitchParam_Rate: _bindgen_ty_130 = 0;
-pub const kNewTimePitchParam_Pitch: _bindgen_ty_130 = 1;
-pub const kNewTimePitchParam_Overlap: _bindgen_ty_130 = 4;
-pub const kNewTimePitchParam_EnablePeakLocking: _bindgen_ty_130 = 6;
+pub const kTimePitchParam_Rate: _bindgen_ty_130 = 0;
+pub const kTimePitchParam_Pitch: _bindgen_ty_130 = 1;
+pub const kTimePitchParam_EffectBlend: _bindgen_ty_130 = 2;
 pub type _bindgen_ty_130 = ::std::os::raw::c_uint;
-pub const kAUSamplerParam_Gain: _bindgen_ty_131 = 900;
-pub const kAUSamplerParam_CoarseTuning: _bindgen_ty_131 = 901;
-pub const kAUSamplerParam_FineTuning: _bindgen_ty_131 = 902;
-pub const kAUSamplerParam_Pan: _bindgen_ty_131 = 903;
+pub const kNewTimePitchParam_Rate: _bindgen_ty_131 = 0;
+pub const kNewTimePitchParam_Pitch: _bindgen_ty_131 = 1;
+pub const kNewTimePitchParam_Smoothness: _bindgen_ty_131 = 4;
+pub const kNewTimePitchParam_Overlap: _bindgen_ty_131 = 4;
+pub const kNewTimePitchParam_EnableSpectralCoherence: _bindgen_ty_131 = 6;
+pub const kNewTimePitchParam_EnablePeakLocking: _bindgen_ty_131 = 6;
+pub const kNewTimePitchParam_EnableTransientPreservation: _bindgen_ty_131 = 7;
 pub type _bindgen_ty_131 = ::std::os::raw::c_uint;
-pub const kBandpassParam_CenterFrequency: _bindgen_ty_132 = 0;
-pub const kBandpassParam_Bandwidth: _bindgen_ty_132 = 1;
+pub const kAUSamplerParam_Gain: _bindgen_ty_132 = 900;
+pub const kAUSamplerParam_CoarseTuning: _bindgen_ty_132 = 901;
+pub const kAUSamplerParam_FineTuning: _bindgen_ty_132 = 902;
+pub const kAUSamplerParam_Pan: _bindgen_ty_132 = 903;
 pub type _bindgen_ty_132 = ::std::os::raw::c_uint;
-pub const kHipassParam_CutoffFrequency: _bindgen_ty_133 = 0;
-pub const kHipassParam_Resonance: _bindgen_ty_133 = 1;
+pub const kBandpassParam_CenterFrequency: _bindgen_ty_133 = 0;
+pub const kBandpassParam_Bandwidth: _bindgen_ty_133 = 1;
 pub type _bindgen_ty_133 = ::std::os::raw::c_uint;
-pub const kLowPassParam_CutoffFrequency: _bindgen_ty_134 = 0;
-pub const kLowPassParam_Resonance: _bindgen_ty_134 = 1;
+pub const kHipassParam_CutoffFrequency: _bindgen_ty_134 = 0;
+pub const kHipassParam_Resonance: _bindgen_ty_134 = 1;
 pub type _bindgen_ty_134 = ::std::os::raw::c_uint;
-pub const kHighShelfParam_CutOffFrequency: _bindgen_ty_135 = 0;
-pub const kHighShelfParam_Gain: _bindgen_ty_135 = 1;
+pub const kLowPassParam_CutoffFrequency: _bindgen_ty_135 = 0;
+pub const kLowPassParam_Resonance: _bindgen_ty_135 = 1;
 pub type _bindgen_ty_135 = ::std::os::raw::c_uint;
-pub const kAULowShelfParam_CutoffFrequency: _bindgen_ty_136 = 0;
-pub const kAULowShelfParam_Gain: _bindgen_ty_136 = 1;
+pub const kHighShelfParam_CutOffFrequency: _bindgen_ty_136 = 0;
+pub const kHighShelfParam_Gain: _bindgen_ty_136 = 1;
 pub type _bindgen_ty_136 = ::std::os::raw::c_uint;
-pub const kParametricEQParam_CenterFreq: _bindgen_ty_137 = 0;
-pub const kParametricEQParam_Q: _bindgen_ty_137 = 1;
-pub const kParametricEQParam_Gain: _bindgen_ty_137 = 2;
+pub const kAULowShelfParam_CutoffFrequency: _bindgen_ty_137 = 0;
+pub const kAULowShelfParam_Gain: _bindgen_ty_137 = 1;
 pub type _bindgen_ty_137 = ::std::os::raw::c_uint;
-pub const kLimiterParam_AttackTime: _bindgen_ty_138 = 0;
-pub const kLimiterParam_DecayTime: _bindgen_ty_138 = 1;
-pub const kLimiterParam_PreGain: _bindgen_ty_138 = 2;
+pub const kParametricEQParam_CenterFreq: _bindgen_ty_138 = 0;
+pub const kParametricEQParam_Q: _bindgen_ty_138 = 1;
+pub const kParametricEQParam_Gain: _bindgen_ty_138 = 2;
 pub type _bindgen_ty_138 = ::std::os::raw::c_uint;
-pub const kDynamicsProcessorParam_Threshold: _bindgen_ty_139 = 0;
-pub const kDynamicsProcessorParam_HeadRoom: _bindgen_ty_139 = 1;
-pub const kDynamicsProcessorParam_ExpansionRatio: _bindgen_ty_139 = 2;
-pub const kDynamicsProcessorParam_ExpansionThreshold: _bindgen_ty_139 = 3;
-pub const kDynamicsProcessorParam_AttackTime: _bindgen_ty_139 = 4;
-pub const kDynamicsProcessorParam_ReleaseTime: _bindgen_ty_139 = 5;
-pub const kDynamicsProcessorParam_OverallGain: _bindgen_ty_139 = 6;
-pub const kDynamicsProcessorParam_MasterGain: _bindgen_ty_139 = 6;
-pub const kDynamicsProcessorParam_CompressionAmount: _bindgen_ty_139 = 1000;
-pub const kDynamicsProcessorParam_InputAmplitude: _bindgen_ty_139 = 2000;
-pub const kDynamicsProcessorParam_OutputAmplitude: _bindgen_ty_139 = 3000;
+pub const kLimiterParam_AttackTime: _bindgen_ty_139 = 0;
+pub const kLimiterParam_DecayTime: _bindgen_ty_139 = 1;
+pub const kLimiterParam_PreGain: _bindgen_ty_139 = 2;
 pub type _bindgen_ty_139 = ::std::os::raw::c_uint;
-pub const kVarispeedParam_PlaybackRate: _bindgen_ty_140 = 0;
-pub const kVarispeedParam_PlaybackCents: _bindgen_ty_140 = 1;
+pub const kDynamicsProcessorParam_Threshold: _bindgen_ty_140 = 0;
+pub const kDynamicsProcessorParam_HeadRoom: _bindgen_ty_140 = 1;
+pub const kDynamicsProcessorParam_ExpansionRatio: _bindgen_ty_140 = 2;
+pub const kDynamicsProcessorParam_ExpansionThreshold: _bindgen_ty_140 = 3;
+pub const kDynamicsProcessorParam_AttackTime: _bindgen_ty_140 = 4;
+pub const kDynamicsProcessorParam_ReleaseTime: _bindgen_ty_140 = 5;
+pub const kDynamicsProcessorParam_OverallGain: _bindgen_ty_140 = 6;
+pub const kDynamicsProcessorParam_MasterGain: _bindgen_ty_140 = 6;
+pub const kDynamicsProcessorParam_CompressionAmount: _bindgen_ty_140 = 1000;
+pub const kDynamicsProcessorParam_InputAmplitude: _bindgen_ty_140 = 2000;
+pub const kDynamicsProcessorParam_OutputAmplitude: _bindgen_ty_140 = 3000;
 pub type _bindgen_ty_140 = ::std::os::raw::c_uint;
-pub const kDistortionParam_Delay: _bindgen_ty_141 = 0;
-pub const kDistortionParam_Decay: _bindgen_ty_141 = 1;
-pub const kDistortionParam_DelayMix: _bindgen_ty_141 = 2;
-pub const kDistortionParam_Decimation: _bindgen_ty_141 = 3;
-pub const kDistortionParam_Rounding: _bindgen_ty_141 = 4;
-pub const kDistortionParam_DecimationMix: _bindgen_ty_141 = 5;
-pub const kDistortionParam_LinearTerm: _bindgen_ty_141 = 6;
-pub const kDistortionParam_SquaredTerm: _bindgen_ty_141 = 7;
-pub const kDistortionParam_CubicTerm: _bindgen_ty_141 = 8;
-pub const kDistortionParam_PolynomialMix: _bindgen_ty_141 = 9;
-pub const kDistortionParam_RingModFreq1: _bindgen_ty_141 = 10;
-pub const kDistortionParam_RingModFreq2: _bindgen_ty_141 = 11;
-pub const kDistortionParam_RingModBalance: _bindgen_ty_141 = 12;
-pub const kDistortionParam_RingModMix: _bindgen_ty_141 = 13;
-pub const kDistortionParam_SoftClipGain: _bindgen_ty_141 = 14;
-pub const kDistortionParam_FinalMix: _bindgen_ty_141 = 15;
+pub const kVarispeedParam_PlaybackRate: _bindgen_ty_141 = 0;
+pub const kVarispeedParam_PlaybackCents: _bindgen_ty_141 = 1;
 pub type _bindgen_ty_141 = ::std::os::raw::c_uint;
-pub const kDelayParam_WetDryMix: _bindgen_ty_142 = 0;
-pub const kDelayParam_DelayTime: _bindgen_ty_142 = 1;
-pub const kDelayParam_Feedback: _bindgen_ty_142 = 2;
-pub const kDelayParam_LopassCutoff: _bindgen_ty_142 = 3;
+pub const kDistortionParam_Delay: _bindgen_ty_142 = 0;
+pub const kDistortionParam_Decay: _bindgen_ty_142 = 1;
+pub const kDistortionParam_DelayMix: _bindgen_ty_142 = 2;
+pub const kDistortionParam_Decimation: _bindgen_ty_142 = 3;
+pub const kDistortionParam_Rounding: _bindgen_ty_142 = 4;
+pub const kDistortionParam_DecimationMix: _bindgen_ty_142 = 5;
+pub const kDistortionParam_LinearTerm: _bindgen_ty_142 = 6;
+pub const kDistortionParam_SquaredTerm: _bindgen_ty_142 = 7;
+pub const kDistortionParam_CubicTerm: _bindgen_ty_142 = 8;
+pub const kDistortionParam_PolynomialMix: _bindgen_ty_142 = 9;
+pub const kDistortionParam_RingModFreq1: _bindgen_ty_142 = 10;
+pub const kDistortionParam_RingModFreq2: _bindgen_ty_142 = 11;
+pub const kDistortionParam_RingModBalance: _bindgen_ty_142 = 12;
+pub const kDistortionParam_RingModMix: _bindgen_ty_142 = 13;
+pub const kDistortionParam_SoftClipGain: _bindgen_ty_142 = 14;
+pub const kDistortionParam_FinalMix: _bindgen_ty_142 = 15;
 pub type _bindgen_ty_142 = ::std::os::raw::c_uint;
-pub const kSampleDelayParam_DelayFrames: _bindgen_ty_143 = 0;
+pub const kDelayParam_WetDryMix: _bindgen_ty_143 = 0;
+pub const kDelayParam_DelayTime: _bindgen_ty_143 = 1;
+pub const kDelayParam_Feedback: _bindgen_ty_143 = 2;
+pub const kDelayParam_LopassCutoff: _bindgen_ty_143 = 3;
 pub type _bindgen_ty_143 = ::std::os::raw::c_uint;
-pub const kAUNBandEQParam_GlobalGain: _bindgen_ty_144 = 0;
-pub const kAUNBandEQParam_BypassBand: _bindgen_ty_144 = 1000;
-pub const kAUNBandEQParam_FilterType: _bindgen_ty_144 = 2000;
-pub const kAUNBandEQParam_Frequency: _bindgen_ty_144 = 3000;
-pub const kAUNBandEQParam_Gain: _bindgen_ty_144 = 4000;
-pub const kAUNBandEQParam_Bandwidth: _bindgen_ty_144 = 5000;
+pub const kSampleDelayParam_DelayFrames: _bindgen_ty_144 = 0;
 pub type _bindgen_ty_144 = ::std::os::raw::c_uint;
-pub const kAUNBandEQFilterType_Parametric: _bindgen_ty_145 = 0;
-pub const kAUNBandEQFilterType_2ndOrderButterworthLowPass: _bindgen_ty_145 = 1;
-pub const kAUNBandEQFilterType_2ndOrderButterworthHighPass: _bindgen_ty_145 = 2;
-pub const kAUNBandEQFilterType_ResonantLowPass: _bindgen_ty_145 = 3;
-pub const kAUNBandEQFilterType_ResonantHighPass: _bindgen_ty_145 = 4;
-pub const kAUNBandEQFilterType_BandPass: _bindgen_ty_145 = 5;
-pub const kAUNBandEQFilterType_BandStop: _bindgen_ty_145 = 6;
-pub const kAUNBandEQFilterType_LowShelf: _bindgen_ty_145 = 7;
-pub const kAUNBandEQFilterType_HighShelf: _bindgen_ty_145 = 8;
-pub const kAUNBandEQFilterType_ResonantLowShelf: _bindgen_ty_145 = 9;
-pub const kAUNBandEQFilterType_ResonantHighShelf: _bindgen_ty_145 = 10;
-pub const kNumAUNBandEQFilterTypes: _bindgen_ty_145 = 11;
+pub const kAUNBandEQParam_GlobalGain: _bindgen_ty_145 = 0;
+pub const kAUNBandEQParam_BypassBand: _bindgen_ty_145 = 1000;
+pub const kAUNBandEQParam_FilterType: _bindgen_ty_145 = 2000;
+pub const kAUNBandEQParam_Frequency: _bindgen_ty_145 = 3000;
+pub const kAUNBandEQParam_Gain: _bindgen_ty_145 = 4000;
+pub const kAUNBandEQParam_Bandwidth: _bindgen_ty_145 = 5000;
 pub type _bindgen_ty_145 = ::std::os::raw::c_uint;
-pub const kRoundTripAACParam_Format: _bindgen_ty_146 = 0;
-pub const kRoundTripAACParam_EncodingStrategy: _bindgen_ty_146 = 1;
-pub const kRoundTripAACParam_RateOrQuality: _bindgen_ty_146 = 2;
-pub const kRoundTripAACParam_BitRate: _bindgen_ty_146 = 1;
-pub const kRoundTripAACParam_Quality: _bindgen_ty_146 = 2;
-pub const kRoundTripAACParam_CompressedFormatSampleRate: _bindgen_ty_146 = 3;
+pub const kAUNBandEQFilterType_Parametric: _bindgen_ty_146 = 0;
+pub const kAUNBandEQFilterType_2ndOrderButterworthLowPass: _bindgen_ty_146 = 1;
+pub const kAUNBandEQFilterType_2ndOrderButterworthHighPass: _bindgen_ty_146 = 2;
+pub const kAUNBandEQFilterType_ResonantLowPass: _bindgen_ty_146 = 3;
+pub const kAUNBandEQFilterType_ResonantHighPass: _bindgen_ty_146 = 4;
+pub const kAUNBandEQFilterType_BandPass: _bindgen_ty_146 = 5;
+pub const kAUNBandEQFilterType_BandStop: _bindgen_ty_146 = 6;
+pub const kAUNBandEQFilterType_LowShelf: _bindgen_ty_146 = 7;
+pub const kAUNBandEQFilterType_HighShelf: _bindgen_ty_146 = 8;
+pub const kAUNBandEQFilterType_ResonantLowShelf: _bindgen_ty_146 = 9;
+pub const kAUNBandEQFilterType_ResonantHighShelf: _bindgen_ty_146 = 10;
+pub const kNumAUNBandEQFilterTypes: _bindgen_ty_146 = 11;
 pub type _bindgen_ty_146 = ::std::os::raw::c_uint;
-pub const kGraphicEQParam_NumberOfBands: _bindgen_ty_147 = 10000;
+pub const kRoundTripAACParam_Format: _bindgen_ty_147 = 0;
+pub const kRoundTripAACParam_EncodingStrategy: _bindgen_ty_147 = 1;
+pub const kRoundTripAACParam_RateOrQuality: _bindgen_ty_147 = 2;
+pub const kRoundTripAACParam_BitRate: _bindgen_ty_147 = 1;
+pub const kRoundTripAACParam_Quality: _bindgen_ty_147 = 2;
+pub const kRoundTripAACParam_CompressedFormatSampleRate: _bindgen_ty_147 = 3;
 pub type _bindgen_ty_147 = ::std::os::raw::c_uint;
-pub const kReverbParam_DryWetMix: _bindgen_ty_148 = 0;
-pub const kReverbParam_SmallLargeMix: _bindgen_ty_148 = 1;
-pub const kReverbParam_SmallSize: _bindgen_ty_148 = 2;
-pub const kReverbParam_LargeSize: _bindgen_ty_148 = 3;
-pub const kReverbParam_PreDelay: _bindgen_ty_148 = 4;
-pub const kReverbParam_LargeDelay: _bindgen_ty_148 = 5;
-pub const kReverbParam_SmallDensity: _bindgen_ty_148 = 6;
-pub const kReverbParam_LargeDensity: _bindgen_ty_148 = 7;
-pub const kReverbParam_LargeDelayRange: _bindgen_ty_148 = 8;
-pub const kReverbParam_SmallBrightness: _bindgen_ty_148 = 9;
-pub const kReverbParam_LargeBrightness: _bindgen_ty_148 = 10;
-pub const kReverbParam_SmallDelayRange: _bindgen_ty_148 = 11;
-pub const kReverbParam_ModulationRate: _bindgen_ty_148 = 12;
-pub const kReverbParam_ModulationDepth: _bindgen_ty_148 = 13;
+pub const kAUSoundIsolationParam_WetDryMixPercent: _bindgen_ty_148 = 0;
+pub const kAUSoundIsolationParam_SoundToIsolate: _bindgen_ty_148 = 1;
 pub type _bindgen_ty_148 = ::std::os::raw::c_uint;
-pub const kMultibandCompressorParam_Pregain: _bindgen_ty_149 = 0;
-pub const kMultibandCompressorParam_Postgain: _bindgen_ty_149 = 1;
-pub const kMultibandCompressorParam_Crossover1: _bindgen_ty_149 = 2;
-pub const kMultibandCompressorParam_Crossover2: _bindgen_ty_149 = 3;
-pub const kMultibandCompressorParam_Crossover3: _bindgen_ty_149 = 4;
-pub const kMultibandCompressorParam_Threshold1: _bindgen_ty_149 = 5;
-pub const kMultibandCompressorParam_Threshold2: _bindgen_ty_149 = 6;
-pub const kMultibandCompressorParam_Threshold3: _bindgen_ty_149 = 7;
-pub const kMultibandCompressorParam_Threshold4: _bindgen_ty_149 = 8;
-pub const kMultibandCompressorParam_Headroom1: _bindgen_ty_149 = 9;
-pub const kMultibandCompressorParam_Headroom2: _bindgen_ty_149 = 10;
-pub const kMultibandCompressorParam_Headroom3: _bindgen_ty_149 = 11;
-pub const kMultibandCompressorParam_Headroom4: _bindgen_ty_149 = 12;
-pub const kMultibandCompressorParam_AttackTime: _bindgen_ty_149 = 13;
-pub const kMultibandCompressorParam_ReleaseTime: _bindgen_ty_149 = 14;
-pub const kMultibandCompressorParam_EQ1: _bindgen_ty_149 = 15;
-pub const kMultibandCompressorParam_EQ2: _bindgen_ty_149 = 16;
-pub const kMultibandCompressorParam_EQ3: _bindgen_ty_149 = 17;
-pub const kMultibandCompressorParam_EQ4: _bindgen_ty_149 = 18;
-pub const kMultibandCompressorParam_CompressionAmount1: _bindgen_ty_149 = 1000;
-pub const kMultibandCompressorParam_CompressionAmount2: _bindgen_ty_149 = 2000;
-pub const kMultibandCompressorParam_CompressionAmount3: _bindgen_ty_149 = 3000;
-pub const kMultibandCompressorParam_CompressionAmount4: _bindgen_ty_149 = 4000;
-pub const kMultibandCompressorParam_InputAmplitude1: _bindgen_ty_149 = 5000;
-pub const kMultibandCompressorParam_InputAmplitude2: _bindgen_ty_149 = 6000;
-pub const kMultibandCompressorParam_InputAmplitude3: _bindgen_ty_149 = 7000;
-pub const kMultibandCompressorParam_InputAmplitude4: _bindgen_ty_149 = 8000;
-pub const kMultibandCompressorParam_OutputAmplitude1: _bindgen_ty_149 = 9000;
-pub const kMultibandCompressorParam_OutputAmplitude2: _bindgen_ty_149 = 10000;
-pub const kMultibandCompressorParam_OutputAmplitude3: _bindgen_ty_149 = 11000;
-pub const kMultibandCompressorParam_OutputAmplitude4: _bindgen_ty_149 = 12000;
+pub const kAUSoundIsolationSoundType_Voice: _bindgen_ty_149 = 1;
 pub type _bindgen_ty_149 = ::std::os::raw::c_uint;
-pub const kMultibandFilter_LowFilterType: _bindgen_ty_150 = 0;
-pub const kMultibandFilter_LowFrequency: _bindgen_ty_150 = 1;
-pub const kMultibandFilter_LowGain: _bindgen_ty_150 = 2;
-pub const kMultibandFilter_CenterFreq1: _bindgen_ty_150 = 3;
-pub const kMultibandFilter_CenterGain1: _bindgen_ty_150 = 4;
-pub const kMultibandFilter_Bandwidth1: _bindgen_ty_150 = 5;
-pub const kMultibandFilter_CenterFreq2: _bindgen_ty_150 = 6;
-pub const kMultibandFilter_CenterGain2: _bindgen_ty_150 = 7;
-pub const kMultibandFilter_Bandwidth2: _bindgen_ty_150 = 8;
-pub const kMultibandFilter_CenterFreq3: _bindgen_ty_150 = 9;
-pub const kMultibandFilter_CenterGain3: _bindgen_ty_150 = 10;
-pub const kMultibandFilter_Bandwidth3: _bindgen_ty_150 = 11;
-pub const kMultibandFilter_HighFilterType: _bindgen_ty_150 = 12;
-pub const kMultibandFilter_HighFrequency: _bindgen_ty_150 = 13;
-pub const kMultibandFilter_HighGain: _bindgen_ty_150 = 14;
+pub const kGraphicEQParam_NumberOfBands: _bindgen_ty_150 = 10000;
 pub type _bindgen_ty_150 = ::std::os::raw::c_uint;
-pub const kRogerBeepParam_InGateThreshold: _bindgen_ty_151 = 0;
-pub const kRogerBeepParam_InGateThresholdTime: _bindgen_ty_151 = 1;
-pub const kRogerBeepParam_OutGateThreshold: _bindgen_ty_151 = 2;
-pub const kRogerBeepParam_OutGateThresholdTime: _bindgen_ty_151 = 3;
-pub const kRogerBeepParam_Sensitivity: _bindgen_ty_151 = 4;
-pub const kRogerBeepParam_RogerType: _bindgen_ty_151 = 5;
-pub const kRogerBeepParam_RogerGain: _bindgen_ty_151 = 6;
+pub const kReverbParam_DryWetMix: _bindgen_ty_151 = 0;
+pub const kReverbParam_SmallLargeMix: _bindgen_ty_151 = 1;
+pub const kReverbParam_SmallSize: _bindgen_ty_151 = 2;
+pub const kReverbParam_LargeSize: _bindgen_ty_151 = 3;
+pub const kReverbParam_PreDelay: _bindgen_ty_151 = 4;
+pub const kReverbParam_LargeDelay: _bindgen_ty_151 = 5;
+pub const kReverbParam_SmallDensity: _bindgen_ty_151 = 6;
+pub const kReverbParam_LargeDensity: _bindgen_ty_151 = 7;
+pub const kReverbParam_LargeDelayRange: _bindgen_ty_151 = 8;
+pub const kReverbParam_SmallBrightness: _bindgen_ty_151 = 9;
+pub const kReverbParam_LargeBrightness: _bindgen_ty_151 = 10;
+pub const kReverbParam_SmallDelayRange: _bindgen_ty_151 = 11;
+pub const kReverbParam_ModulationRate: _bindgen_ty_151 = 12;
+pub const kReverbParam_ModulationDepth: _bindgen_ty_151 = 13;
 pub type _bindgen_ty_151 = ::std::os::raw::c_uint;
-pub const kStereoMixerParam_Volume: _bindgen_ty_152 = 0;
-pub const kStereoMixerParam_Pan: _bindgen_ty_152 = 1;
-pub const kStereoMixerParam_PreAveragePower: _bindgen_ty_152 = 1000;
-pub const kStereoMixerParam_PrePeakHoldLevel: _bindgen_ty_152 = 2000;
-pub const kStereoMixerParam_PostAveragePower: _bindgen_ty_152 = 3000;
-pub const kStereoMixerParam_PostPeakHoldLevel: _bindgen_ty_152 = 4000;
+pub const kMultibandCompressorParam_Pregain: _bindgen_ty_152 = 0;
+pub const kMultibandCompressorParam_Postgain: _bindgen_ty_152 = 1;
+pub const kMultibandCompressorParam_Crossover1: _bindgen_ty_152 = 2;
+pub const kMultibandCompressorParam_Crossover2: _bindgen_ty_152 = 3;
+pub const kMultibandCompressorParam_Crossover3: _bindgen_ty_152 = 4;
+pub const kMultibandCompressorParam_Threshold1: _bindgen_ty_152 = 5;
+pub const kMultibandCompressorParam_Threshold2: _bindgen_ty_152 = 6;
+pub const kMultibandCompressorParam_Threshold3: _bindgen_ty_152 = 7;
+pub const kMultibandCompressorParam_Threshold4: _bindgen_ty_152 = 8;
+pub const kMultibandCompressorParam_Headroom1: _bindgen_ty_152 = 9;
+pub const kMultibandCompressorParam_Headroom2: _bindgen_ty_152 = 10;
+pub const kMultibandCompressorParam_Headroom3: _bindgen_ty_152 = 11;
+pub const kMultibandCompressorParam_Headroom4: _bindgen_ty_152 = 12;
+pub const kMultibandCompressorParam_AttackTime: _bindgen_ty_152 = 13;
+pub const kMultibandCompressorParam_ReleaseTime: _bindgen_ty_152 = 14;
+pub const kMultibandCompressorParam_EQ1: _bindgen_ty_152 = 15;
+pub const kMultibandCompressorParam_EQ2: _bindgen_ty_152 = 16;
+pub const kMultibandCompressorParam_EQ3: _bindgen_ty_152 = 17;
+pub const kMultibandCompressorParam_EQ4: _bindgen_ty_152 = 18;
+pub const kMultibandCompressorParam_CompressionAmount1: _bindgen_ty_152 = 1000;
+pub const kMultibandCompressorParam_CompressionAmount2: _bindgen_ty_152 = 2000;
+pub const kMultibandCompressorParam_CompressionAmount3: _bindgen_ty_152 = 3000;
+pub const kMultibandCompressorParam_CompressionAmount4: _bindgen_ty_152 = 4000;
+pub const kMultibandCompressorParam_InputAmplitude1: _bindgen_ty_152 = 5000;
+pub const kMultibandCompressorParam_InputAmplitude2: _bindgen_ty_152 = 6000;
+pub const kMultibandCompressorParam_InputAmplitude3: _bindgen_ty_152 = 7000;
+pub const kMultibandCompressorParam_InputAmplitude4: _bindgen_ty_152 = 8000;
+pub const kMultibandCompressorParam_OutputAmplitude1: _bindgen_ty_152 = 9000;
+pub const kMultibandCompressorParam_OutputAmplitude2: _bindgen_ty_152 = 10000;
+pub const kMultibandCompressorParam_OutputAmplitude3: _bindgen_ty_152 = 11000;
+pub const kMultibandCompressorParam_OutputAmplitude4: _bindgen_ty_152 = 12000;
 pub type _bindgen_ty_152 = ::std::os::raw::c_uint;
-pub const kAUNetReceiveParam_Status: _bindgen_ty_153 = 0;
-pub const kAUNetReceiveParam_NumParameters: _bindgen_ty_153 = 1;
+pub const kMultibandFilter_LowFilterType: _bindgen_ty_153 = 0;
+pub const kMultibandFilter_LowFrequency: _bindgen_ty_153 = 1;
+pub const kMultibandFilter_LowGain: _bindgen_ty_153 = 2;
+pub const kMultibandFilter_CenterFreq1: _bindgen_ty_153 = 3;
+pub const kMultibandFilter_CenterGain1: _bindgen_ty_153 = 4;
+pub const kMultibandFilter_Bandwidth1: _bindgen_ty_153 = 5;
+pub const kMultibandFilter_CenterFreq2: _bindgen_ty_153 = 6;
+pub const kMultibandFilter_CenterGain2: _bindgen_ty_153 = 7;
+pub const kMultibandFilter_Bandwidth2: _bindgen_ty_153 = 8;
+pub const kMultibandFilter_CenterFreq3: _bindgen_ty_153 = 9;
+pub const kMultibandFilter_CenterGain3: _bindgen_ty_153 = 10;
+pub const kMultibandFilter_Bandwidth3: _bindgen_ty_153 = 11;
+pub const kMultibandFilter_HighFilterType: _bindgen_ty_153 = 12;
+pub const kMultibandFilter_HighFrequency: _bindgen_ty_153 = 13;
+pub const kMultibandFilter_HighGain: _bindgen_ty_153 = 14;
 pub type _bindgen_ty_153 = ::std::os::raw::c_uint;
-pub const kAUNetSendParam_Status: _bindgen_ty_154 = 0;
-pub const kAUNetSendParam_NumParameters: _bindgen_ty_154 = 1;
+pub const kRogerBeepParam_InGateThreshold: _bindgen_ty_154 = 0;
+pub const kRogerBeepParam_InGateThresholdTime: _bindgen_ty_154 = 1;
+pub const kRogerBeepParam_OutGateThreshold: _bindgen_ty_154 = 2;
+pub const kRogerBeepParam_OutGateThresholdTime: _bindgen_ty_154 = 3;
+pub const kRogerBeepParam_Sensitivity: _bindgen_ty_154 = 4;
+pub const kRogerBeepParam_RogerType: _bindgen_ty_154 = 5;
+pub const kRogerBeepParam_RogerGain: _bindgen_ty_154 = 6;
 pub type _bindgen_ty_154 = ::std::os::raw::c_uint;
-pub const kAUNetStatus_NotConnected: _bindgen_ty_155 = 0;
-pub const kAUNetStatus_Connected: _bindgen_ty_155 = 1;
-pub const kAUNetStatus_Overflow: _bindgen_ty_155 = 2;
-pub const kAUNetStatus_Underflow: _bindgen_ty_155 = 3;
-pub const kAUNetStatus_Connecting: _bindgen_ty_155 = 4;
-pub const kAUNetStatus_Listening: _bindgen_ty_155 = 5;
+pub const kStereoMixerParam_Volume: _bindgen_ty_155 = 0;
+pub const kStereoMixerParam_Pan: _bindgen_ty_155 = 1;
+pub const kStereoMixerParam_PreAveragePower: _bindgen_ty_155 = 1000;
+pub const kStereoMixerParam_PrePeakHoldLevel: _bindgen_ty_155 = 2000;
+pub const kStereoMixerParam_PostAveragePower: _bindgen_ty_155 = 3000;
+pub const kStereoMixerParam_PostPeakHoldLevel: _bindgen_ty_155 = 4000;
 pub type _bindgen_ty_155 = ::std::os::raw::c_uint;
-pub const kMusicDeviceParam_Tuning: _bindgen_ty_156 = 0;
-pub const kMusicDeviceParam_Volume: _bindgen_ty_156 = 1;
-pub const kMusicDeviceParam_ReverbVolume: _bindgen_ty_156 = 2;
+pub const kAUNetReceiveParam_Status: _bindgen_ty_156 = 0;
+pub const kAUNetReceiveParam_NumParameters: _bindgen_ty_156 = 1;
 pub type _bindgen_ty_156 = ::std::os::raw::c_uint;
-pub const kRandomParam_BoundA: _bindgen_ty_157 = 0;
-pub const kRandomParam_BoundB: _bindgen_ty_157 = 1;
-pub const kRandomParam_Curve: _bindgen_ty_157 = 2;
+pub const kAUNetSendParam_Status: _bindgen_ty_157 = 0;
+pub const kAUNetSendParam_NumParameters: _bindgen_ty_157 = 1;
 pub type _bindgen_ty_157 = ::std::os::raw::c_uint;
-pub const kReverb2Param_DryWetMix: _bindgen_ty_158 = 0;
-pub const kReverb2Param_Gain: _bindgen_ty_158 = 1;
-pub const kReverb2Param_MinDelayTime: _bindgen_ty_158 = 2;
-pub const kReverb2Param_MaxDelayTime: _bindgen_ty_158 = 3;
-pub const kReverb2Param_DecayTimeAt0Hz: _bindgen_ty_158 = 4;
-pub const kReverb2Param_DecayTimeAtNyquist: _bindgen_ty_158 = 5;
-pub const kReverb2Param_RandomizeReflections: _bindgen_ty_158 = 6;
+pub const kAUNetStatus_NotConnected: _bindgen_ty_158 = 0;
+pub const kAUNetStatus_Connected: _bindgen_ty_158 = 1;
+pub const kAUNetStatus_Overflow: _bindgen_ty_158 = 2;
+pub const kAUNetStatus_Underflow: _bindgen_ty_158 = 3;
+pub const kAUNetStatus_Connecting: _bindgen_ty_158 = 4;
+pub const kAUNetStatus_Listening: _bindgen_ty_158 = 5;
 pub type _bindgen_ty_158 = ::std::os::raw::c_uint;
-pub const kAudioUnitScope_Global: _bindgen_ty_159 = 0;
-pub const kAudioUnitScope_Input: _bindgen_ty_159 = 1;
-pub const kAudioUnitScope_Output: _bindgen_ty_159 = 2;
-pub const kAudioUnitScope_Group: _bindgen_ty_159 = 3;
-pub const kAudioUnitScope_Part: _bindgen_ty_159 = 4;
-pub const kAudioUnitScope_Note: _bindgen_ty_159 = 5;
-pub const kAudioUnitScope_Layer: _bindgen_ty_159 = 6;
-pub const kAudioUnitScope_LayerItem: _bindgen_ty_159 = 7;
+pub const kMusicDeviceParam_Tuning: _bindgen_ty_159 = 0;
+pub const kMusicDeviceParam_Volume: _bindgen_ty_159 = 1;
+pub const kMusicDeviceParam_ReverbVolume: _bindgen_ty_159 = 2;
 pub type _bindgen_ty_159 = ::std::os::raw::c_uint;
-pub const kAudioUnitProperty_ClassInfo: _bindgen_ty_160 = 0;
-pub const kAudioUnitProperty_MakeConnection: _bindgen_ty_160 = 1;
-pub const kAudioUnitProperty_SampleRate: _bindgen_ty_160 = 2;
-pub const kAudioUnitProperty_ParameterList: _bindgen_ty_160 = 3;
-pub const kAudioUnitProperty_ParameterInfo: _bindgen_ty_160 = 4;
-pub const kAudioUnitProperty_CPULoad: _bindgen_ty_160 = 6;
-pub const kAudioUnitProperty_StreamFormat: _bindgen_ty_160 = 8;
-pub const kAudioUnitProperty_ElementCount: _bindgen_ty_160 = 11;
-pub const kAudioUnitProperty_Latency: _bindgen_ty_160 = 12;
-pub const kAudioUnitProperty_SupportedNumChannels: _bindgen_ty_160 = 13;
-pub const kAudioUnitProperty_MaximumFramesPerSlice: _bindgen_ty_160 = 14;
-pub const kAudioUnitProperty_ParameterValueStrings: _bindgen_ty_160 = 16;
-pub const kAudioUnitProperty_AudioChannelLayout: _bindgen_ty_160 = 19;
-pub const kAudioUnitProperty_TailTime: _bindgen_ty_160 = 20;
-pub const kAudioUnitProperty_BypassEffect: _bindgen_ty_160 = 21;
-pub const kAudioUnitProperty_LastRenderError: _bindgen_ty_160 = 22;
-pub const kAudioUnitProperty_SetRenderCallback: _bindgen_ty_160 = 23;
-pub const kAudioUnitProperty_FactoryPresets: _bindgen_ty_160 = 24;
-pub const kAudioUnitProperty_RenderQuality: _bindgen_ty_160 = 26;
-pub const kAudioUnitProperty_HostCallbacks: _bindgen_ty_160 = 27;
-pub const kAudioUnitProperty_InPlaceProcessing: _bindgen_ty_160 = 29;
-pub const kAudioUnitProperty_ElementName: _bindgen_ty_160 = 30;
-pub const kAudioUnitProperty_SupportedChannelLayoutTags: _bindgen_ty_160 = 32;
-pub const kAudioUnitProperty_PresentPreset: _bindgen_ty_160 = 36;
-pub const kAudioUnitProperty_DependentParameters: _bindgen_ty_160 = 45;
-pub const kAudioUnitProperty_InputSamplesInOutput: _bindgen_ty_160 = 49;
-pub const kAudioUnitProperty_ShouldAllocateBuffer: _bindgen_ty_160 = 51;
-pub const kAudioUnitProperty_FrequencyResponse: _bindgen_ty_160 = 52;
-pub const kAudioUnitProperty_ParameterHistoryInfo: _bindgen_ty_160 = 53;
-pub const kAudioUnitProperty_NickName: _bindgen_ty_160 = 54;
-pub const kAudioUnitProperty_OfflineRender: _bindgen_ty_160 = 37;
-pub const kAudioUnitProperty_ParameterIDName: _bindgen_ty_160 = 34;
-pub const kAudioUnitProperty_ParameterStringFromValue: _bindgen_ty_160 = 33;
-pub const kAudioUnitProperty_ParameterClumpName: _bindgen_ty_160 = 35;
-pub const kAudioUnitProperty_ParameterValueFromString: _bindgen_ty_160 = 38;
-pub const kAudioUnitProperty_ContextName: _bindgen_ty_160 = 25;
-pub const kAudioUnitProperty_PresentationLatency: _bindgen_ty_160 = 40;
-pub const kAudioUnitProperty_ClassInfoFromDocument: _bindgen_ty_160 = 50;
-pub const kAudioUnitProperty_RequestViewController: _bindgen_ty_160 = 56;
-pub const kAudioUnitProperty_ParametersForOverview: _bindgen_ty_160 = 57;
-pub const kAudioUnitProperty_SupportsMPE: _bindgen_ty_160 = 58;
-pub const kAudioUnitProperty_RenderContextObserver: _bindgen_ty_160 = 60;
-pub const kAudioUnitProperty_LastRenderSampleTime: _bindgen_ty_160 = 61;
-pub const kAudioUnitProperty_LoadedOutOfProcess: _bindgen_ty_160 = 62;
-pub const kAudioUnitProperty_FastDispatch: _bindgen_ty_160 = 5;
-pub const kAudioUnitProperty_SetExternalBuffer: _bindgen_ty_160 = 15;
-pub const kAudioUnitProperty_GetUIComponentList: _bindgen_ty_160 = 18;
-pub const kAudioUnitProperty_CocoaUI: _bindgen_ty_160 = 31;
-pub const kAudioUnitProperty_IconLocation: _bindgen_ty_160 = 39;
-pub const kAudioUnitProperty_AUHostIdentifier: _bindgen_ty_160 = 46;
-pub const kAudioUnitProperty_MIDIOutputCallbackInfo: _bindgen_ty_160 = 47;
-pub const kAudioUnitProperty_MIDIOutputCallback: _bindgen_ty_160 = 48;
-pub const kAudioUnitProperty_MIDIOutputEventListCallback: _bindgen_ty_160 = 63;
-pub const kAudioUnitProperty_AudioUnitMIDIProtocol: _bindgen_ty_160 = 64;
-pub const kAudioUnitProperty_HostMIDIProtocol: _bindgen_ty_160 = 65;
-pub const kAudioUnitProperty_MIDIOutputBufferSizeHint: _bindgen_ty_160 = 66;
+pub const kRandomParam_BoundA: _bindgen_ty_160 = 0;
+pub const kRandomParam_BoundB: _bindgen_ty_160 = 1;
+pub const kRandomParam_Curve: _bindgen_ty_160 = 2;
 pub type _bindgen_ty_160 = ::std::os::raw::c_uint;
-pub const kAudioUnitProperty_RemoteControlEventListener: _bindgen_ty_161 = 100;
-pub const kAudioUnitProperty_IsInterAppConnected: _bindgen_ty_161 = 101;
-pub const kAudioUnitProperty_PeerURL: _bindgen_ty_161 = 102;
+pub const kReverb2Param_DryWetMix: _bindgen_ty_161 = 0;
+pub const kReverb2Param_Gain: _bindgen_ty_161 = 1;
+pub const kReverb2Param_MinDelayTime: _bindgen_ty_161 = 2;
+pub const kReverb2Param_MaxDelayTime: _bindgen_ty_161 = 3;
+pub const kReverb2Param_DecayTimeAt0Hz: _bindgen_ty_161 = 4;
+pub const kReverb2Param_DecayTimeAtNyquist: _bindgen_ty_161 = 5;
+pub const kReverb2Param_RandomizeReflections: _bindgen_ty_161 = 6;
 pub type _bindgen_ty_161 = ::std::os::raw::c_uint;
+pub const kAudioUnitScope_Global: _bindgen_ty_162 = 0;
+pub const kAudioUnitScope_Input: _bindgen_ty_162 = 1;
+pub const kAudioUnitScope_Output: _bindgen_ty_162 = 2;
+pub const kAudioUnitScope_Group: _bindgen_ty_162 = 3;
+pub const kAudioUnitScope_Part: _bindgen_ty_162 = 4;
+pub const kAudioUnitScope_Note: _bindgen_ty_162 = 5;
+pub const kAudioUnitScope_Layer: _bindgen_ty_162 = 6;
+pub const kAudioUnitScope_LayerItem: _bindgen_ty_162 = 7;
+pub type _bindgen_ty_162 = ::std::os::raw::c_uint;
+pub const kAudioUnitProperty_ClassInfo: _bindgen_ty_163 = 0;
+pub const kAudioUnitProperty_MakeConnection: _bindgen_ty_163 = 1;
+pub const kAudioUnitProperty_SampleRate: _bindgen_ty_163 = 2;
+pub const kAudioUnitProperty_ParameterList: _bindgen_ty_163 = 3;
+pub const kAudioUnitProperty_ParameterInfo: _bindgen_ty_163 = 4;
+pub const kAudioUnitProperty_CPULoad: _bindgen_ty_163 = 6;
+pub const kAudioUnitProperty_StreamFormat: _bindgen_ty_163 = 8;
+pub const kAudioUnitProperty_ElementCount: _bindgen_ty_163 = 11;
+pub const kAudioUnitProperty_Latency: _bindgen_ty_163 = 12;
+pub const kAudioUnitProperty_SupportedNumChannels: _bindgen_ty_163 = 13;
+pub const kAudioUnitProperty_MaximumFramesPerSlice: _bindgen_ty_163 = 14;
+pub const kAudioUnitProperty_ParameterValueStrings: _bindgen_ty_163 = 16;
+pub const kAudioUnitProperty_AudioChannelLayout: _bindgen_ty_163 = 19;
+pub const kAudioUnitProperty_TailTime: _bindgen_ty_163 = 20;
+pub const kAudioUnitProperty_BypassEffect: _bindgen_ty_163 = 21;
+pub const kAudioUnitProperty_LastRenderError: _bindgen_ty_163 = 22;
+pub const kAudioUnitProperty_SetRenderCallback: _bindgen_ty_163 = 23;
+pub const kAudioUnitProperty_FactoryPresets: _bindgen_ty_163 = 24;
+pub const kAudioUnitProperty_RenderQuality: _bindgen_ty_163 = 26;
+pub const kAudioUnitProperty_HostCallbacks: _bindgen_ty_163 = 27;
+pub const kAudioUnitProperty_InPlaceProcessing: _bindgen_ty_163 = 29;
+pub const kAudioUnitProperty_ElementName: _bindgen_ty_163 = 30;
+pub const kAudioUnitProperty_SupportedChannelLayoutTags: _bindgen_ty_163 = 32;
+pub const kAudioUnitProperty_PresentPreset: _bindgen_ty_163 = 36;
+pub const kAudioUnitProperty_DependentParameters: _bindgen_ty_163 = 45;
+pub const kAudioUnitProperty_InputSamplesInOutput: _bindgen_ty_163 = 49;
+pub const kAudioUnitProperty_ShouldAllocateBuffer: _bindgen_ty_163 = 51;
+pub const kAudioUnitProperty_FrequencyResponse: _bindgen_ty_163 = 52;
+pub const kAudioUnitProperty_ParameterHistoryInfo: _bindgen_ty_163 = 53;
+pub const kAudioUnitProperty_NickName: _bindgen_ty_163 = 54;
+pub const kAudioUnitProperty_OfflineRender: _bindgen_ty_163 = 37;
+pub const kAudioUnitProperty_ParameterIDName: _bindgen_ty_163 = 34;
+pub const kAudioUnitProperty_ParameterStringFromValue: _bindgen_ty_163 = 33;
+pub const kAudioUnitProperty_ParameterClumpName: _bindgen_ty_163 = 35;
+pub const kAudioUnitProperty_ParameterValueFromString: _bindgen_ty_163 = 38;
+pub const kAudioUnitProperty_ContextName: _bindgen_ty_163 = 25;
+pub const kAudioUnitProperty_PresentationLatency: _bindgen_ty_163 = 40;
+pub const kAudioUnitProperty_ClassInfoFromDocument: _bindgen_ty_163 = 50;
+pub const kAudioUnitProperty_RequestViewController: _bindgen_ty_163 = 56;
+pub const kAudioUnitProperty_ParametersForOverview: _bindgen_ty_163 = 57;
+pub const kAudioUnitProperty_SupportsMPE: _bindgen_ty_163 = 58;
+pub const kAudioUnitProperty_RenderContextObserver: _bindgen_ty_163 = 60;
+pub const kAudioUnitProperty_LastRenderSampleTime: _bindgen_ty_163 = 61;
+pub const kAudioUnitProperty_LoadedOutOfProcess: _bindgen_ty_163 = 62;
+pub const kAudioUnitProperty_FastDispatch: _bindgen_ty_163 = 5;
+pub const kAudioUnitProperty_SetExternalBuffer: _bindgen_ty_163 = 15;
+pub const kAudioUnitProperty_GetUIComponentList: _bindgen_ty_163 = 18;
+pub const kAudioUnitProperty_CocoaUI: _bindgen_ty_163 = 31;
+pub const kAudioUnitProperty_IconLocation: _bindgen_ty_163 = 39;
+pub const kAudioUnitProperty_AUHostIdentifier: _bindgen_ty_163 = 46;
+pub const kAudioUnitProperty_MIDIOutputCallbackInfo: _bindgen_ty_163 = 47;
+pub const kAudioUnitProperty_MIDIOutputCallback: _bindgen_ty_163 = 48;
+pub const kAudioUnitProperty_MIDIOutputEventListCallback: _bindgen_ty_163 = 63;
+pub const kAudioUnitProperty_AudioUnitMIDIProtocol: _bindgen_ty_163 = 64;
+pub const kAudioUnitProperty_HostMIDIProtocol: _bindgen_ty_163 = 65;
+pub const kAudioUnitProperty_MIDIOutputBufferSizeHint: _bindgen_ty_163 = 66;
+pub type _bindgen_ty_163 = ::std::os::raw::c_uint;
+pub const kAudioUnitProperty_RemoteControlEventListener: _bindgen_ty_164 = 100;
+pub const kAudioUnitProperty_IsInterAppConnected: _bindgen_ty_164 = 101;
+pub const kAudioUnitProperty_PeerURL: _bindgen_ty_164 = 102;
+pub type _bindgen_ty_164 = ::std::os::raw::c_uint;
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
 pub struct AudioUnitConnection {
@@ -18949,14 +19201,14 @@ impl Default for AUPreset {
         }
     }
 }
-pub const kRenderQuality_Max: _bindgen_ty_162 = 127;
-pub const kRenderQuality_High: _bindgen_ty_162 = 96;
-pub const kRenderQuality_Medium: _bindgen_ty_162 = 64;
-pub const kRenderQuality_Low: _bindgen_ty_162 = 32;
-pub const kRenderQuality_Min: _bindgen_ty_162 = 0;
-pub type _bindgen_ty_162 = ::std::os::raw::c_uint;
-pub const kNumberOfResponseFrequencies: _bindgen_ty_163 = 1024;
-pub type _bindgen_ty_163 = ::std::os::raw::c_uint;
+pub const kRenderQuality_Max: _bindgen_ty_165 = 127;
+pub const kRenderQuality_High: _bindgen_ty_165 = 96;
+pub const kRenderQuality_Medium: _bindgen_ty_165 = 64;
+pub const kRenderQuality_Low: _bindgen_ty_165 = 32;
+pub const kRenderQuality_Min: _bindgen_ty_165 = 0;
+pub type _bindgen_ty_165 = ::std::os::raw::c_uint;
+pub const kNumberOfResponseFrequencies: _bindgen_ty_166 = 1024;
+pub type _bindgen_ty_166 = ::std::os::raw::c_uint;
 #[repr(C)]
 #[derive(Debug, Default, Copy, Clone)]
 pub struct AudioUnitFrequencyResponseBin {
@@ -19129,59 +19381,59 @@ pub struct MIDIEventList {
 pub type AUEventSampleTime = i64;
 pub type AUMIDIEventListBlock = *mut ::std::os::raw::c_void;
 pub type AudioUnitParameterUnit = UInt32;
-pub const kAudioUnitParameterUnit_Generic: _bindgen_ty_164 = 0;
-pub const kAudioUnitParameterUnit_Indexed: _bindgen_ty_164 = 1;
-pub const kAudioUnitParameterUnit_Boolean: _bindgen_ty_164 = 2;
-pub const kAudioUnitParameterUnit_Percent: _bindgen_ty_164 = 3;
-pub const kAudioUnitParameterUnit_Seconds: _bindgen_ty_164 = 4;
-pub const kAudioUnitParameterUnit_SampleFrames: _bindgen_ty_164 = 5;
-pub const kAudioUnitParameterUnit_Phase: _bindgen_ty_164 = 6;
-pub const kAudioUnitParameterUnit_Rate: _bindgen_ty_164 = 7;
-pub const kAudioUnitParameterUnit_Hertz: _bindgen_ty_164 = 8;
-pub const kAudioUnitParameterUnit_Cents: _bindgen_ty_164 = 9;
-pub const kAudioUnitParameterUnit_RelativeSemiTones: _bindgen_ty_164 = 10;
-pub const kAudioUnitParameterUnit_MIDINoteNumber: _bindgen_ty_164 = 11;
-pub const kAudioUnitParameterUnit_MIDIController: _bindgen_ty_164 = 12;
-pub const kAudioUnitParameterUnit_Decibels: _bindgen_ty_164 = 13;
-pub const kAudioUnitParameterUnit_LinearGain: _bindgen_ty_164 = 14;
-pub const kAudioUnitParameterUnit_Degrees: _bindgen_ty_164 = 15;
-pub const kAudioUnitParameterUnit_EqualPowerCrossfade: _bindgen_ty_164 = 16;
-pub const kAudioUnitParameterUnit_MixerFaderCurve1: _bindgen_ty_164 = 17;
-pub const kAudioUnitParameterUnit_Pan: _bindgen_ty_164 = 18;
-pub const kAudioUnitParameterUnit_Meters: _bindgen_ty_164 = 19;
-pub const kAudioUnitParameterUnit_AbsoluteCents: _bindgen_ty_164 = 20;
-pub const kAudioUnitParameterUnit_Octaves: _bindgen_ty_164 = 21;
-pub const kAudioUnitParameterUnit_BPM: _bindgen_ty_164 = 22;
-pub const kAudioUnitParameterUnit_Beats: _bindgen_ty_164 = 23;
-pub const kAudioUnitParameterUnit_Milliseconds: _bindgen_ty_164 = 24;
-pub const kAudioUnitParameterUnit_Ratio: _bindgen_ty_164 = 25;
-pub const kAudioUnitParameterUnit_CustomUnit: _bindgen_ty_164 = 26;
-pub const kAudioUnitParameterUnit_MIDI2Controller: _bindgen_ty_164 = 27;
-pub type _bindgen_ty_164 = ::std::os::raw::c_uint;
+pub const kAudioUnitParameterUnit_Generic: _bindgen_ty_167 = 0;
+pub const kAudioUnitParameterUnit_Indexed: _bindgen_ty_167 = 1;
+pub const kAudioUnitParameterUnit_Boolean: _bindgen_ty_167 = 2;
+pub const kAudioUnitParameterUnit_Percent: _bindgen_ty_167 = 3;
+pub const kAudioUnitParameterUnit_Seconds: _bindgen_ty_167 = 4;
+pub const kAudioUnitParameterUnit_SampleFrames: _bindgen_ty_167 = 5;
+pub const kAudioUnitParameterUnit_Phase: _bindgen_ty_167 = 6;
+pub const kAudioUnitParameterUnit_Rate: _bindgen_ty_167 = 7;
+pub const kAudioUnitParameterUnit_Hertz: _bindgen_ty_167 = 8;
+pub const kAudioUnitParameterUnit_Cents: _bindgen_ty_167 = 9;
+pub const kAudioUnitParameterUnit_RelativeSemiTones: _bindgen_ty_167 = 10;
+pub const kAudioUnitParameterUnit_MIDINoteNumber: _bindgen_ty_167 = 11;
+pub const kAudioUnitParameterUnit_MIDIController: _bindgen_ty_167 = 12;
+pub const kAudioUnitParameterUnit_Decibels: _bindgen_ty_167 = 13;
+pub const kAudioUnitParameterUnit_LinearGain: _bindgen_ty_167 = 14;
+pub const kAudioUnitParameterUnit_Degrees: _bindgen_ty_167 = 15;
+pub const kAudioUnitParameterUnit_EqualPowerCrossfade: _bindgen_ty_167 = 16;
+pub const kAudioUnitParameterUnit_MixerFaderCurve1: _bindgen_ty_167 = 17;
+pub const kAudioUnitParameterUnit_Pan: _bindgen_ty_167 = 18;
+pub const kAudioUnitParameterUnit_Meters: _bindgen_ty_167 = 19;
+pub const kAudioUnitParameterUnit_AbsoluteCents: _bindgen_ty_167 = 20;
+pub const kAudioUnitParameterUnit_Octaves: _bindgen_ty_167 = 21;
+pub const kAudioUnitParameterUnit_BPM: _bindgen_ty_167 = 22;
+pub const kAudioUnitParameterUnit_Beats: _bindgen_ty_167 = 23;
+pub const kAudioUnitParameterUnit_Milliseconds: _bindgen_ty_167 = 24;
+pub const kAudioUnitParameterUnit_Ratio: _bindgen_ty_167 = 25;
+pub const kAudioUnitParameterUnit_CustomUnit: _bindgen_ty_167 = 26;
+pub const kAudioUnitParameterUnit_MIDI2Controller: _bindgen_ty_167 = 27;
+pub type _bindgen_ty_167 = ::std::os::raw::c_uint;
 pub type AudioUnitParameterOptions = UInt32;
-pub const kAudioUnitParameterFlag_CFNameRelease: _bindgen_ty_165 = 16;
-pub const kAudioUnitParameterFlag_OmitFromPresets: _bindgen_ty_165 = 8192;
-pub const kAudioUnitParameterFlag_PlotHistory: _bindgen_ty_165 = 16384;
-pub const kAudioUnitParameterFlag_MeterReadOnly: _bindgen_ty_165 = 32768;
-pub const kAudioUnitParameterFlag_DisplayMask: _bindgen_ty_165 = 4653056;
-pub const kAudioUnitParameterFlag_DisplaySquareRoot: _bindgen_ty_165 = 65536;
-pub const kAudioUnitParameterFlag_DisplaySquared: _bindgen_ty_165 = 131072;
-pub const kAudioUnitParameterFlag_DisplayCubed: _bindgen_ty_165 = 196608;
-pub const kAudioUnitParameterFlag_DisplayCubeRoot: _bindgen_ty_165 = 262144;
-pub const kAudioUnitParameterFlag_DisplayExponential: _bindgen_ty_165 = 327680;
-pub const kAudioUnitParameterFlag_HasClump: _bindgen_ty_165 = 1048576;
-pub const kAudioUnitParameterFlag_ValuesHaveStrings: _bindgen_ty_165 = 2097152;
-pub const kAudioUnitParameterFlag_DisplayLogarithmic: _bindgen_ty_165 = 4194304;
-pub const kAudioUnitParameterFlag_IsHighResolution: _bindgen_ty_165 = 8388608;
-pub const kAudioUnitParameterFlag_NonRealTime: _bindgen_ty_165 = 16777216;
-pub const kAudioUnitParameterFlag_CanRamp: _bindgen_ty_165 = 33554432;
-pub const kAudioUnitParameterFlag_ExpertMode: _bindgen_ty_165 = 67108864;
-pub const kAudioUnitParameterFlag_HasCFNameString: _bindgen_ty_165 = 134217728;
-pub const kAudioUnitParameterFlag_IsGlobalMeta: _bindgen_ty_165 = 268435456;
-pub const kAudioUnitParameterFlag_IsElementMeta: _bindgen_ty_165 = 536870912;
-pub const kAudioUnitParameterFlag_IsReadable: _bindgen_ty_165 = 1073741824;
-pub const kAudioUnitParameterFlag_IsWritable: _bindgen_ty_165 = 2147483648;
-pub type _bindgen_ty_165 = ::std::os::raw::c_uint;
+pub const kAudioUnitParameterFlag_CFNameRelease: _bindgen_ty_168 = 16;
+pub const kAudioUnitParameterFlag_OmitFromPresets: _bindgen_ty_168 = 8192;
+pub const kAudioUnitParameterFlag_PlotHistory: _bindgen_ty_168 = 16384;
+pub const kAudioUnitParameterFlag_MeterReadOnly: _bindgen_ty_168 = 32768;
+pub const kAudioUnitParameterFlag_DisplayMask: _bindgen_ty_168 = 4653056;
+pub const kAudioUnitParameterFlag_DisplaySquareRoot: _bindgen_ty_168 = 65536;
+pub const kAudioUnitParameterFlag_DisplaySquared: _bindgen_ty_168 = 131072;
+pub const kAudioUnitParameterFlag_DisplayCubed: _bindgen_ty_168 = 196608;
+pub const kAudioUnitParameterFlag_DisplayCubeRoot: _bindgen_ty_168 = 262144;
+pub const kAudioUnitParameterFlag_DisplayExponential: _bindgen_ty_168 = 327680;
+pub const kAudioUnitParameterFlag_HasClump: _bindgen_ty_168 = 1048576;
+pub const kAudioUnitParameterFlag_ValuesHaveStrings: _bindgen_ty_168 = 2097152;
+pub const kAudioUnitParameterFlag_DisplayLogarithmic: _bindgen_ty_168 = 4194304;
+pub const kAudioUnitParameterFlag_IsHighResolution: _bindgen_ty_168 = 8388608;
+pub const kAudioUnitParameterFlag_NonRealTime: _bindgen_ty_168 = 16777216;
+pub const kAudioUnitParameterFlag_CanRamp: _bindgen_ty_168 = 33554432;
+pub const kAudioUnitParameterFlag_ExpertMode: _bindgen_ty_168 = 67108864;
+pub const kAudioUnitParameterFlag_HasCFNameString: _bindgen_ty_168 = 134217728;
+pub const kAudioUnitParameterFlag_IsGlobalMeta: _bindgen_ty_168 = 268435456;
+pub const kAudioUnitParameterFlag_IsElementMeta: _bindgen_ty_168 = 536870912;
+pub const kAudioUnitParameterFlag_IsReadable: _bindgen_ty_168 = 1073741824;
+pub const kAudioUnitParameterFlag_IsWritable: _bindgen_ty_168 = 2147483648;
+pub type _bindgen_ty_168 = ::std::os::raw::c_uint;
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
 pub struct AudioUnitParameterInfo {
@@ -19204,10 +19456,10 @@ impl Default for AudioUnitParameterInfo {
         }
     }
 }
-pub const kAudioUnitClumpID_System: _bindgen_ty_166 = 0;
-pub type _bindgen_ty_166 = ::std::os::raw::c_uint;
-pub const kAudioUnitParameterName_Full: _bindgen_ty_167 = -1;
-pub type _bindgen_ty_167 = ::std::os::raw::c_int;
+pub const kAudioUnitClumpID_System: _bindgen_ty_169 = 0;
+pub type _bindgen_ty_169 = ::std::os::raw::c_uint;
+pub const kAudioUnitParameterName_Full: _bindgen_ty_170 = -1;
+pub type _bindgen_ty_170 = ::std::os::raw::c_int;
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
 pub struct AudioUnitParameterNameInfo {
@@ -19258,24 +19510,24 @@ impl Default for AudioUnitParameterValueFromString {
     }
 }
 pub type AudioUnitRemoteControlEvent = UInt32;
-pub const kAudioUnitRemoteControlEvent_TogglePlayPause: _bindgen_ty_168 = 1;
-pub const kAudioUnitRemoteControlEvent_ToggleRecord: _bindgen_ty_168 = 2;
-pub const kAudioUnitRemoteControlEvent_Rewind: _bindgen_ty_168 = 3;
-pub type _bindgen_ty_168 = ::std::os::raw::c_uint;
+pub const kAudioUnitRemoteControlEvent_TogglePlayPause: _bindgen_ty_171 = 1;
+pub const kAudioUnitRemoteControlEvent_ToggleRecord: _bindgen_ty_171 = 2;
+pub const kAudioUnitRemoteControlEvent_Rewind: _bindgen_ty_171 = 3;
+pub type _bindgen_ty_171 = ::std::os::raw::c_uint;
 pub type AudioUnitRemoteControlEventListener = *mut ::std::os::raw::c_void;
-pub const kAudioUnitProperty_AllParameterMIDIMappings: _bindgen_ty_169 = 41;
-pub const kAudioUnitProperty_AddParameterMIDIMapping: _bindgen_ty_169 = 42;
-pub const kAudioUnitProperty_RemoveParameterMIDIMapping: _bindgen_ty_169 = 43;
-pub const kAudioUnitProperty_HotMapParameterMIDIMapping: _bindgen_ty_169 = 44;
-pub type _bindgen_ty_169 = ::std::os::raw::c_uint;
+pub const kAudioUnitProperty_AllParameterMIDIMappings: _bindgen_ty_172 = 41;
+pub const kAudioUnitProperty_AddParameterMIDIMapping: _bindgen_ty_172 = 42;
+pub const kAudioUnitProperty_RemoveParameterMIDIMapping: _bindgen_ty_172 = 43;
+pub const kAudioUnitProperty_HotMapParameterMIDIMapping: _bindgen_ty_172 = 44;
+pub type _bindgen_ty_172 = ::std::os::raw::c_uint;
 pub type AUParameterMIDIMappingFlags = UInt32;
-pub const kAUParameterMIDIMapping_AnyChannelFlag: _bindgen_ty_170 = 1;
-pub const kAUParameterMIDIMapping_AnyNoteFlag: _bindgen_ty_170 = 2;
-pub const kAUParameterMIDIMapping_SubRange: _bindgen_ty_170 = 4;
-pub const kAUParameterMIDIMapping_Toggle: _bindgen_ty_170 = 8;
-pub const kAUParameterMIDIMapping_Bipolar: _bindgen_ty_170 = 16;
-pub const kAUParameterMIDIMapping_Bipolar_On: _bindgen_ty_170 = 32;
-pub type _bindgen_ty_170 = ::std::os::raw::c_uint;
+pub const kAUParameterMIDIMapping_AnyChannelFlag: _bindgen_ty_173 = 1;
+pub const kAUParameterMIDIMapping_AnyNoteFlag: _bindgen_ty_173 = 2;
+pub const kAUParameterMIDIMapping_SubRange: _bindgen_ty_173 = 4;
+pub const kAUParameterMIDIMapping_Toggle: _bindgen_ty_173 = 8;
+pub const kAUParameterMIDIMapping_Bipolar: _bindgen_ty_173 = 16;
+pub const kAUParameterMIDIMapping_Bipolar_On: _bindgen_ty_173 = 32;
+pub type _bindgen_ty_173 = ::std::os::raw::c_uint;
 #[repr(C)]
 #[derive(Debug, Default, Copy, Clone)]
 pub struct AUParameterMIDIMapping {
@@ -19291,26 +19543,26 @@ pub struct AUParameterMIDIMapping {
     pub reserved2: UInt8,
     pub reserved3: UInt32,
 }
-pub const kMusicDeviceProperty_MIDIXMLNames: _bindgen_ty_171 = 1006;
-pub const kMusicDeviceProperty_PartGroup: _bindgen_ty_171 = 1010;
-pub const kMusicDeviceProperty_DualSchedulingMode: _bindgen_ty_171 = 1013;
-pub const kMusicDeviceProperty_SupportsStartStopNote: _bindgen_ty_171 = 1014;
-pub type _bindgen_ty_171 = ::std::os::raw::c_uint;
-pub const kMusicDeviceSampleFrameMask_SampleOffset: _bindgen_ty_172 = 16777215;
-pub const kMusicDeviceSampleFrameMask_IsScheduled: _bindgen_ty_172 = 16777216;
-pub type _bindgen_ty_172 = ::std::os::raw::c_uint;
-pub const kAudioUnitOfflineProperty_InputSize: _bindgen_ty_173 = 3020;
-pub const kAudioUnitOfflineProperty_OutputSize: _bindgen_ty_173 = 3021;
-pub const kAudioUnitOfflineProperty_StartOffset: _bindgen_ty_173 = 3022;
-pub const kAudioUnitOfflineProperty_PreflightRequirements: _bindgen_ty_173 = 3023;
-pub const kAudioUnitOfflineProperty_PreflightName: _bindgen_ty_173 = 3024;
-pub type _bindgen_ty_173 = ::std::os::raw::c_uint;
-pub const kOfflinePreflight_NotRequired: _bindgen_ty_174 = 0;
-pub const kOfflinePreflight_Optional: _bindgen_ty_174 = 1;
-pub const kOfflinePreflight_Required: _bindgen_ty_174 = 2;
+pub const kMusicDeviceProperty_MIDIXMLNames: _bindgen_ty_174 = 1006;
+pub const kMusicDeviceProperty_PartGroup: _bindgen_ty_174 = 1010;
+pub const kMusicDeviceProperty_DualSchedulingMode: _bindgen_ty_174 = 1013;
+pub const kMusicDeviceProperty_SupportsStartStopNote: _bindgen_ty_174 = 1014;
 pub type _bindgen_ty_174 = ::std::os::raw::c_uint;
-pub const kAudioUnitProperty_DistanceAttenuationData: _bindgen_ty_175 = 3600;
+pub const kMusicDeviceSampleFrameMask_SampleOffset: _bindgen_ty_175 = 16777215;
+pub const kMusicDeviceSampleFrameMask_IsScheduled: _bindgen_ty_175 = 16777216;
 pub type _bindgen_ty_175 = ::std::os::raw::c_uint;
+pub const kAudioUnitOfflineProperty_InputSize: _bindgen_ty_176 = 3020;
+pub const kAudioUnitOfflineProperty_OutputSize: _bindgen_ty_176 = 3021;
+pub const kAudioUnitOfflineProperty_StartOffset: _bindgen_ty_176 = 3022;
+pub const kAudioUnitOfflineProperty_PreflightRequirements: _bindgen_ty_176 = 3023;
+pub const kAudioUnitOfflineProperty_PreflightName: _bindgen_ty_176 = 3024;
+pub type _bindgen_ty_176 = ::std::os::raw::c_uint;
+pub const kOfflinePreflight_NotRequired: _bindgen_ty_177 = 0;
+pub const kOfflinePreflight_Optional: _bindgen_ty_177 = 1;
+pub const kOfflinePreflight_Required: _bindgen_ty_177 = 2;
+pub type _bindgen_ty_177 = ::std::os::raw::c_uint;
+pub const kAudioUnitProperty_DistanceAttenuationData: _bindgen_ty_178 = 3600;
+pub type _bindgen_ty_178 = ::std::os::raw::c_uint;
 #[repr(C)]
 #[derive(Debug, Default, Copy, Clone)]
 pub struct AUDistanceAttenuationData {
@@ -19323,14 +19575,14 @@ pub struct AUDistanceAttenuationData__bindgen_ty_1 {
     pub inDistance: Float32,
     pub outGain: Float32,
 }
-pub const kAudioUnitMigrateProperty_FromPlugin: _bindgen_ty_176 = 4000;
-pub const kAudioUnitMigrateProperty_OldAutomation: _bindgen_ty_176 = 4001;
-pub type _bindgen_ty_176 = ::std::os::raw::c_uint;
-pub const kOtherPluginFormat_Undefined: _bindgen_ty_177 = 0;
-pub const kOtherPluginFormat_kMAS: _bindgen_ty_177 = 1;
-pub const kOtherPluginFormat_kVST: _bindgen_ty_177 = 2;
-pub const kOtherPluginFormat_AU: _bindgen_ty_177 = 3;
-pub type _bindgen_ty_177 = ::std::os::raw::c_uint;
+pub const kAudioUnitMigrateProperty_FromPlugin: _bindgen_ty_179 = 4000;
+pub const kAudioUnitMigrateProperty_OldAutomation: _bindgen_ty_179 = 4001;
+pub type _bindgen_ty_179 = ::std::os::raw::c_uint;
+pub const kOtherPluginFormat_Undefined: _bindgen_ty_180 = 0;
+pub const kOtherPluginFormat_kMAS: _bindgen_ty_180 = 1;
+pub const kOtherPluginFormat_kVST: _bindgen_ty_180 = 2;
+pub const kOtherPluginFormat_AU: _bindgen_ty_180 = 3;
+pub type _bindgen_ty_180 = ::std::os::raw::c_uint;
 #[repr(C)]
 #[derive(Debug, Default, Copy, Clone)]
 pub struct AudioUnitOtherPluginDesc {
@@ -19364,28 +19616,28 @@ pub struct AudioUnitPresetMAS_Settings {
     pub numberOfSettings: UInt32,
     pub settings: [AudioUnitPresetMAS_SettingData; 1usize],
 }
-pub const kAudioUnitProperty_SampleRateConverterComplexity: _bindgen_ty_178 = 3014;
-pub type _bindgen_ty_178 = ::std::os::raw::c_uint;
-pub const kAudioUnitSampleRateConverterComplexity_Linear: _bindgen_ty_179 = 1818848869;
-pub const kAudioUnitSampleRateConverterComplexity_Normal: _bindgen_ty_179 = 1852797549;
-pub const kAudioUnitSampleRateConverterComplexity_Mastering: _bindgen_ty_179 = 1650553971;
-pub type _bindgen_ty_179 = ::std::os::raw::c_uint;
-pub const kAudioOutputUnitProperty_CurrentDevice: _bindgen_ty_180 = 2000;
-pub const kAudioOutputUnitProperty_IsRunning: _bindgen_ty_180 = 2001;
-pub const kAudioOutputUnitProperty_ChannelMap: _bindgen_ty_180 = 2002;
-pub const kAudioOutputUnitProperty_EnableIO: _bindgen_ty_180 = 2003;
-pub const kAudioOutputUnitProperty_StartTime: _bindgen_ty_180 = 2004;
-pub const kAudioOutputUnitProperty_SetInputCallback: _bindgen_ty_180 = 2005;
-pub const kAudioOutputUnitProperty_HasIO: _bindgen_ty_180 = 2006;
-pub const kAudioOutputUnitProperty_StartTimestampsAtZero: _bindgen_ty_180 = 2007;
-pub const kAudioOutputUnitProperty_OSWorkgroup: _bindgen_ty_180 = 2015;
-pub type _bindgen_ty_180 = ::std::os::raw::c_uint;
-pub const kAudioOutputUnitProperty_MIDICallbacks: _bindgen_ty_181 = 2010;
-pub const kAudioOutputUnitProperty_HostReceivesRemoteControlEvents: _bindgen_ty_181 = 2011;
-pub const kAudioOutputUnitProperty_RemoteControlToHost: _bindgen_ty_181 = 2012;
-pub const kAudioOutputUnitProperty_HostTransportState: _bindgen_ty_181 = 2013;
-pub const kAudioOutputUnitProperty_NodeComponentDescription: _bindgen_ty_181 = 2014;
+pub const kAudioUnitProperty_SampleRateConverterComplexity: _bindgen_ty_181 = 3014;
 pub type _bindgen_ty_181 = ::std::os::raw::c_uint;
+pub const kAudioUnitSampleRateConverterComplexity_Linear: _bindgen_ty_182 = 1818848869;
+pub const kAudioUnitSampleRateConverterComplexity_Normal: _bindgen_ty_182 = 1852797549;
+pub const kAudioUnitSampleRateConverterComplexity_Mastering: _bindgen_ty_182 = 1650553971;
+pub type _bindgen_ty_182 = ::std::os::raw::c_uint;
+pub const kAudioOutputUnitProperty_CurrentDevice: _bindgen_ty_183 = 2000;
+pub const kAudioOutputUnitProperty_IsRunning: _bindgen_ty_183 = 2001;
+pub const kAudioOutputUnitProperty_ChannelMap: _bindgen_ty_183 = 2002;
+pub const kAudioOutputUnitProperty_EnableIO: _bindgen_ty_183 = 2003;
+pub const kAudioOutputUnitProperty_StartTime: _bindgen_ty_183 = 2004;
+pub const kAudioOutputUnitProperty_SetInputCallback: _bindgen_ty_183 = 2005;
+pub const kAudioOutputUnitProperty_HasIO: _bindgen_ty_183 = 2006;
+pub const kAudioOutputUnitProperty_StartTimestampsAtZero: _bindgen_ty_183 = 2007;
+pub const kAudioOutputUnitProperty_OSWorkgroup: _bindgen_ty_183 = 2015;
+pub type _bindgen_ty_183 = ::std::os::raw::c_uint;
+pub const kAudioOutputUnitProperty_MIDICallbacks: _bindgen_ty_184 = 2010;
+pub const kAudioOutputUnitProperty_HostReceivesRemoteControlEvents: _bindgen_ty_184 = 2011;
+pub const kAudioOutputUnitProperty_RemoteControlToHost: _bindgen_ty_184 = 2012;
+pub const kAudioOutputUnitProperty_HostTransportState: _bindgen_ty_184 = 2013;
+pub const kAudioOutputUnitProperty_NodeComponentDescription: _bindgen_ty_184 = 2014;
+pub type _bindgen_ty_184 = ::std::os::raw::c_uint;
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
 pub struct AudioOutputUnitMIDICallbacks {
@@ -19422,31 +19674,31 @@ pub struct AudioOutputUnitStartAtTimeParams {
     pub mTimestamp: AudioTimeStamp,
     pub mFlags: UInt32,
 }
-pub const kAUVoiceIOProperty_BypassVoiceProcessing: _bindgen_ty_182 = 2100;
-pub const kAUVoiceIOProperty_VoiceProcessingEnableAGC: _bindgen_ty_182 = 2101;
-pub const kAUVoiceIOProperty_MuteOutput: _bindgen_ty_182 = 2104;
-pub type _bindgen_ty_182 = ::std::os::raw::c_uint;
-pub type AUVoiceIOSpeechActivityEvent = UInt32;
-pub const kAUVoiceIOSpeechActivityHasStarted: _bindgen_ty_183 = 0;
-pub const kAUVoiceIOSpeechActivityHasEnded: _bindgen_ty_183 = 1;
-pub type _bindgen_ty_183 = ::std::os::raw::c_uint;
-pub type AUVoiceIOMutedSpeechActivityEventListener = *mut ::std::os::raw::c_void;
-pub const kAUVoiceIOProperty_MutedSpeechActivityEventListener: _bindgen_ty_184 = 2106;
-pub type _bindgen_ty_184 = ::std::os::raw::c_uint;
-pub const kAUVoiceIOProperty_VoiceProcessingQuality: _bindgen_ty_185 = 2103;
+pub const kAUVoiceIOProperty_BypassVoiceProcessing: _bindgen_ty_185 = 2100;
+pub const kAUVoiceIOProperty_VoiceProcessingEnableAGC: _bindgen_ty_185 = 2101;
+pub const kAUVoiceIOProperty_MuteOutput: _bindgen_ty_185 = 2104;
 pub type _bindgen_ty_185 = ::std::os::raw::c_uint;
-pub const kAUNBandEQProperty_NumberOfBands: _bindgen_ty_186 = 2200;
-pub const kAUNBandEQProperty_MaxNumberOfBands: _bindgen_ty_186 = 2201;
-pub const kAUNBandEQProperty_BiquadCoefficients: _bindgen_ty_186 = 2203;
+pub type AUVoiceIOSpeechActivityEvent = UInt32;
+pub const kAUVoiceIOSpeechActivityHasStarted: _bindgen_ty_186 = 0;
+pub const kAUVoiceIOSpeechActivityHasEnded: _bindgen_ty_186 = 1;
 pub type _bindgen_ty_186 = ::std::os::raw::c_uint;
-pub const kAUVoiceIOErr_UnexpectedNumberOfInputChannels: _bindgen_ty_187 = -66784;
-pub type _bindgen_ty_187 = ::std::os::raw::c_int;
-pub const kAudioUnitProperty_MeteringMode: _bindgen_ty_188 = 3007;
-pub const kAudioUnitProperty_MatrixLevels: _bindgen_ty_188 = 3006;
-pub const kAudioUnitProperty_MatrixDimensions: _bindgen_ty_188 = 3009;
-pub const kAudioUnitProperty_MeterClipping: _bindgen_ty_188 = 3011;
-pub const kAudioUnitProperty_InputAnchorTimeStamp: _bindgen_ty_188 = 3016;
+pub type AUVoiceIOMutedSpeechActivityEventListener = *mut ::std::os::raw::c_void;
+pub const kAUVoiceIOProperty_MutedSpeechActivityEventListener: _bindgen_ty_187 = 2106;
+pub type _bindgen_ty_187 = ::std::os::raw::c_uint;
+pub const kAUVoiceIOProperty_VoiceProcessingQuality: _bindgen_ty_188 = 2103;
 pub type _bindgen_ty_188 = ::std::os::raw::c_uint;
+pub const kAUNBandEQProperty_NumberOfBands: _bindgen_ty_189 = 2200;
+pub const kAUNBandEQProperty_MaxNumberOfBands: _bindgen_ty_189 = 2201;
+pub const kAUNBandEQProperty_BiquadCoefficients: _bindgen_ty_189 = 2203;
+pub type _bindgen_ty_189 = ::std::os::raw::c_uint;
+pub const kAUVoiceIOErr_UnexpectedNumberOfInputChannels: _bindgen_ty_190 = -66784;
+pub type _bindgen_ty_190 = ::std::os::raw::c_int;
+pub const kAudioUnitProperty_MeteringMode: _bindgen_ty_191 = 3007;
+pub const kAudioUnitProperty_MatrixLevels: _bindgen_ty_191 = 3006;
+pub const kAudioUnitProperty_MatrixDimensions: _bindgen_ty_191 = 3009;
+pub const kAudioUnitProperty_MeterClipping: _bindgen_ty_191 = 3011;
+pub const kAudioUnitProperty_InputAnchorTimeStamp: _bindgen_ty_191 = 3016;
+pub type _bindgen_ty_191 = ::std::os::raw::c_uint;
 #[repr(C)]
 #[derive(Debug, Default, Copy, Clone)]
 pub struct AudioUnitMeterClipping {
@@ -19454,54 +19706,55 @@ pub struct AudioUnitMeterClipping {
     pub sawInfinity: Boolean,
     pub sawNotANumber: Boolean,
 }
-pub const kAudioUnitProperty_ReverbRoomType: _bindgen_ty_189 = 10;
-pub const kAudioUnitProperty_UsesInternalReverb: _bindgen_ty_189 = 1005;
-pub const kAudioUnitProperty_SpatializationAlgorithm: _bindgen_ty_189 = 3000;
-pub const kAudioUnitProperty_SpatialMixerRenderingFlags: _bindgen_ty_189 = 3003;
-pub const kAudioUnitProperty_SpatialMixerSourceMode: _bindgen_ty_189 = 3005;
-pub const kAudioUnitProperty_SpatialMixerDistanceParams: _bindgen_ty_189 = 3010;
-pub const kAudioUnitProperty_SpatialMixerAttenuationCurve: _bindgen_ty_189 = 3013;
-pub const kAudioUnitProperty_SpatialMixerOutputType: _bindgen_ty_189 = 3100;
-pub const kAudioUnitProperty_SpatialMixerPointSourceInHeadMode: _bindgen_ty_189 = 3103;
-pub const kAudioUnitProperty_SpatialMixerEnableHeadTracking: _bindgen_ty_189 = 3111;
-pub type _bindgen_ty_189 = ::std::os::raw::c_uint;
-pub type AUSpatializationAlgorithm = UInt32;
-pub const kSpatializationAlgorithm_EqualPowerPanning: _bindgen_ty_190 = 0;
-pub const kSpatializationAlgorithm_SphericalHead: _bindgen_ty_190 = 1;
-pub const kSpatializationAlgorithm_HRTF: _bindgen_ty_190 = 2;
-pub const kSpatializationAlgorithm_SoundField: _bindgen_ty_190 = 3;
-pub const kSpatializationAlgorithm_VectorBasedPanning: _bindgen_ty_190 = 4;
-pub const kSpatializationAlgorithm_StereoPassThrough: _bindgen_ty_190 = 5;
-pub const kSpatializationAlgorithm_HRTFHQ: _bindgen_ty_190 = 6;
-pub const kSpatializationAlgorithm_UseOutputType: _bindgen_ty_190 = 7;
-pub type _bindgen_ty_190 = ::std::os::raw::c_uint;
-pub type AUSpatialMixerSourceMode = UInt32;
-pub const kSpatialMixerSourceMode_SpatializeIfMono: _bindgen_ty_191 = 0;
-pub const kSpatialMixerSourceMode_Bypass: _bindgen_ty_191 = 1;
-pub const kSpatialMixerSourceMode_PointSource: _bindgen_ty_191 = 2;
-pub const kSpatialMixerSourceMode_AmbienceBed: _bindgen_ty_191 = 3;
-pub type _bindgen_ty_191 = ::std::os::raw::c_uint;
-pub type AUReverbRoomType = UInt32;
-pub const kReverbRoomType_SmallRoom: _bindgen_ty_192 = 0;
-pub const kReverbRoomType_MediumRoom: _bindgen_ty_192 = 1;
-pub const kReverbRoomType_LargeRoom: _bindgen_ty_192 = 2;
-pub const kReverbRoomType_MediumHall: _bindgen_ty_192 = 3;
-pub const kReverbRoomType_LargeHall: _bindgen_ty_192 = 4;
-pub const kReverbRoomType_Plate: _bindgen_ty_192 = 5;
-pub const kReverbRoomType_MediumChamber: _bindgen_ty_192 = 6;
-pub const kReverbRoomType_LargeChamber: _bindgen_ty_192 = 7;
-pub const kReverbRoomType_Cathedral: _bindgen_ty_192 = 8;
-pub const kReverbRoomType_LargeRoom2: _bindgen_ty_192 = 9;
-pub const kReverbRoomType_MediumHall2: _bindgen_ty_192 = 10;
-pub const kReverbRoomType_MediumHall3: _bindgen_ty_192 = 11;
-pub const kReverbRoomType_LargeHall2: _bindgen_ty_192 = 12;
+pub const kAudioUnitProperty_ReverbRoomType: _bindgen_ty_192 = 10;
+pub const kAudioUnitProperty_UsesInternalReverb: _bindgen_ty_192 = 1005;
+pub const kAudioUnitProperty_SpatializationAlgorithm: _bindgen_ty_192 = 3000;
+pub const kAudioUnitProperty_SpatialMixerRenderingFlags: _bindgen_ty_192 = 3003;
+pub const kAudioUnitProperty_SpatialMixerSourceMode: _bindgen_ty_192 = 3005;
+pub const kAudioUnitProperty_SpatialMixerDistanceParams: _bindgen_ty_192 = 3010;
+pub const kAudioUnitProperty_SpatialMixerAttenuationCurve: _bindgen_ty_192 = 3013;
+pub const kAudioUnitProperty_SpatialMixerOutputType: _bindgen_ty_192 = 3100;
+pub const kAudioUnitProperty_SpatialMixerPointSourceInHeadMode: _bindgen_ty_192 = 3103;
+pub const kAudioUnitProperty_SpatialMixerEnableHeadTracking: _bindgen_ty_192 = 3111;
+pub const kAudioUnitProperty_SpatialMixerPersonalizedHRTFMode: _bindgen_ty_192 = 3113;
 pub type _bindgen_ty_192 = ::std::os::raw::c_uint;
-pub type AUSpatialMixerAttenuationCurve = UInt32;
-pub const kSpatialMixerAttenuationCurve_Power: _bindgen_ty_193 = 0;
-pub const kSpatialMixerAttenuationCurve_Exponential: _bindgen_ty_193 = 1;
-pub const kSpatialMixerAttenuationCurve_Inverse: _bindgen_ty_193 = 2;
-pub const kSpatialMixerAttenuationCurve_Linear: _bindgen_ty_193 = 3;
+pub type AUSpatializationAlgorithm = UInt32;
+pub const kSpatializationAlgorithm_EqualPowerPanning: _bindgen_ty_193 = 0;
+pub const kSpatializationAlgorithm_SphericalHead: _bindgen_ty_193 = 1;
+pub const kSpatializationAlgorithm_HRTF: _bindgen_ty_193 = 2;
+pub const kSpatializationAlgorithm_SoundField: _bindgen_ty_193 = 3;
+pub const kSpatializationAlgorithm_VectorBasedPanning: _bindgen_ty_193 = 4;
+pub const kSpatializationAlgorithm_StereoPassThrough: _bindgen_ty_193 = 5;
+pub const kSpatializationAlgorithm_HRTFHQ: _bindgen_ty_193 = 6;
+pub const kSpatializationAlgorithm_UseOutputType: _bindgen_ty_193 = 7;
 pub type _bindgen_ty_193 = ::std::os::raw::c_uint;
+pub type AUSpatialMixerSourceMode = UInt32;
+pub const kSpatialMixerSourceMode_SpatializeIfMono: _bindgen_ty_194 = 0;
+pub const kSpatialMixerSourceMode_Bypass: _bindgen_ty_194 = 1;
+pub const kSpatialMixerSourceMode_PointSource: _bindgen_ty_194 = 2;
+pub const kSpatialMixerSourceMode_AmbienceBed: _bindgen_ty_194 = 3;
+pub type _bindgen_ty_194 = ::std::os::raw::c_uint;
+pub type AUReverbRoomType = UInt32;
+pub const kReverbRoomType_SmallRoom: _bindgen_ty_195 = 0;
+pub const kReverbRoomType_MediumRoom: _bindgen_ty_195 = 1;
+pub const kReverbRoomType_LargeRoom: _bindgen_ty_195 = 2;
+pub const kReverbRoomType_MediumHall: _bindgen_ty_195 = 3;
+pub const kReverbRoomType_LargeHall: _bindgen_ty_195 = 4;
+pub const kReverbRoomType_Plate: _bindgen_ty_195 = 5;
+pub const kReverbRoomType_MediumChamber: _bindgen_ty_195 = 6;
+pub const kReverbRoomType_LargeChamber: _bindgen_ty_195 = 7;
+pub const kReverbRoomType_Cathedral: _bindgen_ty_195 = 8;
+pub const kReverbRoomType_LargeRoom2: _bindgen_ty_195 = 9;
+pub const kReverbRoomType_MediumHall2: _bindgen_ty_195 = 10;
+pub const kReverbRoomType_MediumHall3: _bindgen_ty_195 = 11;
+pub const kReverbRoomType_LargeHall2: _bindgen_ty_195 = 12;
+pub type _bindgen_ty_195 = ::std::os::raw::c_uint;
+pub type AUSpatialMixerAttenuationCurve = UInt32;
+pub const kSpatialMixerAttenuationCurve_Power: _bindgen_ty_196 = 0;
+pub const kSpatialMixerAttenuationCurve_Exponential: _bindgen_ty_196 = 1;
+pub const kSpatialMixerAttenuationCurve_Inverse: _bindgen_ty_196 = 2;
+pub const kSpatialMixerAttenuationCurve_Linear: _bindgen_ty_196 = 3;
+pub type _bindgen_ty_196 = ::std::os::raw::c_uint;
 #[repr(C)]
 #[derive(Debug, Default, Copy, Clone)]
 pub struct MixerDistanceParams {
@@ -19510,52 +19763,57 @@ pub struct MixerDistanceParams {
     pub mMaxAttenuation: Float32,
 }
 pub type AUSpatialMixerRenderingFlags = UInt32;
-pub const kSpatialMixerRenderingFlags_InterAuralDelay: _bindgen_ty_194 = 1;
-pub const kSpatialMixerRenderingFlags_DistanceAttenuation: _bindgen_ty_194 = 4;
-pub type _bindgen_ty_194 = ::std::os::raw::c_uint;
-pub type AUSpatialMixerOutputType = UInt32;
-pub const kSpatialMixerOutputType_Headphones: _bindgen_ty_195 = 1;
-pub const kSpatialMixerOutputType_BuiltInSpeakers: _bindgen_ty_195 = 2;
-pub const kSpatialMixerOutputType_ExternalSpeakers: _bindgen_ty_195 = 3;
-pub type _bindgen_ty_195 = ::std::os::raw::c_uint;
-pub type AUSpatialMixerPointSourceInHeadMode = UInt32;
-pub const kSpatialMixerPointSourceInHeadMode_Mono: _bindgen_ty_196 = 0;
-pub const kSpatialMixerPointSourceInHeadMode_Bypass: _bindgen_ty_196 = 1;
-pub type _bindgen_ty_196 = ::std::os::raw::c_uint;
-pub const kAudioUnitProperty_3DMixerDistanceParams: _bindgen_ty_197 = 3010;
-pub const kAudioUnitProperty_3DMixerAttenuationCurve: _bindgen_ty_197 = 3013;
-pub const kAudioUnitProperty_DopplerShift: _bindgen_ty_197 = 3002;
-pub const kAudioUnitProperty_3DMixerRenderingFlags: _bindgen_ty_197 = 3003;
-pub const kAudioUnitProperty_3DMixerDistanceAtten: _bindgen_ty_197 = 3004;
-pub const kAudioUnitProperty_ReverbPreset: _bindgen_ty_197 = 3012;
+pub const kSpatialMixerRenderingFlags_InterAuralDelay: _bindgen_ty_197 = 1;
+pub const kSpatialMixerRenderingFlags_DistanceAttenuation: _bindgen_ty_197 = 4;
 pub type _bindgen_ty_197 = ::std::os::raw::c_uint;
-pub type AU3DMixerRenderingFlags = UInt32;
-pub const k3DMixerRenderingFlags_InterAuralDelay: _bindgen_ty_198 = 1;
-pub const k3DMixerRenderingFlags_DopplerShift: _bindgen_ty_198 = 2;
-pub const k3DMixerRenderingFlags_DistanceAttenuation: _bindgen_ty_198 = 4;
-pub const k3DMixerRenderingFlags_DistanceFilter: _bindgen_ty_198 = 8;
-pub const k3DMixerRenderingFlags_DistanceDiffusion: _bindgen_ty_198 = 16;
-pub const k3DMixerRenderingFlags_LinearDistanceAttenuation: _bindgen_ty_198 = 32;
-pub const k3DMixerRenderingFlags_ConstantReverbBlend: _bindgen_ty_198 = 64;
+pub type AUSpatialMixerPersonalizedHRTFMode = UInt32;
+pub const kSpatialMixerPersonalizedHRTFMode_Off: _bindgen_ty_198 = 0;
+pub const kSpatialMixerPersonalizedHRTFMode_On: _bindgen_ty_198 = 1;
+pub const kSpatialMixerPersonalizedHRTFMode_Auto: _bindgen_ty_198 = 2;
 pub type _bindgen_ty_198 = ::std::os::raw::c_uint;
-pub type AU3DMixerAttenuationCurve = UInt32;
-pub const k3DMixerAttenuationCurve_Power: _bindgen_ty_199 = 0;
-pub const k3DMixerAttenuationCurve_Exponential: _bindgen_ty_199 = 1;
-pub const k3DMixerAttenuationCurve_Inverse: _bindgen_ty_199 = 2;
-pub const k3DMixerAttenuationCurve_Linear: _bindgen_ty_199 = 3;
+pub type AUSpatialMixerOutputType = UInt32;
+pub const kSpatialMixerOutputType_Headphones: _bindgen_ty_199 = 1;
+pub const kSpatialMixerOutputType_BuiltInSpeakers: _bindgen_ty_199 = 2;
+pub const kSpatialMixerOutputType_ExternalSpeakers: _bindgen_ty_199 = 3;
 pub type _bindgen_ty_199 = ::std::os::raw::c_uint;
-pub const kAudioUnitProperty_ScheduleAudioSlice: _bindgen_ty_200 = 3300;
-pub const kAudioUnitProperty_ScheduleStartTimeStamp: _bindgen_ty_200 = 3301;
-pub const kAudioUnitProperty_CurrentPlayTime: _bindgen_ty_200 = 3302;
+pub type AUSpatialMixerPointSourceInHeadMode = UInt32;
+pub const kSpatialMixerPointSourceInHeadMode_Mono: _bindgen_ty_200 = 0;
+pub const kSpatialMixerPointSourceInHeadMode_Bypass: _bindgen_ty_200 = 1;
 pub type _bindgen_ty_200 = ::std::os::raw::c_uint;
-pub type AUScheduledAudioSliceFlags = UInt32;
-pub const kScheduledAudioSliceFlag_Complete: _bindgen_ty_201 = 1;
-pub const kScheduledAudioSliceFlag_BeganToRender: _bindgen_ty_201 = 2;
-pub const kScheduledAudioSliceFlag_BeganToRenderLate: _bindgen_ty_201 = 4;
-pub const kScheduledAudioSliceFlag_Loop: _bindgen_ty_201 = 8;
-pub const kScheduledAudioSliceFlag_Interrupt: _bindgen_ty_201 = 16;
-pub const kScheduledAudioSliceFlag_InterruptAtLoop: _bindgen_ty_201 = 32;
+pub const kAudioUnitProperty_3DMixerDistanceParams: _bindgen_ty_201 = 3010;
+pub const kAudioUnitProperty_3DMixerAttenuationCurve: _bindgen_ty_201 = 3013;
+pub const kAudioUnitProperty_DopplerShift: _bindgen_ty_201 = 3002;
+pub const kAudioUnitProperty_3DMixerRenderingFlags: _bindgen_ty_201 = 3003;
+pub const kAudioUnitProperty_3DMixerDistanceAtten: _bindgen_ty_201 = 3004;
+pub const kAudioUnitProperty_ReverbPreset: _bindgen_ty_201 = 3012;
 pub type _bindgen_ty_201 = ::std::os::raw::c_uint;
+pub type AU3DMixerRenderingFlags = UInt32;
+pub const k3DMixerRenderingFlags_InterAuralDelay: _bindgen_ty_202 = 1;
+pub const k3DMixerRenderingFlags_DopplerShift: _bindgen_ty_202 = 2;
+pub const k3DMixerRenderingFlags_DistanceAttenuation: _bindgen_ty_202 = 4;
+pub const k3DMixerRenderingFlags_DistanceFilter: _bindgen_ty_202 = 8;
+pub const k3DMixerRenderingFlags_DistanceDiffusion: _bindgen_ty_202 = 16;
+pub const k3DMixerRenderingFlags_LinearDistanceAttenuation: _bindgen_ty_202 = 32;
+pub const k3DMixerRenderingFlags_ConstantReverbBlend: _bindgen_ty_202 = 64;
+pub type _bindgen_ty_202 = ::std::os::raw::c_uint;
+pub type AU3DMixerAttenuationCurve = UInt32;
+pub const k3DMixerAttenuationCurve_Power: _bindgen_ty_203 = 0;
+pub const k3DMixerAttenuationCurve_Exponential: _bindgen_ty_203 = 1;
+pub const k3DMixerAttenuationCurve_Inverse: _bindgen_ty_203 = 2;
+pub const k3DMixerAttenuationCurve_Linear: _bindgen_ty_203 = 3;
+pub type _bindgen_ty_203 = ::std::os::raw::c_uint;
+pub const kAudioUnitProperty_ScheduleAudioSlice: _bindgen_ty_204 = 3300;
+pub const kAudioUnitProperty_ScheduleStartTimeStamp: _bindgen_ty_204 = 3301;
+pub const kAudioUnitProperty_CurrentPlayTime: _bindgen_ty_204 = 3302;
+pub type _bindgen_ty_204 = ::std::os::raw::c_uint;
+pub type AUScheduledAudioSliceFlags = UInt32;
+pub const kScheduledAudioSliceFlag_Complete: _bindgen_ty_205 = 1;
+pub const kScheduledAudioSliceFlag_BeganToRender: _bindgen_ty_205 = 2;
+pub const kScheduledAudioSliceFlag_BeganToRenderLate: _bindgen_ty_205 = 4;
+pub const kScheduledAudioSliceFlag_Loop: _bindgen_ty_205 = 8;
+pub const kScheduledAudioSliceFlag_Interrupt: _bindgen_ty_205 = 16;
+pub const kScheduledAudioSliceFlag_InterruptAtLoop: _bindgen_ty_205 = 32;
+pub type _bindgen_ty_205 = ::std::os::raw::c_uint;
 pub type ScheduledAudioSliceCompletionProc = ::std::option::Option<
     unsafe extern "C" fn(
         userData: *mut ::std::os::raw::c_void,
@@ -19583,12 +19841,12 @@ impl Default for ScheduledAudioSlice {
         }
     }
 }
-pub const kAudioUnitProperty_ScheduledFileIDs: _bindgen_ty_202 = 3310;
-pub const kAudioUnitProperty_ScheduledFileRegion: _bindgen_ty_202 = 3311;
-pub const kAudioUnitProperty_ScheduledFilePrime: _bindgen_ty_202 = 3312;
-pub const kAudioUnitProperty_ScheduledFileBufferSizeFrames: _bindgen_ty_202 = 3313;
-pub const kAudioUnitProperty_ScheduledFileNumberBuffers: _bindgen_ty_202 = 3314;
-pub type _bindgen_ty_202 = ::std::os::raw::c_uint;
+pub const kAudioUnitProperty_ScheduledFileIDs: _bindgen_ty_206 = 3310;
+pub const kAudioUnitProperty_ScheduledFileRegion: _bindgen_ty_206 = 3311;
+pub const kAudioUnitProperty_ScheduledFilePrime: _bindgen_ty_206 = 3312;
+pub const kAudioUnitProperty_ScheduledFileBufferSizeFrames: _bindgen_ty_206 = 3313;
+pub const kAudioUnitProperty_ScheduledFileNumberBuffers: _bindgen_ty_206 = 3314;
+pub type _bindgen_ty_206 = ::std::os::raw::c_uint;
 pub type ScheduledAudioFileRegionCompletionProc = ::std::option::Option<
     unsafe extern "C" fn(
         userData: *mut ::std::os::raw::c_void,
@@ -19616,23 +19874,23 @@ impl Default for ScheduledAudioFileRegion {
         }
     }
 }
-pub const kMusicDeviceProperty_UsesInternalReverb: _bindgen_ty_203 = 1005;
-pub const kMusicDeviceProperty_SoundBankData: _bindgen_ty_203 = 1008;
-pub const kMusicDeviceProperty_StreamFromDisk: _bindgen_ty_203 = 1011;
-pub const kMusicDeviceProperty_SoundBankFSRef: _bindgen_ty_203 = 1012;
-pub type _bindgen_ty_203 = ::std::os::raw::c_uint;
-pub const kMusicDeviceProperty_InstrumentName: _bindgen_ty_204 = 1001;
-pub const kMusicDeviceProperty_InstrumentNumber: _bindgen_ty_204 = 1004;
-pub type _bindgen_ty_204 = ::std::os::raw::c_uint;
-pub const kMusicDeviceProperty_InstrumentCount: _bindgen_ty_205 = 1000;
-pub const kMusicDeviceProperty_BankName: _bindgen_ty_205 = 1007;
-pub const kMusicDeviceProperty_SoundBankURL: _bindgen_ty_205 = 1100;
-pub type _bindgen_ty_205 = ::std::os::raw::c_uint;
-pub const kAUMIDISynthProperty_EnablePreload: _bindgen_ty_206 = 4119;
-pub type _bindgen_ty_206 = ::std::os::raw::c_uint;
-pub const kAUSamplerProperty_LoadInstrument: _bindgen_ty_207 = 4102;
-pub const kAUSamplerProperty_LoadAudioFiles: _bindgen_ty_207 = 4101;
+pub const kMusicDeviceProperty_UsesInternalReverb: _bindgen_ty_207 = 1005;
+pub const kMusicDeviceProperty_SoundBankData: _bindgen_ty_207 = 1008;
+pub const kMusicDeviceProperty_StreamFromDisk: _bindgen_ty_207 = 1011;
+pub const kMusicDeviceProperty_SoundBankFSRef: _bindgen_ty_207 = 1012;
 pub type _bindgen_ty_207 = ::std::os::raw::c_uint;
+pub const kMusicDeviceProperty_InstrumentName: _bindgen_ty_208 = 1001;
+pub const kMusicDeviceProperty_InstrumentNumber: _bindgen_ty_208 = 1004;
+pub type _bindgen_ty_208 = ::std::os::raw::c_uint;
+pub const kMusicDeviceProperty_InstrumentCount: _bindgen_ty_209 = 1000;
+pub const kMusicDeviceProperty_BankName: _bindgen_ty_209 = 1007;
+pub const kMusicDeviceProperty_SoundBankURL: _bindgen_ty_209 = 1100;
+pub type _bindgen_ty_209 = ::std::os::raw::c_uint;
+pub const kAUMIDISynthProperty_EnablePreload: _bindgen_ty_210 = 4119;
+pub type _bindgen_ty_210 = ::std::os::raw::c_uint;
+pub const kAUSamplerProperty_LoadInstrument: _bindgen_ty_211 = 4102;
+pub const kAUSamplerProperty_LoadAudioFiles: _bindgen_ty_211 = 4101;
+pub type _bindgen_ty_211 = ::std::os::raw::c_uint;
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
 pub struct AUSamplerInstrumentData {
@@ -19651,50 +19909,50 @@ impl Default for AUSamplerInstrumentData {
         }
     }
 }
-pub const kInstrumentType_DLSPreset: _bindgen_ty_208 = 1;
-pub const kInstrumentType_SF2Preset: _bindgen_ty_208 = 1;
-pub const kInstrumentType_AUPreset: _bindgen_ty_208 = 2;
-pub const kInstrumentType_Audiofile: _bindgen_ty_208 = 3;
-pub const kInstrumentType_EXS24: _bindgen_ty_208 = 4;
-pub type _bindgen_ty_208 = ::std::os::raw::c_uint;
-pub const kAUSampler_DefaultPercussionBankMSB: _bindgen_ty_209 = 120;
-pub const kAUSampler_DefaultMelodicBankMSB: _bindgen_ty_209 = 121;
-pub const kAUSampler_DefaultBankLSB: _bindgen_ty_209 = 0;
-pub type _bindgen_ty_209 = ::std::os::raw::c_uint;
-pub const kAudioUnitProperty_DeferredRendererPullSize: _bindgen_ty_210 = 3320;
-pub const kAudioUnitProperty_DeferredRendererExtraLatency: _bindgen_ty_210 = 3321;
-pub const kAudioUnitProperty_DeferredRendererWaitFrames: _bindgen_ty_210 = 3322;
-pub type _bindgen_ty_210 = ::std::os::raw::c_uint;
-pub const kAUNetReceiveProperty_Hostname: _bindgen_ty_211 = 3511;
-pub const kAUNetReceiveProperty_Password: _bindgen_ty_211 = 3512;
-pub type _bindgen_ty_211 = ::std::os::raw::c_uint;
-pub const kAUNetSendProperty_PortNum: _bindgen_ty_212 = 3513;
-pub const kAUNetSendProperty_TransmissionFormat: _bindgen_ty_212 = 3514;
-pub const kAUNetSendProperty_TransmissionFormatIndex: _bindgen_ty_212 = 3515;
-pub const kAUNetSendProperty_ServiceName: _bindgen_ty_212 = 3516;
-pub const kAUNetSendProperty_Disconnect: _bindgen_ty_212 = 3517;
-pub const kAUNetSendProperty_Password: _bindgen_ty_212 = 3518;
+pub const kInstrumentType_DLSPreset: _bindgen_ty_212 = 1;
+pub const kInstrumentType_SF2Preset: _bindgen_ty_212 = 1;
+pub const kInstrumentType_AUPreset: _bindgen_ty_212 = 2;
+pub const kInstrumentType_Audiofile: _bindgen_ty_212 = 3;
+pub const kInstrumentType_EXS24: _bindgen_ty_212 = 4;
 pub type _bindgen_ty_212 = ::std::os::raw::c_uint;
-pub const kAUNetSendPresetFormat_PCMFloat32: _bindgen_ty_213 = 0;
-pub const kAUNetSendPresetFormat_PCMInt24: _bindgen_ty_213 = 1;
-pub const kAUNetSendPresetFormat_PCMInt16: _bindgen_ty_213 = 2;
-pub const kAUNetSendPresetFormat_Lossless24: _bindgen_ty_213 = 3;
-pub const kAUNetSendPresetFormat_Lossless16: _bindgen_ty_213 = 4;
-pub const kAUNetSendPresetFormat_ULaw: _bindgen_ty_213 = 5;
-pub const kAUNetSendPresetFormat_IMA4: _bindgen_ty_213 = 6;
-pub const kAUNetSendPresetFormat_AAC_128kbpspc: _bindgen_ty_213 = 7;
-pub const kAUNetSendPresetFormat_AAC_96kbpspc: _bindgen_ty_213 = 8;
-pub const kAUNetSendPresetFormat_AAC_80kbpspc: _bindgen_ty_213 = 9;
-pub const kAUNetSendPresetFormat_AAC_64kbpspc: _bindgen_ty_213 = 10;
-pub const kAUNetSendPresetFormat_AAC_48kbpspc: _bindgen_ty_213 = 11;
-pub const kAUNetSendPresetFormat_AAC_40kbpspc: _bindgen_ty_213 = 12;
-pub const kAUNetSendPresetFormat_AAC_32kbpspc: _bindgen_ty_213 = 13;
-pub const kAUNetSendPresetFormat_AAC_LD_64kbpspc: _bindgen_ty_213 = 14;
-pub const kAUNetSendPresetFormat_AAC_LD_48kbpspc: _bindgen_ty_213 = 15;
-pub const kAUNetSendPresetFormat_AAC_LD_40kbpspc: _bindgen_ty_213 = 16;
-pub const kAUNetSendPresetFormat_AAC_LD_32kbpspc: _bindgen_ty_213 = 17;
-pub const kAUNetSendNumPresetFormats: _bindgen_ty_213 = 18;
+pub const kAUSampler_DefaultPercussionBankMSB: _bindgen_ty_213 = 120;
+pub const kAUSampler_DefaultMelodicBankMSB: _bindgen_ty_213 = 121;
+pub const kAUSampler_DefaultBankLSB: _bindgen_ty_213 = 0;
 pub type _bindgen_ty_213 = ::std::os::raw::c_uint;
+pub const kAudioUnitProperty_DeferredRendererPullSize: _bindgen_ty_214 = 3320;
+pub const kAudioUnitProperty_DeferredRendererExtraLatency: _bindgen_ty_214 = 3321;
+pub const kAudioUnitProperty_DeferredRendererWaitFrames: _bindgen_ty_214 = 3322;
+pub type _bindgen_ty_214 = ::std::os::raw::c_uint;
+pub const kAUNetReceiveProperty_Hostname: _bindgen_ty_215 = 3511;
+pub const kAUNetReceiveProperty_Password: _bindgen_ty_215 = 3512;
+pub type _bindgen_ty_215 = ::std::os::raw::c_uint;
+pub const kAUNetSendProperty_PortNum: _bindgen_ty_216 = 3513;
+pub const kAUNetSendProperty_TransmissionFormat: _bindgen_ty_216 = 3514;
+pub const kAUNetSendProperty_TransmissionFormatIndex: _bindgen_ty_216 = 3515;
+pub const kAUNetSendProperty_ServiceName: _bindgen_ty_216 = 3516;
+pub const kAUNetSendProperty_Disconnect: _bindgen_ty_216 = 3517;
+pub const kAUNetSendProperty_Password: _bindgen_ty_216 = 3518;
+pub type _bindgen_ty_216 = ::std::os::raw::c_uint;
+pub const kAUNetSendPresetFormat_PCMFloat32: _bindgen_ty_217 = 0;
+pub const kAUNetSendPresetFormat_PCMInt24: _bindgen_ty_217 = 1;
+pub const kAUNetSendPresetFormat_PCMInt16: _bindgen_ty_217 = 2;
+pub const kAUNetSendPresetFormat_Lossless24: _bindgen_ty_217 = 3;
+pub const kAUNetSendPresetFormat_Lossless16: _bindgen_ty_217 = 4;
+pub const kAUNetSendPresetFormat_ULaw: _bindgen_ty_217 = 5;
+pub const kAUNetSendPresetFormat_IMA4: _bindgen_ty_217 = 6;
+pub const kAUNetSendPresetFormat_AAC_128kbpspc: _bindgen_ty_217 = 7;
+pub const kAUNetSendPresetFormat_AAC_96kbpspc: _bindgen_ty_217 = 8;
+pub const kAUNetSendPresetFormat_AAC_80kbpspc: _bindgen_ty_217 = 9;
+pub const kAUNetSendPresetFormat_AAC_64kbpspc: _bindgen_ty_217 = 10;
+pub const kAUNetSendPresetFormat_AAC_48kbpspc: _bindgen_ty_217 = 11;
+pub const kAUNetSendPresetFormat_AAC_40kbpspc: _bindgen_ty_217 = 12;
+pub const kAUNetSendPresetFormat_AAC_32kbpspc: _bindgen_ty_217 = 13;
+pub const kAUNetSendPresetFormat_AAC_LD_64kbpspc: _bindgen_ty_217 = 14;
+pub const kAUNetSendPresetFormat_AAC_LD_48kbpspc: _bindgen_ty_217 = 15;
+pub const kAUNetSendPresetFormat_AAC_LD_40kbpspc: _bindgen_ty_217 = 16;
+pub const kAUNetSendPresetFormat_AAC_LD_32kbpspc: _bindgen_ty_217 = 17;
+pub const kAUNetSendNumPresetFormats: _bindgen_ty_217 = 18;
+pub type _bindgen_ty_217 = ::std::os::raw::c_uint;
 #[repr(C)]
 #[derive(Debug, Default, Copy, Clone)]
 pub struct AUNumVersion {
@@ -19718,24 +19976,24 @@ impl Default for AUHostIdentifier {
         }
     }
 }
-pub const kAudioUnitParameterFlag_Global: _bindgen_ty_214 = 1;
-pub const kAudioUnitParameterFlag_Input: _bindgen_ty_214 = 2;
-pub const kAudioUnitParameterFlag_Output: _bindgen_ty_214 = 4;
-pub const kAudioUnitParameterFlag_Group: _bindgen_ty_214 = 8;
-pub type _bindgen_ty_214 = ::std::os::raw::c_uint;
-pub const kAudioUnitParameterFlag_HasName: _bindgen_ty_215 = 2097152;
-pub type _bindgen_ty_215 = ::std::os::raw::c_uint;
-pub const kAudioUnitProperty_SRCAlgorithm: _bindgen_ty_216 = 9;
-pub const kAudioUnitProperty_MIDIControlMapping: _bindgen_ty_216 = 17;
-pub const kAudioUnitProperty_CurrentPreset: _bindgen_ty_216 = 28;
-pub const kAudioUnitProperty_ParameterValueName: _bindgen_ty_216 = 33;
-pub const kAudioUnitProperty_BusCount: _bindgen_ty_216 = 11;
-pub const kAudioOfflineUnitProperty_InputSize: _bindgen_ty_216 = 3020;
-pub const kAudioOfflineUnitProperty_OutputSize: _bindgen_ty_216 = 3021;
-pub type _bindgen_ty_216 = ::std::os::raw::c_uint;
-pub const kAudioUnitSRCAlgorithm_Polyphase: _bindgen_ty_217 = 1886350457;
-pub const kAudioUnitSRCAlgorithm_MediumQuality: _bindgen_ty_217 = 1668510307;
-pub type _bindgen_ty_217 = ::std::os::raw::c_uint;
+pub const kAudioUnitParameterFlag_Global: _bindgen_ty_218 = 1;
+pub const kAudioUnitParameterFlag_Input: _bindgen_ty_218 = 2;
+pub const kAudioUnitParameterFlag_Output: _bindgen_ty_218 = 4;
+pub const kAudioUnitParameterFlag_Group: _bindgen_ty_218 = 8;
+pub type _bindgen_ty_218 = ::std::os::raw::c_uint;
+pub const kAudioUnitParameterFlag_HasName: _bindgen_ty_219 = 2097152;
+pub type _bindgen_ty_219 = ::std::os::raw::c_uint;
+pub const kAudioUnitProperty_SRCAlgorithm: _bindgen_ty_220 = 9;
+pub const kAudioUnitProperty_MIDIControlMapping: _bindgen_ty_220 = 17;
+pub const kAudioUnitProperty_CurrentPreset: _bindgen_ty_220 = 28;
+pub const kAudioUnitProperty_ParameterValueName: _bindgen_ty_220 = 33;
+pub const kAudioUnitProperty_BusCount: _bindgen_ty_220 = 11;
+pub const kAudioOfflineUnitProperty_InputSize: _bindgen_ty_220 = 3020;
+pub const kAudioOfflineUnitProperty_OutputSize: _bindgen_ty_220 = 3021;
+pub type _bindgen_ty_220 = ::std::os::raw::c_uint;
+pub const kAudioUnitSRCAlgorithm_Polyphase: _bindgen_ty_221 = 1886350457;
+pub const kAudioUnitSRCAlgorithm_MediumQuality: _bindgen_ty_221 = 1668510307;
+pub type _bindgen_ty_221 = ::std::os::raw::c_uint;
 #[repr(C)]
 #[derive(Debug, Default, Copy, Clone)]
 pub struct AudioUnitMIDIControlMapping {
@@ -19761,18 +20019,18 @@ impl Default for AudioUnitParameterValueName {
         }
     }
 }
-pub const kMusicDeviceProperty_GroupOutputBus: _bindgen_ty_218 = 1002;
-pub const kMusicDeviceProperty_SoundBankFSSpec: _bindgen_ty_218 = 1003;
-pub const kAudioUnitProperty_PannerMode: _bindgen_ty_218 = 3008;
-pub type _bindgen_ty_218 = ::std::os::raw::c_uint;
-pub const kAudioUnitProperty_SpeakerConfiguration: _bindgen_ty_219 = 3001;
-pub type _bindgen_ty_219 = ::std::os::raw::c_uint;
-pub const kSpeakerConfiguration_HeadPhones: _bindgen_ty_220 = 0;
-pub const kSpeakerConfiguration_Stereo: _bindgen_ty_220 = 1;
-pub const kSpeakerConfiguration_Quad: _bindgen_ty_220 = 2;
-pub const kSpeakerConfiguration_5_0: _bindgen_ty_220 = 3;
-pub const kSpeakerConfiguration_5_1: _bindgen_ty_220 = 3;
-pub type _bindgen_ty_220 = ::std::os::raw::c_uint;
+pub const kMusicDeviceProperty_GroupOutputBus: _bindgen_ty_222 = 1002;
+pub const kMusicDeviceProperty_SoundBankFSSpec: _bindgen_ty_222 = 1003;
+pub const kAudioUnitProperty_PannerMode: _bindgen_ty_222 = 3008;
+pub type _bindgen_ty_222 = ::std::os::raw::c_uint;
+pub const kAudioUnitProperty_SpeakerConfiguration: _bindgen_ty_223 = 3001;
+pub type _bindgen_ty_223 = ::std::os::raw::c_uint;
+pub const kSpeakerConfiguration_HeadPhones: _bindgen_ty_224 = 0;
+pub const kSpeakerConfiguration_Stereo: _bindgen_ty_224 = 1;
+pub const kSpeakerConfiguration_Quad: _bindgen_ty_224 = 2;
+pub const kSpeakerConfiguration_5_0: _bindgen_ty_224 = 3;
+pub const kSpeakerConfiguration_5_1: _bindgen_ty_224 = 3;
+pub type _bindgen_ty_224 = ::std::os::raw::c_uint;
 #[repr(C)]
 #[derive(Debug, Copy, Clone)]
 pub struct AUSamplerBankPresetData {
@@ -19791,9 +20049,9 @@ impl Default for AUSamplerBankPresetData {
         }
     }
 }
-pub const kAUSamplerProperty_LoadPresetFromBank: _bindgen_ty_221 = 4100;
-pub const kAUSamplerProperty_BankAndPreset: _bindgen_ty_221 = 4100;
-pub type _bindgen_ty_221 = ::std::os::raw::c_uint;
+pub const kAUSamplerProperty_LoadPresetFromBank: _bindgen_ty_225 = 4100;
+pub const kAUSamplerProperty_BankAndPreset: _bindgen_ty_225 = 4100;
+pub type _bindgen_ty_225 = ::std::os::raw::c_uint;
 pub type MusicDeviceInstrumentID = UInt32;
 #[repr(C)]
 #[derive(Debug, Default, Copy, Clone)]
@@ -19816,9 +20074,9 @@ pub struct MusicDeviceNoteParams {
     pub mVelocity: Float32,
     pub mControls: [NoteParamsControlValue; 1usize],
 }
-pub const kMusicNoteEvent_UseGroupInstrument: _bindgen_ty_222 = 4294967295;
-pub const kMusicNoteEvent_Unused: _bindgen_ty_222 = 4294967295;
-pub type _bindgen_ty_222 = ::std::os::raw::c_uint;
+pub const kMusicNoteEvent_UseGroupInstrument: _bindgen_ty_226 = 4294967295;
+pub const kMusicNoteEvent_Unused: _bindgen_ty_226 = 4294967295;
+pub type _bindgen_ty_226 = ::std::os::raw::c_uint;
 pub type MusicDeviceGroupID = UInt32;
 pub type NoteInstanceID = UInt32;
 pub type MusicDeviceComponent = AudioComponentInstance;
@@ -19863,15 +20121,15 @@ extern "C" {
         inOffsetSampleFrame: UInt32,
     ) -> OSStatus;
 }
-pub const kMusicDeviceRange: _bindgen_ty_223 = 256;
-pub const kMusicDeviceMIDIEventSelect: _bindgen_ty_223 = 257;
-pub const kMusicDeviceSysExSelect: _bindgen_ty_223 = 258;
-pub const kMusicDevicePrepareInstrumentSelect: _bindgen_ty_223 = 259;
-pub const kMusicDeviceReleaseInstrumentSelect: _bindgen_ty_223 = 260;
-pub const kMusicDeviceStartNoteSelect: _bindgen_ty_223 = 261;
-pub const kMusicDeviceStopNoteSelect: _bindgen_ty_223 = 262;
-pub const kMusicDeviceMIDIEventListSelect: _bindgen_ty_223 = 263;
-pub type _bindgen_ty_223 = ::std::os::raw::c_uint;
+pub const kMusicDeviceRange: _bindgen_ty_227 = 256;
+pub const kMusicDeviceMIDIEventSelect: _bindgen_ty_227 = 257;
+pub const kMusicDeviceSysExSelect: _bindgen_ty_227 = 258;
+pub const kMusicDevicePrepareInstrumentSelect: _bindgen_ty_227 = 259;
+pub const kMusicDeviceReleaseInstrumentSelect: _bindgen_ty_227 = 260;
+pub const kMusicDeviceStartNoteSelect: _bindgen_ty_227 = 261;
+pub const kMusicDeviceStopNoteSelect: _bindgen_ty_227 = 262;
+pub const kMusicDeviceMIDIEventListSelect: _bindgen_ty_227 = 263;
+pub type _bindgen_ty_227 = ::std::os::raw::c_uint;
 pub type MusicDeviceMIDIEventProc = ::std::option::Option<
     unsafe extern "C" fn(
         self_: *mut ::std::os::raw::c_void,
@@ -19930,228 +20188,231 @@ pub struct AudioObjectPropertyAddress {
     pub mScope: AudioObjectPropertyScope,
     pub mElement: AudioObjectPropertyElement,
 }
-pub const kAudioHardwareNoError: _bindgen_ty_224 = 0;
-pub const kAudioHardwareNotRunningError: _bindgen_ty_224 = 1937010544;
-pub const kAudioHardwareUnspecifiedError: _bindgen_ty_224 = 2003329396;
-pub const kAudioHardwareUnknownPropertyError: _bindgen_ty_224 = 2003332927;
-pub const kAudioHardwareBadPropertySizeError: _bindgen_ty_224 = 561211770;
-pub const kAudioHardwareIllegalOperationError: _bindgen_ty_224 = 1852797029;
-pub const kAudioHardwareBadObjectError: _bindgen_ty_224 = 560947818;
-pub const kAudioHardwareBadDeviceError: _bindgen_ty_224 = 560227702;
-pub const kAudioHardwareBadStreamError: _bindgen_ty_224 = 561214578;
-pub const kAudioHardwareUnsupportedOperationError: _bindgen_ty_224 = 1970171760;
-pub const kAudioHardwareNotReadyError: _bindgen_ty_224 = 1852990585;
-pub const kAudioDeviceUnsupportedFormatError: _bindgen_ty_224 = 560226676;
-pub const kAudioDevicePermissionsError: _bindgen_ty_224 = 560492391;
-pub type _bindgen_ty_224 = ::std::os::raw::c_uint;
-pub const kAudioObjectUnknown: _bindgen_ty_225 = 0;
-pub type _bindgen_ty_225 = ::std::os::raw::c_uint;
-pub const kAudioObjectPropertyScopeGlobal: _bindgen_ty_226 = 1735159650;
-pub const kAudioObjectPropertyScopeInput: _bindgen_ty_226 = 1768845428;
-pub const kAudioObjectPropertyScopeOutput: _bindgen_ty_226 = 1869968496;
-pub const kAudioObjectPropertyScopePlayThrough: _bindgen_ty_226 = 1886679669;
-pub const kAudioObjectPropertyElementMain: _bindgen_ty_226 = 0;
-pub const kAudioObjectPropertyElementMaster: _bindgen_ty_226 = 0;
-pub type _bindgen_ty_226 = ::std::os::raw::c_uint;
-pub const kAudioObjectPropertySelectorWildcard: _bindgen_ty_227 = 707406378;
-pub type _bindgen_ty_227 = ::std::os::raw::c_uint;
-pub const kAudioObjectPropertyScopeWildcard: _bindgen_ty_228 = 707406378;
+pub const kAudioHardwareNoError: _bindgen_ty_228 = 0;
+pub const kAudioHardwareNotRunningError: _bindgen_ty_228 = 1937010544;
+pub const kAudioHardwareUnspecifiedError: _bindgen_ty_228 = 2003329396;
+pub const kAudioHardwareUnknownPropertyError: _bindgen_ty_228 = 2003332927;
+pub const kAudioHardwareBadPropertySizeError: _bindgen_ty_228 = 561211770;
+pub const kAudioHardwareIllegalOperationError: _bindgen_ty_228 = 1852797029;
+pub const kAudioHardwareBadObjectError: _bindgen_ty_228 = 560947818;
+pub const kAudioHardwareBadDeviceError: _bindgen_ty_228 = 560227702;
+pub const kAudioHardwareBadStreamError: _bindgen_ty_228 = 561214578;
+pub const kAudioHardwareUnsupportedOperationError: _bindgen_ty_228 = 1970171760;
+pub const kAudioHardwareNotReadyError: _bindgen_ty_228 = 1852990585;
+pub const kAudioDeviceUnsupportedFormatError: _bindgen_ty_228 = 560226676;
+pub const kAudioDevicePermissionsError: _bindgen_ty_228 = 560492391;
 pub type _bindgen_ty_228 = ::std::os::raw::c_uint;
-pub const kAudioObjectPropertyElementWildcard: _bindgen_ty_229 = 4294967295;
+pub const kAudioObjectUnknown: _bindgen_ty_229 = 0;
 pub type _bindgen_ty_229 = ::std::os::raw::c_uint;
-pub const kAudioObjectClassIDWildcard: _bindgen_ty_230 = 707406378;
+pub const kAudioObjectPropertyScopeGlobal: _bindgen_ty_230 = 1735159650;
+pub const kAudioObjectPropertyScopeInput: _bindgen_ty_230 = 1768845428;
+pub const kAudioObjectPropertyScopeOutput: _bindgen_ty_230 = 1869968496;
+pub const kAudioObjectPropertyScopePlayThrough: _bindgen_ty_230 = 1886679669;
+pub const kAudioObjectPropertyElementMain: _bindgen_ty_230 = 0;
+pub const kAudioObjectPropertyElementMaster: _bindgen_ty_230 = 0;
 pub type _bindgen_ty_230 = ::std::os::raw::c_uint;
-pub const kAudioObjectClassID: _bindgen_ty_231 = 1634689642;
+pub const kAudioObjectPropertySelectorWildcard: _bindgen_ty_231 = 707406378;
 pub type _bindgen_ty_231 = ::std::os::raw::c_uint;
-pub const kAudioObjectPropertyBaseClass: _bindgen_ty_232 = 1650682995;
-pub const kAudioObjectPropertyClass: _bindgen_ty_232 = 1668047219;
-pub const kAudioObjectPropertyOwner: _bindgen_ty_232 = 1937007734;
-pub const kAudioObjectPropertyName: _bindgen_ty_232 = 1819173229;
-pub const kAudioObjectPropertyModelName: _bindgen_ty_232 = 1819111268;
-pub const kAudioObjectPropertyManufacturer: _bindgen_ty_232 = 1819107691;
-pub const kAudioObjectPropertyElementName: _bindgen_ty_232 = 1818454126;
-pub const kAudioObjectPropertyElementCategoryName: _bindgen_ty_232 = 1818452846;
-pub const kAudioObjectPropertyElementNumberName: _bindgen_ty_232 = 1818455662;
-pub const kAudioObjectPropertyOwnedObjects: _bindgen_ty_232 = 1870098020;
-pub const kAudioObjectPropertyIdentify: _bindgen_ty_232 = 1768187246;
-pub const kAudioObjectPropertySerialNumber: _bindgen_ty_232 = 1936618861;
-pub const kAudioObjectPropertyFirmwareVersion: _bindgen_ty_232 = 1719105134;
+pub const kAudioObjectPropertyScopeWildcard: _bindgen_ty_232 = 707406378;
 pub type _bindgen_ty_232 = ::std::os::raw::c_uint;
-pub const kAudioPlugInClassID: _bindgen_ty_233 = 1634757735;
+pub const kAudioObjectPropertyElementWildcard: _bindgen_ty_233 = 4294967295;
 pub type _bindgen_ty_233 = ::std::os::raw::c_uint;
-pub const kAudioPlugInPropertyBundleID: _bindgen_ty_234 = 1885956452;
-pub const kAudioPlugInPropertyDeviceList: _bindgen_ty_234 = 1684370979;
-pub const kAudioPlugInPropertyTranslateUIDToDevice: _bindgen_ty_234 = 1969841252;
-pub const kAudioPlugInPropertyBoxList: _bindgen_ty_234 = 1651472419;
-pub const kAudioPlugInPropertyTranslateUIDToBox: _bindgen_ty_234 = 1969841250;
-pub const kAudioPlugInPropertyClockDeviceList: _bindgen_ty_234 = 1668049699;
-pub const kAudioPlugInPropertyTranslateUIDToClockDevice: _bindgen_ty_234 = 1969841251;
+pub const kAudioObjectClassIDWildcard: _bindgen_ty_234 = 707406378;
 pub type _bindgen_ty_234 = ::std::os::raw::c_uint;
-pub const kAudioTransportManagerClassID: _bindgen_ty_235 = 1953656941;
+pub const kAudioObjectClassID: _bindgen_ty_235 = 1634689642;
 pub type _bindgen_ty_235 = ::std::os::raw::c_uint;
-pub const kAudioTransportManagerPropertyEndPointList: _bindgen_ty_236 = 1701733411;
-pub const kAudioTransportManagerPropertyTranslateUIDToEndPoint: _bindgen_ty_236 = 1969841253;
-pub const kAudioTransportManagerPropertyTransportType: _bindgen_ty_236 = 1953653102;
+pub const kAudioObjectPropertyBaseClass: _bindgen_ty_236 = 1650682995;
+pub const kAudioObjectPropertyClass: _bindgen_ty_236 = 1668047219;
+pub const kAudioObjectPropertyOwner: _bindgen_ty_236 = 1937007734;
+pub const kAudioObjectPropertyName: _bindgen_ty_236 = 1819173229;
+pub const kAudioObjectPropertyModelName: _bindgen_ty_236 = 1819111268;
+pub const kAudioObjectPropertyManufacturer: _bindgen_ty_236 = 1819107691;
+pub const kAudioObjectPropertyElementName: _bindgen_ty_236 = 1818454126;
+pub const kAudioObjectPropertyElementCategoryName: _bindgen_ty_236 = 1818452846;
+pub const kAudioObjectPropertyElementNumberName: _bindgen_ty_236 = 1818455662;
+pub const kAudioObjectPropertyOwnedObjects: _bindgen_ty_236 = 1870098020;
+pub const kAudioObjectPropertyIdentify: _bindgen_ty_236 = 1768187246;
+pub const kAudioObjectPropertySerialNumber: _bindgen_ty_236 = 1936618861;
+pub const kAudioObjectPropertyFirmwareVersion: _bindgen_ty_236 = 1719105134;
 pub type _bindgen_ty_236 = ::std::os::raw::c_uint;
-pub const kAudioBoxClassID: _bindgen_ty_237 = 1633841016;
+pub const kAudioPlugInClassID: _bindgen_ty_237 = 1634757735;
 pub type _bindgen_ty_237 = ::std::os::raw::c_uint;
-pub const kAudioBoxPropertyBoxUID: _bindgen_ty_238 = 1651861860;
-pub const kAudioBoxPropertyTransportType: _bindgen_ty_238 = 1953653102;
-pub const kAudioBoxPropertyHasAudio: _bindgen_ty_238 = 1651007861;
-pub const kAudioBoxPropertyHasVideo: _bindgen_ty_238 = 1651013225;
-pub const kAudioBoxPropertyHasMIDI: _bindgen_ty_238 = 1651010921;
-pub const kAudioBoxPropertyIsProtected: _bindgen_ty_238 = 1651536495;
-pub const kAudioBoxPropertyAcquired: _bindgen_ty_238 = 1652060014;
-pub const kAudioBoxPropertyAcquisitionFailed: _bindgen_ty_238 = 1652060006;
-pub const kAudioBoxPropertyDeviceList: _bindgen_ty_238 = 1650751011;
-pub const kAudioBoxPropertyClockDeviceList: _bindgen_ty_238 = 1650682915;
+pub const kAudioPlugInPropertyBundleID: _bindgen_ty_238 = 1885956452;
+pub const kAudioPlugInPropertyDeviceList: _bindgen_ty_238 = 1684370979;
+pub const kAudioPlugInPropertyTranslateUIDToDevice: _bindgen_ty_238 = 1969841252;
+pub const kAudioPlugInPropertyBoxList: _bindgen_ty_238 = 1651472419;
+pub const kAudioPlugInPropertyTranslateUIDToBox: _bindgen_ty_238 = 1969841250;
+pub const kAudioPlugInPropertyClockDeviceList: _bindgen_ty_238 = 1668049699;
+pub const kAudioPlugInPropertyTranslateUIDToClockDevice: _bindgen_ty_238 = 1969841251;
 pub type _bindgen_ty_238 = ::std::os::raw::c_uint;
-pub const kAudioDeviceClassID: _bindgen_ty_239 = 1633969526;
+pub const kAudioTransportManagerClassID: _bindgen_ty_239 = 1953656941;
 pub type _bindgen_ty_239 = ::std::os::raw::c_uint;
-pub const kAudioDeviceTransportTypeUnknown: _bindgen_ty_240 = 0;
-pub const kAudioDeviceTransportTypeBuiltIn: _bindgen_ty_240 = 1651274862;
-pub const kAudioDeviceTransportTypeAggregate: _bindgen_ty_240 = 1735554416;
-pub const kAudioDeviceTransportTypeVirtual: _bindgen_ty_240 = 1986622068;
-pub const kAudioDeviceTransportTypePCI: _bindgen_ty_240 = 1885563168;
-pub const kAudioDeviceTransportTypeUSB: _bindgen_ty_240 = 1970496032;
-pub const kAudioDeviceTransportTypeFireWire: _bindgen_ty_240 = 825440564;
-pub const kAudioDeviceTransportTypeBluetooth: _bindgen_ty_240 = 1651275109;
-pub const kAudioDeviceTransportTypeBluetoothLE: _bindgen_ty_240 = 1651271009;
-pub const kAudioDeviceTransportTypeHDMI: _bindgen_ty_240 = 1751412073;
-pub const kAudioDeviceTransportTypeDisplayPort: _bindgen_ty_240 = 1685090932;
-pub const kAudioDeviceTransportTypeAirPlay: _bindgen_ty_240 = 1634300528;
-pub const kAudioDeviceTransportTypeAVB: _bindgen_ty_240 = 1700886114;
-pub const kAudioDeviceTransportTypeThunderbolt: _bindgen_ty_240 = 1953002862;
+pub const kAudioTransportManagerPropertyEndPointList: _bindgen_ty_240 = 1701733411;
+pub const kAudioTransportManagerPropertyTranslateUIDToEndPoint: _bindgen_ty_240 = 1969841253;
+pub const kAudioTransportManagerPropertyTransportType: _bindgen_ty_240 = 1953653102;
 pub type _bindgen_ty_240 = ::std::os::raw::c_uint;
-pub const kAudioDevicePropertyConfigurationApplication: _bindgen_ty_241 = 1667330160;
-pub const kAudioDevicePropertyDeviceUID: _bindgen_ty_241 = 1969841184;
-pub const kAudioDevicePropertyModelUID: _bindgen_ty_241 = 1836411236;
-pub const kAudioDevicePropertyTransportType: _bindgen_ty_241 = 1953653102;
-pub const kAudioDevicePropertyRelatedDevices: _bindgen_ty_241 = 1634429294;
-pub const kAudioDevicePropertyClockDomain: _bindgen_ty_241 = 1668049764;
-pub const kAudioDevicePropertyDeviceIsAlive: _bindgen_ty_241 = 1818850926;
-pub const kAudioDevicePropertyDeviceIsRunning: _bindgen_ty_241 = 1735354734;
-pub const kAudioDevicePropertyDeviceCanBeDefaultDevice: _bindgen_ty_241 = 1684434036;
-pub const kAudioDevicePropertyDeviceCanBeDefaultSystemDevice: _bindgen_ty_241 = 1936092276;
-pub const kAudioDevicePropertyLatency: _bindgen_ty_241 = 1819569763;
-pub const kAudioDevicePropertyStreams: _bindgen_ty_241 = 1937009955;
-pub const kAudioObjectPropertyControlList: _bindgen_ty_241 = 1668575852;
-pub const kAudioDevicePropertySafetyOffset: _bindgen_ty_241 = 1935763060;
-pub const kAudioDevicePropertyNominalSampleRate: _bindgen_ty_241 = 1853059700;
-pub const kAudioDevicePropertyAvailableNominalSampleRates: _bindgen_ty_241 = 1853059619;
-pub const kAudioDevicePropertyIcon: _bindgen_ty_241 = 1768124270;
-pub const kAudioDevicePropertyIsHidden: _bindgen_ty_241 = 1751737454;
-pub const kAudioDevicePropertyPreferredChannelsForStereo: _bindgen_ty_241 = 1684236338;
-pub const kAudioDevicePropertyPreferredChannelLayout: _bindgen_ty_241 = 1936879204;
+pub const kAudioBoxClassID: _bindgen_ty_241 = 1633841016;
 pub type _bindgen_ty_241 = ::std::os::raw::c_uint;
-pub const kAudioClockDeviceClassID: _bindgen_ty_242 = 1633905771;
+pub const kAudioBoxPropertyBoxUID: _bindgen_ty_242 = 1651861860;
+pub const kAudioBoxPropertyTransportType: _bindgen_ty_242 = 1953653102;
+pub const kAudioBoxPropertyHasAudio: _bindgen_ty_242 = 1651007861;
+pub const kAudioBoxPropertyHasVideo: _bindgen_ty_242 = 1651013225;
+pub const kAudioBoxPropertyHasMIDI: _bindgen_ty_242 = 1651010921;
+pub const kAudioBoxPropertyIsProtected: _bindgen_ty_242 = 1651536495;
+pub const kAudioBoxPropertyAcquired: _bindgen_ty_242 = 1652060014;
+pub const kAudioBoxPropertyAcquisitionFailed: _bindgen_ty_242 = 1652060006;
+pub const kAudioBoxPropertyDeviceList: _bindgen_ty_242 = 1650751011;
+pub const kAudioBoxPropertyClockDeviceList: _bindgen_ty_242 = 1650682915;
 pub type _bindgen_ty_242 = ::std::os::raw::c_uint;
-pub const kAudioClockDevicePropertyDeviceUID: _bindgen_ty_243 = 1668639076;
-pub const kAudioClockDevicePropertyTransportType: _bindgen_ty_243 = 1953653102;
-pub const kAudioClockDevicePropertyClockDomain: _bindgen_ty_243 = 1668049764;
-pub const kAudioClockDevicePropertyDeviceIsAlive: _bindgen_ty_243 = 1818850926;
-pub const kAudioClockDevicePropertyDeviceIsRunning: _bindgen_ty_243 = 1735354734;
-pub const kAudioClockDevicePropertyLatency: _bindgen_ty_243 = 1819569763;
-pub const kAudioClockDevicePropertyControlList: _bindgen_ty_243 = 1668575852;
-pub const kAudioClockDevicePropertyNominalSampleRate: _bindgen_ty_243 = 1853059700;
-pub const kAudioClockDevicePropertyAvailableNominalSampleRates: _bindgen_ty_243 = 1853059619;
+pub const kAudioDeviceClassID: _bindgen_ty_243 = 1633969526;
 pub type _bindgen_ty_243 = ::std::os::raw::c_uint;
-pub const kAudioEndPointDeviceClassID: _bindgen_ty_244 = 1701078390;
+pub const kAudioDeviceTransportTypeUnknown: _bindgen_ty_244 = 0;
+pub const kAudioDeviceTransportTypeBuiltIn: _bindgen_ty_244 = 1651274862;
+pub const kAudioDeviceTransportTypeAggregate: _bindgen_ty_244 = 1735554416;
+pub const kAudioDeviceTransportTypeVirtual: _bindgen_ty_244 = 1986622068;
+pub const kAudioDeviceTransportTypePCI: _bindgen_ty_244 = 1885563168;
+pub const kAudioDeviceTransportTypeUSB: _bindgen_ty_244 = 1970496032;
+pub const kAudioDeviceTransportTypeFireWire: _bindgen_ty_244 = 825440564;
+pub const kAudioDeviceTransportTypeBluetooth: _bindgen_ty_244 = 1651275109;
+pub const kAudioDeviceTransportTypeBluetoothLE: _bindgen_ty_244 = 1651271009;
+pub const kAudioDeviceTransportTypeHDMI: _bindgen_ty_244 = 1751412073;
+pub const kAudioDeviceTransportTypeDisplayPort: _bindgen_ty_244 = 1685090932;
+pub const kAudioDeviceTransportTypeAirPlay: _bindgen_ty_244 = 1634300528;
+pub const kAudioDeviceTransportTypeAVB: _bindgen_ty_244 = 1700886114;
+pub const kAudioDeviceTransportTypeThunderbolt: _bindgen_ty_244 = 1953002862;
+pub const kAudioDeviceTransportTypeContinuityCaptureWired: _bindgen_ty_244 = 1667463012;
+pub const kAudioDeviceTransportTypeContinuityCaptureWireless: _bindgen_ty_244 = 1667463020;
+pub const kAudioDeviceTransportTypeContinuityCapture: _bindgen_ty_244 = 1667457392;
 pub type _bindgen_ty_244 = ::std::os::raw::c_uint;
-pub const kAudioEndPointDevicePropertyComposition: _bindgen_ty_245 = 1633906541;
-pub const kAudioEndPointDevicePropertyEndPointList: _bindgen_ty_245 = 1634169456;
-pub const kAudioEndPointDevicePropertyIsPrivate: _bindgen_ty_245 = 1886546294;
+pub const kAudioDevicePropertyConfigurationApplication: _bindgen_ty_245 = 1667330160;
+pub const kAudioDevicePropertyDeviceUID: _bindgen_ty_245 = 1969841184;
+pub const kAudioDevicePropertyModelUID: _bindgen_ty_245 = 1836411236;
+pub const kAudioDevicePropertyTransportType: _bindgen_ty_245 = 1953653102;
+pub const kAudioDevicePropertyRelatedDevices: _bindgen_ty_245 = 1634429294;
+pub const kAudioDevicePropertyClockDomain: _bindgen_ty_245 = 1668049764;
+pub const kAudioDevicePropertyDeviceIsAlive: _bindgen_ty_245 = 1818850926;
+pub const kAudioDevicePropertyDeviceIsRunning: _bindgen_ty_245 = 1735354734;
+pub const kAudioDevicePropertyDeviceCanBeDefaultDevice: _bindgen_ty_245 = 1684434036;
+pub const kAudioDevicePropertyDeviceCanBeDefaultSystemDevice: _bindgen_ty_245 = 1936092276;
+pub const kAudioDevicePropertyLatency: _bindgen_ty_245 = 1819569763;
+pub const kAudioDevicePropertyStreams: _bindgen_ty_245 = 1937009955;
+pub const kAudioObjectPropertyControlList: _bindgen_ty_245 = 1668575852;
+pub const kAudioDevicePropertySafetyOffset: _bindgen_ty_245 = 1935763060;
+pub const kAudioDevicePropertyNominalSampleRate: _bindgen_ty_245 = 1853059700;
+pub const kAudioDevicePropertyAvailableNominalSampleRates: _bindgen_ty_245 = 1853059619;
+pub const kAudioDevicePropertyIcon: _bindgen_ty_245 = 1768124270;
+pub const kAudioDevicePropertyIsHidden: _bindgen_ty_245 = 1751737454;
+pub const kAudioDevicePropertyPreferredChannelsForStereo: _bindgen_ty_245 = 1684236338;
+pub const kAudioDevicePropertyPreferredChannelLayout: _bindgen_ty_245 = 1936879204;
 pub type _bindgen_ty_245 = ::std::os::raw::c_uint;
-pub const kAudioEndPointClassID: _bindgen_ty_246 = 1701733488;
+pub const kAudioClockDeviceClassID: _bindgen_ty_246 = 1633905771;
 pub type _bindgen_ty_246 = ::std::os::raw::c_uint;
+pub const kAudioClockDevicePropertyDeviceUID: _bindgen_ty_247 = 1668639076;
+pub const kAudioClockDevicePropertyTransportType: _bindgen_ty_247 = 1953653102;
+pub const kAudioClockDevicePropertyClockDomain: _bindgen_ty_247 = 1668049764;
+pub const kAudioClockDevicePropertyDeviceIsAlive: _bindgen_ty_247 = 1818850926;
+pub const kAudioClockDevicePropertyDeviceIsRunning: _bindgen_ty_247 = 1735354734;
+pub const kAudioClockDevicePropertyLatency: _bindgen_ty_247 = 1819569763;
+pub const kAudioClockDevicePropertyControlList: _bindgen_ty_247 = 1668575852;
+pub const kAudioClockDevicePropertyNominalSampleRate: _bindgen_ty_247 = 1853059700;
+pub const kAudioClockDevicePropertyAvailableNominalSampleRates: _bindgen_ty_247 = 1853059619;
+pub type _bindgen_ty_247 = ::std::os::raw::c_uint;
+pub const kAudioEndPointDeviceClassID: _bindgen_ty_248 = 1701078390;
+pub type _bindgen_ty_248 = ::std::os::raw::c_uint;
+pub const kAudioEndPointDevicePropertyComposition: _bindgen_ty_249 = 1633906541;
+pub const kAudioEndPointDevicePropertyEndPointList: _bindgen_ty_249 = 1634169456;
+pub const kAudioEndPointDevicePropertyIsPrivate: _bindgen_ty_249 = 1886546294;
+pub type _bindgen_ty_249 = ::std::os::raw::c_uint;
+pub const kAudioEndPointClassID: _bindgen_ty_250 = 1701733488;
+pub type _bindgen_ty_250 = ::std::os::raw::c_uint;
 #[repr(C)]
 #[derive(Debug, Default, Copy, Clone)]
 pub struct AudioStreamRangedDescription {
     pub mFormat: AudioStreamBasicDescription,
     pub mSampleRateRange: AudioValueRange,
 }
-pub const kAudioStreamClassID: _bindgen_ty_247 = 1634956402;
-pub type _bindgen_ty_247 = ::std::os::raw::c_uint;
-pub const kAudioStreamTerminalTypeUnknown: _bindgen_ty_248 = 0;
-pub const kAudioStreamTerminalTypeLine: _bindgen_ty_248 = 1818848869;
-pub const kAudioStreamTerminalTypeDigitalAudioInterface: _bindgen_ty_248 = 1936745574;
-pub const kAudioStreamTerminalTypeSpeaker: _bindgen_ty_248 = 1936747378;
-pub const kAudioStreamTerminalTypeHeadphones: _bindgen_ty_248 = 1751412840;
-pub const kAudioStreamTerminalTypeLFESpeaker: _bindgen_ty_248 = 1818649971;
-pub const kAudioStreamTerminalTypeReceiverSpeaker: _bindgen_ty_248 = 1920168043;
-pub const kAudioStreamTerminalTypeMicrophone: _bindgen_ty_248 = 1835623282;
-pub const kAudioStreamTerminalTypeHeadsetMicrophone: _bindgen_ty_248 = 1752000867;
-pub const kAudioStreamTerminalTypeReceiverMicrophone: _bindgen_ty_248 = 1919773027;
-pub const kAudioStreamTerminalTypeTTY: _bindgen_ty_248 = 1953790303;
-pub const kAudioStreamTerminalTypeHDMI: _bindgen_ty_248 = 1751412073;
-pub const kAudioStreamTerminalTypeDisplayPort: _bindgen_ty_248 = 1685090932;
-pub type _bindgen_ty_248 = ::std::os::raw::c_uint;
-pub const kAudioStreamPropertyIsActive: _bindgen_ty_249 = 1935762292;
-pub const kAudioStreamPropertyDirection: _bindgen_ty_249 = 1935960434;
-pub const kAudioStreamPropertyTerminalType: _bindgen_ty_249 = 1952805485;
-pub const kAudioStreamPropertyStartingChannel: _bindgen_ty_249 = 1935894638;
-pub const kAudioStreamPropertyLatency: _bindgen_ty_249 = 1819569763;
-pub const kAudioStreamPropertyVirtualFormat: _bindgen_ty_249 = 1936092532;
-pub const kAudioStreamPropertyAvailableVirtualFormats: _bindgen_ty_249 = 1936092513;
-pub const kAudioStreamPropertyPhysicalFormat: _bindgen_ty_249 = 1885762592;
-pub const kAudioStreamPropertyAvailablePhysicalFormats: _bindgen_ty_249 = 1885762657;
-pub type _bindgen_ty_249 = ::std::os::raw::c_uint;
-pub const kAudioControlClassID: _bindgen_ty_250 = 1633907820;
-pub type _bindgen_ty_250 = ::std::os::raw::c_uint;
-pub const kAudioControlPropertyScope: _bindgen_ty_251 = 1668506480;
-pub const kAudioControlPropertyElement: _bindgen_ty_251 = 1667591277;
+pub const kAudioStreamClassID: _bindgen_ty_251 = 1634956402;
 pub type _bindgen_ty_251 = ::std::os::raw::c_uint;
-pub const kAudioSliderControlClassID: _bindgen_ty_252 = 1936483442;
+pub const kAudioStreamTerminalTypeUnknown: _bindgen_ty_252 = 0;
+pub const kAudioStreamTerminalTypeLine: _bindgen_ty_252 = 1818848869;
+pub const kAudioStreamTerminalTypeDigitalAudioInterface: _bindgen_ty_252 = 1936745574;
+pub const kAudioStreamTerminalTypeSpeaker: _bindgen_ty_252 = 1936747378;
+pub const kAudioStreamTerminalTypeHeadphones: _bindgen_ty_252 = 1751412840;
+pub const kAudioStreamTerminalTypeLFESpeaker: _bindgen_ty_252 = 1818649971;
+pub const kAudioStreamTerminalTypeReceiverSpeaker: _bindgen_ty_252 = 1920168043;
+pub const kAudioStreamTerminalTypeMicrophone: _bindgen_ty_252 = 1835623282;
+pub const kAudioStreamTerminalTypeHeadsetMicrophone: _bindgen_ty_252 = 1752000867;
+pub const kAudioStreamTerminalTypeReceiverMicrophone: _bindgen_ty_252 = 1919773027;
+pub const kAudioStreamTerminalTypeTTY: _bindgen_ty_252 = 1953790303;
+pub const kAudioStreamTerminalTypeHDMI: _bindgen_ty_252 = 1751412073;
+pub const kAudioStreamTerminalTypeDisplayPort: _bindgen_ty_252 = 1685090932;
 pub type _bindgen_ty_252 = ::std::os::raw::c_uint;
-pub const kAudioSliderControlPropertyValue: _bindgen_ty_253 = 1935962742;
-pub const kAudioSliderControlPropertyRange: _bindgen_ty_253 = 1935962738;
+pub const kAudioStreamPropertyIsActive: _bindgen_ty_253 = 1935762292;
+pub const kAudioStreamPropertyDirection: _bindgen_ty_253 = 1935960434;
+pub const kAudioStreamPropertyTerminalType: _bindgen_ty_253 = 1952805485;
+pub const kAudioStreamPropertyStartingChannel: _bindgen_ty_253 = 1935894638;
+pub const kAudioStreamPropertyLatency: _bindgen_ty_253 = 1819569763;
+pub const kAudioStreamPropertyVirtualFormat: _bindgen_ty_253 = 1936092532;
+pub const kAudioStreamPropertyAvailableVirtualFormats: _bindgen_ty_253 = 1936092513;
+pub const kAudioStreamPropertyPhysicalFormat: _bindgen_ty_253 = 1885762592;
+pub const kAudioStreamPropertyAvailablePhysicalFormats: _bindgen_ty_253 = 1885762657;
 pub type _bindgen_ty_253 = ::std::os::raw::c_uint;
-pub const kAudioLevelControlClassID: _bindgen_ty_254 = 1818588780;
-pub const kAudioVolumeControlClassID: _bindgen_ty_254 = 1986817381;
-pub const kAudioLFEVolumeControlClassID: _bindgen_ty_254 = 1937072758;
+pub const kAudioControlClassID: _bindgen_ty_254 = 1633907820;
 pub type _bindgen_ty_254 = ::std::os::raw::c_uint;
-pub const kAudioLevelControlPropertyScalarValue: _bindgen_ty_255 = 1818456950;
-pub const kAudioLevelControlPropertyDecibelValue: _bindgen_ty_255 = 1818453110;
-pub const kAudioLevelControlPropertyDecibelRange: _bindgen_ty_255 = 1818453106;
-pub const kAudioLevelControlPropertyConvertScalarToDecibels: _bindgen_ty_255 = 1818456932;
-pub const kAudioLevelControlPropertyConvertDecibelsToScalar: _bindgen_ty_255 = 1818453107;
+pub const kAudioControlPropertyScope: _bindgen_ty_255 = 1668506480;
+pub const kAudioControlPropertyElement: _bindgen_ty_255 = 1667591277;
 pub type _bindgen_ty_255 = ::std::os::raw::c_uint;
-pub const kAudioBooleanControlClassID: _bindgen_ty_256 = 1953458028;
-pub const kAudioMuteControlClassID: _bindgen_ty_256 = 1836414053;
-pub const kAudioSoloControlClassID: _bindgen_ty_256 = 1936682095;
-pub const kAudioJackControlClassID: _bindgen_ty_256 = 1784767339;
-pub const kAudioLFEMuteControlClassID: _bindgen_ty_256 = 1937072749;
-pub const kAudioPhantomPowerControlClassID: _bindgen_ty_256 = 1885888878;
-pub const kAudioPhaseInvertControlClassID: _bindgen_ty_256 = 1885893481;
-pub const kAudioClipLightControlClassID: _bindgen_ty_256 = 1668049264;
-pub const kAudioTalkbackControlClassID: _bindgen_ty_256 = 1952541794;
-pub const kAudioListenbackControlClassID: _bindgen_ty_256 = 1819504226;
+pub const kAudioSliderControlClassID: _bindgen_ty_256 = 1936483442;
 pub type _bindgen_ty_256 = ::std::os::raw::c_uint;
-pub const kAudioBooleanControlPropertyValue: _bindgen_ty_257 = 1650685548;
+pub const kAudioSliderControlPropertyValue: _bindgen_ty_257 = 1935962742;
+pub const kAudioSliderControlPropertyRange: _bindgen_ty_257 = 1935962738;
 pub type _bindgen_ty_257 = ::std::os::raw::c_uint;
-pub const kAudioSelectorControlClassID: _bindgen_ty_258 = 1936483188;
-pub const kAudioDataSourceControlClassID: _bindgen_ty_258 = 1685287523;
-pub const kAudioDataDestinationControlClassID: _bindgen_ty_258 = 1684370292;
-pub const kAudioClockSourceControlClassID: _bindgen_ty_258 = 1668047723;
-pub const kAudioLineLevelControlClassID: _bindgen_ty_258 = 1852601964;
-pub const kAudioHighPassFilterControlClassID: _bindgen_ty_258 = 1751740518;
+pub const kAudioLevelControlClassID: _bindgen_ty_258 = 1818588780;
+pub const kAudioVolumeControlClassID: _bindgen_ty_258 = 1986817381;
+pub const kAudioLFEVolumeControlClassID: _bindgen_ty_258 = 1937072758;
 pub type _bindgen_ty_258 = ::std::os::raw::c_uint;
-pub const kAudioSelectorControlPropertyCurrentItem: _bindgen_ty_259 = 1935893353;
-pub const kAudioSelectorControlPropertyAvailableItems: _bindgen_ty_259 = 1935892841;
-pub const kAudioSelectorControlPropertyItemName: _bindgen_ty_259 = 1935894894;
-pub const kAudioSelectorControlPropertyItemKind: _bindgen_ty_259 = 1668049771;
+pub const kAudioLevelControlPropertyScalarValue: _bindgen_ty_259 = 1818456950;
+pub const kAudioLevelControlPropertyDecibelValue: _bindgen_ty_259 = 1818453110;
+pub const kAudioLevelControlPropertyDecibelRange: _bindgen_ty_259 = 1818453106;
+pub const kAudioLevelControlPropertyConvertScalarToDecibels: _bindgen_ty_259 = 1818456932;
+pub const kAudioLevelControlPropertyConvertDecibelsToScalar: _bindgen_ty_259 = 1818453107;
 pub type _bindgen_ty_259 = ::std::os::raw::c_uint;
-pub const kAudioSelectorControlItemKindSpacer: _bindgen_ty_260 = 1936745330;
+pub const kAudioBooleanControlClassID: _bindgen_ty_260 = 1953458028;
+pub const kAudioMuteControlClassID: _bindgen_ty_260 = 1836414053;
+pub const kAudioSoloControlClassID: _bindgen_ty_260 = 1936682095;
+pub const kAudioJackControlClassID: _bindgen_ty_260 = 1784767339;
+pub const kAudioLFEMuteControlClassID: _bindgen_ty_260 = 1937072749;
+pub const kAudioPhantomPowerControlClassID: _bindgen_ty_260 = 1885888878;
+pub const kAudioPhaseInvertControlClassID: _bindgen_ty_260 = 1885893481;
+pub const kAudioClipLightControlClassID: _bindgen_ty_260 = 1668049264;
+pub const kAudioTalkbackControlClassID: _bindgen_ty_260 = 1952541794;
+pub const kAudioListenbackControlClassID: _bindgen_ty_260 = 1819504226;
 pub type _bindgen_ty_260 = ::std::os::raw::c_uint;
-pub const kAudioClockSourceItemKindInternal: _bindgen_ty_261 = 1768846368;
+pub const kAudioBooleanControlPropertyValue: _bindgen_ty_261 = 1650685548;
 pub type _bindgen_ty_261 = ::std::os::raw::c_uint;
-pub const kAudioStereoPanControlClassID: _bindgen_ty_262 = 1936744814;
+pub const kAudioSelectorControlClassID: _bindgen_ty_262 = 1936483188;
+pub const kAudioDataSourceControlClassID: _bindgen_ty_262 = 1685287523;
+pub const kAudioDataDestinationControlClassID: _bindgen_ty_262 = 1684370292;
+pub const kAudioClockSourceControlClassID: _bindgen_ty_262 = 1668047723;
+pub const kAudioLineLevelControlClassID: _bindgen_ty_262 = 1852601964;
+pub const kAudioHighPassFilterControlClassID: _bindgen_ty_262 = 1751740518;
 pub type _bindgen_ty_262 = ::std::os::raw::c_uint;
-pub const kAudioStereoPanControlPropertyValue: _bindgen_ty_263 = 1936745334;
-pub const kAudioStereoPanControlPropertyPanningChannels: _bindgen_ty_263 = 1936745315;
+pub const kAudioSelectorControlPropertyCurrentItem: _bindgen_ty_263 = 1935893353;
+pub const kAudioSelectorControlPropertyAvailableItems: _bindgen_ty_263 = 1935892841;
+pub const kAudioSelectorControlPropertyItemName: _bindgen_ty_263 = 1935894894;
+pub const kAudioSelectorControlPropertyItemKind: _bindgen_ty_263 = 1668049771;
 pub type _bindgen_ty_263 = ::std::os::raw::c_uint;
-pub const kAudioObjectSystemObject: _bindgen_ty_264 = 1;
+pub const kAudioSelectorControlItemKindSpacer: _bindgen_ty_264 = 1936745330;
 pub type _bindgen_ty_264 = ::std::os::raw::c_uint;
+pub const kAudioClockSourceItemKindInternal: _bindgen_ty_265 = 1768846368;
+pub type _bindgen_ty_265 = ::std::os::raw::c_uint;
+pub const kAudioStereoPanControlClassID: _bindgen_ty_266 = 1936744814;
+pub type _bindgen_ty_266 = ::std::os::raw::c_uint;
+pub const kAudioStereoPanControlPropertyValue: _bindgen_ty_267 = 1936745334;
+pub const kAudioStereoPanControlPropertyPanningChannels: _bindgen_ty_267 = 1936745315;
+pub type _bindgen_ty_267 = ::std::os::raw::c_uint;
+pub const kAudioObjectSystemObject: _bindgen_ty_268 = 1;
+pub type _bindgen_ty_268 = ::std::os::raw::c_uint;
 pub type AudioObjectPropertyListenerProc = ::std::option::Option<
     unsafe extern "C" fn(
         inObjectID: AudioObjectID,
@@ -20161,10 +20422,10 @@ pub type AudioObjectPropertyListenerProc = ::std::option::Option<
     ) -> OSStatus,
 >;
 pub type AudioObjectPropertyListenerBlock = *mut ::std::os::raw::c_void;
-pub const kAudioObjectPropertyCreator: _bindgen_ty_265 = 1869638759;
-pub const kAudioObjectPropertyListenerAdded: _bindgen_ty_265 = 1818850145;
-pub const kAudioObjectPropertyListenerRemoved: _bindgen_ty_265 = 1818850162;
-pub type _bindgen_ty_265 = ::std::os::raw::c_uint;
+pub const kAudioObjectPropertyCreator: _bindgen_ty_269 = 1869638759;
+pub const kAudioObjectPropertyListenerAdded: _bindgen_ty_269 = 1818850145;
+pub const kAudioObjectPropertyListenerRemoved: _bindgen_ty_269 = 1818850162;
+pub type _bindgen_ty_269 = ::std::os::raw::c_uint;
 extern "C" {
     pub fn AudioObjectShow(inObjectID: AudioObjectID);
 }
@@ -20242,37 +20503,37 @@ extern "C" {
         inListener: AudioObjectPropertyListenerBlock,
     ) -> OSStatus;
 }
-pub const kAudioSystemObjectClassID: _bindgen_ty_266 = 1634957683;
-pub type _bindgen_ty_266 = ::std::os::raw::c_uint;
+pub const kAudioSystemObjectClassID: _bindgen_ty_270 = 1634957683;
+pub type _bindgen_ty_270 = ::std::os::raw::c_uint;
 pub type AudioHardwarePowerHint = UInt32;
-pub const kAudioHardwarePowerHintNone: _bindgen_ty_267 = 0;
-pub const kAudioHardwarePowerHintFavorSavingPower: _bindgen_ty_267 = 1;
-pub type _bindgen_ty_267 = ::std::os::raw::c_uint;
-pub const kAudioHardwarePropertyDevices: _bindgen_ty_268 = 1684370979;
-pub const kAudioHardwarePropertyDefaultInputDevice: _bindgen_ty_268 = 1682533920;
-pub const kAudioHardwarePropertyDefaultOutputDevice: _bindgen_ty_268 = 1682929012;
-pub const kAudioHardwarePropertyDefaultSystemOutputDevice: _bindgen_ty_268 = 1934587252;
-pub const kAudioHardwarePropertyTranslateUIDToDevice: _bindgen_ty_268 = 1969841252;
-pub const kAudioHardwarePropertyMixStereoToMono: _bindgen_ty_268 = 1937010031;
-pub const kAudioHardwarePropertyPlugInList: _bindgen_ty_268 = 1886152483;
-pub const kAudioHardwarePropertyTranslateBundleIDToPlugIn: _bindgen_ty_268 = 1651074160;
-pub const kAudioHardwarePropertyTransportManagerList: _bindgen_ty_268 = 1953326883;
-pub const kAudioHardwarePropertyTranslateBundleIDToTransportManager: _bindgen_ty_268 = 1953325673;
-pub const kAudioHardwarePropertyBoxList: _bindgen_ty_268 = 1651472419;
-pub const kAudioHardwarePropertyTranslateUIDToBox: _bindgen_ty_268 = 1969841250;
-pub const kAudioHardwarePropertyClockDeviceList: _bindgen_ty_268 = 1668049699;
-pub const kAudioHardwarePropertyTranslateUIDToClockDevice: _bindgen_ty_268 = 1969841251;
-pub const kAudioHardwarePropertyProcessIsMain: _bindgen_ty_268 = 1835100526;
-pub const kAudioHardwarePropertyIsInitingOrExiting: _bindgen_ty_268 = 1768845172;
-pub const kAudioHardwarePropertyUserIDChanged: _bindgen_ty_268 = 1702193508;
-pub const kAudioHardwarePropertyProcessIsAudible: _bindgen_ty_268 = 1886221684;
-pub const kAudioHardwarePropertySleepingIsAllowed: _bindgen_ty_268 = 1936483696;
-pub const kAudioHardwarePropertyUnloadingIsAllowed: _bindgen_ty_268 = 1970170980;
-pub const kAudioHardwarePropertyHogModeIsAllowed: _bindgen_ty_268 = 1752131442;
-pub const kAudioHardwarePropertyUserSessionIsActiveOrHeadless: _bindgen_ty_268 = 1970496882;
-pub const kAudioHardwarePropertyServiceRestarted: _bindgen_ty_268 = 1936880500;
-pub const kAudioHardwarePropertyPowerHint: _bindgen_ty_268 = 1886353256;
-pub type _bindgen_ty_268 = ::std::os::raw::c_uint;
+pub const kAudioHardwarePowerHintNone: _bindgen_ty_271 = 0;
+pub const kAudioHardwarePowerHintFavorSavingPower: _bindgen_ty_271 = 1;
+pub type _bindgen_ty_271 = ::std::os::raw::c_uint;
+pub const kAudioHardwarePropertyDevices: _bindgen_ty_272 = 1684370979;
+pub const kAudioHardwarePropertyDefaultInputDevice: _bindgen_ty_272 = 1682533920;
+pub const kAudioHardwarePropertyDefaultOutputDevice: _bindgen_ty_272 = 1682929012;
+pub const kAudioHardwarePropertyDefaultSystemOutputDevice: _bindgen_ty_272 = 1934587252;
+pub const kAudioHardwarePropertyTranslateUIDToDevice: _bindgen_ty_272 = 1969841252;
+pub const kAudioHardwarePropertyMixStereoToMono: _bindgen_ty_272 = 1937010031;
+pub const kAudioHardwarePropertyPlugInList: _bindgen_ty_272 = 1886152483;
+pub const kAudioHardwarePropertyTranslateBundleIDToPlugIn: _bindgen_ty_272 = 1651074160;
+pub const kAudioHardwarePropertyTransportManagerList: _bindgen_ty_272 = 1953326883;
+pub const kAudioHardwarePropertyTranslateBundleIDToTransportManager: _bindgen_ty_272 = 1953325673;
+pub const kAudioHardwarePropertyBoxList: _bindgen_ty_272 = 1651472419;
+pub const kAudioHardwarePropertyTranslateUIDToBox: _bindgen_ty_272 = 1969841250;
+pub const kAudioHardwarePropertyClockDeviceList: _bindgen_ty_272 = 1668049699;
+pub const kAudioHardwarePropertyTranslateUIDToClockDevice: _bindgen_ty_272 = 1969841251;
+pub const kAudioHardwarePropertyProcessIsMain: _bindgen_ty_272 = 1835100526;
+pub const kAudioHardwarePropertyIsInitingOrExiting: _bindgen_ty_272 = 1768845172;
+pub const kAudioHardwarePropertyUserIDChanged: _bindgen_ty_272 = 1702193508;
+pub const kAudioHardwarePropertyProcessIsAudible: _bindgen_ty_272 = 1886221684;
+pub const kAudioHardwarePropertySleepingIsAllowed: _bindgen_ty_272 = 1936483696;
+pub const kAudioHardwarePropertyUnloadingIsAllowed: _bindgen_ty_272 = 1970170980;
+pub const kAudioHardwarePropertyHogModeIsAllowed: _bindgen_ty_272 = 1752131442;
+pub const kAudioHardwarePropertyUserSessionIsActiveOrHeadless: _bindgen_ty_272 = 1970496882;
+pub const kAudioHardwarePropertyServiceRestarted: _bindgen_ty_272 = 1936880500;
+pub const kAudioHardwarePropertyPowerHint: _bindgen_ty_272 = 1886353256;
+pub type _bindgen_ty_272 = ::std::os::raw::c_uint;
 extern "C" {
     pub fn AudioHardwareUnload() -> OSStatus;
 }
@@ -20285,12 +20546,12 @@ extern "C" {
 extern "C" {
     pub fn AudioHardwareDestroyAggregateDevice(inDeviceID: AudioObjectID) -> OSStatus;
 }
-pub const kAudioPlugInCreateAggregateDevice: _bindgen_ty_269 = 1667327847;
-pub const kAudioPlugInDestroyAggregateDevice: _bindgen_ty_269 = 1684105063;
-pub type _bindgen_ty_269 = ::std::os::raw::c_uint;
-pub const kAudioTransportManagerCreateEndPointDevice: _bindgen_ty_270 = 1667523958;
-pub const kAudioTransportManagerDestroyEndPointDevice: _bindgen_ty_270 = 1684301174;
-pub type _bindgen_ty_270 = ::std::os::raw::c_uint;
+pub const kAudioPlugInCreateAggregateDevice: _bindgen_ty_273 = 1667327847;
+pub const kAudioPlugInDestroyAggregateDevice: _bindgen_ty_273 = 1684105063;
+pub type _bindgen_ty_273 = ::std::os::raw::c_uint;
+pub const kAudioTransportManagerCreateEndPointDevice: _bindgen_ty_274 = 1667523958;
+pub const kAudioTransportManagerDestroyEndPointDevice: _bindgen_ty_274 = 1684301174;
+pub type _bindgen_ty_274 = ::std::os::raw::c_uint;
 pub type AudioDeviceIOProc = ::std::option::Option<
     unsafe extern "C" fn(
         inDevice: AudioObjectID,
@@ -20320,76 +20581,76 @@ impl Default for AudioHardwareIOProcStreamUsage {
         }
     }
 }
-pub const kAudioDeviceStartTimeIsInputFlag: _bindgen_ty_271 = 1;
-pub const kAudioDeviceStartTimeDontConsultDeviceFlag: _bindgen_ty_271 = 2;
-pub const kAudioDeviceStartTimeDontConsultHALFlag: _bindgen_ty_271 = 4;
-pub type _bindgen_ty_271 = ::std::os::raw::c_uint;
-pub const kAudioDevicePropertyPlugIn: _bindgen_ty_272 = 1886156135;
-pub const kAudioDevicePropertyDeviceHasChanged: _bindgen_ty_272 = 1684629094;
-pub const kAudioDevicePropertyDeviceIsRunningSomewhere: _bindgen_ty_272 = 1735356005;
-pub const kAudioDeviceProcessorOverload: _bindgen_ty_272 = 1870030194;
-pub const kAudioDevicePropertyIOStoppedAbnormally: _bindgen_ty_272 = 1937010788;
-pub const kAudioDevicePropertyHogMode: _bindgen_ty_272 = 1869180523;
-pub const kAudioDevicePropertyBufferFrameSize: _bindgen_ty_272 = 1718839674;
-pub const kAudioDevicePropertyBufferFrameSizeRange: _bindgen_ty_272 = 1718843939;
-pub const kAudioDevicePropertyUsesVariableBufferFrameSizes: _bindgen_ty_272 = 1986425722;
-pub const kAudioDevicePropertyIOCycleUsage: _bindgen_ty_272 = 1852012899;
-pub const kAudioDevicePropertyStreamConfiguration: _bindgen_ty_272 = 1936482681;
-pub const kAudioDevicePropertyIOProcStreamUsage: _bindgen_ty_272 = 1937077093;
-pub const kAudioDevicePropertyActualSampleRate: _bindgen_ty_272 = 1634955892;
-pub const kAudioDevicePropertyClockDevice: _bindgen_ty_272 = 1634755428;
-pub const kAudioDevicePropertyIOThreadOSWorkgroup: _bindgen_ty_272 = 1869838183;
-pub const kAudioDevicePropertyProcessMute: _bindgen_ty_272 = 1634758765;
-pub type _bindgen_ty_272 = ::std::os::raw::c_uint;
-pub const kAudioDevicePropertyJackIsConnected: _bindgen_ty_273 = 1784767339;
-pub const kAudioDevicePropertyVolumeScalar: _bindgen_ty_273 = 1987013741;
-pub const kAudioDevicePropertyVolumeDecibels: _bindgen_ty_273 = 1987013732;
-pub const kAudioDevicePropertyVolumeRangeDecibels: _bindgen_ty_273 = 1986290211;
-pub const kAudioDevicePropertyVolumeScalarToDecibels: _bindgen_ty_273 = 1983013986;
-pub const kAudioDevicePropertyVolumeDecibelsToScalar: _bindgen_ty_273 = 1684157046;
-pub const kAudioDevicePropertyStereoPan: _bindgen_ty_273 = 1936744814;
-pub const kAudioDevicePropertyStereoPanChannels: _bindgen_ty_273 = 1936748067;
-pub const kAudioDevicePropertyMute: _bindgen_ty_273 = 1836414053;
-pub const kAudioDevicePropertySolo: _bindgen_ty_273 = 1936682095;
-pub const kAudioDevicePropertyPhantomPower: _bindgen_ty_273 = 1885888878;
-pub const kAudioDevicePropertyPhaseInvert: _bindgen_ty_273 = 1885893481;
-pub const kAudioDevicePropertyClipLight: _bindgen_ty_273 = 1668049264;
-pub const kAudioDevicePropertyTalkback: _bindgen_ty_273 = 1952541794;
-pub const kAudioDevicePropertyListenback: _bindgen_ty_273 = 1819504226;
-pub const kAudioDevicePropertyDataSource: _bindgen_ty_273 = 1936945763;
-pub const kAudioDevicePropertyDataSources: _bindgen_ty_273 = 1936941859;
-pub const kAudioDevicePropertyDataSourceNameForIDCFString: _bindgen_ty_273 = 1819501422;
-pub const kAudioDevicePropertyDataSourceKindForID: _bindgen_ty_273 = 1936941931;
-pub const kAudioDevicePropertyClockSource: _bindgen_ty_273 = 1668510307;
-pub const kAudioDevicePropertyClockSources: _bindgen_ty_273 = 1668506403;
-pub const kAudioDevicePropertyClockSourceNameForIDCFString: _bindgen_ty_273 = 1818456942;
-pub const kAudioDevicePropertyClockSourceKindForID: _bindgen_ty_273 = 1668506475;
-pub const kAudioDevicePropertyPlayThru: _bindgen_ty_273 = 1953002101;
-pub const kAudioDevicePropertyPlayThruSolo: _bindgen_ty_273 = 1953002099;
-pub const kAudioDevicePropertyPlayThruVolumeScalar: _bindgen_ty_273 = 1836479331;
-pub const kAudioDevicePropertyPlayThruVolumeDecibels: _bindgen_ty_273 = 1836475490;
-pub const kAudioDevicePropertyPlayThruVolumeRangeDecibels: _bindgen_ty_273 = 1836475427;
-pub const kAudioDevicePropertyPlayThruVolumeScalarToDecibels: _bindgen_ty_273 = 1836462692;
-pub const kAudioDevicePropertyPlayThruVolumeDecibelsToScalar: _bindgen_ty_273 = 1836462707;
-pub const kAudioDevicePropertyPlayThruStereoPan: _bindgen_ty_273 = 1836281966;
-pub const kAudioDevicePropertyPlayThruStereoPanChannels: _bindgen_ty_273 = 1836281891;
-pub const kAudioDevicePropertyPlayThruDestination: _bindgen_ty_273 = 1835295859;
-pub const kAudioDevicePropertyPlayThruDestinations: _bindgen_ty_273 = 1835295779;
-pub const kAudioDevicePropertyPlayThruDestinationNameForIDCFString: _bindgen_ty_273 = 1835295843;
-pub const kAudioDevicePropertyChannelNominalLineLevel: _bindgen_ty_273 = 1852601964;
-pub const kAudioDevicePropertyChannelNominalLineLevels: _bindgen_ty_273 = 1852601891;
-pub const kAudioDevicePropertyChannelNominalLineLevelNameForIDCFString: _bindgen_ty_273 =
+pub const kAudioDeviceStartTimeIsInputFlag: _bindgen_ty_275 = 1;
+pub const kAudioDeviceStartTimeDontConsultDeviceFlag: _bindgen_ty_275 = 2;
+pub const kAudioDeviceStartTimeDontConsultHALFlag: _bindgen_ty_275 = 4;
+pub type _bindgen_ty_275 = ::std::os::raw::c_uint;
+pub const kAudioDevicePropertyPlugIn: _bindgen_ty_276 = 1886156135;
+pub const kAudioDevicePropertyDeviceHasChanged: _bindgen_ty_276 = 1684629094;
+pub const kAudioDevicePropertyDeviceIsRunningSomewhere: _bindgen_ty_276 = 1735356005;
+pub const kAudioDeviceProcessorOverload: _bindgen_ty_276 = 1870030194;
+pub const kAudioDevicePropertyIOStoppedAbnormally: _bindgen_ty_276 = 1937010788;
+pub const kAudioDevicePropertyHogMode: _bindgen_ty_276 = 1869180523;
+pub const kAudioDevicePropertyBufferFrameSize: _bindgen_ty_276 = 1718839674;
+pub const kAudioDevicePropertyBufferFrameSizeRange: _bindgen_ty_276 = 1718843939;
+pub const kAudioDevicePropertyUsesVariableBufferFrameSizes: _bindgen_ty_276 = 1986425722;
+pub const kAudioDevicePropertyIOCycleUsage: _bindgen_ty_276 = 1852012899;
+pub const kAudioDevicePropertyStreamConfiguration: _bindgen_ty_276 = 1936482681;
+pub const kAudioDevicePropertyIOProcStreamUsage: _bindgen_ty_276 = 1937077093;
+pub const kAudioDevicePropertyActualSampleRate: _bindgen_ty_276 = 1634955892;
+pub const kAudioDevicePropertyClockDevice: _bindgen_ty_276 = 1634755428;
+pub const kAudioDevicePropertyIOThreadOSWorkgroup: _bindgen_ty_276 = 1869838183;
+pub const kAudioDevicePropertyProcessMute: _bindgen_ty_276 = 1634758765;
+pub type _bindgen_ty_276 = ::std::os::raw::c_uint;
+pub const kAudioDevicePropertyJackIsConnected: _bindgen_ty_277 = 1784767339;
+pub const kAudioDevicePropertyVolumeScalar: _bindgen_ty_277 = 1987013741;
+pub const kAudioDevicePropertyVolumeDecibels: _bindgen_ty_277 = 1987013732;
+pub const kAudioDevicePropertyVolumeRangeDecibels: _bindgen_ty_277 = 1986290211;
+pub const kAudioDevicePropertyVolumeScalarToDecibels: _bindgen_ty_277 = 1983013986;
+pub const kAudioDevicePropertyVolumeDecibelsToScalar: _bindgen_ty_277 = 1684157046;
+pub const kAudioDevicePropertyStereoPan: _bindgen_ty_277 = 1936744814;
+pub const kAudioDevicePropertyStereoPanChannels: _bindgen_ty_277 = 1936748067;
+pub const kAudioDevicePropertyMute: _bindgen_ty_277 = 1836414053;
+pub const kAudioDevicePropertySolo: _bindgen_ty_277 = 1936682095;
+pub const kAudioDevicePropertyPhantomPower: _bindgen_ty_277 = 1885888878;
+pub const kAudioDevicePropertyPhaseInvert: _bindgen_ty_277 = 1885893481;
+pub const kAudioDevicePropertyClipLight: _bindgen_ty_277 = 1668049264;
+pub const kAudioDevicePropertyTalkback: _bindgen_ty_277 = 1952541794;
+pub const kAudioDevicePropertyListenback: _bindgen_ty_277 = 1819504226;
+pub const kAudioDevicePropertyDataSource: _bindgen_ty_277 = 1936945763;
+pub const kAudioDevicePropertyDataSources: _bindgen_ty_277 = 1936941859;
+pub const kAudioDevicePropertyDataSourceNameForIDCFString: _bindgen_ty_277 = 1819501422;
+pub const kAudioDevicePropertyDataSourceKindForID: _bindgen_ty_277 = 1936941931;
+pub const kAudioDevicePropertyClockSource: _bindgen_ty_277 = 1668510307;
+pub const kAudioDevicePropertyClockSources: _bindgen_ty_277 = 1668506403;
+pub const kAudioDevicePropertyClockSourceNameForIDCFString: _bindgen_ty_277 = 1818456942;
+pub const kAudioDevicePropertyClockSourceKindForID: _bindgen_ty_277 = 1668506475;
+pub const kAudioDevicePropertyPlayThru: _bindgen_ty_277 = 1953002101;
+pub const kAudioDevicePropertyPlayThruSolo: _bindgen_ty_277 = 1953002099;
+pub const kAudioDevicePropertyPlayThruVolumeScalar: _bindgen_ty_277 = 1836479331;
+pub const kAudioDevicePropertyPlayThruVolumeDecibels: _bindgen_ty_277 = 1836475490;
+pub const kAudioDevicePropertyPlayThruVolumeRangeDecibels: _bindgen_ty_277 = 1836475427;
+pub const kAudioDevicePropertyPlayThruVolumeScalarToDecibels: _bindgen_ty_277 = 1836462692;
+pub const kAudioDevicePropertyPlayThruVolumeDecibelsToScalar: _bindgen_ty_277 = 1836462707;
+pub const kAudioDevicePropertyPlayThruStereoPan: _bindgen_ty_277 = 1836281966;
+pub const kAudioDevicePropertyPlayThruStereoPanChannels: _bindgen_ty_277 = 1836281891;
+pub const kAudioDevicePropertyPlayThruDestination: _bindgen_ty_277 = 1835295859;
+pub const kAudioDevicePropertyPlayThruDestinations: _bindgen_ty_277 = 1835295779;
+pub const kAudioDevicePropertyPlayThruDestinationNameForIDCFString: _bindgen_ty_277 = 1835295843;
+pub const kAudioDevicePropertyChannelNominalLineLevel: _bindgen_ty_277 = 1852601964;
+pub const kAudioDevicePropertyChannelNominalLineLevels: _bindgen_ty_277 = 1852601891;
+pub const kAudioDevicePropertyChannelNominalLineLevelNameForIDCFString: _bindgen_ty_277 =
     1818455660;
-pub const kAudioDevicePropertyHighPassFilterSetting: _bindgen_ty_273 = 1751740518;
-pub const kAudioDevicePropertyHighPassFilterSettings: _bindgen_ty_273 = 1751740451;
-pub const kAudioDevicePropertyHighPassFilterSettingNameForIDCFString: _bindgen_ty_273 = 1751740524;
-pub const kAudioDevicePropertySubVolumeScalar: _bindgen_ty_273 = 1937140845;
-pub const kAudioDevicePropertySubVolumeDecibels: _bindgen_ty_273 = 1937140836;
-pub const kAudioDevicePropertySubVolumeRangeDecibels: _bindgen_ty_273 = 1937138723;
-pub const kAudioDevicePropertySubVolumeScalarToDecibels: _bindgen_ty_273 = 1937125988;
-pub const kAudioDevicePropertySubVolumeDecibelsToScalar: _bindgen_ty_273 = 1935946358;
-pub const kAudioDevicePropertySubMute: _bindgen_ty_273 = 1936553332;
-pub type _bindgen_ty_273 = ::std::os::raw::c_uint;
+pub const kAudioDevicePropertyHighPassFilterSetting: _bindgen_ty_277 = 1751740518;
+pub const kAudioDevicePropertyHighPassFilterSettings: _bindgen_ty_277 = 1751740451;
+pub const kAudioDevicePropertyHighPassFilterSettingNameForIDCFString: _bindgen_ty_277 = 1751740524;
+pub const kAudioDevicePropertySubVolumeScalar: _bindgen_ty_277 = 1937140845;
+pub const kAudioDevicePropertySubVolumeDecibels: _bindgen_ty_277 = 1937140836;
+pub const kAudioDevicePropertySubVolumeRangeDecibels: _bindgen_ty_277 = 1937138723;
+pub const kAudioDevicePropertySubVolumeScalarToDecibels: _bindgen_ty_277 = 1937125988;
+pub const kAudioDevicePropertySubVolumeDecibelsToScalar: _bindgen_ty_277 = 1935946358;
+pub const kAudioDevicePropertySubMute: _bindgen_ty_277 = 1936553332;
+pub type _bindgen_ty_277 = ::std::os::raw::c_uint;
 extern "C" {
     pub fn AudioDeviceCreateIOProcID(
         inDevice: AudioObjectID,
@@ -20446,58 +20707,58 @@ extern "C" {
         inFlags: UInt32,
     ) -> OSStatus;
 }
-pub const kAudioAggregateDeviceClassID: _bindgen_ty_274 = 1633773415;
-pub type _bindgen_ty_274 = ::std::os::raw::c_uint;
-pub const kAudioAggregateDevicePropertyFullSubDeviceList: _bindgen_ty_275 = 1735554416;
-pub const kAudioAggregateDevicePropertyActiveSubDeviceList: _bindgen_ty_275 = 1634169456;
-pub const kAudioAggregateDevicePropertyComposition: _bindgen_ty_275 = 1633906541;
-pub const kAudioAggregateDevicePropertyMainSubDevice: _bindgen_ty_275 = 1634562932;
-pub const kAudioAggregateDevicePropertyClockDevice: _bindgen_ty_275 = 1634755428;
-pub type _bindgen_ty_275 = ::std::os::raw::c_uint;
-pub const kAudioSubDeviceClassID: _bindgen_ty_276 = 1634956642;
-pub type _bindgen_ty_276 = ::std::os::raw::c_uint;
-pub const kAudioSubDeviceDriftCompensationMinQuality: _bindgen_ty_277 = 0;
-pub const kAudioSubDeviceDriftCompensationLowQuality: _bindgen_ty_277 = 32;
-pub const kAudioSubDeviceDriftCompensationMediumQuality: _bindgen_ty_277 = 64;
-pub const kAudioSubDeviceDriftCompensationHighQuality: _bindgen_ty_277 = 96;
-pub const kAudioSubDeviceDriftCompensationMaxQuality: _bindgen_ty_277 = 127;
-pub type _bindgen_ty_277 = ::std::os::raw::c_uint;
-pub const kAudioSubDevicePropertyExtraLatency: _bindgen_ty_278 = 2020373603;
-pub const kAudioSubDevicePropertyDriftCompensation: _bindgen_ty_278 = 1685218932;
-pub const kAudioSubDevicePropertyDriftCompensationQuality: _bindgen_ty_278 = 1685218929;
+pub const kAudioAggregateDeviceClassID: _bindgen_ty_278 = 1633773415;
 pub type _bindgen_ty_278 = ::std::os::raw::c_uint;
-pub const kAudioDevicePropertyScopeInput: _bindgen_ty_279 = 1768845428;
-pub const kAudioDevicePropertyScopeOutput: _bindgen_ty_279 = 1869968496;
-pub const kAudioDevicePropertyScopePlayThrough: _bindgen_ty_279 = 1886679669;
+pub const kAudioAggregateDevicePropertyFullSubDeviceList: _bindgen_ty_279 = 1735554416;
+pub const kAudioAggregateDevicePropertyActiveSubDeviceList: _bindgen_ty_279 = 1634169456;
+pub const kAudioAggregateDevicePropertyComposition: _bindgen_ty_279 = 1633906541;
+pub const kAudioAggregateDevicePropertyMainSubDevice: _bindgen_ty_279 = 1634562932;
+pub const kAudioAggregateDevicePropertyClockDevice: _bindgen_ty_279 = 1634755428;
 pub type _bindgen_ty_279 = ::std::os::raw::c_uint;
-pub const kAudioPropertyWildcardPropertyID: _bindgen_ty_280 = 707406378;
+pub const kAudioSubDeviceClassID: _bindgen_ty_280 = 1634956642;
 pub type _bindgen_ty_280 = ::std::os::raw::c_uint;
-pub const kAudioPropertyWildcardSection: _bindgen_ty_281 = 255;
+pub const kAudioSubDeviceDriftCompensationMinQuality: _bindgen_ty_281 = 0;
+pub const kAudioSubDeviceDriftCompensationLowQuality: _bindgen_ty_281 = 32;
+pub const kAudioSubDeviceDriftCompensationMediumQuality: _bindgen_ty_281 = 64;
+pub const kAudioSubDeviceDriftCompensationHighQuality: _bindgen_ty_281 = 96;
+pub const kAudioSubDeviceDriftCompensationMaxQuality: _bindgen_ty_281 = 127;
 pub type _bindgen_ty_281 = ::std::os::raw::c_uint;
-pub const kAudioPropertyWildcardChannel: _bindgen_ty_282 = 4294967295;
+pub const kAudioSubDevicePropertyExtraLatency: _bindgen_ty_282 = 2020373603;
+pub const kAudioSubDevicePropertyDriftCompensation: _bindgen_ty_282 = 1685218932;
+pub const kAudioSubDevicePropertyDriftCompensationQuality: _bindgen_ty_282 = 1685218929;
 pub type _bindgen_ty_282 = ::std::os::raw::c_uint;
-pub const kAudioISubOwnerControlClassID: _bindgen_ty_283 = 1635017576;
+pub const kAudioDevicePropertyScopeInput: _bindgen_ty_283 = 1768845428;
+pub const kAudioDevicePropertyScopeOutput: _bindgen_ty_283 = 1869968496;
+pub const kAudioDevicePropertyScopePlayThrough: _bindgen_ty_283 = 1886679669;
 pub type _bindgen_ty_283 = ::std::os::raw::c_uint;
-pub const kAudioLevelControlPropertyDecibelsToScalarTransferFunction: _bindgen_ty_284 = 1818457190;
+pub const kAudioPropertyWildcardPropertyID: _bindgen_ty_284 = 707406378;
 pub type _bindgen_ty_284 = ::std::os::raw::c_uint;
-pub type AudioLevelControlTransferFunction = UInt32;
-pub const kAudioLevelControlTranferFunctionLinear: _bindgen_ty_285 = 0;
-pub const kAudioLevelControlTranferFunction1Over3: _bindgen_ty_285 = 1;
-pub const kAudioLevelControlTranferFunction1Over2: _bindgen_ty_285 = 2;
-pub const kAudioLevelControlTranferFunction3Over4: _bindgen_ty_285 = 3;
-pub const kAudioLevelControlTranferFunction3Over2: _bindgen_ty_285 = 4;
-pub const kAudioLevelControlTranferFunction2Over1: _bindgen_ty_285 = 5;
-pub const kAudioLevelControlTranferFunction3Over1: _bindgen_ty_285 = 6;
-pub const kAudioLevelControlTranferFunction4Over1: _bindgen_ty_285 = 7;
-pub const kAudioLevelControlTranferFunction5Over1: _bindgen_ty_285 = 8;
-pub const kAudioLevelControlTranferFunction6Over1: _bindgen_ty_285 = 9;
-pub const kAudioLevelControlTranferFunction7Over1: _bindgen_ty_285 = 10;
-pub const kAudioLevelControlTranferFunction8Over1: _bindgen_ty_285 = 11;
-pub const kAudioLevelControlTranferFunction9Over1: _bindgen_ty_285 = 12;
-pub const kAudioLevelControlTranferFunction10Over1: _bindgen_ty_285 = 13;
-pub const kAudioLevelControlTranferFunction11Over1: _bindgen_ty_285 = 14;
-pub const kAudioLevelControlTranferFunction12Over1: _bindgen_ty_285 = 15;
+pub const kAudioPropertyWildcardSection: _bindgen_ty_285 = 255;
 pub type _bindgen_ty_285 = ::std::os::raw::c_uint;
+pub const kAudioPropertyWildcardChannel: _bindgen_ty_286 = 4294967295;
+pub type _bindgen_ty_286 = ::std::os::raw::c_uint;
+pub const kAudioISubOwnerControlClassID: _bindgen_ty_287 = 1635017576;
+pub type _bindgen_ty_287 = ::std::os::raw::c_uint;
+pub const kAudioLevelControlPropertyDecibelsToScalarTransferFunction: _bindgen_ty_288 = 1818457190;
+pub type _bindgen_ty_288 = ::std::os::raw::c_uint;
+pub type AudioLevelControlTransferFunction = UInt32;
+pub const kAudioLevelControlTranferFunctionLinear: _bindgen_ty_289 = 0;
+pub const kAudioLevelControlTranferFunction1Over3: _bindgen_ty_289 = 1;
+pub const kAudioLevelControlTranferFunction1Over2: _bindgen_ty_289 = 2;
+pub const kAudioLevelControlTranferFunction3Over4: _bindgen_ty_289 = 3;
+pub const kAudioLevelControlTranferFunction3Over2: _bindgen_ty_289 = 4;
+pub const kAudioLevelControlTranferFunction2Over1: _bindgen_ty_289 = 5;
+pub const kAudioLevelControlTranferFunction3Over1: _bindgen_ty_289 = 6;
+pub const kAudioLevelControlTranferFunction4Over1: _bindgen_ty_289 = 7;
+pub const kAudioLevelControlTranferFunction5Over1: _bindgen_ty_289 = 8;
+pub const kAudioLevelControlTranferFunction6Over1: _bindgen_ty_289 = 9;
+pub const kAudioLevelControlTranferFunction7Over1: _bindgen_ty_289 = 10;
+pub const kAudioLevelControlTranferFunction8Over1: _bindgen_ty_289 = 11;
+pub const kAudioLevelControlTranferFunction9Over1: _bindgen_ty_289 = 12;
+pub const kAudioLevelControlTranferFunction10Over1: _bindgen_ty_289 = 13;
+pub const kAudioLevelControlTranferFunction11Over1: _bindgen_ty_289 = 14;
+pub const kAudioLevelControlTranferFunction12Over1: _bindgen_ty_289 = 15;
+pub type _bindgen_ty_289 = ::std::os::raw::c_uint;
 pub type AudioHardwarePropertyID = AudioObjectPropertySelector;
 pub type AudioHardwarePropertyListenerProc = ::std::option::Option<
     unsafe extern "C" fn(
@@ -20505,19 +20766,19 @@ pub type AudioHardwarePropertyListenerProc = ::std::option::Option<
         inClientData: *mut ::std::os::raw::c_void,
     ) -> OSStatus,
 >;
-pub const kAudioHardwarePropertyRunLoop: _bindgen_ty_286 = 1919839344;
-pub const kAudioHardwarePropertyDeviceForUID: _bindgen_ty_286 = 1685416292;
-pub const kAudioHardwarePropertyPlugInForBundleID: _bindgen_ty_286 = 1885954665;
-pub const kAudioHardwarePropertyProcessIsMaster: _bindgen_ty_286 = 1835103092;
-pub type _bindgen_ty_286 = ::std::os::raw::c_uint;
-pub const kAudioHardwarePropertyBootChimeVolumeScalar: _bindgen_ty_287 = 1650620019;
-pub const kAudioHardwarePropertyBootChimeVolumeDecibels: _bindgen_ty_287 = 1650620004;
-pub const kAudioHardwarePropertyBootChimeVolumeRangeDecibels: _bindgen_ty_287 = 1650615331;
-pub const kAudioHardwarePropertyBootChimeVolumeScalarToDecibels: _bindgen_ty_287 = 1651913316;
-pub const kAudioHardwarePropertyBootChimeVolumeDecibelsToScalar: _bindgen_ty_287 = 1650733686;
-pub const kAudioHardwarePropertyBootChimeVolumeDecibelsToScalarTransferFunction: _bindgen_ty_287 =
+pub const kAudioHardwarePropertyRunLoop: _bindgen_ty_290 = 1919839344;
+pub const kAudioHardwarePropertyDeviceForUID: _bindgen_ty_290 = 1685416292;
+pub const kAudioHardwarePropertyPlugInForBundleID: _bindgen_ty_290 = 1885954665;
+pub const kAudioHardwarePropertyProcessIsMaster: _bindgen_ty_290 = 1835103092;
+pub type _bindgen_ty_290 = ::std::os::raw::c_uint;
+pub const kAudioHardwarePropertyBootChimeVolumeScalar: _bindgen_ty_291 = 1650620019;
+pub const kAudioHardwarePropertyBootChimeVolumeDecibels: _bindgen_ty_291 = 1650620004;
+pub const kAudioHardwarePropertyBootChimeVolumeRangeDecibels: _bindgen_ty_291 = 1650615331;
+pub const kAudioHardwarePropertyBootChimeVolumeScalarToDecibels: _bindgen_ty_291 = 1651913316;
+pub const kAudioHardwarePropertyBootChimeVolumeDecibelsToScalar: _bindgen_ty_291 = 1650733686;
+pub const kAudioHardwarePropertyBootChimeVolumeDecibelsToScalarTransferFunction: _bindgen_ty_291 =
     1651930214;
-pub type _bindgen_ty_287 = ::std::os::raw::c_uint;
+pub type _bindgen_ty_291 = ::std::os::raw::c_uint;
 extern "C" {
     pub fn AudioHardwareAddRunLoopSource(inRunLoopSource: CFRunLoopSourceRef) -> OSStatus;
 }
@@ -20569,41 +20830,41 @@ pub type AudioDevicePropertyListenerProc = ::std::option::Option<
         inClientData: *mut ::std::os::raw::c_void,
     ) -> OSStatus,
 >;
-pub const kAudioDeviceUnknown: _bindgen_ty_288 = 0;
-pub type _bindgen_ty_288 = ::std::os::raw::c_uint;
-pub const kAudioDeviceTransportTypeAutoAggregate: _bindgen_ty_289 = 1718055536;
-pub type _bindgen_ty_289 = ::std::os::raw::c_uint;
-pub const kAudioDevicePropertyVolumeDecibelsToScalarTransferFunction: _bindgen_ty_290 = 1986229350;
-pub const kAudioDevicePropertyPlayThruVolumeDecibelsToScalarTransferFunction: _bindgen_ty_290 =
+pub const kAudioDeviceUnknown: _bindgen_ty_292 = 0;
+pub type _bindgen_ty_292 = ::std::os::raw::c_uint;
+pub const kAudioDeviceTransportTypeAutoAggregate: _bindgen_ty_293 = 1718055536;
+pub type _bindgen_ty_293 = ::std::os::raw::c_uint;
+pub const kAudioDevicePropertyVolumeDecibelsToScalarTransferFunction: _bindgen_ty_294 = 1986229350;
+pub const kAudioDevicePropertyPlayThruVolumeDecibelsToScalarTransferFunction: _bindgen_ty_294 =
     1836479590;
-pub const kAudioDevicePropertyDriverShouldOwniSub: _bindgen_ty_290 = 1769174370;
-pub const kAudioDevicePropertySubVolumeDecibelsToScalarTransferFunction: _bindgen_ty_290 =
+pub const kAudioDevicePropertyDriverShouldOwniSub: _bindgen_ty_294 = 1769174370;
+pub const kAudioDevicePropertySubVolumeDecibelsToScalarTransferFunction: _bindgen_ty_294 =
     1937142886;
-pub type _bindgen_ty_290 = ::std::os::raw::c_uint;
-pub const kAudioDevicePropertyDeviceName: _bindgen_ty_291 = 1851878757;
-pub const kAudioDevicePropertyDeviceNameCFString: _bindgen_ty_291 = 1819173229;
-pub const kAudioDevicePropertyDeviceManufacturer: _bindgen_ty_291 = 1835101042;
-pub const kAudioDevicePropertyDeviceManufacturerCFString: _bindgen_ty_291 = 1819107691;
-pub const kAudioDevicePropertyRegisterBufferList: _bindgen_ty_291 = 1919055206;
-pub const kAudioDevicePropertyBufferSize: _bindgen_ty_291 = 1651730810;
-pub const kAudioDevicePropertyBufferSizeRange: _bindgen_ty_291 = 1651735075;
-pub const kAudioDevicePropertyChannelName: _bindgen_ty_291 = 1667788397;
-pub const kAudioDevicePropertyChannelNameCFString: _bindgen_ty_291 = 1818454126;
-pub const kAudioDevicePropertyChannelCategoryName: _bindgen_ty_291 = 1667460717;
-pub const kAudioDevicePropertyChannelCategoryNameCFString: _bindgen_ty_291 = 1818452846;
-pub const kAudioDevicePropertyChannelNumberName: _bindgen_ty_291 = 1668181613;
-pub const kAudioDevicePropertyChannelNumberNameCFString: _bindgen_ty_291 = 1818455662;
-pub const kAudioDevicePropertySupportsMixing: _bindgen_ty_291 = 1835628607;
-pub const kAudioDevicePropertyStreamFormat: _bindgen_ty_291 = 1936092532;
-pub const kAudioDevicePropertyStreamFormats: _bindgen_ty_291 = 1936092451;
-pub const kAudioDevicePropertyStreamFormatSupported: _bindgen_ty_291 = 1936092479;
-pub const kAudioDevicePropertyStreamFormatMatch: _bindgen_ty_291 = 1936092525;
-pub const kAudioDevicePropertyDataSourceNameForID: _bindgen_ty_291 = 1936941934;
-pub const kAudioDevicePropertyClockSourceNameForID: _bindgen_ty_291 = 1668506478;
-pub const kAudioDevicePropertyPlayThruDestinationNameForID: _bindgen_ty_291 = 1835295854;
-pub const kAudioDevicePropertyChannelNominalLineLevelNameForID: _bindgen_ty_291 = 1668181110;
-pub const kAudioDevicePropertyHighPassFilterSettingNameForID: _bindgen_ty_291 = 1667787120;
-pub type _bindgen_ty_291 = ::std::os::raw::c_uint;
+pub type _bindgen_ty_294 = ::std::os::raw::c_uint;
+pub const kAudioDevicePropertyDeviceName: _bindgen_ty_295 = 1851878757;
+pub const kAudioDevicePropertyDeviceNameCFString: _bindgen_ty_295 = 1819173229;
+pub const kAudioDevicePropertyDeviceManufacturer: _bindgen_ty_295 = 1835101042;
+pub const kAudioDevicePropertyDeviceManufacturerCFString: _bindgen_ty_295 = 1819107691;
+pub const kAudioDevicePropertyRegisterBufferList: _bindgen_ty_295 = 1919055206;
+pub const kAudioDevicePropertyBufferSize: _bindgen_ty_295 = 1651730810;
+pub const kAudioDevicePropertyBufferSizeRange: _bindgen_ty_295 = 1651735075;
+pub const kAudioDevicePropertyChannelName: _bindgen_ty_295 = 1667788397;
+pub const kAudioDevicePropertyChannelNameCFString: _bindgen_ty_295 = 1818454126;
+pub const kAudioDevicePropertyChannelCategoryName: _bindgen_ty_295 = 1667460717;
+pub const kAudioDevicePropertyChannelCategoryNameCFString: _bindgen_ty_295 = 1818452846;
+pub const kAudioDevicePropertyChannelNumberName: _bindgen_ty_295 = 1668181613;
+pub const kAudioDevicePropertyChannelNumberNameCFString: _bindgen_ty_295 = 1818455662;
+pub const kAudioDevicePropertySupportsMixing: _bindgen_ty_295 = 1835628607;
+pub const kAudioDevicePropertyStreamFormat: _bindgen_ty_295 = 1936092532;
+pub const kAudioDevicePropertyStreamFormats: _bindgen_ty_295 = 1936092451;
+pub const kAudioDevicePropertyStreamFormatSupported: _bindgen_ty_295 = 1936092479;
+pub const kAudioDevicePropertyStreamFormatMatch: _bindgen_ty_295 = 1936092525;
+pub const kAudioDevicePropertyDataSourceNameForID: _bindgen_ty_295 = 1936941934;
+pub const kAudioDevicePropertyClockSourceNameForID: _bindgen_ty_295 = 1668506478;
+pub const kAudioDevicePropertyPlayThruDestinationNameForID: _bindgen_ty_295 = 1835295854;
+pub const kAudioDevicePropertyChannelNominalLineLevelNameForID: _bindgen_ty_295 = 1668181110;
+pub const kAudioDevicePropertyHighPassFilterSettingNameForID: _bindgen_ty_295 = 1667787120;
+pub type _bindgen_ty_295 = ::std::os::raw::c_uint;
 extern "C" {
     pub fn AudioDeviceAddIOProc(
         inDevice: AudioDeviceID,
@@ -20671,8 +20932,8 @@ extern "C" {
         inProc: AudioDevicePropertyListenerProc,
     ) -> OSStatus;
 }
-pub const kAudioAggregateDevicePropertyMasterSubDevice: _bindgen_ty_292 = 1634562932;
-pub type _bindgen_ty_292 = ::std::os::raw::c_uint;
+pub const kAudioAggregateDevicePropertyMasterSubDevice: _bindgen_ty_296 = 1634562932;
+pub type _bindgen_ty_296 = ::std::os::raw::c_uint;
 pub type AudioStreamID = AudioObjectID;
 pub type AudioStreamPropertyListenerProc = ::std::option::Option<
     unsafe extern "C" fn(
@@ -20682,13 +20943,13 @@ pub type AudioStreamPropertyListenerProc = ::std::option::Option<
         inClientData: *mut ::std::os::raw::c_void,
     ) -> OSStatus,
 >;
-pub const kAudioStreamUnknown: _bindgen_ty_293 = 0;
-pub type _bindgen_ty_293 = ::std::os::raw::c_uint;
-pub const kAudioStreamPropertyOwningDevice: _bindgen_ty_294 = 1937007734;
-pub const kAudioStreamPropertyPhysicalFormats: _bindgen_ty_294 = 1885762595;
-pub const kAudioStreamPropertyPhysicalFormatSupported: _bindgen_ty_294 = 1885762623;
-pub const kAudioStreamPropertyPhysicalFormatMatch: _bindgen_ty_294 = 1885762669;
-pub type _bindgen_ty_294 = ::std::os::raw::c_uint;
+pub const kAudioStreamUnknown: _bindgen_ty_297 = 0;
+pub type _bindgen_ty_297 = ::std::os::raw::c_uint;
+pub const kAudioStreamPropertyOwningDevice: _bindgen_ty_298 = 1937007734;
+pub const kAudioStreamPropertyPhysicalFormats: _bindgen_ty_298 = 1885762595;
+pub const kAudioStreamPropertyPhysicalFormatSupported: _bindgen_ty_298 = 1885762623;
+pub const kAudioStreamPropertyPhysicalFormatMatch: _bindgen_ty_298 = 1885762669;
+pub type _bindgen_ty_298 = ::std::os::raw::c_uint;
 extern "C" {
     pub fn AudioStreamGetPropertyInfo(
         inStream: AudioStreamID,
@@ -20734,12 +20995,12 @@ extern "C" {
         inProc: AudioStreamPropertyListenerProc,
     ) -> OSStatus;
 }
-pub const kAudioBootChimeVolumeControlClassID: _bindgen_ty_295 = 1886544237;
-pub type _bindgen_ty_295 = ::std::os::raw::c_uint;
-pub const kAudioControlPropertyVariant: _bindgen_ty_296 = 1668702578;
-pub type _bindgen_ty_296 = ::std::os::raw::c_uint;
-pub const kAudioClockSourceControlPropertyItemKind: _bindgen_ty_297 = 1668049771;
-pub type _bindgen_ty_297 = ::std::os::raw::c_uint;
+pub const kAudioBootChimeVolumeControlClassID: _bindgen_ty_299 = 1886544237;
+pub type _bindgen_ty_299 = ::std::os::raw::c_uint;
+pub const kAudioControlPropertyVariant: _bindgen_ty_300 = 1668702578;
+pub type _bindgen_ty_300 = ::std::os::raw::c_uint;
+pub const kAudioClockSourceControlPropertyItemKind: _bindgen_ty_301 = 1668049771;
+pub type _bindgen_ty_301 = ::std::os::raw::c_uint;
 extern "C" {
     pub fn AudioGetCurrentHostTime() -> UInt64;
 }

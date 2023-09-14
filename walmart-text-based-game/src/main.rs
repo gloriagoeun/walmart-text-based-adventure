@@ -12,6 +12,7 @@ struct Aisle {
     desc: String,
     Pointers: Vec<Pointer>,
 }
+
 struct Pointer {
     target: AisleID,         // More about this in a minute
     triggers: Vec<String>,   // e.g. "left" or "right" or "straight"
@@ -384,7 +385,9 @@ fn main() {
     let mut input_one = String::new();
 
     let mut at = AisleID(0);
-    println!("The Walmart Shopping Adventure");
+    println!();
+    println!();
+    println!("The Ultimate Walmart Searcharcha Hunt");
     println!("=======================================================");
     println!("Welcome to...");
     println!();
@@ -397,24 +400,74 @@ fn main() {
      #+#+# #+#+#  #+#     #+# #+#        #+#       #+# #+#     #+# #+#    #+#     #+#     
       ###   ###   ###     ### ########## ###       ### ###     ### ###    ###     ### "
     );
+    println!("=======================================================");
+    //playing the intro music here
+    let intro_time: u64 = 5;
+    let mp3_file_path = "./src/beep.mp3";
+    play_mp3_file(mp3_file_path, &intro_time);
     println!();
+
     println!();
-    println!("You are grocery shopping with your parents!! WOW, so fun...");
+    let text = "You are grocery shopping with your parents!! WOW, so fun...";
+    let delay = Duration::from_millis(80); // Adjust the delay as needed
+    let mut stdout = io::stdout();
+
+    for char in text.chars() {
+        print!("{}", char);
+        stdout.flush().unwrap(); // Flush stdout to ensure characters are displayed immediately
+        sleep(delay);
+    }
     println!();
+
     //sleep(Duration::from_secs(2));
-    println!("Except, you are stressed.. Why may you ask? Your parents are checking out their items, but THEY FORGOT THE SRIRACHA!!");
+    let text = "Except, now you are stressed. You reached the billing counter only for your parents to realize THEY FORGOT THE SRIRACHA!!";
+    let delay = Duration::from_millis(70); // Adjust the delay as needed
+    let mut stdout = io::stdout();
+
+    for char in text.chars() {
+        print!("{}", char);
+        stdout.flush().unwrap(); // Flush stdout to ensure characters are displayed immediately
+        sleep(delay);
+    }
     println!();
-    println!("Your mission for this game is to grab the sriracha before the cashier checks out all of the items and before your parents leave..... without you.... :'(");
+
+    let text = "Your mission for this game is to grab the sriracha before the cashier checks out all of the items and before your parents leave..... without you.... :'(";
+    let delay = Duration::from_millis(70); // Adjust the delay as needed
+    let mut stdout = io::stdout();
+
+    for char in text.chars() {
+        print!("{}", char);
+        stdout.flush().unwrap(); // Flush stdout to ensure characters are displayed immediately
+        sleep(delay);
+    }
     println!();
-    println!("Ready....? The game shall start soon...");
 
     //playing the intro music here
-    let intro_time: u64 = 7;
+    let intro_time: u64 = 5;
+    let mp3_file_path = "./src/beep.mp3";
+    play_mp3_file(mp3_file_path, &intro_time);
+    println!();
+
+    let str1 = "The cashier has started billing.\nThe beeping has started.\nWill you be able to find the Sriracha? And bring it back in time?";
+    let delay = Duration::from_millis(2500); // Adjust the delay as needed
+    let mut stdout = io::stdout();
+
+    for line in str1.lines() {
+        println!("{}", line);
+        stdout.flush().unwrap(); // Flush stdout to ensure characters are displayed immediately
+        sleep(delay);
+    }
+    println!();
+    println!("Ready...?");
+    println!();
+
+    //playing the intro music here
+    let intro_time: u64 = 5;
     let mp3_file_path = "./src/beep.mp3";
     play_mp3_file(mp3_file_path, &intro_time);
 
     let start = Instant::now();
-    let time_limit: u64 = 240;
+    let time_limit: u64 = 2400;
 
     loop {
         // We don't want to move out of Aisles, so we take a reference
@@ -426,24 +479,40 @@ fn main() {
 
         //the game should end when the time ends
         let mut new_now = Instant::now();
+        println!();
+        println!(
+            ">You have {:?} seconds left!!!<",
+            Duration::from_secs(time_limit).as_secs() - new_now.duration_since(start).as_secs()
+        );
+
         if new_now.duration_since(start) >= Duration::from_secs(time_limit) {
-            println!("You ran out of time :( Your parents left you..... Sriracha blood is all over you >:))");
+            println!(
+                "
+            =====================================================================================
+            =====================================================================================
+                                              # GAME OVER ⌛️ #
+             You ran out of time :( Your parents left you..... Sriracha blood is all over you >:)
+            =====================================================================================
+            =====================================================================================)"
+            );
             break;
         }
         println!();
         println!("{}\n{}", here.name, here.desc);
 
         if end_aisles.contains(&at) {
-            println!("You reached the end. You can go home with your parents :)");
+            println!(
+                "
+            =====================================================================================
+            =====================================================================================
+                                                # YOU WIN #
+            You saved the day for the family! You can now go home safely with your parents :)
+            =====================================================================================
+            =====================================================================================
+            "
+            );
             break;
         }
-
-        println!();
-        println!(
-            "You have {:?} seconds left!!!",
-            Duration::from_secs(time_limit).as_secs() - new_now.duration_since(start).as_secs()
-        );
-        println!();
 
         let mut keep = true;
 
@@ -457,7 +526,6 @@ fn main() {
             || at == AisleID(7)
         {
             loop {
-                println!();
                 println!("Is the sriracha in this aisle?: 'Yes' or 'No'?");
                 io::stdout().flush().unwrap();
                 input_one.clear();
@@ -467,7 +535,7 @@ fn main() {
                 if input_one == "No" || input_one == "no" {
                     if at == AisleID(7) {
                         at = AisleID(0);
-                        println!("You missed it... back to the cashier");
+                        println!("Darn! You missed it… back to the cashier");
                         keep = false;
                     }
                     break;
@@ -475,10 +543,10 @@ fn main() {
                     // say yes
                     if at != AisleID(7) {
                         at = AisleID(0);
-                        println!("You missed it... back to the cashier");
+                        println!("Darn! You missed it… back to the cashier");
                         keep = false;
                     } else {
-                        println!("You found it.. Navigate your way back to the cashier!");
+                        println!("You found it! Hurry and navigate your way back to the cashier from level 2!");
                     }
                     break;
                 } else {
@@ -490,7 +558,7 @@ fn main() {
         if keep {
             loop {
                 println!();
-                print!("What will you do?\n> ");
+                print!("What will you do?\n");
                 show_moves(here);
 
                 io::stdout().flush().unwrap();

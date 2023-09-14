@@ -467,7 +467,7 @@ fn main() {
     play_mp3_file(mp3_file_path, &intro_time);
 
     let start = Instant::now();
-    let time_limit: u64 = 2400;
+    let time_limit: u64 = 200;
 
     loop {
         // We don't want to move out of Aisles, so we take a reference
